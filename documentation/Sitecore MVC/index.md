@@ -7,6 +7,8 @@ title: Sitecore MVC
 
 ## Creating a Layout
 
+	<h2>testtesttest</h2>
+
 ## Creating a Component
 
 ### View Renderings
