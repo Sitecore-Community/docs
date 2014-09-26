@@ -27,4 +27,4 @@ title: Sitecore MVC
 
 ## Blog posts
 
-{% include siteore-mvc-blogs.html %}
+{% include siteore-mvc-blogs.md %}
