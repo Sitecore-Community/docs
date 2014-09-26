@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+
+        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/animation.css">
+        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="{{site.baseurl}}/">Welcome to {{ site.name }}</a></h1>
+                <h4>{{ site.description }}</h4>
+            <hr />
+        </header>
+
+        <nav>
+
+            <h3>First Heading</h3>
+
+            <ul>
+                <li><i class="icon-home"></i>   <a href="{{site.baseurl}}/">Home</a></li>
+                <li><i class="icon-mail"></i>   <a href="{{site.baseurl}}/contact">Contact</a></li>
+                <li><i class="icon-th"></i>     <a href="{{site.baseurl}}/archive">Archive</a></li>
+                <li><i class="icon-rss"></i>    <a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
+            </ul>
+
+            <h3>Second Heading</h3>
+
+            <ul>
+                <li><i class="icon-link"></i>   <a href="#">Link 1</a></li>
+                <li><i class="icon-link"></i>   <a href="#">Link 2</a></li>
+                <li><i class="icon-link"></i>   <a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            {{ content }}
+
+        </main>
+
+        <footer>
+            <hr />
+            <p>&copy; <time>2012</time> {{ site.author }}</p>
+        </footer>
+
+        <script src="{{site.baseurl}}/scripts.js"></script>
+    </body>
+
+</html>

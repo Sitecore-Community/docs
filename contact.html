@@ -1,0 +1,13 @@
+---
+layout: page
+title: Contact Information
+---
+
+<section>
+    <address>
+        <p><strong>{{site.author}}</strong></p>
+
+        <p><i class="icon-phone"></i> 1-555-123-1234<br/>
+        <i class="icon-mail"></i> <a href="mailto:{{site.author_email}}">{{site.author_email}}</a></p>
+    </address>
+</section>

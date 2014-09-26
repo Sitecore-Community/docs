@@ -1,0 +1,12 @@
+{
+  "author": "Luke Maciak",
+  "name": "Sample-Jekyll-Blog",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+      "grunt": "~0.4.1",
+      "grunt-html-validation": "~0.1.6",
+      "grunt-contrib-jshint": "~0.1.1",
+      "grunt-contrib-csslint": "~0.1.2"
+  }
+}
