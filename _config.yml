@@ -1,5 +1,5 @@
 # Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Sample Jekyll Blog
+name: Sitecore Community Documentation
 
 # Short description (goes below the title; it will also be used in the RSS feed)
 description: This is a sample Jekyll Blog.
@@ -28,7 +28,7 @@ url: http://yourdomain.com/
 # Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
 # If you use maroku (default engine) some of your generated pages may not validate or lint as html5
 # If you don't have it install it via gem install rdiscount
-markdown: rdiscount
+markdown: kramdown
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
