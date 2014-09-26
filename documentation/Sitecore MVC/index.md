@@ -3,29 +3,9 @@ layout: default
 title: Sitecore MVC
 ---
 
-## Creating a Visual Studio Project
+## Official Sitecore Documentation
 
-## Creating a Layout
-
-	<h2>testtesttest</h2>
-	
-	<h3>test test test test</h3>
-
-## Creating a Component
-
-### View Renderings
-
-### Controller Renderings
-
-## The Sitecore @Html Helper
-
-### data-* attributes
-
-## Routing
-
-## Unit Testing
-
-## Blog posts
+## Blog Posts
 * http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html (4 Parts)
 * http://mhwelander.net/category/sitecore-mvc/ 
 * http://kevinobee.wordpress.com/2013/04/13/cassette-bundling-with-sitecore-mvc/
