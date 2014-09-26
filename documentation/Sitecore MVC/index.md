@@ -24,3 +24,7 @@ title: Sitecore MVC
 ## Routing
 
 ## Unit Testing
+
+## Blog posts
+
+{% include siteore-mvc-blogs.html %}
