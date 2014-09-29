@@ -5,6 +5,7 @@ title: Getting Started with Sitecore
 
 Want to contribute to this project? Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community-Docs)** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / [@mhwelander](http://twitter.com/mhwelander).
 
+---------------------------------------
 #Sitecore Fundamentals
 
 ## [Defining Data](/documentation/Data Definition/index.html)
@@ -19,14 +20,20 @@ All about items, data templates, and the Sitecore tree.
 
 ## Page Editor
 
+---------------------------------------
 #Scaling and Optimization
 
 ## Caching
 
 ## Scaling
 
+---------------------------------------
 #[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
+---------------------------------------
+#Sitecore Azure
+
+---------------------------------------
 # Feeds and Newsletters
 
 ## Feeds
