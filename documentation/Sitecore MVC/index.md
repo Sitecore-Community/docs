@@ -13,24 +13,26 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 
 ----------------------
 
-## Unit Testing
+## Documentation
 
-### Blog Posts
+### Unit Testing
+
+#### Blog Posts
 
 * [http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/](http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/)
 * [http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/](http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/)
 
-## Form Posting
+### Form Posting
 
-### Blog Posts
+#### Blog Posts
 
 * [http://mhwelander.net/2014/05/28/posting-forms-in-sitecore-mvc-part-1-view-renderings/](http://mhwelander.net/2014/05/28/posting-forms-in-sitecore-mvc-part-1-view-renderings/)
 * [http://mhwelander.net/2014/05/30/posting-forms-in-sitecore-mvc-part-2-controller-renderings/](http://mhwelander.net/2014/05/30/posting-forms-in-sitecore-mvc-part-2-controller-renderings/)
 * [http://ctor.io/posting-forms-in-sitecore-controller-renderings-another-perspective/](http://ctor.io/posting-forms-in-sitecore-controller-renderings-another-perspective/)
 
-## API
+### API
 
-### Official Sitecore Documentation (7.0 - 7.2)
+#### Official Sitecore Documentation (7.0 - 7.2)
 * [Sitecore MVC Developer Reference](http://sdn.sitecore.net/Reference/Sitecore%207/MVC%20Reference.aspx)
 
 ----------------------
