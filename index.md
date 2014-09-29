@@ -7,54 +7,67 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ---------------------------------------
 
-#Sitecore Fundamentals
+# Quick Links
 
-## [Defining Data](/documentation/Data Definition/index.html)
+* [Contacting Support](http://sdn.sitecore.net/Support.aspx) - Make sure you follow recommended practices!
+* [Sitecore Developer Network (SDN)](http://sdn.sitecore.net/) - Official downloads, documentation, and forum
+* [Sitecore Knowledgebase (KB)](https://kb.sitecore.net/) - Known issues and how-tos from Support
+* [Compatability Tables](https://kb.sitecore.net/SearchResults#term=compatability%20tables) - Matrix of version numbers
+* [Sitecore Marketplace](https://marketplace.sitecore.net/) - Module downloads
+ * [Sitecore Instance Manager (SIM)](https://marketplace.sitecore.net/Modules/Sitecore_Instance_Manager.aspx)
+
+# Documentation
+
+##Sitecore Fundamentals
+
+### [Defining Data](/documentation/Data Definition/index.html)
 All about items, data templates, and the Sitecore tree. 
 
-### Quick Jump
+#### Quick Jump
 * Multisite
 
-## Presentation Details
+### Presentation Details
 
-## API Reference
+### API Reference
 
-## Page Editor
-
----------------------------------------
-
-#Scaling and Optimization
-
-## Caching
-
-## Scaling
+### Page Editor
 
 ---------------------------------------
 
-#[Sitecore MVC](/documentation/Sitecore MVC/index.html)
+##Scaling and Optimization
+
+### Caching
+
+### Scaling
 
 ---------------------------------------
 
-#Sitecore Azure
+##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
 ---------------------------------------
 
-# Feeds and Newsletters
+##Sitecore Azure
 
-## Feeds
+---------------------------------------
+
+## Misc
+
+### Feeds
 
 * [http://feeds.sitecore.net/Feed/LatestPosts](http://feeds.sitecore.net/Feed/LatestPosts) (This replaces the Yahoo! pipe - please e-mail Mark van Aalst to add a blog - [mva@sitecore.net](mva@sitecore.net))
 * [https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&output=html](https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&output=html) (MVP Details)
 * [http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2](http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2) (Older Yahoo! MVP pipe - [RSS](http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&_render=rss) / [JSON](http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&_render=json))
 
-##Newsletters
+###Newsletters
 
-### Daily
+#### Daily
 
 * [The Sitecore Daily](http://paper.li/sitecore)
 * [Sitecore Basics](http://paper.li/kiranpatils/1378702752)
 * [Sitecore Journal](http://paper.li/varunvns/1387067950)
 
-### Weekly
+#### Weekly
 
 * [Sitecore Basics Weekly](http://tinyletter.com/sitecorebasics)
+
+### User Groups
