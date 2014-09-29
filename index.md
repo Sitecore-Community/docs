@@ -3,6 +3,8 @@ layout: default
 title: Getting Started with Sitecore
 ---
 
+Want to contribute to this project? Make a **pull request** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / @mhwelander).
+
 #[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
 # Feeds and Newsletters
