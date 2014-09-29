@@ -1,10 +1,21 @@
 ---
 layout: default
-title: Data Definition
+title: Sitecore Fundamentals
 ---
 
-Developers must design a data structure that allows for content re-use, and supports both personalization and testing. The process of defining data templates and building a Sitecore tree runs parallel with breaking designs or static HTML up into reusable components. Content and presentation are both modular in Sitecore, and a key responsibility of the developer is to make sure that they work in harmony to support key marketing features and the Page Editor.
+#Official Sitecore Documentation (7.0 - 7.2)
 
-# H1
+## Data Definition
 
-## H2
+* [Data Definition Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20Reference.aspx)  
+An overview of the Sitecore tree, items, data templates, and field types.
+* [Data Definition Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20Cookbook.aspx)  
+A list of **how tos** for setting up your site's tree structure - creating data templates, assigning icons, creating items. Also includes a section on the **insert options pipeline**.
+* [Data Definition API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20API%20Cookbook.aspx)  
+How to access data templates programmatically.
+
+## Presentation
+
+## API
+
+# Blog posts
