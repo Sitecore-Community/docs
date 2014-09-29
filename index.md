@@ -3,7 +3,23 @@ layout: default
 title: Getting Started with Sitecore
 ---
 
-Want to contribute to this project? Make a **pull request** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / @mhwelander).
+Want to contribute to this project? Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community-Docs)** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / [@mhwelander](http://twitter.com/mhwelander).
+
+#Sitecore Fundamentals
+
+## [Defining Data](/documentation/Defining-Data/index.html)
+
+## Presentation Details
+
+## API Reference
+
+## Page Editor
+
+#Scaling and Optimization
+
+## Caching
+
+## Scaling
 
 #[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
