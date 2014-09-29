@@ -18,9 +18,9 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 # Documentation
 
-##Sitecore Fundamentals
+##[Sitecore Fundamentals](/documentation/Sitecore Fundamentals/index.html)
 
-### [Defining Data](/documentation/Data Definition/index.html)
+### [Defining Data](/documentation/Sitecore Fundamentals/index.html)
 All about items, data templates, and the Sitecore tree. 
 
 #### Quick Jump
