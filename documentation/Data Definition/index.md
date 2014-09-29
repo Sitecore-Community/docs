@@ -8,5 +8,3 @@ Developers must design a data structure that allows for content re-use, and supp
 # H1
 
 ## H2
-
-{% include sitecore-mvc-blogs.html %}
