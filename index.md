@@ -4,9 +4,7 @@ title: Getting Started with Sitecore
 ---
 
 Want to contribute to this project? Make a **pull request** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / @mhwelander).
-
 #[Sitecore MVC](/documentation/Sitecore MVC/index.html)
-
 # Feeds and Newsletters
 ## Feeds
 * [http://feeds.sitecore.net/Feed/LatestPosts](http://feeds.sitecore.net/Feed/LatestPosts) (This replaces the Yahoo! pipe - please e-mail Mark van Aalst to add a blog - [mva@sitecore.net](mva@sitecore.net))
