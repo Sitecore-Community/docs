@@ -24,17 +24,24 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ### Quick Jump
 
+* Installation
 * Defining Data
 * Presentation
 * Basic API
 * Page Editor
 
-##Scaling and Optimization
+##Scaling, Security, and Optimization
 
 ### Quick Jump
 
 * Scaling
 * Caching
+
+## Extending Sitecore
+
+## Sitecore Search
+
+## SPEAK
 
 ##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
@@ -43,10 +50,15 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Form Posting
 * Unit Testing
 
+## Continuous Integration / Continuous Delivery
+ 
+## Team Development
 
-##Sitecore Azure
+## Sitecore Azure
 
 ## DMS / xDB
+
+## Configuring the Client
 
 ## Modules
 
