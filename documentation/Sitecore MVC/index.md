@@ -23,7 +23,7 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 * [http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/](http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/)
 * [http://ctor.io/wrapping-a-view-rendering-to-automatically-add-additional-markup/](http://ctor.io/wrapping-a-view-rendering-to-automatically-add-additional-markup/)
 * [http://www.chrisvandesteeg.nl/2014/06/13/sitecore-mvc-in-a-multisite-environment-areas/](http://www.chrisvandesteeg.nl/2014/06/13/sitecore-mvc-in-a-multisite-environment-areas/)
-* [http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC)](http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC)
+* [http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC)](http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC))
 * [http://www.matthewdresser.com/sitecore/single-page-application-sitecore-mvc](http://www.matthewdresser.com/sitecore/single-page-application-sitecore-mvc)
 * [http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/](http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/)
 * [http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/](http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/)
