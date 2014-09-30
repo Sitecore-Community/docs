@@ -38,6 +38,22 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 
 * [http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/](http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/)
 * [http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/](http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/)
+* [http://www.igloo.com.au/blog/unit-testing-for-sitecore/](http://www.igloo.com.au/blog/unit-testing-for-sitecore/)
+* [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
+* [http://nttdatasitecore.com/Blog/2014/September/Highly-testable-Sitecore-code-using-MVC-Ninject-Synthesis-Moq-and-NUnit](http://nttdatasitecore.com/Blog/2014/September/Highly-testable-Sitecore-code-using-MVC-Ninject-Synthesis-Moq-and-NUnit)
+* [http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/](http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/)
+* [http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/](http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/)
+* [http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5](http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5)
+* [http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/](http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/) 
+* [http://www.martywoods.nl/unit-testing-sitecore-webforms-with-the-mvp-pattern/](http://www.martywoods.nl/unit-testing-sitecore-webforms-with-the-mvp-pattern/)
+* [http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/](http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/)
+* [http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2](http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2)
+* [http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/](http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/)
+
+#### Video
+
+* [Sitecore Unit Testing Setup](https://www.youtube.com/watch?v=mZKSl3pemEs)
+* [Alistair Deneys on Unit Testing Sitecore](https://www.youtube.com/watch?v=oQ2CPvN9FAU )
 
 ### Form Posts and Routing
 
@@ -60,3 +76,5 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 ## Other Resources
 * [GitHub Project: Sample Sitecore MVC (sample project used by introductory videos)](https://github.com/Sitecore-Community/sample-sitecore-mvc)
 * [GitHub Project: Sitecore MVC Contrib](https://github.com/Sitecore-Community/Sitecore-Mvc-Contrib)
+* [https://github.com/herskinduk/AutoWrapping](https://github.com/herskinduk/AutoWrapping)
+* [https://github.com/sergeyshushlyapin/Sitecore.FakeDb](https://github.com/sergeyshushlyapin/Sitecore.FakeDb)
