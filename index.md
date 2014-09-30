@@ -47,7 +47,12 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 * SOLR
 
-## SPEAK
+## [Extending the Sitecore Client]((/documentation/Extending the Sitecore Client/index.html)
+
+**Quick Jump**
+
+* SPEAK
+* Sheer UI
 
 ##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
