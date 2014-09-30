@@ -26,7 +26,7 @@ https://github.com/JakobChristensen/Sitecore.Speak.Reference (Reference / Fiddle
 
 ### Video
 
-* [Jakob’s YouTube playlist](https://www.youtube.com/playlist?list=PLWIbrolNZWflnBq32WcxNejEgiT2lyEwG)
+* [Jakob's YouTube playlist](https://www.youtube.com/playlist?list=PLWIbrolNZWflnBq32WcxNejEgiT2lyEwG)
 
 ### Social
 
