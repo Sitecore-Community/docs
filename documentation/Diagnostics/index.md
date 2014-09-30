@@ -1,3 +1,8 @@
+---
+layout: default
+title: Diagnostics, Troubleshooting, and Testing
+---
+
 # Diagnostics, Troubleshooting, and Testing
 
 ### Blog Posts
