@@ -3,7 +3,9 @@ layout: default
 title: Sitecore MVC
 ---
 
-# Getting Started
+# Sitecore MVC
+
+## Getting Started
 
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
 
@@ -12,8 +14,6 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 * [http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html](http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html) (4 parts)
 
 ----------------------
-
-# Documentation
 
 ## General
 
