@@ -54,7 +54,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
  
 ## Team Development
 
-## Sitecore Azure
+## [Sitecore Azure](/documentation/Sitecore Azure/index.html)
 
 ## DMS / xDB
 

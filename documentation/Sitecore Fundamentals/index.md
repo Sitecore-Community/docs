@@ -3,6 +3,12 @@ layout: default
 title: Sitecore Fundamentals
 ---
 
+# Getting Started
+
+-------------------------------------
+
+# Documentation
+
 ## Installing Sitecore
 
 ### Official Sitecore Documentation (7.0 - 7.2)
