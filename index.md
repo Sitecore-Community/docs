@@ -39,7 +39,10 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## Extending Sitecore
 
-## Sitecore Search
+## [Sitecore Search](/documentation/Search/index.html)
+
+### Quick Jump
+* SOLR
 
 ## SPEAK
 
