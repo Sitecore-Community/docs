@@ -3,8 +3,6 @@ layout: default
 title: Sitecore Azure
 ---
 
-# Documentation
-
 ## General
 
 ### Blog Posts

@@ -50,9 +50,11 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Form Posting
 * [Unit Testing](/documentation/Sitecore MVC/index.html#unit-testing)
 
-## Continuous Integration / Continuous Delivery
- 
-## Team Development
+## Development Process
+
+### Quick Jump
+* Continuous Integration / Continuous Delivery
+* Team Development
 
 ## [Sitecore Azure](/documentation/Sitecore Azure/index.html)
 
