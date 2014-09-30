@@ -37,6 +37,8 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Scaling
 * Caching
 
+## Diagnostics, Troubleshooting, and Testing
+
 ## Extending Sitecore
 
 ## [Sitecore Search](/documentation/Search/index.html)
