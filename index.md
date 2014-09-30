@@ -22,7 +22,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ##[Sitecore Fundamentals](/documentation/Sitecore Fundamentals/index.html)
 
-### Quick Jump
+**Quick Jump**
 
 * Installation
 * Defining Data
@@ -32,7 +32,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ##Scaling, Security, and Optimization
 
-### Quick Jump
+**Quick Jump**
 
 * Scaling
 * Caching
@@ -41,21 +41,23 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## [Sitecore Search](/documentation/Search/index.html)
 
-### Quick Jump
+**Quick Jump**
+
 * SOLR
 
 ## SPEAK
 
 ##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
-### Quick Jump
+**Quick Jump**
 
 * Form Posting
 * [Unit Testing](/documentation/Sitecore MVC/index.html#unit-testing)
 
 ## [Development Process](/documentation/Continuous Integration and Delivery/index.html)
 
-### Quick Jump
+**Quick Jump**
+
 * Continuous Integration / Continuous Delivery
 * Team Development
 
@@ -67,7 +69,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## Modules
 
-### Quick Jump
+**Quick Jump**
 
 * Web Forms For Marketers (WFFM)
 * Email Campaign Manager (ECM)

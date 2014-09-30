@@ -7,8 +7,13 @@ title: Sitecore Search
 
 ## General
 
-### Blog Posts
+### Official Sitecore Documentation (7.0 - 7.2)
 
+* [Developer's Guide to Item Buckets and Search](http://sdn.sitecore.net/Reference/Sitecore%207/Developers%20Guide%20to%20Item%20Buckets%20and%20Search.aspx)
+* [Sitecore Search Scaling Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20CMS%20Scaling%20Guide.aspx)
+* [Sitecore Search and Indexing Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20Indexing%20Guide.aspx)
+
+### Blog Posts
 
 * [http://sitecoresnippets.blogspot.de/2013/08/making-lucene-index-smaller-in-sitecore.html#.VCKWifmSxBE](http://sitecoresnippets.blogspot.de/2013/08/making-lucene-index-smaller-in-sitecore.html#.VCKWifmSxBE)
 * [http://cardinalcore.co.uk/lucinq/lucinq-sitecore-extensions/getting-started-with-lucinq-on-sitecore/](http://cardinalcore.co.uk/lucinq/lucinq-sitecore-extensions/getting-started-with-lucinq-on-sitecore/)
@@ -35,12 +40,6 @@ title: Sitecore Search
 ### Video
 
 * [Search Hangouts](http://www.youtube.com/user/SitecorePM)
-
-### Official Sitecore Documentation (7.0 - 7.2)
-
-* [Developer's Guide to Item Buckets and Search](http://sdn.sitecore.net/Reference/Sitecore%207/Developers%20Guide%20to%20Item%20Buckets%20and%20Search.aspx)
-* [Sitecore Search Scaling Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20CMS%20Scaling%20Guide.aspx)
-* [Sitecore Search and Indexing Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20Indexing%20Guide.aspx)
 
 ## Solr
 
