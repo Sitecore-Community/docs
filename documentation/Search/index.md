@@ -30,7 +30,6 @@ title: Sitecore Search
 * [http://reasoncodeexample.com/2014/02/21/pitfalls-when-indexing-numbers-sitecore-7-content-search/](http://reasoncodeexample.com/2014/02/21/pitfalls-when-indexing-numbers-sitecore-7-content-search/)
 * [http://sitecorefun.baziret.com/2014/06/sitecore-datasource-indexer/](http://sitecorefun.baziret.com/2014/06/sitecore-datasource-indexer/)
 * [http://getfishtank.ca/blog/new-sitecore-7-feature-predefined-queries](http://getfishtank.ca/blog/new-sitecore-7-feature-predefined-queries)
-
 * [http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/06/LuceneQuery1.aspx](http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/06/LuceneQuery1.aspx)
 
 ### Video
@@ -38,6 +37,10 @@ title: Sitecore Search
 * [Search Hangouts](http://www.youtube.com/user/SitecorePM)
 
 ### Official Sitecore Documentation (7.0 - 7.2)
+
+* [Developer's Guide to Item Buckets and Search](http://sdn.sitecore.net/Reference/Sitecore%207/Developers%20Guide%20to%20Item%20Buckets%20and%20Search.aspx)
+* [Sitecore Search Scaling Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20CMS%20Scaling%20Guide.aspx)
+* [Sitecore Search and Indexing Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Search%20and%20Indexing%20Guide.aspx)
 
 ## Solr
 
