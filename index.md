@@ -18,8 +18,6 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ---------------------------------------
 
-# Documentation
-
 ##[Sitecore Fundamentals](/documentation/Sitecore Fundamentals/index.html)
 
 **Quick Jump**
@@ -29,6 +27,10 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Presentation
 * Basic API
 * Page Editor
+
+## Publishing
+
+## Workflow and Permissions
 
 ##Scaling, Security, and Optimization
 
@@ -47,6 +49,17 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 * SOLR
 
+-------------------------------------
+
+## [Development Process](/documentation/Continuous Integration and Delivery/index.html)
+
+**Quick Jump**
+
+* Continuous Integration / Continuous Delivery
+* Team Development
+
+-------------------------------------
+
 ## [Extending the Sitecore Client](/documentation/Extending the Sitecore Client/index.html)
 
 **Quick Jump**
@@ -61,18 +74,15 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Form Posting
 * [Unit Testing](/documentation/Sitecore MVC/index.html#unit-testing)
 
-## [Development Process](/documentation/Continuous Integration and Delivery/index.html)
-
-**Quick Jump**
-
-* Continuous Integration / Continuous Delivery
-* Team Development
-
 ## [Sitecore Azure](/documentation/Sitecore Azure/index.html)
+
+-------------------------------------
 
 ## DMS / xDB
 
 ## Configuring the Client
+
+-------------------------------------
 
 ## Modules
 
