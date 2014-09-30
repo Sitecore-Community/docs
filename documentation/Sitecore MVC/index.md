@@ -68,10 +68,8 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 
 ----------------------
 
-## Videos
+## Other Videos
 * [YouTube: User Group Conference presentation with link to SlideShare for the slides (Ruud van Falier)](https://www.youtube.com/watch?v=vQVBaU5D4yo)
-
-----------------------
 
 ## Other Resources
 * [GitHub Project: Sample Sitecore MVC (sample project used by introductory videos)](https://github.com/Sitecore-Community/sample-sitecore-mvc)
