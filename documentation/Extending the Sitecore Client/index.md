@@ -12,11 +12,11 @@ title: Extending the Sitecore Client
 
 ### Blog Posts
 
-* [http://mhwelander.net/category/speak/ (Beginner’s Guides)](http://mhwelander.net/category/speak/)
+* [http://mhwelander.net/category/speak/ (Beginner's Guides)](http://mhwelander.net/category/speak/)
 * [http://www.hugeinc.com/ideas/perspective/sitecore-speak-introduction](http://www.hugeinc.com/ideas/perspective/sitecore-speak-introduction)
 * [http://www.programmingbynumbers.com/2014/09/18/creating-a-custom-sitecore-speak-component/ ](http://www.programmingbynumbers.com/2014/09/18/creating-a-custom-sitecore-speak-component/ )
 * [http://laubplusco.net/category/sitecore-speak/](http://laubplusco.net/category/sitecore-speak/)
-* [http://adeneys.wordpress.com/category/net/sitecore/speak/ ](http://adeneys.wordpress.com/category/net/sitecore/speak/ )
+* [http://adeneys.wordpress.com/category/net/sitecore/speak/ ](http://adeneys.wordpress.com/category/net/sitecore/speak/)
 * [http://www.dervalp.com/ (Pierre, SPEAK developer)](http://www.dervalp.com/)
 
 ### Projects and References
