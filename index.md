@@ -47,7 +47,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 * SOLR
 
-## [Extending the Sitecore Client]((/documentation/Extending the Sitecore Client/index.html)
+## [Extending the Sitecore Client](/documentation/Extending the Sitecore Client/index.html)
 
 **Quick Jump**
 
