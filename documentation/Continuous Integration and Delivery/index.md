@@ -35,4 +35,9 @@ title: Development Process
 
 [https://www.youtube.com/watch?v=mSjFZgJLAys  (By Lee Cook)](https://www.youtube.com/watch?v=mSjFZgJLAys)
 
-# Team Development
+## Team Development
+
+### Videos
+
+* [http://www.hhogdev.com/Products/Team-Development-for-Sitecore/Overview.aspx](http://www.hhogdev.com/Products/Team-Development-for-Sitecore/Overview.aspx)
+* [https://www.youtube.com/watch?v=Sbx7bk4UEO0&list=PLb9QmtmxCbhl1uzG_XJ37Sc9fhsJNLfaM](https://www.youtube.com/watch?v=Sbx7bk4UEO0&list=PLb9QmtmxCbhl1uzG_XJ37Sc9fhsJNLfaM (TDS YouTube Videos))
