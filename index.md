@@ -23,13 +23,9 @@ Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community
 
 ---------------------------------------
 
-<div class="well">
-
 ## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
 
 List of Sitecore 8 blog posts from those with the technical preview.
-
-</div>
 
 ---------------------------------------
 
