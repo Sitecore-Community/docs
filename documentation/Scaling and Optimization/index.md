@@ -9,6 +9,14 @@ title: Scaling, Optimization, and Diagnostics
 
 ### Official Documentation (7.0 - 7.2)
 
+* [Scaling Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Scaling%20Guide.aspx)
+* [Security Hardening Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Security%20Hardening%20Guide.aspx)  
+Server security (such as folder permissions).
+* [CMS Diagnostics Guide](http://sdn.sitecore.net/Reference/Sitecore%207/CMS%20Diagnostics%20Guide.aspx)
+* [CMS Performance Tuning Guide](http://sdn.sitecore.net/Reference/Sitecore%207/CMS%20Performance%20Tuning%20Guide.aspx)
+* [DMS Performance Tuning Guide](http://sdn.sitecore.net/Reference/Sitecore%206/DMS%20Performance%20Tuning%20Guide.aspx)  
+Performance tuning specifically relating to the analytics infrastructure.
+
 ### Blog Posts
 
 * [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
