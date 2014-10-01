@@ -26,13 +26,11 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Defining Data
 * Presentation
 * Basic API
+* Configuration
+* Publishing and Workflow
 * Page Editor
 
-## Publishing
-
-## Workflow and Permissions
-
-##Scaling and Optimization(/documentation/Scaling and Optimization/index.html)
+##[Scaling and Optimization](/documentation/Scaling and Optimization/index.html)
 
 **Quick Jump**
 
