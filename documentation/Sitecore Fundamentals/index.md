@@ -50,6 +50,18 @@ How to access data templates programmatically.
 
 * [http://ctor.io/handling-404-and-other-errors-with-sitecore-items/](http://ctor.io/handling-404-and-other-errors-with-sitecore-items/)
 
+## Extending Sitecore (Piplines, Events, Rules)
+
+### Blog Posts
+
+* [http://www.partechit.nl/nl/blog/2014/09/configurable-pipeline-processors-and-event-handlers](http://www.partechit.nl/nl/blog/2014/09/configurable-pipeline-processors-and-event-handlers)
+* [http://www.partechit.nl/nl/blog/2014/09/isolating-pipeline-processors-and-event-handlers](http://www.partechit.nl/nl/blog/2014/09/isolating-pipeline-processors-and-event-handlers)
+* [http://sitecorejunkie.com/category/pipeline/](http://sitecorejunkie.com/category/pipeline/)
+* [http://sitecorejunkie.com/category/processors/](http://sitecorejunkie.com/category/processors/)
+* [http://sitecorejunkie.com/category/commands/](http://sitecorejunkie.com/category/commands/)
+* [http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html](http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html)
+* [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
+
 ## Recommended Practices
 
 ### Official Sitecore Documetnation (7.0 - 7.2)
