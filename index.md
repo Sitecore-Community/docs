@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting Started with Sitecore
+title: Index
 ---
 
 Want to contribute to this project? Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community-Docs)** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / [@mhwelander](http://twitter.com/mhwelander))
