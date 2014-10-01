@@ -42,6 +42,30 @@ title: Development Process
 
 [https://www.youtube.com/watch?v=mSjFZgJLAys  (By Lee Cook)](https://www.youtube.com/watch?v=mSjFZgJLAys)
 
+## Packages
+
+### Official Sitecore Documentation (7.0 - 7.2)
+
+* [Package Designer Administrator's Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Package%20Designer%20Administrator%20Guide.aspx)
+
+### Blog Posts
+* [http://www.partechit.nl/en/blog/2012/11/sitecore-package-installation-options-explained](http://www.partechit.nl/en/blog/2012/11/sitecore-package-installation-options-explained)
+
+## Powershell
+
+### Blog Posts
+
+* [https://marketplace.sitecore.net/en/Modules/Sitecore_PowerShell_console.aspx](https://marketplace.sitecore.net/en/Modules/Sitecore_PowerShell_console.aspx)
+* [https://www.youtube.com/watch?v=bVqa4DAANYk&list=PLph7ZchYd_nCypVZSNkudGwPFRqf1na0b (video tutorials by Michael West)](https://www.youtube.com/watch?v=bVqa4DAANYk&list=PLph7ZchYd_nCypVZSNkudGwPFRqf1na0b)
+* [http://blog.najmanowicz.com/sitecore-powershell-console/](http://blog.najmanowicz.com/sitecore-powershell-console/)
+* [http://blog.najmanowicz.com/category/software-development/powershell/](http://blog.najmanowicz.com/category/software-development/powershell/)
+* [http://sitecorejunkie.com/category/sitecore-powershell-extensions/](http://sitecorejunkie.com/category/sitecore-powershell-extensions/)
+* [http://reasoncodeexample.com/2014/01/29/powershell-commandlets-sitecore-powershell-extensions/](http://reasoncodeexample.com/2014/01/29/powershell-commandlets-sitecore-powershell-extensions/)
+
+### Video
+
+* [https://www.youtube.com/watch?v=Eo4V2uJadMU (#SUGCON presentation by Mike Reynolds)](https://www.youtube.com/watch?v=Eo4V2uJadMU)
+
 ## Team Development
 
 ### Videos
