@@ -20,7 +20,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ##[Sitecore Fundamentals](/documentation/Sitecore Fundamentals/index.html)
 
-**Quick Jump**
+**Includes:**
 
 * Installating Sitecore
 * Data Templates and the Sitecore Tree
@@ -33,7 +33,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ##[Scaling and Optimization](/documentation/Scaling and Optimization/index.html)
 
-**Quick Jump**
+**Includes**
 
 * Scaling
 * Caching
@@ -41,7 +41,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## [Sitecore Search](/documentation/Search/index.html)
 
-**Quick Jump**
+**Includes**
 
 * SOLR
 
@@ -49,7 +49,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## [Development Process](/documentation/Development Processes/index.html)
 
-**Quick Jump**
+**Includes**
 
 * Solution Structure
 * Continuous Integration / Continuous Delivery
@@ -59,14 +59,14 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## [Extending the Sitecore Client](/documentation/Extending the Sitecore Client/index.html)
 
-**Quick Jump**
+**Includes**
 
 * SPEAK
 * Sheer UI
 
 ##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
 
-**Quick Jump**
+**Includes**
 
 * Form Posting
 * [Unit Testing](/documentation/Sitecore MVC/index.html#unit-testing)
@@ -75,13 +75,13 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## DMS / xDB
+## DMS / xDB(/documentation/DMS/index.html)
 
 -------------------------------------
 
 ## Modules
 
-**Quick Jump**
+**Includes**
 
 * Web Forms For Marketers (WFFM)
 * Email Campaign Manager (ECM)
