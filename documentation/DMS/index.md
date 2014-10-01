@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sitecore MVC
+title: DMS / xDB - Sitecore Marketing and Analytics
 ---
 
 # DMS / xDB - Sitecore Marketing and Analytics
