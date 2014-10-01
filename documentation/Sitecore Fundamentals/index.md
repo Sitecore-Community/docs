@@ -13,7 +13,7 @@ If you are setting up a **production environment**, refer to the following guide
  * Scaling Guides
  * Security Hardening Guide
 
-## Data Definition
+## Data Templates and the Sitecore Tree
 
 ### Official Sitecore Documentation (7.0 - 7.2)
 * [Data Definition Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20Reference.aspx)  
@@ -22,23 +22,44 @@ An overview of the Sitecore tree, items, data templates, and field types.
 A list of **how tos** for setting up your site's tree structure - creating data templates, assigning icons, creating items. Also includes a section on the **insert options pipeline**.
 * [Data Definition API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20API%20Cookbook.aspx)  
 How to access data templates programmatically.
+* [Content API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20API%20Cookbook.aspx)
+* [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)
 
 ## Presentation
 
-## Official Sitecore Documentation (7.0 - 7.2)
+### Official Sitecore Documentation (7.0 - 7.2)
 
 * [Presentation Component Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20Cookbook.aspx)
 * [Presentation Component Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20Reference.aspx)
 * [Presentation Component Troubleshooting](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20Troubleshooting%20Guide.aspx)
 * [Presentation Component XSL Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20XSL%20Reference.aspx)
+* [Dynamic Links](http://sdn.sitecore.net/Reference/Sitecore%207/Dynamic%20Links.aspx)
 
-## API
+## Configuration
+
+### Official Sitecore Documentation (7.0 - 7.2)
+
+* [Include File Patching Facilities](http://sdn.sitecore.net/Reference/Sitecore%207/Include%20File%20Patching%20Facilities.aspx)
+* [Handling HTTP 404](http://sdn.sitecore.net/Reference/Sitecore%207/Handing%20HTTP%20404.aspx)
+
+### Blog Posts
+
+* [http://ctor.io/handling-404-and-other-errors-with-sitecore-items/](http://ctor.io/handling-404-and-other-errors-with-sitecore-items/)
 
 ## Recommended Practices
 
-## Blog posts
+### Official Sitecore Documetnation (7.0 - 7.2)
 
-### General
+* [General Recommended Practices](http://sdn.sitecore.net/Reference/Sitecore%207/Recommended%20Practices.aspx)
+* [Page Editor Recommended Practices for Developers](http://sdn.sitecore.net/Reference/Sitecore%207/Page%20Editor%20Recommended%20Practices%20for%20Developers.aspx)
+
+### Blog Posts
+
+* [http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/ - Don't Fight the Framework](http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/)
+* [http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions Creating Good Sitecore Solutions]([http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions)
+* [http://laubplusco.net/category/sitecore-best-practices/](http://laubplusco.net/category/sitecore-best-practices/)
+
+## General Blog Posts
 
 * [http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html (13 parts so far)](http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html)
 * [http://learnsitecore.cmsuniverse.net/Developers/Articles/2009/07/SimpleSitePart1.aspx (11 part serties)](http://learnsitecore.cmsuniverse.net/Developers/Articles/2009/07/SimpleSitePart1.aspx)
@@ -52,7 +73,6 @@ How to access data templates programmatically.
 * [http://blog.coates.dk/2014/05/29/how-to-kill-sitecore-whilst-getting-the-languages-for-an-item/](http://blog.coates.dk/2014/05/29/how-to-kill-sitecore-whilst-getting-the-languages-for-an-item/)
 * [http://theagilecoder.wordpress.com/](http://theagilecoder.wordpress.com/)
 * [http://navmarwaha.com/2014/09/23/have-vision-but-dont-get-there/](http://navmarwaha.com/2014/09/23/have-vision-but-dont-get-there/)
-* [http://ctor.io/handling-404-and-other-errors-with-sitecore-items/](http://ctor.io/handling-404-and-other-errors-with-sitecore-items/)
 * [http://ctor.io/correctly-switching-sitecore-contextes/](http://ctor.io/correctly-switching-sitecore-contextes/)
 * [http://sitecore.unic.com/2014/08/08/enable-multi-level-site-property-inheritance](http://sitecore.unic.com/2014/08/08/enable-multi-level-site-property-inheritance)
 * [http://www.cognifide.com/blogs/categories/sitecore/](http://www.cognifide.com/blogs/categories/sitecore/)
@@ -61,10 +81,3 @@ How to access data templates programmatically.
 * [http://www.bugdebugzone.com/search/label/Sitecore ](http://www.bugdebugzone.com/search/label/Sitecore)
 * [http://sitecore.stockpick.nl/english/sitecore-and-the-error-page.aspx](http://sitecore.stockpick.nl/english/sitecore-and-the-error-page.aspx)
 * http://laubplusco.net/category/sitecore-development-tips/
-
-
-### Recommended Practice
-
-* [http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/ - Don't Fight the Framework](http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/)
-* [http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions Creating Good Sitecore Solutions]([http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions)
-* [http://laubplusco.net/category/sitecore-best-practices/](http://laubplusco.net/category/sitecore-best-practices/)
