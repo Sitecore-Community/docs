@@ -47,7 +47,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## [Development Process](/documentation/Development Process/index.html)
+## [Development Process](/documentation/Development Processes/index.html)
 
 **Quick Jump**
 
