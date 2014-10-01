@@ -68,6 +68,11 @@ How to access data templates programmatically.
 * [http://sitecorebasics.wordpress.com/?s=publish ](http://sitecorebasics.wordpress.com/?s=publish )
 * [http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ ](http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ )
 
+## Workflow and User Security
+
+* [http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/](http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/)
+* [http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/](http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/)
+* [http://www.ping-works.com.au/blog/securing-web-services-with-sitecore-authentication-providers-in-5-easy-steps](http://www.ping-works.com.au/blog/securing-web-services-with-sitecore-authentication-providers-in-5-easy-steps)
 
 ## Configuration
 

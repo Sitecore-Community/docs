@@ -7,6 +7,12 @@ title: Modules
 
 ## Official Modules
 
+### Social Connected
+
+#### Video
+
+* [https://www.youtube.com/watch?v=UcglkGSYLVU - by Kern Herskind Nightingale](https://www.youtube.com/watch?v=UcglkGSYLVU)
+
 ### Email Campaign Manager
 
 #### Blog Posts
