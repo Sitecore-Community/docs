@@ -18,7 +18,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ---------------------------------------
 
-##[Sitecore Fundamentals](/documentation/Sitecore Fundamentals/index.html)
+##[Sitecore Fundamentals](/docs/documentation/Sitecore Fundamentals/index.html)
 
 **Includes:**
 
@@ -31,7 +31,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Recommended Practices
 * Configuring the Client
 
-##[Scaling and Optimization](/documentation/Scaling and Optimization/index.html)
+##[Scaling and Optimization](/docs/documentation/Scaling and Optimization/index.html)
 
 **Includes**
 
@@ -39,7 +39,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Caching
 * Diagnostics and Testing
 
-## [Sitecore Search](/documentation/Search/index.html)
+## [Sitecore Search](/docs/documentation/Search/index.html)
 
 **Includes**
 
@@ -47,7 +47,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## [Development Process](/documentation/Development Processes/index.html)
+## [Development Process](/docs/documentation/Development Processes/index.html)
 
 **Includes**
 
@@ -57,33 +57,33 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## [Services and ORM](/documentation/Services and ORMs/index.html)
+## [Services and ORM](/docs/documentation/Services and ORMs/index.html)
 **Includes**
 * Item Web API
 
-## [Extending the Sitecore Client](/documentation/Extending the Sitecore Client/index.html)
+## [Extending the Sitecore Client](/docs/documentation/Extending the Sitecore Client/index.html)
 
 **Includes**
 
 * SPEAK
 * Sheer UI
 
-##[Sitecore MVC](/documentation/Sitecore MVC/index.html)
+##[Sitecore MVC](/docs/documentation/Sitecore MVC/index.html)
 
 **Includes**
 
 * Form Posting
-* [Unit Testing](/documentation/Sitecore MVC/index.html#unit-testing)
+* [Unit Testing](/docs/documentation/Sitecore MVC/index.html#unit-testing)
 
-## [Sitecore Azure](/documentation/Sitecore Azure/index.html)
-
--------------------------------------
-
-## [DMS / xDB](/documentation/DMS/index.html)
+## [Sitecore Azure](/docs/documentation/Sitecore Azure/index.html)
 
 -------------------------------------
 
-## [Modules](/documentation/Modules/index.html)
+## [DMS / xDB](/docs/documentation/DMS/index.html)
+
+-------------------------------------
+
+## [Modules](/docs/documentation/Modules/index.html)
 
 **Includes**
 
