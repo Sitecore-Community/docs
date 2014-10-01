@@ -22,13 +22,14 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 **Quick Jump**
 
-* Installation
-* Defining Data
+* Installating Sitecore
+* Data Templates and the Sitecore Tree
 * Presentation
-* Basic API
+* Publishing
 * Configuration
-* Publishing and Workflow
-* Page Editor
+* Extending Sitecore (Pipelines, Events, Rules)
+* Recommended Practices
+* Configuring the Client
 
 ##[Scaling and Optimization](/documentation/Scaling and Optimization/index.html)
 
@@ -37,8 +38,6 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Scaling
 * Caching
 * Diagnostics and Testing
-
-## Extending Sitecore
 
 ## [Sitecore Search](/documentation/Search/index.html)
 
@@ -77,8 +76,6 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 -------------------------------------
 
 ## DMS / xDB
-
-## Configuring the Client
 
 -------------------------------------
 
