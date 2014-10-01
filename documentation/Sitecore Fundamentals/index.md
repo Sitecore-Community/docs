@@ -9,10 +9,7 @@ title: Sitecore Fundamentals
 
 ### Official Sitecore Documentation (7.0 - 7.2)
 * [Installation Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Installation%20Guide.aspx)  
-If you are setting up a **production environment**, refer to the following guides:
- * Scaling Guides
- * Security Hardening Guide
-
+If you are setting up a **production environment**, refer to the [**scaling guide** and **security hardening guide**](/docs/documentation/Scaling%20and%20Optimization/index.html).
 ## Data Templates and the Sitecore Tree
 
 ### Official Sitecore Documentation (7.0 - 7.2)
@@ -22,8 +19,10 @@ An overview of the Sitecore tree, items, data templates, and field types.
 A list of **how tos** for setting up your site's tree structure - creating data templates, assigning icons, creating items. Also includes a section on the **insert options pipeline**.
 * [Data Definition API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20API%20Cookbook.aspx)  
 How to access data templates programmatically.
-* [Content API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20API%20Cookbook.aspx)
-* [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)
+* [Content API Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20API%20Cookbook.aspx)  
+Basic Sitecore API reference.
+* [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)  
+Overview of how Sitecore manages content, including information about **the content tree** and **versioning**.
 
 ### Blog Posts
 
@@ -60,6 +59,11 @@ How to access data templates programmatically.
 
 ## Publishing
 
+### Official Sitecore Documentation (7.0 - 7.2)
+
+* [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)  
+Chapter 3 contains information about publishing (including targets, types, and restrictions - please refer to [this blog post for an overview of the major publishing improvements made in 7.2](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx) (written by the development team).
+
 ### Blog Posts
 
 * [https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx (Major improvements to publishing in 7.2)](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx)
@@ -88,6 +92,11 @@ How to access data templates programmatically.
 * [http://herskind.co.uk/blog/2012/03/sitecore-404-without-302](http://herskind.co.uk/blog/2012/03/sitecore-404-without-302)
 
 ## Extending Sitecore (Piplines, Events, Rules)
+
+### Official Sitecore Documentation (7.0 - 7.2)
+
+* [Sitecore Pipelines](http://sdn.sitecore.net/Reference/Sitecore%207/Sitecore%20Pipelines.aspx)
+* [Rules Engine Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Rules%20Engine%20Cookbook.aspx)
 
 ### Blog Posts
 
