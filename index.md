@@ -57,6 +57,10 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
+## [Services and ORM](/documentation/Services and ORMs/index.html)
+**Includes**
+* Item Web API
+
 ## [Extending the Sitecore Client](/documentation/Extending the Sitecore Client/index.html)
 
 **Includes**
