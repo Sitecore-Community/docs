@@ -39,6 +39,8 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * Caching
 * Diagnostics and Testing
 
+-------------------------------------
+
 ## [Sitecore Search](/docs/documentation/Search/index.html)
 
 **Includes**
@@ -47,7 +49,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## [Development Process](/docs/documentation/Development Processes/index.html)
+## [Development Processes and Methodologies](/docs/documentation/Development Processes/index.html)
 
 **Includes**
 
@@ -58,7 +60,9 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 -------------------------------------
 
 ## [Services and ORM](/docs/documentation/Services and ORMs/index.html)
+
 **Includes**
+
 * Item Web API
 
 ## [Extending the Sitecore Client](/docs/documentation/Extending the Sitecore Client/index.html)
@@ -68,12 +72,16 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * SPEAK
 * Sheer UI
 
+-------------------------------------
+
 ##[Sitecore MVC](/docs/documentation/Sitecore MVC/index.html)
 
 **Includes**
 
 * Form Posting
 * [Unit Testing](/docs/documentation/Sitecore MVC/index.html#unit-testing)
+
+-------------------------------------
 
 ## [Sitecore Azure](/docs/documentation/Sitecore Azure/index.html)
 
