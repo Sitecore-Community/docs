@@ -5,6 +5,13 @@ title: Development Process
 
 # Development Process
 
+## Solution Structure
+
+### Blog Posts
+* [http://cardinalcore.co.uk/2014/07/10/sitecore-solution-structure/](http://cardinalcore.co.uk/2014/07/10/sitecore-solution-structure/)
+* [http://jockstothecore.com/setting-up-a-sitecore-solution-part-1-visual-studio-and-projects/](http://jockstothecore.com/setting-up-a-sitecore-solution-part-1-visual-studio-and-projects/)
+* [http://jockstothecore.com/setting-up-a-sitecore-solution-part-2-tds-and-build-configurations/](http://jockstothecore.com/setting-up-a-sitecore-solution-part-2-tds-and-build-configurations/)
+
 ## Continuous Delivery / Integration / Deployment
 
 ### Blog Posts

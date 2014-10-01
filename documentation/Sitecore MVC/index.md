@@ -60,6 +60,7 @@ Note: This topoic is not exclusive to Sitecore  MVC.
 * [http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/](http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/)
 * [http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2](http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2)
 * [http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/](http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/)
+* [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
 
 ### Video
 

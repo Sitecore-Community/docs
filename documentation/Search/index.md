@@ -36,6 +36,7 @@ title: Sitecore Search
 * [http://sitecorefun.baziret.com/2014/06/sitecore-datasource-indexer/](http://sitecorefun.baziret.com/2014/06/sitecore-datasource-indexer/)
 * [http://getfishtank.ca/blog/new-sitecore-7-feature-predefined-queries](http://getfishtank.ca/blog/new-sitecore-7-feature-predefined-queries)
 * [http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/06/LuceneQuery1.aspx](http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/06/LuceneQuery1.aspx)
+* [http://www.awareweb.com/awareblog/8-15-14-sitecorearchscalability](http://www.awareweb.com/awareblog/8-15-14-sitecorearchscalability)
 
 ### Video
 
