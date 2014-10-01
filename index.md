@@ -110,7 +110,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * [Sitecore Journal](http://paper.li/varunvns/1387067950)
 
 ### Weekly
-
+ 
 * [Sitecore Basics Weekly](http://tinyletter.com/sitecorebasics)
 
 ## User Groups
