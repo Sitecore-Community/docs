@@ -36,8 +36,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 * Scaling
 * Caching
-
-## [Diagnostics, Troubleshooting, and Testing](/documentation/Diagnostics/index.html)
+* Diagnostics and Testing
 
 ## Extending Sitecore
 

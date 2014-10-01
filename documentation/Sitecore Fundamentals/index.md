@@ -35,6 +35,10 @@ How to access data templates programmatically.
 * [Presentation Component XSL Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20XSL%20Reference.aspx)
 * [Dynamic Links](http://sdn.sitecore.net/Reference/Sitecore%207/Dynamic%20Links.aspx)
 
+## Publishing
+
+### Blog Posts
+
 ## Configuration
 
 ### Official Sitecore Documentation (7.0 - 7.2)
