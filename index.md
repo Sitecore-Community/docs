@@ -32,7 +32,7 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 ## Workflow and Permissions
 
-##Scaling, Security, and Optimization
+##Scaling and Optimization(/documentation/Scaling and Optimization/index.html)
 
 **Quick Jump**
 
@@ -51,10 +51,11 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 
 -------------------------------------
 
-## [Development Process](/documentation/Continuous Integration and Delivery/index.html)
+## [Development Process](/documentation/Development Process/index.html)
 
 **Quick Jump**
 
+* Solution Structure
 * Continuous Integration / Continuous Delivery
 * Team Development
 
