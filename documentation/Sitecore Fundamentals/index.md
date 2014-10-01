@@ -10,6 +10,9 @@ title: Sitecore Fundamentals
 ### Official Sitecore Documentation (7.0 - 7.2)
 * [Installation Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Installation%20Guide.aspx)  
 If you are setting up a **production environment**, refer to the [**scaling guide** and **security hardening guide**](/docs/documentation/Scaling%20and%20Optimization/index.html).
+
+--------------------------
+
 ## Data Templates and the Sitecore Tree
 
 ### Official Sitecore Documentation (7.0 - 7.2)
@@ -47,6 +50,8 @@ Overview of how Sitecore manages content, including information about **the cont
 * [http://sitecoreskills.blogspot.co.uk/2014/05/notes-on-lowercase-sitecore-urls.html](http://sitecoreskills.blogspot.co.uk/2014/05/notes-on-lowercase-sitecore-urls.html)
 * [http://laubplusco.net/url-mappings-in-sitecore-done-easy/](http://laubplusco.net/url-mappings-in-sitecore-done-easy/)
 
+--------------------------
+
 ## Presentation
 
 ### Official Sitecore Documentation (7.0 - 7.2)
@@ -56,6 +61,8 @@ Overview of how Sitecore manages content, including information about **the cont
 * [Presentation Component Troubleshooting](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20Troubleshooting%20Guide.aspx)
 * [Presentation Component XSL Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Presentation%20Component%20XSL%20Reference.aspx)
 * [Dynamic Links](http://sdn.sitecore.net/Reference/Sitecore%207/Dynamic%20Links.aspx)
+
+--------------------------
 
 ## Publishing
 
@@ -72,11 +79,15 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://sitecorebasics.wordpress.com/?s=publish ](http://sitecorebasics.wordpress.com/?s=publish )
 * [http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ ](http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ )
 
+--------------------------
+
 ## Workflow and User Security
 
 * [http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/](http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/)
 * [http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/](http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/)
 * [http://www.ping-works.com.au/blog/securing-web-services-with-sitecore-authentication-providers-in-5-easy-steps](http://www.ping-works.com.au/blog/securing-web-services-with-sitecore-authentication-providers-in-5-easy-steps)
+
+--------------------------
 
 ## Configuration
 
@@ -90,6 +101,8 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://ctor.io/handling-404-and-other-errors-with-sitecore-items/](http://ctor.io/handling-404-and-other-errors-with-sitecore-items/)
 * [http://sitecore.stockpick.nl/english/sitecore-and-the-error-page.aspx](http://sitecore.stockpick.nl/english/sitecore-and-the-error-page.aspx)
 * [http://herskind.co.uk/blog/2012/03/sitecore-404-without-302](http://herskind.co.uk/blog/2012/03/sitecore-404-without-302)
+
+--------------------------
 
 ## Extending Sitecore (Piplines, Events, Rules)
 
@@ -108,6 +121,8 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html](http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html)
 * [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
 
+--------------------------
+
 ## Recommended Practices
 
 ### Official Sitecore Documentation (7.0 - 7.2)
@@ -120,6 +135,8 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/ - Don't Fight the Framework](http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/)
 * [http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions Creating Good Sitecore Solutions]([http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions)
 * [http://laubplusco.net/category/sitecore-best-practices/](http://laubplusco.net/category/sitecore-best-practices/)
+
+--------------------------
 
 ## General Blog Posts
 
