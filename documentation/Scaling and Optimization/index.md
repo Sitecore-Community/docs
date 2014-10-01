@@ -17,6 +17,7 @@ Server security (such as folder permissions).
 * [DMS Performance Tuning Guide](http://sdn.sitecore.net/Reference/Sitecore%206/DMS%20Performance%20Tuning%20Guide.aspx)  
 Performance tuning specifically relating to the analytics infrastructure.
 * [Cache Configuration Reference](http://sdn.sitecore.net/Reference/Sitecore%206/Cache%20Configuration%20Reference.aspx)
+* [SQL Server Replication Guide](http://sdn.sitecore.net/Reference/Sitecore%207/SQL%20Server%20Replication%20Guide.aspx)
 
 ### Blog Posts
 

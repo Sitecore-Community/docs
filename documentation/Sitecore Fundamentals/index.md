@@ -26,6 +26,7 @@ How to access data templates programmatically.
 Basic Sitecore API reference.
 * [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)  
 Overview of how Sitecore manages content, including information about **the content tree** and **versioning**.
+* [Sitecore Query](http://sdn.sitecore.net/Reference/Using%20Sitecore%20Query.aspx)
 
 ### Blog Posts
 
@@ -82,6 +83,12 @@ Chapter 3 contains information about publishing (including targets, types, and r
 --------------------------
 
 ## Workflow and User Security
+
+### Official Sitecore Documentation (7.0 - 7.2)
+* [Workflow Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Workflow%20Cookbook.aspx)
+* [Workflow Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Workflow%20Reference.aspx)
+
+### Blog Posts
 
 * [http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/](http://cardinalcore.co.uk/2014/07/02/creating-custom-permissions-in-sitecore/)
 * [http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/](http://cardinalcore.co.uk/2014/08/19/custom-permissions-pt-ii-using-custom-permissions-with-conditional-renderings-in-sitecore/)
