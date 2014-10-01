@@ -18,10 +18,7 @@ title: Sitecore MVC
 
 ## xDB
 
-### Blog posts - General MongoDB
-
-* [MongoDB Official Blog - Scaling](http://blog.mongodb.org/tagged/scaling)
-* [http://blog.mongolab.com/2014/01/how-big-is-your-mongodb/](http://blog.mongolab.com/2014/01/how-big-is-your-mongodb/)
+Sitecore 7.5 dramatically alters the way that Sitecore stores and handles analytics data - notably the addition of noSQL **MongoDB**.
 
 ### Blog Posts - Sitecore xDB
 
@@ -32,3 +29,8 @@ title: Sitecore MVC
 * [One Month with Sitecore 7.5](http://www.techphoria414.com/Blog/2014/June/One_Month_with_Sitecore_7-5_Part_1)
 * [http://sitecoreblog.blogspot.co.uk/2014/06/sitecore-75-setting-up-xdb-without.html](http://sitecoreblog.blogspot.co.uk/2014/06/sitecore-75-setting-up-xdb-without.html)
 * [http://www.delphicdigital.com/home/blog.aspx/d=2227/title=4-advantages-to-using-mongodb-in-sitecore](http://www.delphicdigital.com/home/blog.aspx/d=2227/title=4-advantages-to-using-mongodb-in-sitecore)
+
+### Blog posts - General MongoDB
+
+* [MongoDB Official Blog - Scaling](http://blog.mongodb.org/tagged/scaling)
+* [http://blog.mongolab.com/2014/01/how-big-is-your-mongodb/](http://blog.mongolab.com/2014/01/how-big-is-your-mongodb/)
