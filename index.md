@@ -109,8 +109,34 @@ Want to contribute to this project? Make a **[pull request](https://github.com/S
 * [Sitecore Basics](http://paper.li/kiranpatils/1378702752)
 * [Sitecore Journal](http://paper.li/varunvns/1387067950)
 
-#### Weekly
+### Weekly
 
 * [Sitecore Basics Weekly](http://tinyletter.com/sitecorebasics)
 
-### User Groups
+## User Groups
+
+* [http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx ](http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx )
+* [https://www.youtube.com/watch?v=vQVBaU5D4yo (Sitecore MVC, SUG Conference)](https://www.youtube.com/watch?v=vQVBaU5D4yo)
+* [https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI (Sitecore Virtual User Group)](https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI)
+* [https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH (2013 Sitecore Virtual Users Summit)](https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH)
+
+## Unsorted
+
+* [http://sitecorebasics.wordpress.com/tag/tips-and-tricks/ ](http://sitecorebasics.wordpress.com/tag/tips-and-tricks/ )
+* [http://sitecorebasics.wordpress.com/2013/02/13/basics-of-sitecore-mvp-award/ ](http://sitecorebasics.wordpress.com/2013/02/13/basics-of-sitecore-mvp-award/ )
+* [http://sitecorebasics.wordpress.com/2014/08/24/the-seven-habits-of-highly-effective-sitecore-developers/](http://sitecorebasics.wordpress.com/2014/08/24/the-seven-habits-of-highly-effective-sitecore-developers/)
+* [http://sitecorebasics.wordpress.com/2012/03/27/why-i-love-sitecore/ ](http://sitecorebasics.wordpress.com/2012/03/27/why-i-love-sitecore/ )
+
+### Media Framework
+
+* [http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2013/10/Introducing-Sitecore-Media-Framework.aspx](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2013/10/Introducing-Sitecore-Media-Framework.aspx)
+* [http://himadritechblog.wordpress.com/2014/06/16/a-youtube-connector-for-sitecore-media-framework-part-1/](http://himadritechblog.wordpress.com/2014/06/16/a-youtube-connector-for-sitecore-media-framework-part-1/)
+* [http://himadritechblog.wordpress.com/2014/08/06/youtube-connector-is-available-in-sitecore-marketplace/](http://himadritechblog.wordpress.com/2014/08/06/youtube-connector-is-available-in-sitecore-marketplace/)
+
+### Scheduled Tasks and Agents
+* [http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ ](http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ )
+* [http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ ](http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ )
+
+### Forums
+
+* [http://techitpro.com/sitecore-forums-know-how/](http://techitpro.com/sitecore-forums-know-how/)
