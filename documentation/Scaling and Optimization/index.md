@@ -17,6 +17,7 @@ title: Scaling, Optimization, and Diagnostics
 http://sitecorebasics.wordpress.com/2011/03/05/sitecore-caching/) 
 * [http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/](
 http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/)
+* [http://reasoncodeexample.com/2012/04/02/sitecore-security-hardening/](http://reasoncodeexample.com/2012/04/02/sitecore-security-hardening/)
 
 #### Event Queue
 * [http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ ](http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ )

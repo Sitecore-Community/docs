@@ -3,9 +3,11 @@ layout: default
 title: Sitecore MVC
 ---
 
-# DMS
+# DMS / xDB - Sitecore Marketing and Analytics
 
-## Blog Posts
+## DMS
+
+### Blog Posts
 * [http://blog.horizontalintegration.com/2014/03/26/sitecore-analytics-disable-page-views-for-mvc-routes](http://blog.horizontalintegration.com/2014/03/26/sitecore-analytics-disable-page-views-for-mvc-routes)
 * [http://blog.horizontalintegration.com/2014/03/24/sitecore-dms-set-up-maxmind-webservice-for-geo-ip-lookup/](http://blog.horizontalintegration.com/2014/03/24/sitecore-dms-set-up-maxmind-webservice-for-geo-ip-lookup/)
 * [http://blog.horizontalintegration.com/2013/11/19/sitecore-dms-trigger-goals-programatically/](http://blog.horizontalintegration.com/2013/11/19/sitecore-dms-trigger-goals-programatically/)
@@ -14,7 +16,9 @@ title: Sitecore MVC
 * [http://visionsincode.wordpress.com/2014/05/04/geofencing-with-real-time-geodata-in-sitecore-dms/](http://visionsincode.wordpress.com/2014/05/04/geofencing-with-real-time-geodata-in-sitecore-dms/)
 * [http://laubplusco.net/category/analytics/](http://laubplusco.net/category/analytics/)
 
-# xDB
+## xDB
+
+### Blog Posts
 
 * [http://hermanussen.eu/sitecore/wordprss/2012/05/making-sitecore-faster-with-mongodb/](http://hermanussen.eu/sitecore/wordprss/2012/05/making-sitecore-faster-with-mongodb/)
 * [http://getfishtank.ca/blog/sitecore-xdb-technical-introduction-to-mongodb](http://getfishtank.ca/blog/sitecore-xdb-technical-introduction-to-mongodb)

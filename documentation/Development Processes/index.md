@@ -12,6 +12,21 @@ title: Development Process
 * [http://jockstothecore.com/setting-up-a-sitecore-solution-part-1-visual-studio-and-projects/](http://jockstothecore.com/setting-up-a-sitecore-solution-part-1-visual-studio-and-projects/)
 * [http://jockstothecore.com/setting-up-a-sitecore-solution-part-2-tds-and-build-configurations/](http://jockstothecore.com/setting-up-a-sitecore-solution-part-2-tds-and-build-configurations/)
 
+## Sitecore Rocks
+
+### Blog Posts
+
+* [http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/ ](http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/)
+
+#### Rocks Query Analyzer
+* [http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/](http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/)
+* [http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/](http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/)
+* [http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx](http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx)
+
+### Video
+
+* [https://www.youtube.com/playlist?list=PLWIbrolNZWfk2WZcNefluTlW0QQmrMj1q](https://www.youtube.com/playlist?list=PLWIbrolNZWfk2WZcNefluTlW0QQmrMj1q)
+
 ## Continuous Delivery / Integration / Deployment
 
 ### Blog Posts
