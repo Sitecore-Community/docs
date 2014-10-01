@@ -18,6 +18,10 @@ http://sitecorebasics.wordpress.com/2011/03/05/sitecore-caching/)
 * [http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/](
 http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/)
 
+#### Event Queue
+* [http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ ](http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ )
+* [http://sitecorebasics.wordpress.com/2013/01/28/basic-ways-of-troubleshooting-eventqueue-challenges/ ](http://sitecorebasics.wordpress.com/2013/01/28/basic-ways-of-troubleshooting-eventqueue-challenges/)
+
 ## Diagnostics and Testing
 
 ### Blog Posts
@@ -36,3 +40,14 @@ http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/)
 ### Tools
 * [http://sitecore.unic.com/2014/08/11/sitecore-glimpse](http://sitecore.unic.com/2014/08/11/sitecore-glimpse)
 * [http://kevinobee.github.io/Sitecore.Glimpse/](http://kevinobee.github.io/Sitecore.Glimpse/)
+
+## Upgrading and Migrating
+
+### Blog Posts
+
+* [http://oshyn.com/web-content-management/updating-your-sitecore-site (Upgrade tips)](http://oshyn.com/web-content-management/updating-your-sitecore-site)
+* [http://www.seanholmesby.com/a-fix-for-the-sitecore-7-1-upgrade-process/ (a fix for the 7.1 upgrade)](http://www.seanholmesby.com/a-fix-for-the-sitecore-7-1-upgrade-process/)
+* [http://getfishtank.ca/blog/sitecore-7-2-upgrade-encoding-media-library-item-names](http://getfishtank.ca/blog/sitecore-7-2-upgrade-encoding-media-library-item-names)
+* [http://sitecorebasics.wordpress.com/2014/06/21/sitecore-version-upgrade-troubleshooting-basics/ ](http://sitecorebasics.wordpress.com/2014/06/21/sitecore-version-upgrade-troubleshooting-basics/ )
+* [http://sitecorebasics.wordpress.com/2011/03/05/sitecore-upgrade-decision/](http://sitecorebasics.wordpress.com/2011/03/05/sitecore-upgrade-decision/) 
+* [http://blog.horizontalintegration.com/2014/04/01/sitecore-content-migration-basics/ ](http://blog.horizontalintegration.com/2014/04/01/sitecore-content-migration-basics/ )

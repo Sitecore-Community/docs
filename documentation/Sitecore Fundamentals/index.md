@@ -39,6 +39,13 @@ How to access data templates programmatically.
 
 ### Blog Posts
 
+* [https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx (Major improvements to publishing in 7.2)](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx)
+* [http://www.partechit.nl/en/blog/2013/03/display-item-publication-status-in-the-sitecore-gutter](http://www.partechit.nl/en/blog/2013/03/display-item-publication-status-in-the-sitecore-gutter)
+* [http://firebreaksice.com/unpublish-sitecore-content/](http://firebreaksice.com/unpublish-sitecore-content/)
+* [http://sitecorebasics.wordpress.com/?s=publish ](http://sitecorebasics.wordpress.com/?s=publish )
+* [http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ ](http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ )
+
+
 ## Configuration
 
 ### Official Sitecore Documentation (7.0 - 7.2)
