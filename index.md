@@ -58,6 +58,11 @@ List of Sitecore 8 blog posts from those with the technical preview.
 
 * SOLR
 
+## [Sitecore and Media](/docs/documentation/Sitecore and Media/index.html)
+
+**Includes**
+* Responsive Images
+
 -------------------------------------
 
 ## [Development Processes and Methodologies](/docs/documentation/Development Processes/index.html)
