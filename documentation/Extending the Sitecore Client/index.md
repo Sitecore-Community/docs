@@ -11,6 +11,7 @@ title: Extending the Sitecore Client
 * [SPEAK Documentation](http://sdn.sitecore.net/Reference/Sitecore%207/SPEAK.aspx)  
 Includes **Developer's Cookbook** and **Component Reference**, as well as an example application.
 * [SPEAK Recommended Practices by Pierre Derval](https://github.com/Sitecore-Community/Sitecore.Speak.Guideline/blob/master/bestPractises.md)
+* [SPEAK on doc.sitecore.net](https://doc.sitecore.net/products/speak/speak%20development)
 
 ### Blog Posts
 
