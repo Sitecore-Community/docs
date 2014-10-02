@@ -29,6 +29,10 @@ http://sitecorebasics.wordpress.com/2011/03/05/sitecore-caching/)
 http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/)
 * [http://reasoncodeexample.com/2012/04/02/sitecore-security-hardening/](http://reasoncodeexample.com/2012/04/02/sitecore-security-hardening/)
 
+#### <a name="caaching-publishing"></a>Caching and Publishing
+
+* [http://sitecoreblog.patelyogesh.in/2013/08/sitecore-partial-cache-clear-programmatically.html](http://sitecoreblog.patelyogesh.in/2013/08/sitecore-partial-cache-clear-programmatically.html)
+
 #### Event Queue
 * [http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ ](http://sitecorebasics.wordpress.com/2011/03/19/basics-of-sitecore-event-queue/ )
 * [http://sitecorebasics.wordpress.com/2013/01/28/basic-ways-of-troubleshooting-eventqueue-challenges/ ](http://sitecorebasics.wordpress.com/2013/01/28/basic-ways-of-troubleshooting-eventqueue-challenges/)
