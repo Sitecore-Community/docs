@@ -80,6 +80,8 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://sitecorebasics.wordpress.com/?s=publish ](http://sitecorebasics.wordpress.com/?s=publish )
 * [http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ ](http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ )
 
+**NOTE**: [Visit the scaling and optimization page](/docs/documentation/Scaling and Optimization/index.html#caaching-publishing) for information about publishing and caching.
+
 --------------------------
 
 ## Workflow and User Security
