@@ -71,6 +71,7 @@ Overview of how Sitecore manages content, including information about **the cont
 
 * [Content Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Content%20Reference.aspx)  
 Chapter 3 contains information about publishing (including targets, types, and restrictions - please refer to [this blog post for an overview of the major publishing improvements made in 7.2](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx) (written by the development team).
+* See the [Scaling Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Scaling%20Guide.aspx) for information about cache-clearing on publish:end per site (Topic 4.4 - How to: Configure HTML cache clearing)
 
 ### Blog Posts
 
