@@ -20,7 +20,7 @@ title: Sitecore Azure
 
 ### Official Sitecore Documentation (7.2) and Resources
 
-The following documents relate to the **Sitecore Azure module**, version 7.2.
+The following documents relate to the **Sitecore Azure module** (version 7.2). This module relies on a number of Microsoft Azure Services (and therefore utilizies Microsoft Azure in a PaaS capacity). Make sure that you are aware of the **size limitations** (especially of the Azure SQL Database service) if you decide to go down this route.
 
 * [Installation Guide](http://sdn.sitecore.net/Products/Sitecore%20Azure/Sitecore%20Azure%207,-d-,2/Installation.aspx)
 * [Getting Started with Sitecore Azure](http://sdn.sitecore.net/Products/Sitecore%20Azure/Sitecore%20Azure%207,-d-,2/Documentation.aspx)
