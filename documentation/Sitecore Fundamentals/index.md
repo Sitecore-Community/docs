@@ -130,6 +130,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://sitecorejunkie.com/category/commands/](http://sitecorejunkie.com/category/commands/)
 * [http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html](http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html)
 * [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
+* [http://blog.coates.dk/2014/10/03/sitecore-save-event/](http://blog.coates.dk/2014/10/03/sitecore-save-event/)
 
 --------------------------
 
