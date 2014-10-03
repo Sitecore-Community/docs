@@ -151,12 +151,6 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * [http://sitecorebasics.wordpress.com/2014/08/24/the-seven-habits-of-highly-effective-sitecore-developers/](http://sitecorebasics.wordpress.com/2014/08/24/the-seven-habits-of-highly-effective-sitecore-developers/)
 * [http://sitecorebasics.wordpress.com/2012/03/27/why-i-love-sitecore/ ](http://sitecorebasics.wordpress.com/2012/03/27/why-i-love-sitecore/ )
 
-### Media Framework
-
-* [http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2013/10/Introducing-Sitecore-Media-Framework.aspx](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2013/10/Introducing-Sitecore-Media-Framework.aspx)
-* [http://himadritechblog.wordpress.com/2014/06/16/a-youtube-connector-for-sitecore-media-framework-part-1/](http://himadritechblog.wordpress.com/2014/06/16/a-youtube-connector-for-sitecore-media-framework-part-1/)
-* [http://himadritechblog.wordpress.com/2014/08/06/youtube-connector-is-available-in-sitecore-marketplace/](http://himadritechblog.wordpress.com/2014/08/06/youtube-connector-is-available-in-sitecore-marketplace/)
-
 ### Scheduled Tasks and Agents
 * [http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ ](http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ )
 * [http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ ](http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ )
