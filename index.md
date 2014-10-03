@@ -97,7 +97,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * Form Posting
 * [Unit Testing](/docs/documentation/Sitecore MVC/index.html#unit-testing)
 
-## [IoC and Dependency Injection]((/docs/documentation/IoC/index.html)
+## [IoC and Dependency Injection](/docs/documentation/IoC/index.html)
 
 -------------------------------------
 
