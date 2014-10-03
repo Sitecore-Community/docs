@@ -16,6 +16,9 @@ title: Development Process
 
 ### Blog Posts
 
+* [John West: Sitecore Differentiating Factors: Sitecore Rocks](http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2011/07/sitecore-differentiating-factors-blog-series-sitecore-rocks.aspx) 
+* [Trevor Campbell: 28 Days Of Sitecore Rocks](http://www.sitecore.net/learn/blogs/technical-blogs/trevor-campbell.aspx)
+* [http://vsplugins.sitecore.net](http://vsplugins.sitecore.net)
 * [http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/ ](http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/)
 
 #### Rocks Query Analyzer
@@ -26,6 +29,7 @@ title: Development Process
 ### Video
 
 * [https://www.youtube.com/playlist?list=PLWIbrolNZWfk2WZcNefluTlW0QQmrMj1q](https://www.youtube.com/playlist?list=PLWIbrolNZWfk2WZcNefluTlW0QQmrMj1q)
+* [Sitecore Rocks Series by Sen Gupta](https://www.youtube.com/watch?v=O4R7AbwotS0&list=PLFNs4m6IdelTc277XFzwxh2AaXC4bzyrg)
 
 ## Continuous Delivery / Integration / Deployment
 
