@@ -39,7 +39,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * Publishing
 * Configuration
 * Extending Sitecore (Pipelines, Events, Rules)
-* Recommended Practices
+* [Recommended Practices](/docs/documentation/Sitecore Fundamentals/index.html#recommended-practices)
 * Configuring the Client
 
 ##[Scaling and Optimization](/docs/documentation/Scaling and Optimization/index.html)
