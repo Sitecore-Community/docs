@@ -50,6 +50,7 @@ title: Sitecore Search
 * [http://www.dansolovay.com/2013/05/setting-up-solr-with-sitecore-7.html](http://www.dansolovay.com/2013/05/setting-up-solr-with-sitecore-7.html)
 * [http://mikerobbins.co.uk/2014/09/23/solr-search-on-exact-phrase/](http://mikerobbins.co.uk/2014/09/23/solr-search-on-exact-phrase/)
 * [http://www.ehabelgindy.com/category/solr/](http://www.ehabelgindy.com/category/solr/)
+* [http://www.skillcore.net/sitecore/using-switchonrebuildsolrsearchindex-solr-provider-for-sitecore](http://www.skillcore.net/sitecore/using-switchonrebuildsolrsearchindex-solr-provider-for-sitecore)
 
 ### Video
 
