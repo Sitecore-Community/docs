@@ -134,7 +134,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 
 --------------------------
 
-## Recommended Practices <a name="recommended-practices"></a>
+## Recommended Practices
 
 ### Official Sitecore Documentation (7.0 - 7.2)
 
@@ -146,7 +146,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/ - Don't Fight the Framework](http://cardinalcore.co.uk/category/sitecore/dont-fight-the-framework/)
 * [http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions Creating Good Sitecore Solutions]([http://intothecore.cassidy.dk/search/label/Creating%20good%20Sitecore%20solutions)
 * [http://laubplusco.net/category/sitecore-best-practices/](http://laubplusco.net/category/sitecore-best-practices/)
-* [http://www.cmsbestpractices.com/sitecore-architecture-best-practices-part-1-understanding-architectural-basics/](http://www.cmsbestpractices.com/sitecore-architecture-best-practices-part-1-understanding-architectural-basics/)
+* [http://blog.eldblom.dk/2010/08/03/5-worst-code-smells-in-sitecore/](http://blog.eldblom.dk/2010/08/03/5-worst-code-smells-in-sitecore/)
 
 --------------------------
 
