@@ -15,6 +15,7 @@ title: DMS / xDB - Sitecore Marketing and Analytics
 * [http://visionsincode.wordpress.com/2014/04/02/track-a-visitors-coordinates-in-the-sitecore-dms/](http://visionsincode.wordpress.com/2014/04/02/track-a-visitors-coordinates-in-the-sitecore-dms/)
 * [http://visionsincode.wordpress.com/2014/05/04/geofencing-with-real-time-geodata-in-sitecore-dms/](http://visionsincode.wordpress.com/2014/05/04/geofencing-with-real-time-geodata-in-sitecore-dms/)
 * [http://laubplusco.net/category/analytics/](http://laubplusco.net/category/analytics/)
+* [http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Damian-Brooks/Posts/2014/10/03102014.aspx](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Damian-Brooks/Posts/2014/10/03102014.aspx)
 
 ## xDB
 
