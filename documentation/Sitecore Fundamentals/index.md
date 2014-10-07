@@ -150,6 +150,12 @@ Chapter 3 contains information about publishing (including targets, types, and r
 
 --------------------------
 
+## Configuring the Sitecore Interfaces
+
+* [http://t.co/9RnYL2gNEt](http://t.co/9RnYL2gNEt)
+
+--------------------------
+
 ## General Blog Posts
 
 * [http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html (13 parts so far)](http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html)
