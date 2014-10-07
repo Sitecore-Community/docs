@@ -12,3 +12,4 @@ The technical preview for Sitecore 8 was made available to MVPs and those that r
 * [http://corescorner.wordpress.com/2014/10/01/sitecore-8-fxm-federated-experience-manager/](http://corescorner.wordpress.com/2014/10/01/sitecore-8-fxm-federated-experience-manager/)
 * [http://sitecoreskills.blogspot.co.uk/2014/09/looking-ahead-to-sitecore-8.html](http://sitecoreskills.blogspot.co.uk/2014/09/looking-ahead-to-sitecore-8.html)
 * [http://petersondave.wordpress.com/2014/10/01/sitecore-8-at-a-glance/](http://petersondave.wordpress.com/2014/10/01/sitecore-8-at-a-glance/)
+* [http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/10/Sitecore-8-Adding-applications-launch-pad.aspx](http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/10/Sitecore-8-Adding-applications-launch-pad.aspx)
