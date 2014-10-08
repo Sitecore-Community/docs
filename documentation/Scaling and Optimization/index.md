@@ -39,6 +39,11 @@ http://reasoncodeexample.com/2013/03/20/sitecore-cache-settings-for-slackers/)
 
 ## Diagnostics and Testing
 
+There are plenty of modules to help you extract information about your system, such as:
+
+* [Sitecore Informatics](http://nileshthakkar.github.io/Sitecore-Informatics/)
+* [Sitecore Log Analyzer](https://marketplace.sitecore.net/Modules/Sitecore_Log_Analyzer.aspx)
+
 ### Blog Posts
 
 * [http://kate-butenko.blogspot.dk/2012/07/types-of-i-need-your-dump-issues.html](http://kate-butenko.blogspot.dk/2012/07/types-of-i-need-your-dump-issues.html)
