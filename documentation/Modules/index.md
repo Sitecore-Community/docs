@@ -41,6 +41,7 @@ title: Modules
 * [https://marketplace.sitecore.net/Modules/301_Redirect_module.aspx?sc_lang=en](https://marketplace.sitecore.net/Modules/301_Redirect_module.aspx?sc_lang=en)
 * [https://marketplace.sitecore.net/en/Modules/Index_Viewer.aspx](https://marketplace.sitecore.net/en/Modules/Index_Viewer.aspx)
 * [https://marketplace.sitecore.net/Modules/Site_Under_Maintenance_-_SUM.aspx](https://marketplace.sitecore.net/Modules/Site_Under_Maintenance_-_SUM.aspx)
+* [https://marketplace.sitecore.net/en/Modules/Sitecore_Informatics.aspx](https://marketplace.sitecore.net/en/Modules/Sitecore_Informatics.aspx) [(or visit the project's own site](http://nileshthakkar.github.io/Sitecore-Informatics/)
 
 ### Blog Posts
 * [http://sitecorebasics.wordpress.com/2011/04/27/cache-tuner-user-guide/ ](http://sitecorebasics.wordpress.com/2011/04/27/cache-tuner-user-guide/)
