@@ -20,11 +20,13 @@ title: Development Process
 * [Trevor Campbell: 28 Days Of Sitecore Rocks](http://www.sitecore.net/learn/blogs/technical-blogs/trevor-campbell.aspx)
 * [http://vsplugins.sitecore.net](http://vsplugins.sitecore.net)
 * [http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/ ](http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/)
+* [http://www.seanholmesby.com/sitecore-rocks-presentation-with-the-layout-designer/](http://www.seanholmesby.com/sitecore-rocks-presentation-with-the-layout-designer/)
 
 #### Rocks Query Analyzer
 * [http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/](http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/)
 * [http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/](http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/)
 * [http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx](http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx)
+* [http://www.seanholmesby.com/setting-the-item-sortorder-value-in-sitecore-rocks-query-analyzer/](http://www.seanholmesby.com/setting-the-item-sortorder-value-in-sitecore-rocks-query-analyzer/)
 
 ### Video
 
@@ -46,6 +48,8 @@ title: Development Process
 * [http://sitecorebasics.wordpress.com/2011/04/12/favorite-tools/](http://sitecorebasics.wordpress.com/2011/04/12/favorite-tools/)
 * [http://sitecorebasics.wordpress.com/2012/07/26/sitecore-extension-methods/](http://sitecorebasics.wordpress.com/2012/07/26/sitecore-extension-methods/)
 * [http://www.seanholmesby.com/copysauce-a-file-copying-utility-for-sitecore-development/](http://www.seanholmesby.com/copysauce-a-file-copying-utility-for-sitecore-development/)
+* [http://www.seanholmesby.com/razl-dazl-the-sitecore-database-compare-tool/](http://www.seanholmesby.com/razl-dazl-the-sitecore-database-compare-tool/)
+* [http://www.seanholmesby.com/a-little-razl-tip-to-help-your-efficiency/](http://www.seanholmesby.com/a-little-razl-tip-to-help-your-efficiency/)
 
 ### Tools
 
