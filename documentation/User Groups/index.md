@@ -10,4 +10,5 @@ title: User Groups and Conferences
 SUGCON?
 
 ## User Groups
-[United Kingdom User Groups Index](http://www.sitecore.net/TechUserGroupUK)
+* [United Kingdom User Groups Index](http://www.sitecore.net/TechUserGroupUK)
+* [SUGL - Sitecore User Group Nederland](http://www.sugnl.net/)
