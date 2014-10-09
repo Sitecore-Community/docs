@@ -35,7 +35,8 @@ In terms of Information Architecture it's important to consider the effect of th
 * Rich text fields may be required to be more heavily locked down for example as the mobile / tablet browsers may a) not allow as rich a set of features and b) may not be catered for at all.
 * Certain fields may well be better presented on mobile using the mobile specific equivalent ( tel: in anchors for example ), this for example might mean you in fact have 2 fields, where for the desktop only site you may only require 1.
 
-Pure Responsive can also present challenges with views / renderings or sublayouts such as the following
+Pure Responsive can also present challenges with views / renderings or sublayouts such as the following:
+
 * You can possibly end up more complex as you may have to add more classes, wrappers.
 * In some cases you may be required to render things in a different order to the order they appear on screen / from Sitecore. This is only really ever an issue if they are coming from repeating content.
 * Depending on your front end developers skill, you may find that css specificity can be challenging as in Sitecore we will refrain from using id's where possible due to the dynamic presentation engine. This can present challenges for the front end development.
