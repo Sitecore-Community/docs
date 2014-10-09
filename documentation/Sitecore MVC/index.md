@@ -28,6 +28,7 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 * [http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/](http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/)
 * [http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/](http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/)
 * [http://mhwelander.net/2014/05/22/passing-data-between-actions-in-sitecore-mvc/](http://mhwelander.net/2014/05/22/passing-data-between-actions-in-sitecore-mvc/)
+* [http://www.seanholmesby.com/fixing-visual-studio-intellisense-in-sitecore-mvc-views/](http://www.seanholmesby.com/fixing-visual-studio-intellisense-in-sitecore-mvc-views/)
 
 ### Official Sitecore Documentation (7.0 - 7.2)
 * [Sitecore MVC Developer Reference](http://sdn.sitecore.net/Reference/Sitecore%207/MVC%20Reference.aspx)
