@@ -63,10 +63,10 @@ In terms of Information Architecture it's less important than responsive design 
 
 You can, of course, create a completely separate mobile site within Sitecore - this might be the best solution if your mobile content or design has to be drastically different. Sitecore will allow you to point m.mysite.com to a different starting Home node.
 
-
 ### MVC vs Webforms
 
 This is an area that doesn't usually crop up, but is quite important when you consider Sitecore as a mobile delivery mechanism. The Html control from MVC is much greater and the markup it produces is often much smaller ( no viewstate and multiple forms for example ). This makes your front end developers life MUCH simpler and will give potentially a faster and more supportable mobile experience. Whilst responsive IS possible in Webforms, MVC becomes a preferred choice.
+
 ------------------------------
 
 For information about how Sitecore can help you with adapative images, see the [Sitecore and Media section](/docs/documentation/Sitecore and Media/index.html).
