@@ -45,6 +45,7 @@ title: Development Process
 * [http://sitecorebasics.wordpress.com/2014/08/04/project-2-sitecore-copier/](http://sitecorebasics.wordpress.com/2014/08/04/project-2-sitecore-copier/)
 * [http://sitecorebasics.wordpress.com/2011/04/12/favorite-tools/](http://sitecorebasics.wordpress.com/2011/04/12/favorite-tools/)
 * [http://sitecorebasics.wordpress.com/2012/07/26/sitecore-extension-methods/](http://sitecorebasics.wordpress.com/2012/07/26/sitecore-extension-methods/)
+* [http://www.seanholmesby.com/copysauce-a-file-copying-utility-for-sitecore-development/](http://www.seanholmesby.com/copysauce-a-file-copying-utility-for-sitecore-development/)
 
 ### Tools
 
