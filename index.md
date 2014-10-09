@@ -62,6 +62,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 ## [Sitecore and Media](/docs/documentation/Sitecore and Media/index.html)
 
 **Includes**
+
 * Responsive Images
 
 -------------------------------------
