@@ -22,6 +22,8 @@ Includes **Developer's Cookbook** and **Component Reference**, as well as an exa
 * [http://laubplusco.net/category/sitecore-speak/](http://laubplusco.net/category/sitecore-speak/)
 * [http://adeneys.wordpress.com/category/net/sitecore/speak/ ](http://adeneys.wordpress.com/category/net/sitecore/speak/)
 * [http://www.dervalp.com/ (Pierre, SPEAK developer)](http://www.dervalp.com/)
+* [http://www.hhogdev.com/blog/2014/october/speak-behaviors.aspx](http://www.hhogdev.com/blog/2014/october/speak-behaviors.aspx)
+* [http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx](http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx)
 
 ### Projects and References
 
