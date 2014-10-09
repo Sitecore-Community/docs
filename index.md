@@ -39,7 +39,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * Publishing
 * Configuration
 * Extending Sitecore (Pipelines, Events, Rules)
-* [Recommended Practices](/docs/documentation/Sitecore Fundamentals/index.html#recommended-practices)
+* Recommended Practices
 * Configuring the Client
 
 ##[Scaling and Optimization](/docs/documentation/Scaling and Optimization/index.html)
@@ -98,6 +98,10 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * [Unit Testing](/docs/documentation/Sitecore MVC/index.html#unit-testing)
 
 ## [IoC and Dependency Injection](/docs/documentation/IoC/index.html)
+
+-------------------------------------
+
+## [Sitecore and  Mobile](/docs/documentation/Mobile/index.html)
 
 -------------------------------------
 
