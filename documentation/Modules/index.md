@@ -29,6 +29,7 @@ title: Modules
 ### Web Forms for Marketers
 * [http://sitecorejunkie.com/category/web-forms-for-marketers/](http://sitecorejunkie.com/category/web-forms-for-marketers/)
 * [http://blogs.perficient.com/microsoft/2014/04/web-forms-for-marketers-mvc-and-the-sitecore-page-editor/](http://blogs.perficient.com/microsoft/2014/04/web-forms-for-marketers-mvc-and-the-sitecore-page-editor/)
+* [http://cardinalcore.co.uk/2014/10/08/web-form-for-marketers-mvc-hijacked-my-pipeline/] (http://cardinalcore.co.uk/2014/10/08/web-form-for-marketers-mvc-hijacked-my-pipeline/)
 
 ## Recommmended Marketplace Modules
 * [https://marketplace.sitecore.net/en/Modules/Markdown_for_Sitecore.aspx](https://marketplace.sitecore.net/en/Modules/Markdown_for_Sitecore.aspx)
