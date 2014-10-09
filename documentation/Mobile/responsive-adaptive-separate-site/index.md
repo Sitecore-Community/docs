@@ -38,6 +38,7 @@ An item's presentationd details can vary between devices. If you use the [Mobile
 
 This **does not mean that you have to create a completely different set of presentation details**. In reality, most projects use a blend of responsive and adaptive design - for the following reasons:
 
+* I still get all the benefits of responsive - and more. 
 * As a content author, I know that I'm designing my page for a particular device - I am more likely to check (in the Mobile Simulator, for example) that my page looks good in that device. 
 * I can add/remove/move components and make my mobile pages lighter.
 * As a developer, you have the opportunity to **target a particular device** and change Sitecore's behaviour. For example, you might want to make a change to the image rendering pipeline that sets the max image size to 320 for the mobile device - across the site.
