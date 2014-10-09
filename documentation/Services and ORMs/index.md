@@ -26,3 +26,4 @@ title: Services and ORM
 * [https://github.com/hermanussen/CompiledDomainModel](https://github.com/hermanussen/CompiledDomainModel)
 * [https://github.com/NTTDATA/ClassySitecore/](https://github.com/NTTDATA/ClassySitecore/)
 * [http://www.harshbaid.in/2013/09/23/code-generation-using-sitecore-rocks-and-visual-studio/](http://www.harshbaid.in/2013/09/23/code-generation-using-sitecore-rocks-and-visual-studio/)
+* [http://www.seanholmesby.com/sitecore-glass-mapper-data-handler-for-a-link-list-field/](http://www.seanholmesby.com/sitecore-glass-mapper-data-handler-for-a-link-list-field/)
