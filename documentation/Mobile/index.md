@@ -7,7 +7,7 @@ title: Sitecore and Mobile
 
 ---------------------------------------
 
-## [Responsive, adaptive, or separate site](/docs/documentation/Mobile/responsive-adaptive-separate-site.html)
+## [Responsive, adaptive, or separate site](/docs/documentation/Mobile/responsive-adaptive-separate-site/index.html)
 
 This section looks at the different ways of approaching mobile with a Sitecore site, and the pros and cons of each.
 
