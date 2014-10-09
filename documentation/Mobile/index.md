@@ -5,13 +5,11 @@ title: Sitecore and Mobile
 
 # Sitecore and  Mobile
 
-# Responsive and Adaptive Design
+# [Responsive, Adaptive, or Separate Site?](/docs/documentation/mobile/responsive-adaptive-separate-site.html)
 
-For information about how Sitecore can help you with adapative images, see the [Sitecore and Media section](/docs/documentation/Sitecore and Media/index.html).
+This section looks at the different ways of approaching mobile with a Sitecore site, and the pros and cons of each.
 
-* [Mobile Device Detection Module](https://marketplace.sitecore.net/Modules/Mobile_Device_Detector.aspx)
-* [http://techitpro.com/sitecore-mobile-website-shared-content-tree-structure-part-1/](http://techitpro.com/sitecore-mobile-website-shared-content-tree-structure-part-1/)
-* [http://techitpro.com/sitecore-mobile-website-separate-content-tree-structure-part-2/](http://techitpro.com/sitecore-mobile-website-separate-content-tree-structure-part-2/)
+---------------------------------------
 
 # Sitecore Mobile Apps
 
