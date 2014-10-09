@@ -7,7 +7,7 @@ title: Sitecore and Mobile
 
 # Responsive and Adaptive Design
 
-For information about how Sitecore can help you with adapative images, see the [Sitecore and Media section](/docs/documentation/Sitecore and Media.html).
+For information about how Sitecore can help you with adapative images, see the [Sitecore and Media section](/docs/documentation/Sitecore and Media/index.html).
 
 * [Mobile Device Detection Module](https://marketplace.sitecore.net/Modules/Mobile_Device_Detector.aspx)
 
