@@ -13,6 +13,7 @@ Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community
 
 # Quick Links
 
+* **[User Groups and Conferences](/docs/documentation/User Groups/index.html)**
 * [Contacting Support](http://sdn.sitecore.net/Support.aspx) - Make sure you follow recommended practices!
 * [Sitecore Doc Site - Sitecore 8](http://doc.sitecore.net/)
 * [Sitecore Developer Network (SDN)](http://sdn.sitecore.net/) - Official downloads, documentation, and forum
