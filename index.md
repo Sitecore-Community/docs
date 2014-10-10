@@ -22,7 +22,7 @@ Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community
 * [Sitecore Marketplace](https://marketplace.sitecore.net/) - Module downloads
   * [Sitecore Instance Manager (SIM)](https://marketplace.sitecore.net/Modules/Sitecore_Instance_Manager.aspx)
 
----------------------------------------
+--------------------------------------
 
 ## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
 
