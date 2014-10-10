@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Upgrading and Migrating
+title: Upgrades and Migrating
 ---
 
-# Upgrading and Migrating
+# Upgrades and Migrating
 
 ### Blog Posts
 
