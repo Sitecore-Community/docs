@@ -53,6 +53,14 @@ List of Sitecore 8 blog posts from those with the technical preview.
 
 -------------------------------------
 
+## [Upgrades and Migrating](/docs/documentation/Upgrades and Migrating/index.html)
+ **Includes**
+
+* Upgrade Tips
+* Upgrade Fixes
+
+-------------------------------------
+
 ## [Sitecore Search](/docs/documentation/Search/index.html)
 
 **Includes**
