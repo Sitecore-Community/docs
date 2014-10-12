@@ -50,6 +50,8 @@ Includes **Developer's Cookbook** and **Component Reference**, as well as an exa
 * [https://markstiles.net/Blog/2014/02/01/Sheer-UI-4-Building-A-Wizard.aspx](https://markstiles.net/Blog/2014/02/01/Sheer-UI-4-Building-A-Wizard.aspx)
 * [http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/10/My-First-Sitecore-XAML-Application.aspx](http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/10/My-First-Sitecore-XAML-Application.aspx)
 * [http://jockstothecore.com/tag/sheer/](http://jockstothecore.com/tag/sheer/)
+* [http://sitecorejunkie.com/category/context-menu/](http://sitecorejunkie.com/category/context-menu/)
+* [http://sitecorejunkie.com/category/commands/](http://sitecorejunkie.com/category/commands/)
 
 ### Video
 
