@@ -191,3 +191,4 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://www.newguid.net/sitecore/2014/restricting-the-number-of-components-in-the-sitecore-page-editor/](http://www.newguid.net/sitecore/2014/restricting-the-number-of-components-in-the-sitecore-page-editor/)
 * [http://jockstothecore.com/injecting-resources-into-content-and-page-editor/](http://jockstothecore.com/injecting-resources-into-content-and-page-editor/)
 * [http://getfishtank.ca/blog/create-rss-feeds-in-sitecore](http://getfishtank.ca/blog/create-rss-feeds-in-sitecore)
+* [http://sitecorejourney.nileshthakkar.com/](http://sitecorejourney.nileshthakkar.com/)
