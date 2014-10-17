@@ -24,6 +24,13 @@ Includes **Developer's Cookbook** and **Component Reference**, as well as an exa
 * [http://www.dervalp.com/ (Pierre, SPEAK developer)](http://www.dervalp.com/)
 * [http://www.hhogdev.com/blog/2014/october/speak-behaviors.aspx](http://www.hhogdev.com/blog/2014/october/speak-behaviors.aspx)
 * [http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx](http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx)
+* [http://mikerobbins.co.uk/2014/10/10/sitecore-speak-dialog-within-desktop/](http://mikerobbins.co.uk/2014/10/10/sitecore-speak-dialog-within-desktop/)
+
+### Modules
+
+* [https://marketplace.sitecore.net/Modules/SPEAK_Data_Importer.aspx?sc_lang=en (Data Importer)](https://marketplace.sitecore.net/Modules/SPEAK_Data_Importer.aspx?sc_lang=en)
+* [https://marketplace.sitecore.net/Modules/Sitecore_Bulk_Role_Permissions.aspx?sc_lang=en (Bulk Role Permissions Dialog)](https://marketplace.sitecore.net/Modules/Sitecore_Bulk_Role_Permissions.aspx?sc_lang=en)
+
 
 ### Projects and References
 
