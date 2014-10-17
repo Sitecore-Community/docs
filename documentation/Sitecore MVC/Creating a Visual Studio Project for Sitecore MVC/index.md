@@ -7,6 +7,10 @@ title: Creating a Visual Studio Project for Sitecore MVC
 
 In order to work with Sitecore, you must set up a Visual Studio project. The following article explains how to do so for a Sitecore MVC project.
 
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="420" height="315" src="//www.youtube.com/embed/sRmHcUYZo9o" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ## Before You Start
 
 ### Which Version of MVC?
