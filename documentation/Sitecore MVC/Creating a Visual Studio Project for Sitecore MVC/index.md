@@ -32,6 +32,7 @@ Sitecore recommends that you create your Visual Studio project in a location out
 ## Step 2 - Add References
 
 Add a reference to **Sitecore.Kernel.dll** and **Sitecore.MVC.dll** at the very least. It is recommended that you do not add your references directly from the web root /bin directory, as the version and location may vary across machines. Here are some options:
+
 * Create a **lib** folder in your project root, and make copies of the Sitecore .dlls that you require.
 * Create a central library for Sitecore .dlls within your organization.
 * Set up a **local NuGet server** within your organization to store different versions of the Sitecore .dlls.
