@@ -74,8 +74,7 @@ The following is a default Sitecore Global.asax:
 
 Notice that it inherits ``Sitecore.Web.Application`` (which in turn inherits the standard (``System.Web.HttpApplication``). To extend Global.asax (which you are very likely to do if you use any kind of IoC container), you can simply add in the ``Application_*`` methods:
 
-```
-<%@Application Language='C#' Inherits="Sitecore.Web.Application" %>
+```<%@Application Language='C#' Inherits="Sitecore.Web.Application" %>
 <script runat="server">
   public void Application_Start() {
   }
@@ -85,8 +84,7 @@ Notice that it inherits ``Sitecore.Web.Application`` (which in turn inherits the
 
   public void Application_Error(object sender, EventArgs args) {
   }
-</script>
-```
+</script>```
 
 Or, if you want to use a ``Global.asax.cs`` to work in, just remember to inherit ``Sitecore.Web.Application``.
 
