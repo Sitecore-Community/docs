@@ -5,6 +5,7 @@ title: Sitecore MVC
 
 # Sitecore MVC
 
+----------------------
 ## Getting Started
 
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
@@ -13,6 +14,9 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 * [YouTube: Sitecore MVC - Part 2: View Renderings, @Html.Sitecore(), and Custom Models](http://www.youtube.com/watch?v=dW_rQp9bMmE)
 * [http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html](http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html) (4 parts)
 
+----------------------
+## [Creating a Visual Studio Project for Sitecore MVC](/docs/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC/index.html)
+How to createa  Visual Studio project to work with Sitecore MVC, including troubleshooting and FAQ sections.
 ----------------------
 
 ## General
