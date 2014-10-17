@@ -18,13 +18,15 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 ----------------------
 
 ## [Creating a Visual Studio Project for Sitecore MVC](/docs/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC/index.html)
-How to createa  Visual Studio project to work with Sitecore MVC, including troubleshooting and FAQ sections.
+How to create a  Visual Studio project to work with Sitecore MVC, including troubleshooting and FAQ sections.
 
 ----------------------
 
-## General
+## Reference Materials
 
-### Blog Posts
+### General Information
+
+#### Blog Posts
 
 * [http://kevinobee.wordpress.com/2013/04/13/cassette-bundling-with-sitecore-mvc/](http://kevinobee.wordpress.com/2013/04/13/cassette-bundling-with-sitecore-mvc/)
 * [http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/](http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/)
@@ -37,16 +39,16 @@ How to createa  Visual Studio project to work with Sitecore MVC, including troub
 * [http://mhwelander.net/2014/05/22/passing-data-between-actions-in-sitecore-mvc/](http://mhwelander.net/2014/05/22/passing-data-between-actions-in-sitecore-mvc/)
 * [http://www.seanholmesby.com/fixing-visual-studio-intellisense-in-sitecore-mvc-views/](http://www.seanholmesby.com/fixing-visual-studio-intellisense-in-sitecore-mvc-views/)
 
-### Official Sitecore Documentation (7.0 - 7.2)
+#### Official Sitecore Documentation (7.0 - 7.2)
 * [Sitecore MVC Developer Reference](http://sdn.sitecore.net/Reference/Sitecore%207/MVC%20Reference.aspx)
 
-## IoC / Dependency Injection
+### IoC / Dependency Injection
 
 Moved to its own page [here](/docs/documentation/IoC/index.html).
 
-## <a name="unit-testing"></a>Unit Testing
+### <a name="unit-testing"></a>Unit Testing
 
-### Blog Posts
+#### Blog Posts
 
 * [http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/](http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/)
 * [http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/](http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/)
@@ -63,12 +65,12 @@ Moved to its own page [here](/docs/documentation/IoC/index.html).
 * [http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/](http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/)
 * [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
 
-### Video
+#### Video
 
 * [Sitecore Unit Testing Setup](https://www.youtube.com/watch?v=mZKSl3pemEs)
 * [Alistair Deneys on Unit Testing Sitecore](https://www.youtube.com/watch?v=oQ2CPvN9FAU )
 
-## Form Posts and Routing
+### Form Posts and Routing
 
 ### Blog Posts
 
@@ -78,13 +80,10 @@ Moved to its own page [here](/docs/documentation/IoC/index.html).
 * [http://jockstothecore.com/to-the-controller-and-back-part-1-routing/](http://jockstothecore.com/to-the-controller-and-back-part-1-routing/)
 * [http://jockstothecore.com/to-the-controller-and-back-part-2-validation/](http://jockstothecore.com/to-the-controller-and-back-part-2-validation/)
 
-
-----------------------
-
-# Other Videos
+### Other Videos
 * [YouTube: User Group Conference presentation with link to SlideShare for the slides (Ruud van Falier)](https://www.youtube.com/watch?v=vQVBaU5D4yo)
 
-# Other Resources
+### Other Resources
 * [GitHub Project: Sample Sitecore MVC (sample project used by introductory videos)](https://github.com/Sitecore-Community/sample-sitecore-mvc)
 * [GitHub Project: Sitecore MVC Contrib](https://github.com/Sitecore-Community/Sitecore-Mvc-Contrib)
 * [https://github.com/herskinduk/AutoWrapping](https://github.com/herskinduk/AutoWrapping)
