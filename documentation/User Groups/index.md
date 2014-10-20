@@ -23,3 +23,4 @@ SUGCON?
 * [Sitecore User Group - Chicago](http://www.meetup.com/Sitecore-User-Group-Chicago/)
 * [Sitecore User Group - Portland, Oregon](http://www.meetup.com/Sitecore-Portland-Oregon-User-Group/)
 * [Sitecore User Group - Dallas](http://www.meetup.com/Sitecore-User-Group-Dallas/)
+* [SUG-BELUX](http://www.meetup.com/Sitecore-User-Group-Belgium/)
