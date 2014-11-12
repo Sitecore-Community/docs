@@ -4,25 +4,24 @@ title: Index
 ---
 
 ### What is this?
-This is a community-drive collection of developer resources - including blogs, videos, downloadble resources, and references to official documentation.
+This is a *community-driven* collection of developer resources - including blogs, videos, downloadble resources, and references to official documentation. Please note that although Sitecore employees contribute, this is not official Sitecore documetnation.
 
 ### Can I contribute?
 Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community-Docs)** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / [@mhwelander](http://twitter.com/mhwelander)).
 
 ---------------------------------------
 
-# Quick Links
-
-* **[User Groups and Conferences](/docs/documentation/User Groups/index.html)**
+# Official Resources
 * [Contacting Support](http://sdn.sitecore.net/Support.aspx) - Make sure you follow recommended practices!
-* [Sitecore Doc Site - Sitecore 8](http://doc.sitecore.net/)
+* [Sitecore Doc Site - Sitecore 8+](http://doc.sitecore.net/)
 * [Sitecore Developer Network (SDN)](http://sdn.sitecore.net/) - Official downloads, documentation, and forum
 * [Sitecore Knowledgebase (KB)](https://kb.sitecore.net/) - Known issues and how-tos from Support
-* [Compatability Tables](https://kb.sitecore.net/SearchResults#term=compatability%20tables) - Matrix of version numbers
+  * [Compatability Tables](https://kb.sitecore.net/SearchResults#term=compatability%20tables) - Matrix of version numbers
 * [Sitecore Marketplace](https://marketplace.sitecore.net/) - Module downloads
-  * [Sitecore Instance Manager (SIM)](https://marketplace.sitecore.net/Modules/Sitecore_Instance_Manager.aspx)
 
 --------------------------------------
+
+* **[User Groups and Conferences](/docs/documentation/User Groups/index.html)**
 
 ## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
 
