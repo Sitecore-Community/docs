@@ -34,7 +34,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 
 **Includes:**
 
-* Installating Sitecore
+* Installing Sitecore
 * Data Templates and the Sitecore Tree
 * Presentation
 * Publishing
