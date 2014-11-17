@@ -23,8 +23,12 @@ Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community
 
 * **[User Groups and Conferences](/docs/documentation/User Groups/index.html)**
 
-## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
+--------------------------------------
 
+## Sitecore 7.5 Resources
+* [DMS / xDB](/docs/documentation/DMS/index.html)
+
+## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
 List of Sitecore 8 blog posts from those with the technical preview.
 
 ---------------------------------------
@@ -120,10 +124,6 @@ List of Sitecore 8 blog posts from those with the technical preview.
 -------------------------------------
 
 ## [Sitecore Azure](/docs/documentation/Sitecore Azure/index.html)
-
--------------------------------------
-
-## [DMS / xDB](/docs/documentation/DMS/index.html)
 
 -------------------------------------
 
