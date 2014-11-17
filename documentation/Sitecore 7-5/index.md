@@ -21,6 +21,7 @@ Sitecore 7.5 dramatically alters the way that Sitecore stores and handles analyt
 * [http://www.delphicdigital.com/home/blog.aspx/d=2227/title=4-advantages-to-using-mongodb-in-sitecore](http://www.delphicdigital.com/home/blog.aspx/d=2227/title=4-advantages-to-using-mongodb-in-sitecore)
 * [http://blog.coates.dk/2014/11/09/no-images-after-upgrading-to-sitecore-7-5/](http://blog.coates.dk/2014/11/09/no-images-after-upgrading-to-sitecore-7-5/)
 * [http://laubplusco.net/bug-hunt-sitecore-7-5/](http://laubplusco.net/bug-hunt-sitecore-7-5/)
+* [http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/11/Deployment-Support-Sitecore-7-5-MongoDB.aspx](http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/11/Deployment-Support-Sitecore-7-5-MongoDB.aspx)
 
 ### Blog posts - General MongoDB
 
