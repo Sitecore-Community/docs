@@ -14,7 +14,7 @@ Sitecore 7.5 dramatically alters the way that Sitecore stores and handles analyt
 
 * [http://hermanussen.eu/sitecore/wordprss/2012/05/making-sitecore-faster-with-mongodb/](http://hermanussen.eu/sitecore/wordprss/2012/05/making-sitecore-faster-with-mongodb/)
 * [http://getfishtank.ca/blog/sitecore-xdb-technical-introduction-to-mongodb](http://getfishtank.ca/blog/sitecore-xdb-technical-introduction-to-mongodb) 
-*[http://cardinalcore.co.uk/2014/07/08/using-mongodb-to-provide-items-as-a-cache-for-sitecore/](http://cardinalcore.co.uk/2014/07/08/using-mongodb-to-provide-items-as-a-cache-for-sitecore/)
+ * [http://cardinalcore.co.uk/2014/07/08/using-mongodb-to-provide-items-as-a-cache-for-sitecore/](http://cardinalcore.co.uk/2014/07/08/using-mongodb-to-provide-items-as-a-cache-for-sitecore/)
 * [http://blog.eldblom.dk/2014/08/22/merging-visitor-cookies-in-sitecore-cms-7-5-and-the-experience-database/](http://blog.eldblom.dk/2014/08/22/merging-visitor-cookies-in-sitecore-cms-7-5-and-the-experience-database/)
 * [One Month with Sitecore 7.5](http://www.techphoria414.com/Blog/2014/June/One_Month_with_Sitecore_7-5_Part_1)
 * [http://sitecoreblog.blogspot.co.uk/2014/06/sitecore-75-setting-up-xdb-without.html](http://sitecoreblog.blogspot.co.uk/2014/06/sitecore-75-setting-up-xdb-without.html)
@@ -22,6 +22,7 @@ Sitecore 7.5 dramatically alters the way that Sitecore stores and handles analyt
 * [http://blog.coates.dk/2014/11/09/no-images-after-upgrading-to-sitecore-7-5/](http://blog.coates.dk/2014/11/09/no-images-after-upgrading-to-sitecore-7-5/)
 * [http://laubplusco.net/bug-hunt-sitecore-7-5/](http://laubplusco.net/bug-hunt-sitecore-7-5/)
 * [http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/11/Deployment-Support-Sitecore-7-5-MongoDB.aspx](http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/11/Deployment-Support-Sitecore-7-5-MongoDB.aspx)
+* [Images not re-sizing in Sitecore 7.5, Sitecore 8.](http://www.seanholmesby.com/images-not-resizing-in-sitecore-7-5-sitecore-8-0/)
 
 ### Blog posts - General MongoDB
 
