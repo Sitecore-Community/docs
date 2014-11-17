@@ -26,7 +26,7 @@ Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community
 --------------------------------------
 
 ## Sitecore 7.5 Resources
-* [DMS / xDB](/docs/documentation/DMS/index.html)
+* [The xDB](/docs/documentation/DMS/index.html) (also contains links to information about the retired DMS)
 
 ## [Sitecore 8 Resources](/docs/documentation/Sitecore 8/index.html)
 List of Sitecore 8 blog posts from those with the technical preview.
