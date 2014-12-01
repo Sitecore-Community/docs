@@ -177,6 +177,9 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * [http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ ](http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ )
 * [http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ ](http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ )
 
+### Best practices: multisite solutions
+* [Sitecore best practices: Making the most of multi-sites](http://www.nonlinearcreations.com/Digital/how-we-think/slideshows/Sitecore-multi-sites.aspx#.VHdnTyLfJmw.twitter)
+
 ### Forums
 
 * [http://techitpro.com/sitecore-forums-know-how/](http://techitpro.com/sitecore-forums-know-how/)
