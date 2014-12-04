@@ -4,9 +4,9 @@ title: Index
 ---
 
 ### What is this?
-This is a *community-driven* collection of developer resources - including blogs, videos, downloadble resources, and references to official documentation. Please note that although Sitecore employees contribute, this is not official Sitecore documetnation.
+This is a *community-driven* collection of developer resources - including blogs, videos, downloadble resources, and references to official documentation. Please note that although Sitecore employees contribute, this is not official Sitecore documentation.
 
-### Can I contribute?
+### May I contribute?
 Make a **[pull request](https://github.com/Sitecore-Community/Sitecore-Community-Docs)** or get in touch with Martina Welander ([maw@sitecore.net](maw@sitecore.net) / [@mhwelander](http://twitter.com/mhwelander)).
 
 ---------------------------------------
@@ -119,7 +119,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 
 -------------------------------------
 
-## [Sitecore and  Mobile](/docs/documentation/Mobile/index.html)
+## [Sitecore and Mobile](/docs/documentation/Mobile/index.html)
 
 -------------------------------------
 
@@ -147,7 +147,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * [https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&output=html](https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&output=html) (MVP Details)
 * [http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2](http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2) (Older Yahoo! MVP pipe - [RSS](http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&_render=rss) / [JSON](http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&_render=json))
 
-##Newsletters
+## Newsletters
 
 ### Daily
 
@@ -177,7 +177,7 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * [http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ ](http://sitecorebasics.wordpress.com/2014/08/09/scheduled-task-basics/ )
 * [http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ ](http://sitecorebasics.wordpress.com/2014/09/16/do-you-know-why-you-check-async-checkbox-while-configuring-scheduled-task/ )
 
-### Best practices: multisite solutions
+### Best Practices: Multi-Site Solutions
 * [Sitecore best practices: Making the most of multi-sites](http://www.nonlinearcreations.com/Digital/how-we-think/slideshows/Sitecore-multi-sites.aspx#.VHdnTyLfJmw.twitter)
 
 ### Forums
