@@ -71,9 +71,13 @@ List of Sitecore 8 blog posts from those with the technical preview.
 * SOLR
 * 
 
-## Sitecore Services Layer
+## [Sitecore Services Layer](/docs/documentation/Sitecore Services Layer/index.html)
 
-(Please contribute - [official documentation here](http://sdn.sitecore.net/SDN5/Reference/Sitecore%207/Developers%20Guide%20to%20Sitecore%20Services%20Client.aspx))
+**Includes**
+
+* SSC
+* EntityService
+
 
 ## [Sitecore and Media](/docs/documentation/Sitecore and Media/index.html)
 
