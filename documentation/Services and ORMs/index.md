@@ -6,6 +6,7 @@ title: Services and ORM
 # Services and ORM
 
 ## Item Web API
+* [Web API Sitecore ID Formatter](http://mikerobbins.co.uk/2014/12/02/web-api-sitecore-id-formatter/)
 
 ### Video
 * [https://www.youtube.com/watch?v=muLFkTlYtCM - by Kern Herskind Nightingale](https://www.youtube.com/watch?v=muLFkTlYtCM )
@@ -27,3 +28,6 @@ title: Services and ORM
 * [https://github.com/NTTDATA/ClassySitecore/](https://github.com/NTTDATA/ClassySitecore/)
 * [http://www.harshbaid.in/2013/09/23/code-generation-using-sitecore-rocks-and-visual-studio/](http://www.harshbaid.in/2013/09/23/code-generation-using-sitecore-rocks-and-visual-studio/)
 * [http://www.seanholmesby.com/sitecore-glass-mapper-data-handler-for-a-link-list-field/](http://www.seanholmesby.com/sitecore-glass-mapper-data-handler-for-a-link-list-field/)
+
+## Sitecore.Service.Client
+* [EntityService within Sitecore.Services.Client (By Mike Robbins)](mikerobbins.co.uk/2015/01/06/entityservice-sitecore-service-client/)
