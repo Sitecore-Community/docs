@@ -51,6 +51,7 @@ title: Sitecore Search
 * [http://mikerobbins.co.uk/2014/09/23/solr-search-on-exact-phrase/](http://mikerobbins.co.uk/2014/09/23/solr-search-on-exact-phrase/)
 * [http://www.ehabelgindy.com/category/solr/](http://www.ehabelgindy.com/category/solr/)
 * [http://www.skillcore.net/sitecore/using-switchonrebuildsolrsearchindex-solr-provider-for-sitecore](http://www.skillcore.net/sitecore/using-switchonrebuildsolrsearchindex-solr-provider-for-sitecore)
+* [http://mikerobbins.co.uk/2014/11/07/install-solr-as-windows-service-for-sitecore-content-search/](http://mikerobbins.co.uk/2014/11/07/install-solr-as-windows-service-for-sitecore-content-search/)
 
 ### Video
 

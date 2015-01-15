@@ -6,6 +6,7 @@ title: Services and ORM
 # Services and ORM
 
 ## Item Web API
+* [Web API Sitecore ID Formatter](http://mikerobbins.co.uk/2014/12/02/web-api-sitecore-id-formatter/)
 
 ### Video
 * [https://www.youtube.com/watch?v=muLFkTlYtCM - by Kern Herskind Nightingale](https://www.youtube.com/watch?v=muLFkTlYtCM )
