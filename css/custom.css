@@ -1,0 +1,16 @@
+body {
+	background: #000;
+}
+
+.doc-masthead {
+	color: #fff;
+	background: #008998;
+}
+
+.container {
+	background: #fff;
+}
+
+.container.doc-body {
+	padding: 40px;
+}
