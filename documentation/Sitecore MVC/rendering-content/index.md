@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Rendering Content
+tags: mvc, rendering
 ---
 
-# Rendering Content
+# {{page.title}}
+Tags: {{page.tags}}
 
 In standard ASP.NET MVC, a view accepts a model (or view model). This model contains everything that the view requires - including content. For instance, you may have a ``NewsArticle`` model with a ``Text`` and ``Title`` property. You would output this content like this:
 
