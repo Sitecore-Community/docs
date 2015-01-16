@@ -7,7 +7,7 @@ title: Rendering Content
 
 In standard ASP.NET MVC, a view accepts a model (or view model). This model contains everything that the view requires - including content. For instance, you may have a ``NewsArticle`` model with a ``Text`` and ``Title`` property. You would output this content like this:
 
-```
+```html
 <h1>@Model.Title</h1>
 @Model.Text
 ```
