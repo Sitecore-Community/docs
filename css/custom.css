@@ -5,12 +5,9 @@ body {
 .doc-masthead {
 	color: #fff;
 	background: #008998;
+	margin-bottom: 0;
 }
-
-.container {
-	background: #fff;
-}
-
 .container.doc-body {
 	padding: 40px;
+	background: #fff;
 }
