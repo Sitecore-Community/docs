@@ -34,6 +34,8 @@ View renderings allow you to return a .cshtml file which can take a standard or 
 
 Controller renderings allow you to specify a controller and action result, which in turn can return a .cshtml file or any other type of renderable content.
 
+---------------------------
+
 ## Reference Materials
 
 ### General Information
