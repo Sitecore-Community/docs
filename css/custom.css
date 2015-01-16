@@ -31,7 +31,14 @@ a:hover {
 	background: #008998;
 	margin-bottom: 0;
 }
-.container.doc-body {
+
+.doc-body-inner {
 	padding: 40px;
 	background: #fff;
+}
+
+.container.doc-body {
+	background: #071a2d;
+	border-top: 1px solid #203a51;
+	padding: 30px 10px;
 }
