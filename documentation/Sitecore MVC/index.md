@@ -36,7 +36,9 @@ Controller renderings allow you to specify a controller and action result, which
 
 ---------------------------
 
-## Rendering Content
+## [Rendering Content](/docs/documentation/Sitecore MVC/rendering-content.html)
+
+In Sitecore MVC, you can either return content as properties of your model (much like standard ASP.NET MVC), or use the field helper to output fields from a context or datasource item.
 
 ---------------------------
 
