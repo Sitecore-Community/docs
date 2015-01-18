@@ -49,8 +49,13 @@ a:hover {
 {
 	.container.doc-body {
 	padding: 0;
+	border: 0;
 	
 }
-	}
+
+.doc-body-inner {
+	padding: 20px;
 }
+}
+
 }
