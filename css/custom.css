@@ -42,3 +42,15 @@ a:hover {
 	border-top: 1px solid #203a51;
 	padding: 30px 10px;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) 
+{
+	.container.doc-body {
+	padding: 0;
+	
+}
+	}
+}
+}
