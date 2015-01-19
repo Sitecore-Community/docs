@@ -7,7 +7,7 @@ title: Sitecore MVC
 
 ----------------------
 
-## Getting Started
+## [Getting Started]()
 
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
 
@@ -17,7 +17,7 @@ If you are new to Sitecore MVC, check out the following videos and introductory 
 
 ----------------------
 
-## [Creating a Visual Studio Project for Sitecore MVC](/docs/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC/index.html)
+## [Creating a Visual Studio Project for Sitecore MVC]({{ site.baseurl }}/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC/index.html)
 How to create a  Visual Studio project to work with Sitecore MVC, including troubleshooting and FAQ sections.
 
 ----------------------
@@ -36,9 +36,15 @@ Controller renderings allow you to specify a controller and action result, which
 
 ---------------------------
 
-## [Rendering Content](/docs/documentation/Sitecore MVC/rendering-content)
+## [Models]()
+
+---------------------------
+
+## [Rendering Content]({{ site.baseurl }}/documentation/Sitecore MVC/Rendering Content/index.html)
 
 In Sitecore MVC, you can either return content as properties of your model (much like standard ASP.NET MVC), or use the field helper to output fields from a context or datasource item.
+
+### [Sitecore HTML Helper]()
 
 ---------------------------
 
@@ -64,7 +70,7 @@ In Sitecore MVC, you can either return content as properties of your model (much
 
 ### IoC / Dependency Injection
 
-Moved to its own page [here](/docs/documentation/IoC/index.html).
+Moved to its own page [here]({{ site.baseurl }}/documentation/IoC/index.html).
 
 ### <a name="unit-testing"></a>Unit Testing
 
