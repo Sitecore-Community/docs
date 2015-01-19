@@ -23,7 +23,7 @@ The default ``RenderingModel`` has a property named ``.Item`` - this will return
 
 2. Choose your instance from the **Sitecore Explorer Connection** dropdown list: 
 
-	![Choose an instance of Sitecore from the dropdown]({{ site.baseurl }}/img/project-rocks-properties.png)
+	![Choose an instance of Sitecore from the dropdown]({{ site.baseurl }}/img/project-rocks-properties.PNG)
 
 3. To create a view rendering, right-click on the folder in your project where you wish to insert the ``.cshtml`` file and select **Add > New Item...**.
 
@@ -31,11 +31,11 @@ The default ``RenderingModel`` has a property named ``.Item`` - this will return
 
 4. Choose **Sitecore** in the left-hand menu, and select **Sitecore View Rendering** in the right-hand pane. Give the view rendering a name. Keep in mind that this will also be the name of the compenent definition item in Sitecore, so it should be human-readable.
 
-	![Select and name view rendering]({{ site.baseurl }}/img/create-view-rendering.png)
+	![Select and name view rendering]({{ site.baseurl }}/img/create-view-rendering.PNG)
 
 5. Sitecore will prompt you to add a corresponding definition item. View renderings live under ``/sitecore/Layout/Renderings``, and should ideally be organized into a sub-folder.
 
-	![Create a Sitecore item]({{ site.baseurl }}/img/create-corresponding-item.png)	
+	![Create a Sitecore item]({{ site.baseurl }}/img/create-corresponding-item.PNG)	
 
 	Choose a location and click OK (or right-click to insert a new sub-folder). Sitecore will create a definition item in the tree, and you will get a ``.cshtml`` file that is setup in the following way:
 		
