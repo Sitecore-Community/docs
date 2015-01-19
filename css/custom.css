@@ -26,10 +26,11 @@ a:hover {
 	color: #1cb0c2;
 }
 
-.doc-masthead {
+.container .doc-masthead {
 	color: #fff;
 	background: #008998;
 	margin-bottom: 0;
+		border-radius: 0;
 }
 
 .doc-body-inner {
