@@ -22,11 +22,11 @@ How to create a  Visual Studio project to work with Sitecore MVC, including trou
 
 Sitecore MVC introduces a number of additional component types. The most commonly used types are **controller renderings** and **view renderings**.
 
-### [View Renderings]()
+### [View Renderings]({{ site.baseurl }}/documentation/Sitecore MVC/View Renderings/index.html)
 
 View renderings allow you to return a .cshtml file which can take a standard or custom Sitecore model.
 
-### [Controller Renderings]()
+### Controller Renderings
 
 Controller renderings allow you to specify a controller and action result, which in turn can return a .cshtml file or any other type of renderable content.
 
@@ -39,8 +39,6 @@ Controller renderings allow you to specify a controller and action result, which
 ## [Rendering Content]({{ site.baseurl }}/documentation/Sitecore MVC/Rendering Content/index.html)
 
 In Sitecore MVC, you can either return content as properties of your model (much like standard ASP.NET MVC), or use the field helper to output fields from a context or datasource item.
-
-### [Sitecore HTML Helper]()
 
 ---------------------------
 
