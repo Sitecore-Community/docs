@@ -18,12 +18,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+h3#what-is-this {
+	margin-top: 0;
+}
+
 a {
 	color: #006f7c
 }
 
 a:hover {
 	color: #1cb0c2;
+}
+
+.btn-primary { 
+background: #33aab7;
+border-color: #33aab7;
+}
+
+.btn-primary:hover {
+	background: #006f7c;
+	border-color: #006f7c;
 }
 
 .container .doc-masthead {
