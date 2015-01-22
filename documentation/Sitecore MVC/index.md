@@ -26,7 +26,7 @@ Sitecore MVC introduces a number of additional component types. The most commonl
 
 View renderings allow you to return a .cshtml file which can take a standard or custom Sitecore model.
 
-### Controller Renderings
+### [Controller Renderings]({{ site.baseurl }}/documentation/Sitecore MVC/Controller Renderings/index.html)
 
 Controller renderings allow you to specify a controller and action result, which in turn can return a .cshtml file or any other type of renderable content.
 
