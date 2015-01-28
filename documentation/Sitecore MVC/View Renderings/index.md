@@ -26,9 +26,6 @@ The default ``RenderingModel`` has a property named ``.Item`` - this will return
 	![Choose an instance of Sitecore from the dropdown]({{ site.baseurl }}/img/project-rocks-properties.PNG)
 
 3. To create a view rendering, right-click on the folder in your project where you wish to insert the ``.cshtml`` file and select **Add > New Item...**.
-
-	![Create a new view rendering file]({{ site.baseurl }}/img/create-new-view-rendering.png)
-
 4. Choose **Sitecore** in the left-hand menu, and select **Sitecore View Rendering** in the right-hand pane. Give the view rendering a name. Keep in mind that this will also be the name of the compenent definition item in Sitecore, so it should be human-readable.
 
 	![Select and name view rendering]({{ site.baseurl }}/img/create-view-rendering.PNG)
