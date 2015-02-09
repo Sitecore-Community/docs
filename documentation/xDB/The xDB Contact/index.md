@@ -3,7 +3,7 @@ layout: default
 title: The xDB Contact
 ---
 
-<p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
+<p class="well"><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 
 ## What is a contact?
 In the Experience Database (xDB), a contact is a visitor. Even if you are anonymous, or have never provided your e-mail address to Sitecore, you are still referred to and stored as a contact.
@@ -88,13 +88,13 @@ Web Forms for Marketers will automatically 'identify' a contact to match a regis
 
 Remember to format the username correctly, including **domain** and double backslash.  The xDB will now associate your logged-in visitor with an existing xDB record, provided this is not their first visit.
 
-# Adding information to a contact
+## Adding information to a contact
 
-Because MongoDB stores information as unstructured JSON, it's very easy to extend. There are two main ways that Sitecore adds content into the xDB - tags and facets.
+### Facets
 
-## Emails
+Find out more about [facets]({{ site.baseurl }}/documentation/xDB/Facets).
 
-## Tags
+### Tags
 
 **Tags** are an informal, unstructured way of storing data as key value pairs. If a marketer creates a form to capture details about a visitor's favourite food, that information can be stored as a tag without a developer needing to create some kind of data structure beforehand.
 
@@ -115,6 +115,3 @@ Because MongoDB stores information as unstructured JSON, it's very easy to exten
 
 To store a field value as a tag when using Web Forms for Marketers, select the field in question and tick the 'Tag' checkbox in the Analytics sub-section in the left-hand menu.
 
-## Facets
-
-Not to be confused with **goal facets** or **search facets**, a contact facet is a property of a contact that has a bit more definition than a tag. [Find out more about facets here]({{ site.baseurl }}/documentation/xDB/Facets).
