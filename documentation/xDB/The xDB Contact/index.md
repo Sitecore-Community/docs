@@ -3,7 +3,7 @@ layout: default
 title: The xDB Contact
 ---
 
-<p><strong>Tags:</strong><span class="">Sitecore 8</span></p>
+<small><span class="lyphicon glyphicon-tag">Sitecore 8</span></small>
 
 ## What is a contact?
 In the Experience Database (xDB), a contact is a visitor. Even if you are anonymous, or have never provided your e-mail address to Sitecore, you are still referred to and stored as a contact.
