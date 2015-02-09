@@ -3,22 +3,24 @@ layout: default
 title: xDB and Experience Marketing
 ---
 
-## Getting Started
-
 ## Architecture
 
-## Contact
+### Collection
 
-## Reporting
+### Aggregation
 
-### Reporting API
+## [The xDB Contact]({{ site.baseurl }}/documentation/xDB/The xDB Contact)
 
-### Graphs and Reports
+## xDB API
+
+* Identify contact
+
+## Generating Analytics Data
 
 ## Interfaces
 
 ### Experience Profile
-
+ 
 ### Experience Analytics
 
 ### [Launch Pad]({{ site.baseurl }}/documentation/xDB/Interfaces/Launch Pad)
