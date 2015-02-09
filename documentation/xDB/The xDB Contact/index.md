@@ -92,6 +92,8 @@ Remember to format the username correctly, including **domain** and double backs
 
 Because MongoDB stores information as unstructured JSON, it's very easy to extend. There are two main ways that Sitecore adds content into the xDB - tags and facets.
 
+## Emails
+
 ## Tags
 
 **Tags** are an informal, unstructured way of storing data as key value pairs. If a marketer creates a form to capture details about a visitor's favourite food, that information can be stored as a tag without a developer needing to create some kind of data structure beforehand.
