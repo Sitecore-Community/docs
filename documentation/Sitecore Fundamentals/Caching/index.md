@@ -59,48 +59,48 @@ Caches can be created as needed in your code.
 #### <a name=creating_the_cache"">Creating the Cache</a>
 Creating a cache consists of creating a new instance of `Sitecore.Caching.Cache`. When the instance is created the cache is automatically registered with the system. This means that Sitecore recognizes the cache and can control it.
 
-```c#
+{% highlight csharp %}
 var mycache = new Sitecore.Caching.Cache("test cache", 1024);
-```
+{% endhighlight %}
 
 #### <a name="referencing_the_cache">Referencing the Cache</a>
 A cache is accessed by name using the Cache Manager.
 
-```c#
+{% highlight csharp %}
 var mycache = Sitecore.Caching.CacheManager.FindCacheByName("test cache");
-```
+{% endhighlight %}
 
 #### <a name="adding_a_value_to_the_cache">Adding a Value to the Cache</a>
 A value is added to the cache using the `Add` method.
 
-```c#
+{% highlight csharp %}
 var mycache = Sitecore.Caching.CacheManager.FindCacheByName("test cache");
 mycache.Add("name", "value"); 
-```
+{% endhighlight %}
 
 #### <a name="reading_a_value_from_the_cache">Reading a Value from the Cache</a>
 A value is read from the cache using the `GetValue` method. Reading a value notifies that the value has been read, which resets the expiration timer.
 
-```c#
+{% highlight csharp %}
 var mycache = Sitecore.Caching.CacheManager.FindCacheByName("test cache");
 var value = mycache.GetValue("name");
-```
+{% endhighlight %}
 
 #### <a name="removing_a_value_from_the_cache">Removing a Value from the Cache</a>
 A value is removed from the cache using the `Remove` method.
 
-```c#
+{% highlight csharp %}
 var mycache = Sitecore.Caching.CacheManager.FindCacheByName("test cache");
 mycache.Remove("name");
-```
+{% endhighlight %}
 
 #### <a name="clearing_the_cache">Clearing the Cache</a>
 A cache can be cleared using the `Clear` method.
 
-```c#
+{% highlight csharp %}
 var mycache = Sitecore.Caching.CacheManager.FindCacheByName("test cache");
 mycache.Clear();
-```
+{% endhighlight %}
 
 ## <a name="implementing_a_custom_cache">Implementing a Custom Cache</a>
 A custom cache is a strongly-typed cache. These types of caches are easier to work with. In in other regards a custom cache works the same way as other caches.
@@ -108,7 +108,7 @@ A custom cache is a strongly-typed cache. These types of caches are easier to wo
 #### <a name="custom_cache_example">Custom Cache Example</a>
 The following is an example of a custom cache and a manager class for accessing the cache.
 
-```c#
+{% highlight csharp %}
 public class AbbreviationCache : Sitecore.Caching.CustomCache
 {
     public AbbreviationCache(string name, long maxSize) : base(name, maxSize) {  }
@@ -122,9 +122,9 @@ public class AbbreviationCache : Sitecore.Caching.CustomCache
         return base.GetString(key);
     }
 }
-```
+{% endhighlight %}
 
-```c#
+{% highlight csharp %}
 public class AbbreviationCacheManager
 {
     private static AbbreviationCache _abbreviationCache;
@@ -140,11 +140,11 @@ public class AbbreviationCacheManager
         return _abbreviationCache;
     }
 }
-```
+{% endhighlight %}
 
 The following is an example of how to use the custom cache.
 
-```c#
+{% highlight csharp %}
 var cache = Testing.Caching.AbbreviationCacheManager.GetAbbreviationCache();
 cache.SetAbbreviation("adc", "Adam David Conn");
-```
+{% endhighlight %}

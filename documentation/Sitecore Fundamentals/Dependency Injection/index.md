@@ -18,7 +18,7 @@ But it's not just a matter of convenience. Sitecore caches these objects so you 
 
 ## <a name="mapping_types">Mapping Types</a>
 The following Sitecore patch file demonstrates the most basic kind of name-to-object mapping: a name to a type.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -26,17 +26,17 @@ The following Sitecore patch file demonstrates the most basic kind of name-to-ob
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class MyClass1 {}
 }
-```
+{% endhighlight %}
 ## <a name="mapping_constructors">Mapping Constructors</a>
 You can specify constructor parameters in your Sitecore patch file.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -46,9 +46,9 @@ You can specify constructor parameters in your Sitecore patch file.
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class MyClass2
@@ -60,10 +60,10 @@ namespace Testing.Config
         public string Name { get; private set; }
     }
 }
-```
+{% endhighlight %}
 ## <a name="mapping_primitive_properties">Mapping Primitive Properties</a>
 You can set values on primitive-type properties in your Sitecore patch file.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -73,9 +73,9 @@ You can set values on primitive-type properties in your Sitecore patch file.
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class MyClass3
@@ -83,10 +83,10 @@ namespace Testing.Config
         public string Name { get; set; }
     }
 }
-```
+{% endhighlight %}
 ## <a name="mapping_object_properties">Mapping Object Properties</a>
 You can set values on object-type properties in your Sitecore patch file.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -99,11 +99,11 @@ You can set values on object-type properties in your Sitecore patch file.
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 Since the `type` attribute is specified on the `config` node, Sitecore will instantiate an object using that type and will set the `config` property on the `objectpropman` object.
 
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class ConfigExample
@@ -116,10 +116,10 @@ namespace Testing.Config
         public ConfigExample Config { get; set; }
     }
 }
-```
+{% endhighlight %}
 ## <a name="mapping_string_list_properties">Mapping String List Properties</a>
 You can add values to properties that store string lists in your Sitecore patch file.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -132,11 +132,11 @@ You can add values to properties that store string lists in your Sitecore patch 
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 The addition of `hint="list"` tells Sitecore to treat each child node as a string, and to pass that string to the list's `Add` method. But using the "hint" functionality means you cannot use the "type" functionality. Without the "type" functionality Sitecore doesn't know which type to use to create a new object to assign to the property, so you have to be sure the property is set to an object because Sitecore tries to add a new member to the collection.
 
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class MyClass5
@@ -148,10 +148,10 @@ namespace Testing.Config
         }
     }
 }
-```
+{% endhighlight %}
 ## <a name="mapping_collection_properties">Mapping Collection Properties</a>
 You can add objects to collections in your Sitecore patch file.
-```xml
+{% highlight xml %}
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <guide>
@@ -168,11 +168,11 @@ You can add objects to collections in your Sitecore patch file.
     </guide>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 The addition of `hint="raw:AddItemName"` tells Sitecore to pass each child node as an `XmlNode` object to the `MyClass6` object's `AddItemName` method. 
 
 This configuration assumes the following class is available on the Sitecore server:
-```c#
+{% highlight csharp %}
 namespace Testing.Config
 {
     public class MyClass6
@@ -195,7 +195,7 @@ namespace Testing.Config
         }
     }
 }
-```
+{% endhighlight %}
 #### Create helper methods for adding items to a collection
 A helper method allows you to take advantage of the "hint" functionality which greatly simplifies the configuration that is required to define the members of the collection.
 
@@ -204,8 +204,8 @@ A helper method allows you to take advantage of the "hint" functionality which g
 
 ## <a name="config_factory">Using the Configuration Factory</a>
 The Sitecore API provides a factory that will instantiate the objects defined in your Sitecore patch file.
-```c#
+{% highlight csharp %}
 var refObj = Sitecore.Configuration.Factory.CreateObject("guide/stringlistmap", true) as Testing.Config.MyClass5;
-```
+{% endhighlight %}
 The `bool` parameter in the `CreateObject` method specifies whether an exception is thrown if the specified path in the Sitecore patch file cannot be located. `True` means an exception will be thrown if the path does not exist. `False` means no exception will be thrown and the `CreateObject` method will return `null`.
 

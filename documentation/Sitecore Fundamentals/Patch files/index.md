@@ -51,181 +51,181 @@ The following are examples of how patching can be used to affect Sitecore config
 #### <a name="example_merging">Example: patch file merging</a>
 Configuration from different files are merged in the order the patch files are processed.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <settings>
   <setting name="name" value="Aaron" />
 </settings>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- /App_Config/Include/file1.config -->
 <settings>
   <setting name="city" value="New York" />
 </settings>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- /App_Config/Include/file2.config -->
 <settings>
   <setting name="country" value="USA" />
 </settings>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime. In this case the order of the elements doesn't matter because the elements are all different configurations:
-```xml
+{% highlight xml %}
 <settings>
   <setting name="name" value="Aaron" />
   <setting name="city" value="New York" />
   <setting name="country" value="USA" />
 </settings>
-```
+{% endhighlight %}
 
 #### <a name="example_merging">Example: overriding configuration</a>
 The configuration from one file can override the configuration from another file.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <settings>
   <setting name="name" value="Charles" />
 </settings>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- /App_Config/Include/file1.config -->
 <settings>
   <setting name="name" value="Brian" />
 </settings>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- /App_Config/Include/file2.config -->
 <settings>
   <setting name="name" value="Aaron" />
 </settings>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime. The configuration from the last patch file processed is used:
-```xml
+{% highlight xml %}
 <settings>
   <setting name="name" value="Aaron" />
 </settings>
-```
+{% endhighlight %}
 
 #### <a name="example_insert_before_relative">Example: inserting before a specific position</a>
 The configuration from one file can be inserted before the element at a specific position. In this example a processor is added before the first processor.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <test>
   <processor type="test1" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- Patch file -->
 <test>
   <processor type="testA" patch:before = "*[1]"/>
 </test>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime:
-```xml
+{% highlight xml %}
 <test>
   <processor type="testA" />
   <processor type="test1" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
 #### <a name="example_insert_before_specific">Inserting before a specific element</a>
 The configuration from one file can be inserted before a specific element. In this example a processor is added before the processor with the type `test2`.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <test>
   <processor type="test1" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- Patch file -->
 <test>
   <processor type="testA" patch:before = "processor[@type='test2']"/>
 </test>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime:
-```xml
+{% highlight xml %}
 <test>
   <processor type="test1" />
   <processor type="testA" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
 #### <a name="example_insert_after_relative">Inserting after a specific position</a>
 The configuration from one file can be inserted after the element at a specific position. In this example a processor is added after the first processor.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <test>
   <processor type="test1" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- Patch file -->
 <test>
   <processor type="testA" patch:after = "*[1]"/>
 </test>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime:
-```xml
+{% highlight xml %}
 <test>
   <processor type="test1" />
   <processor type="testA" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
 #### <a name="example_insert_after_specific">Inserting after a specific element</a>
 The configuration from one file can be inserted after a specific element. In this example a processor is added after the processor with the type `test2`.
 
-```xml
+{% highlight xml %}
 <!-- Web.config -->
 <test>
   <processor type="test1" />
   <processor type="test2" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
-```xml
+{% highlight xml %}
 <!-- Patch file -->
 <test>
   <processor type="testA" patch:after = "processor[@type='test2']"/>
 </test>
-```
+{% endhighlight %}
 
 The following configuration is used at runtime:
-```xml
+{% highlight xml %}
 <test>
   <processor type="test1" />
   <processor type="test2" />
   <processor type="testA" />
   <processor type="test3" />
 </test>
-```
+{% endhighlight %}
 
 
