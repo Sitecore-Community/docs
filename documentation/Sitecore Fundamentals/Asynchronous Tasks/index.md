@@ -52,9 +52,7 @@ An example is useful for understanding the relationship between the scheduler's 
 The following is an example of when the various tasks will run if the Sitecore server is started and the scheduler runs for the first time at 09:00.
 
 <table>
-<tr>
-  <th>Time</th><th>MyTask1</th><th>MyTask2</th><th>MyTask3</th>
-</tr>
+<tr><th>Time</th><th>MyTask1</th><th>MyTask2</th><th>MyTask3</th></tr>
 <tr><td>09:00</td><td><b>Start</b><br/>Last run: never</td><td><b>Start</b><br/>Last run: never</td><td><b>Start</b><br/>Last run: never</td></tr>
 <tr><td>09:01</td><td></td><td></td></tr>
 <tr><td>09:02</td><td></td><td></td></tr>
@@ -110,7 +108,7 @@ The following is an example of how to schedule a task using a Sitecore patch fil
 	  </sitecore>
 	</configuration>
 
-Parameters can be passed to tasks using dependency injection. For more information on using dependency injection in [this section]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency injection).
+Parameters can be passed to tasks using dependency injection. For more information on using dependency injection in [this section]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency Injection).
 
 #### <a name="context">Context</a>
 When an agent is run, Sitecore calls the specified method. The method is called outside of the standard Sitecore request-handling process. As a result, the Sitecore context is not fully initialized.
@@ -184,6 +182,7 @@ Command methods must have a specific method signature:
 	public void Run(Sitecore.Data.Items.Item[] items, Sitecore.Tasks.CommandItem command, Sitecore.Tasks.ScheduleItem schedule)
 
 Parameters:
+
 * `Sitecore.Data.Items.Item[] items` - When a command is scheduled, items can be specified. This parameter represents those items. If no items are specified, this array will be a 0-length array.
 * `Sitecore.Tasks.CommandItem command` - This parameter represents the command item.
 * `Sitecore.Tasks.ScheduleItem schedule` - This parameter represents the schedule that resulted in the command being executed.

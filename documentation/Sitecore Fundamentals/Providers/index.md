@@ -15,7 +15,7 @@ title: Sitecore Providers
 #### <a name="what_is_a_provider">What is a Provider?</a>
 A provider is a component that implements logic. They are used to encapsulate functionality for a problem domain.  Much of Sitecore's functionality is implemented in providers. For example, when you publish items Sitecore uses a publishing provider. 
 
-Dependency injection is used to identify which providers Sitecore should use. This makes it possible to replace providers without changing code. As a result, providers make it easy for developers to extend or replace Sitecore functionality. For more information on dependency injection and Sitecore see [this section]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency injection).
+Dependency injection is used to identify which providers Sitecore should use. This makes it possible to replace providers without changing code. As a result, providers make it easy for developers to extend or replace Sitecore functionality. For more information on dependency injection and Sitecore see [this section]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency Injection).
 
 #### <a name="how_does_sitecore_use_providers">How does Sitecore use Providers?</a>
 Most functionality in Sitecore is implemented in and accessed using providers. The following is a list of some of the Sitecore functionality that is implemented by providers.

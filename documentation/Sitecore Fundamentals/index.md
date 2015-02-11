@@ -110,9 +110,9 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [Handling HTTP 404](http://sdn.sitecore.net/Reference/Sitecore%207/Handing%20HTTP%20404.aspx)
 
 ### Configuration Topics
-* [Patch files]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch files)
+* [Patch Files]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files)
 * [Settings]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Settings)
-* [Dependency injection]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency injection)
+* [Dependency Injection]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency Injection)
 
 ### Blog Posts
 
