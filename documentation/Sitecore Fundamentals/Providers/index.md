@@ -46,33 +46,29 @@ A provider is a class that inherits from `System.Configuration.Provider.Provider
 
 The following is an example of a provider.
 
-{% highlight csharp %}
-public class HelloWorldProvider : System.Configuration.Provider.ProviderBase
-{
-    public virtual string SayHello()
-    {
-        return "Hello, world.";
-    }
-}
-{% endhighlight %}
+	public class HelloWorldProvider : System.Configuration.Provider.ProviderBase
+	{
+	    public virtual string SayHello()
+	    {
+	        return "Hello, world.";
+	    }
+	}
 
 #### <a name="provider_collection_class">Provider Collection Class</a>
 It is possible for a single Sitecore server to support multiple implementations of a certain provider. For example, Sitecore supports basic and digest authentication, so Sitecore has multiple HTTP authentication providers. The provider collection class provides access to these multiple providers.
 
 The following is an example of a provider collection.
 
-{% highlight csharp %}
-public class HelloWorldProviderCollection : System.Configuration.Provider.ProviderCollection
-{
-    public HelloWorldProvider this[string name]
-    {
-        get
-        {
-            return (base[name] as HelloWorldProvider);
-        }
-    }
-}
-{% endhighlight %}
+	public class HelloWorldProviderCollection : System.Configuration.Provider.ProviderCollection
+	{
+	    public HelloWorldProvider this[string name]
+	    {
+	        get
+	        {
+	            return (base[name] as HelloWorldProvider);
+	        }
+	    }
+	}
 
 #### <a name="manager_class">Manager Class</a>
 A manager class is used to access a provider. The manager makes it easier for a developer to ask Sitecore for the appropriate provider without having to hard-code and references to a specific implementation.
@@ -81,52 +77,47 @@ A manager is used to access providers and to facilitate using providers.
 
 The following is an example of a manager.
 
-{% highlight csharp %}
-public static class HelloWorldManager
-{
-    private static Sitecore.Configuration.ProviderHelper<HelloWorldProvider, HelloWorldProviderCollection> _providerHelper;
-    static HelloWorldManager()
-    {
-        _providerHelper = new Sitecore.Configuration.ProviderHelper<HelloWorldProvider, HelloWorldProviderCollection>("helloWorldManager");
-    }
-    public static HelloWorldProvider Provider
-    {
-        get
-        {
-            return _providerHelper.Provider;
-        }
-    }
-    public static HelloWorldProviderCollection Providers
-    {
-        get
-        {
-            return _providerHelper.Providers;
-        }
-    }
-    public static string SayHello()
-    {
-        return Provider.SayHello();
-    }
-}
-{% endhighlight %}
+	public static class HelloWorldManager
+	{
+	    private static Sitecore.Configuration.ProviderHelper<HelloWorldProvider, HelloWorldProviderCollection> _providerHelper;
+	    static HelloWorldManager()
+	    {
+	        _providerHelper = new Sitecore.Configuration.ProviderHelper<HelloWorldProvider, HelloWorldProviderCollection>("helloWorldManager");
+	    }
+	    public static HelloWorldProvider Provider
+	    {
+	        get
+	        {
+	            return _providerHelper.Provider;
+	        }
+	    }
+	    public static HelloWorldProviderCollection Providers
+	    {
+	        get
+	        {
+	            return _providerHelper.Providers;
+	        }
+	    }
+	    public static string SayHello()
+	    {
+	        return Provider.SayHello();
+	    }
+	}
 
 #### <a name="provider_configuration">Provider Configuration</a>
 Providers are defined in `Web.config` and Sitecore patch files under `/configuration/sitecore`.
 
 The following is an example of a provider configuration.
 
-{% highlight xml %}
-<helloWorldManager defaultProvider="default" enabled="true">
-  <providers>
-    <clear />
-    <add name="default" type="Testing.Providers.HelloWorldProvider, Testing" />
-  </providers>
-</helloWorldManager>
-{% endhighlight %}
+	<helloWorldManager defaultProvider="default" enabled="true">
+	  <providers>
+	    <clear />
+	    <add name="default" type="Testing.Providers.HelloWorldProvider, Testing" />
+	  </providers>
+	</helloWorldManager>
 
 #### <a name="using_a_provider">Using a Provider</a>
 The easiest way to use a provider is through the manager class. The following is an example of how to use the manager class.
 
-{% highlight csharp %}
-var msg = Testing.Providers.HelloWorldManager.SayHello();
-{% endhighlight %}
+	var msg = Testing.Providers.HelloWorldManager.SayHello();
+

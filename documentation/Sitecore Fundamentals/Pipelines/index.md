@@ -27,20 +27,18 @@ Pipelines are defined in `Web.config` and in Sitecore patch files.
 
 The following is an example of the pipeline that is responsible for rendering a page:
 
-{% highlight xml %}
-<renderLayout>
-  <processor type="Sitecore.Pipelines.PreprocessRequest.CheckIgnoreFlag, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.PageHandlers, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.SecurityCheck, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.InsertRenderings, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.PageExtenders, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.ExpandMasterPages, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.BuildTree, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.InsertSystemControls, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.InsertUnusedControls, Sitecore.Kernel" />
-  <processor type="Sitecore.Pipelines.RenderLayout.BrowserCaching, Sitecore.Kernel" />
-</renderLayout>
-{% endhighlight %}
+	<renderLayout>
+	  <processor type="Sitecore.Pipelines.PreprocessRequest.CheckIgnoreFlag, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.PageHandlers, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.SecurityCheck, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.InsertRenderings, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.PageExtenders, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.ExpandMasterPages, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.BuildTree, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.InsertSystemControls, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.InsertUnusedControls, Sitecore.Kernel" />
+	  <processor type="Sitecore.Pipelines.RenderLayout.BrowserCaching, Sitecore.Kernel" />
+	</renderLayout>
 
 #### <a name="common_pipelines">Common Pipelines</a>
 
@@ -48,12 +46,13 @@ Sitecore includes more than 140 pipelines. Each new version of Sitecore adds pip
 
 The following is a list of some of the more commonly used pipelines. It is unlikely you will ever call any of these pipelines directly, but it is not unusual to extend these pipelines.
 
-Pipeline name|Defined in|Args type|Description
--|-|-|-
-`initialize`|`Web.config`|`PipelineArgs`|Runs when the IIS application pool is started. Processors handle initialization tasks that need to run once.
-`httpRequestBegin`|`Web.config`|`HttpRequestArgs`|Handles the HTTP request. This includes tasks such as resolving the context item, device and presentation settings.
-`insertRenderings`|`Web.config`|`InsertRenderingsArgs`|Determines the presentation components to include when rendering an item.
-`renderField`|`Web.config`|`RenderFieldArgs`|Runs when the FieldRenderer is used to render a field value.
+<table>
+<tr><th>Pipeline name</th><th>Defined in</th><th>Args type</th><th>Description</th></tr>
+<tr><td><code>initialize</code></td><td><code>Web.config</code></td><td><code>PipelineArgs</code></td><td>Runs when the IIS application pool is started. Processors handle initialization tasks that need to run once.</td></tr>
+<tr><td><code>httpRequestBegin</code></td><td><code>Web.config</code></td><td><code>HttpRequestArgs</code></td><td>Handles the HTTP request. This includes tasks such as resolving the context item, device and presentation settings.</td></tr>
+<tr><td><code>insertRenderings</code></td><td><code>Web.config</code></td><td><code>InsertRenderingsArgs</code></td><td>Determines the presentation components to include when rendering an item.</td></tr>
+<tr><td><code>renderField</code></td><td><code>Web.config</code></td><td><code>RenderFieldArgs</code></td><td>Runs when the FieldRenderer is used to render a field value.</td></tr>
+</table>
 
 #### <a name="extending_a_pipeline">Extending a Pipeline</a>
 
@@ -61,12 +60,10 @@ Pipelines are extended by adding or replacing processors. Extending a pipeline i
 
 The following is an example of how the Sitecore patch file `Sitecore.Analytics.config` extends the pipeline `httpRequestBegin`:
 
-{% highlight xml %}
-<httpRequestBegin>
-  <processor type="Sitecore.Analytics.Pipelines.HttpRequest.StartDiagnostics,Sitecore.Analytics" patch:after="processor[@type='Sitecore.Pipelines.HttpRequest.StartMeasurements, Sitecore.Kernel']" />
-  <processor type="Sitecore.Analytics.Pipelines.HttpRequest.PageLevelTestItemResolver,Sitecore.Analytics" patch:after="processor[@type='Sitecore.Pipelines.HttpRequest.ItemResolver, Sitecore.Kernel']" />
-</httpRequestBegin>
-{% endhighlight %}
+	<httpRequestBegin>
+	  <processor type="Sitecore.Analytics.Pipelines.HttpRequest.StartDiagnostics,Sitecore.Analytics" patch:after="processor[@type='Sitecore.Pipelines.HttpRequest.StartMeasurements, Sitecore.Kernel']" />
+	  <processor type="Sitecore.Analytics.Pipelines.HttpRequest.PageLevelTestItemResolver,Sitecore.Analytics" patch:after="processor[@type='Sitecore.Pipelines.HttpRequest.ItemResolver, Sitecore.Kernel']" />
+	</httpRequestBegin>
 
 #### <a name="configuring_a_processor">Configuring a Processor</a>
 Most processors are specified by type only, but there are other ways to specify a processor.
@@ -91,16 +88,14 @@ While there is neither a class to extend nor an interface to implement, a conven
 
 The following is an example of a custom processor.
 
-{% highlight csharp %}
-public class SetVal1
-{
-    public void Process(MyPipelineArgs args)
-    {
-        Sitecore.Diagnostics.Assert.ArgumentNotNull(args, "args");
-        //do something
-    }
-}
-{% endhighlight %}
+	public class SetVal1
+	{
+	    public void Process(MyPipelineArgs args)
+	    {
+	        Sitecore.Diagnostics.Assert.ArgumentNotNull(args, "args");
+	        //do something
+	    }
+	}
 
 ## <a name="custom_pipelines">Custom Pipelines</a>
 Creating custom pipelines is an essential part of integrating an external system with Sitecore.
@@ -116,13 +111,11 @@ However, custom a `PipelineArgs` class makes it easier to pass objects between p
 
 In order to create a custom `PipelineArgs` class you must inherit from `Sitecore.Pipeline.PipelineArgs`.
 
-{% highlight csharp %}
-public class MyPipelineArgs : Sitecore.Pipelines.PipelineArgs
-{
-    public string Val1 { get; set; }
-    public string Val2 { get; set; }
-}
-{% endhighlight %}
+	public class MyPipelineArgs : Sitecore.Pipelines.PipelineArgs
+	{
+	    public string Val1 { get; set; }
+	    public string Val2 { get; set; }
+	}
 
 > Objects used with `PipelineArgs` objects must be serializable
 
@@ -131,20 +124,16 @@ A pipeline itself is nothing more than a block of XML in the `configuration > Si
 
 The following is an example of a custom pipeline definition.
 
-{% highlight xml %}
-<myPipeline>
-  <processor type="Testing.SetVal1, Testing" />
-  <processor type="Testing.SetVal2, Testing" />
-</myPipeline>
-{% endhighlight %}
+	<myPipeline>
+	  <processor type="Testing.SetVal1, Testing" />
+	  <processor type="Testing.SetVal2, Testing" />
+	</myPipeline>
 
 #### <a name="invoking_a_pipeline">Invoking a Pipeline</a>
 The following is an example of calling a pipeline.
 
-{% highlight csharp %}
-var args = new Testing.MyPipelineArgs();
-Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
-{% endhighlight %}
+	var args = new Testing.MyPipelineArgs();
+	Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
 
 Set values from the Sitecore context and from other static objects on the `PipelineArgs` object
 Pipelines run in a different context than the process (the request) that invokes the pipeline. Explicitly set any values you need on the `PipelineArgs` before running a pipeline.
@@ -159,64 +148,54 @@ Processors provide the logic that is used when a pipeline is invoked.
 #### <a name="passing_data_to_a_pipeline">Passing Data to a Pipeline</a>
 When the base `PipelineArgs` class is used to run the pipeline, the `CustomData` property is used to pass parameters to the pipeline. This property is a `Dictionary<string, object>` object. 
 
-{% highlight csharp %}
-var args = new Sitecore.Pipelines.PipelineArgs();
-args.CustomData.Add("product", "Sitecore");
-Sitecore.Pipelines.CorePipeline.Run("somePipeline", args);
-{% endhighlight %}
+	var args = new Sitecore.Pipelines.PipelineArgs();
+	args.CustomData.Add("product", "Sitecore");
+	Sitecore.Pipelines.CorePipeline.Run("somePipeline", args);
 
 In addition, custom `PipelineArgs` classes can be created. This can make it easier to pass values to a pipeline. Values can be passed using a constructor or by properties.
 
-{% highlight csharp %}
-var args = new Testing.MyPipelineArgs();
-args.Val2 = "value set before the pipeline runs";
-Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
-{% endhighlight %}
+	var args = new Testing.MyPipelineArgs();
+	args.Val2 = "value set before the pipeline runs";
+	Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
 
 #### <a name="reading_information_from_a_pipeline">Reading Information from a Pipeline</a>
 The `PipelineArgs` object is what is used to read information from the pipeline. If you think of a pipeline as a method, then the `PipelineArgs` object is a parameter passed by reference to the method. Any of the processors in the pipelines may set fields on the `PipelineArgs` object. When the pipeline is finished running, the `PipelineArgs` object is still available and the fields can be read.
 
 The following is an example of calling a pipeline and then reading a value that (ostensibly) has been set during the execution of the pipeline.
 
-{% highlight csharp %}
-var args = new Testing.MyPipelineArgs();
-args.Val2 = "value set before the pipeline runs";
-Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
-var val1 = args.Val1;
-{% endhighlight %}
+	var args = new Testing.MyPipelineArgs();
+	args.Val2 = "value set before the pipeline runs";
+	Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
+	var val1 = args.Val1;
 
 #### <a name="aborting_a_pipeline">Aborting a Pipeline</a>
 Pipelines are made up of one or more processors. If a processor determines a condition exists that should prevent the rest of the processors from running, the processor can abort the pipeline. 
 
 The following example shows how a processor can abort a pipeline.
 
-{% highlight csharp %}
-public class SetVal1
-{
-    public void Process(MyPipelineArgs args)
-    {
-        Sitecore.Diagnostics.Assert.ArgumentNotNull(args, "args");
-        if (!string.IsNullOrEmpty(args.Val1))
-        {
-            args.AbortPipeline();
-            return;
-        }
-        args.Val1 = "some value set by the processor";
-    }
-}
-{% endhighlight %}
+	public class SetVal1
+	{
+	    public void Process(MyPipelineArgs args)
+	    {
+	        Sitecore.Diagnostics.Assert.ArgumentNotNull(args, "args");
+	        if (!string.IsNullOrEmpty(args.Val1))
+	        {
+	            args.AbortPipeline();
+	            return;
+	        }
+	        args.Val1 = "some value set by the processor";
+	    }
+	}
 
 The code that invoked the pipeline might want to know if the pipeline was aborted. The following example shows how to determine whether the pipeline was aborted.
 
-{% highlight csharp %}
-var args = new Testing.MyPipelineArgs();
-args.Val1 = "this value will result in the pipeline being aborted";
-Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
-if (args.Aborted)
-{
-    //aborted
-}
-{% endhighlight %}
+	var args = new Testing.MyPipelineArgs();
+	args.Val1 = "this value will result in the pipeline being aborted";
+	Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
+	if (args.Aborted)
+	{
+	    //aborted
+	}
 
 > An aborted pipeline does not indicate an error has occurred. 
 > It simply means that one of the processors determined the 

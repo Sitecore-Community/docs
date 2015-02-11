@@ -42,22 +42,20 @@ This means that if the log level is set to INFO, messages logged at the INFO lev
 
 The following is an excerpt from `Web.config` that shows the log level (priority) assigned to the main Sitecore log:
 
-{% highlight xml %}
-<log4net>
-  <appender name="LogFileAppender" 
-            type="log4net.Appender.SitecoreLogFileAppender, Sitecore.Logging">
-    <file value="$(dataFolder)/logs/log.{date}.txt" />
-    <appendToFile value="true" />
-    <layout type="log4net.Layout.PatternLayout">
-      <conversionPattern value="%4t %d{ABSOLUTE} %-5p %m%n" />
-    </layout>
-  </appender>
-  <root>
-    <priority value="INFO" />
-    <appender-ref ref="LogFileAppender" />
-  </root>
-</log4net>
-{% endhighlight %}
+	<log4net>
+	  <appender name="LogFileAppender" 
+	            type="log4net.Appender.SitecoreLogFileAppender, Sitecore.Logging">
+	    <file value="$(dataFolder)/logs/log.{date}.txt" />
+	    <appendToFile value="true" />
+	    <layout type="log4net.Layout.PatternLayout">
+	      <conversionPattern value="%4t %d{ABSOLUTE} %-5p %m%n" />
+	    </layout>
+	  </appender>
+	  <root>
+	    <priority value="INFO" />
+	    <appender-ref ref="LogFileAppender" />
+	  </root>
+	</log4net>
 
 ## <a name="writing_to_a_sitecore_log">Writing to a Sitecore Log</a>
 In your integration you may want to write to the Sitecore log. The class `Sitecore.Diagnostics.Log` contains a number of methods that provide logging at different severity levels.
@@ -67,131 +65,99 @@ An audit message indicates that a user has performed an action in the Sitecore c
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my audit message";
-Log.Audit(msg, this);
-{% endhighlight %}
+	var msg = "my audit message";
+	Log.Audit(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3936 11:52:40 INFO  AUDIT (sitecore\admin): my audit message
-{% endhighlight %}
+	3936 11:52:40 INFO  AUDIT (sitecore\admin): my audit message
 
 #### `Debug`
 A debug message records information that may be useful during troubleshooting or debugging, but is generally not needed on a routine basis. As a result, most Sitecore servers are not set to record debug messages.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my debug message";
-Log.Debug(msg, this);
-{% endhighlight %}
+	var msg = "my debug message";
+	Log.Debug(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3940 15:35:54 DEBUG my debug message
-{% endhighlight %}
+	3940 15:35:54 DEBUG my debug message
 
 #### `Error`
 An error message indicates an error has occurred.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my error message";
-Log.Error(msg, this);
-{% endhighlight %}
+	var msg = "my error message";
+	Log.Error(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3936 11:52:40 ERROR my error message
-{% endhighlight %}
+	3936 11:52:40 ERROR my error message
 
 #### `Fatal`
 A fatal message indicates something has happened where significant loss of functionality is likely to follow.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my fatal message";
-Log.Fatal(msg, this);
-{% endhighlight %}
+	var msg = "my fatal message";
+	Log.Fatal(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3936 11:52:40 FATAL my fatal message
-{% endhighlight %}
+	3936 11:52:40 FATAL my fatal message
 
 #### `Info`
 An info message indicates a routine condition. INFO is the default logging level on a Sitecore server, so any Sitecore server that has not been changed will include info messages in its log.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my info message";
-Log.Info(msg, this);
-{% endhighlight %}
+	var msg = "my info message";
+	Log.Info(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3936 11:52:40 INFO my info message
-{% endhighlight %}
+	3936 11:52:40 INFO my info message
 
 #### `SingleError`
 This method is used to record error conditions that should only be recorded in the log one time.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my single error message";
-Log.SingleError(msg, this);
-{% endhighlight %}
+	var msg = "my single error message";
+	Log.SingleError(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3940 15:35:54 ERROR my single error message
-{% endhighlight %}
+	3940 15:35:54 ERROR my single error message
 
 #### `SingleFatal`
 This method is used to record fatal conditions that should only be recorded in the log once time.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my single fatal message";
-var ex = new Exception("My fatal exception);
-Log.SingleFatal(msg, ex, this);
-{% endhighlight %}
+	var msg = "my single fatal message";
+	var ex = new Exception("My fatal exception);
+	Log.SingleFatal(msg, ex, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3940 15:35:54 FATAL SINGLE MSG: my single fatal message
-Exception: System.Exception
-Message: My fatal exception
-{% endhighlight %}
+	3940 15:35:54 FATAL SINGLE MSG: my single fatal message
+	Exception: System.Exception
+	Message: My fatal exception
 
 #### `Warn`
 A warn message indicates a condition that, while not an error, is something an administrator might want to investigate.
 
 The following code...
 
-{% highlight csharp %}
-var msg = "my warn message";
-Log.Warn(msg, this);
-{% endhighlight %}
+	var msg = "my warn message";
+	Log.Warn(msg, this);
 
 ... results in the following message in the log:
 
-{% endhighlight %}
-3940 15:35:54 WARN  my warn message
-{% endhighlight %}
+	3940 15:35:54 WARN  my warn message
 
 ## <a name="custom_logs">Custom Logs</a>
 Sitecore allows you to add custom logs.
@@ -213,29 +179,27 @@ Since Sitecore uses log4net, log messages can be written to a variety of sources
 1.	Open `Web.config` 
 2.	Navigate to `configuration > log4net`
 3.	Add the following:
-{% highlight xml %}
-<appender name="MyLogFileAppender" 
-                 type="log4net.Appender.SitecoreLogFileAppender, Sitecore.Logging">
-  <file value="$(dataFolder)/logs/log.{date}.txt" />
-  <appendToFile value="true" />
-  <layout type="log4net.Layout.PatternLayout">
-    <conversionPattern value="%4t %d{ABSOLUTE} %-5p %m%n" />
-  </layout>
-</appender>
-<logger name="MyLog" additivity="false">
-  <priority value="INFO" />
-  <appender-ref ref="MyLogFileAppender" />
-</logger>
-{% endhighlight %}
+
+		<appender name="MyLogFileAppender" 
+		                 type="log4net.Appender.SitecoreLogFileAppender, Sitecore.Logging">
+		  <file value="$(dataFolder)/logs/log.{date}.txt" />
+		  <appendToFile value="true" />
+		  <layout type="log4net.Layout.PatternLayout">
+		    <conversionPattern value="%4t %d{ABSOLUTE} %-5p %m%n" />
+		  </layout>
+		</appender>
+		<logger name="MyLog" additivity="false">
+		  <priority value="INFO" />
+		  <appender-ref ref="MyLogFileAppender" />
+		</logger>
+
 4.	Save your changes.
 
 #### Writing to Custom Logs
 The following is an example of the code needed to write to a custom log:
 
-{% highlight csharp %}
-var logger = Sitecore.Diagnostics.LoggerFactory.GetLogger("MyLog");
-logger.Info("This is an info message for my custom log");
-{% endhighlight %}
+	var logger = Sitecore.Diagnostics.LoggerFactory.GetLogger("MyLog");
+	logger.Info("This is an info message for my custom log");
 
 > Consider creating a helper class for custom logs. When you write 
 > to the Sitecore log you use the `Sitecore.Diagnostics.Log` class. 
