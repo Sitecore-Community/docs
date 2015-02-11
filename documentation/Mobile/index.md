@@ -29,3 +29,6 @@ This section looks at the different ways of approaching mobile with a Sitecore s
 * [https://github.com/Sitecore/sitecore-ios-sdk](https://github.com/Sitecore/sitecore-ios-sdk)
 * [https://github.com/Sitecore/sitecore-android-sdk](https://github.com/Sitecore/sitecore-android-sdk)
 
+{% highlight csharp %}
+var test = "test";
+{% endhighlight %}
