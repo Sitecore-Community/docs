@@ -29,9 +29,9 @@ An agent is used to configure a scheduled task. Agents are defined in `Web.confi
 
 The following is an example of an agent that is scheduled to run every 4 hours.
 
-```xml
+{% highlight xml %} 
 <agent type="Sitecore.Tasks.CleanupHistory" method="Run" interval="04:00:00" />
-```
+{% endhighlight %}
 
 #### <a name="how_the_scheduler_runs_agents">How the Scheduler Runs Agents</a>
 The initialize pipeline includes a processor `Sitecore.Pipelines.Loader.InitializeScheduler`. This processor creates a new thread. This thread sleeps for the amount of time specified in `Web.config` or Sitecore patch file by the value of `/configuration/sitecore/scheduling/frequency`.
@@ -40,18 +40,18 @@ This does not mean that agents run based on this value. It means that the thread
 
 An example is useful for understanding the relationship between the scheduler's frequency setting and the individual task's interval setting. Consider the following Sitecore patch file:
 
-```xml
+{% highlight xml %} 
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <scheduling>
       <frequency>00:05:00</frequency>
-      <agent type="Testing.IntegrationGuide.Scheduler.MyTask1, Testing.IntegrationGuide" method="Run" interval="00:03:00" />
-      <agent type="Testing.IntegrationGuide.Scheduler.MyTask2, Testing.IntegrationGuide" method="Run" interval="00:06:00" />
-      <agent type="Testing.IntegrationGuide.Scheduler.MyTask3, Testing.IntegrationGuide" method="Run" interval="00:12:00" />
+      <agent type="Testing.Scheduler.MyTask1, Testing" method="Run" interval="00:03:00" />
+      <agent type="Testing.Scheduler.MyTask2, Testing" method="Run" interval="00:06:00" />
+      <agent type="Testing.Scheduler.MyTask3, Testing" method="Run" interval="00:12:00" />
     </scheduling>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 
 The following is an example of when the various tasks will run if the Sitecore server is started and the scheduler runs for the first time at 09:00.
 
@@ -93,9 +93,9 @@ Agents are used to schedule tasks.
 #### <a name="implementing_a_task">Implementing a Task</a>
 A task is a method that is run by an agent. The method must have a specific method signature:
 
-```c#
+{% highlight csharp %} 
 public void Run()
-```
+{% endhighlight %}
 
 Task methods do not return values and they accept no parameters. In order to pass parameters, use the class constructor or properties.
 
@@ -104,16 +104,16 @@ Scheduled tasks can be configured using a Sitecore patch file.
 
 The following is an example of how to schedule a task using a Sitecore patch file.
 
-```xml
+{% highlight xml %} 
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
     <scheduling>
-      <agent type="Testing.IntegrationGuide.Scheduler.MyTask, Testing.IntegrationGuide" method="Run" interval="01:00:00">
+      <agent type="Testing.Scheduler.MyTask, Testing" method="Run" interval="01:00:00">
       </agent>
     </scheduling>
   </sitecore>
 </configuration>
-```
+{% endhighlight %}
 
 Parameters can be passed to tasks using dependency injection. For more information on using dependency injection in [this section]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency injection).
 
@@ -125,28 +125,28 @@ One part of the Sitecore context that is initialized is `Sitecore.Context.Job`. 
 #### <a name="logging">Logging</a>
 Task logging is best handled by using the `Status` property on `Sitecore.Context.Job`. The following is an example of how to log messages from a task.
 
-```c#
+{% highlight csharp %} 
 public virtual void Run()
 {
     Sitecore.Context.Job.Status.LogError("error message");
     Sitecore.Context.Job.Status.LogInfo("info message");
     Sitecore.Context.Job.Status.LogException(new Exception("exception happened"));
 }
-```
+{% endhighlight %}
 
 #### <a name="units_processed">Units Processed</a>
 If you look in the Sitecore log you will see messages (logged at INFO level) that indicate when a job started and when it stopped.
 
-```
+{% endhighlight %}
 ManagedPoolThread #15 12:43:28 INFO  Scheduling.DatabaseAgent started. Database: master
 ManagedPoolThread #15 12:43:28 INFO  Job ended: Sitecore.Tasks.DatabaseAgent (units processed: 2)
-```
+{% endhighlight %}
 
 Some of the "Job ended" messages include a "units processed" count. If you want your task to be able to report this value, use the following code.
 
-```
+{% endhighlight %}
 Sitecore.Context.Job.Status.Processed = 44;
-```
+{% endhighlight %}
 
 #### <a name="performance">Performance</a>
 Agents can cause performance problems on a Sitecore server. It is important to use them appropriately.
@@ -168,13 +168,13 @@ The Database Agent is an agent that comes enabled by default. Just like all othe
 
 Each Sitecore database has its own database scheduler. The following is an example of the database agent for the master database.
 
-```xml
+{% highlight xml %} 
 <agent type="Sitecore.Tasks.DatabaseAgent" method="Run" interval="00:10:00">
   <param desc="database">master</param>
   <param desc="schedule root">/sitecore/system/tasks/schedules</param>
   <LogActivity>true</LogActivity>
 </agent>
-```
+{% endhighlight %}
 
 The `Sitecore.Tasks.DatabaseAgent` constructor expects following parameters:
 
@@ -194,9 +194,9 @@ A schedule is a Sitecore item that specifies when a command should be executed.
 #### <a name="implementing_a_command_method">Implementing a Command Method</a>
 Command methods must have a specific method signature:
 
-```c#
+{% highlight csharp %} 
 public void Run(Sitecore.Data.Items.Item[] items, Sitecore.Tasks.CommandItem command, Sitecore.Tasks.ScheduleItem schedule)
-```
+{% endhighlight %}
 
 Parameters:
 * `Sitecore.Data.Items.Item[] items` - When a command is scheduled, items can be specified. This parameter represents those items. If no items are specified, this array will be a 0-length array.
@@ -297,7 +297,7 @@ The `Schedule` field on a `Schedule` item expects a pipe-delimited value make up
 #### <a name="starting_a_job_programmatically">Starting a Job Programmatically</a>
 The following is an example of how to start a job programmatically.
 
-```c#
+{% highlight csharp %} 
 public class JobRunner
 {
     public Job CurrentJob { get; set; }
@@ -324,7 +324,7 @@ public class JobRunner
         }
     }
 }
-```
+{% endhighlight %}
 
 The `Sitecore.Jobs.JobOptions` instance tells Sitecore what to do. The constructor expects the following parameters:
 
@@ -347,22 +347,22 @@ A job runs as a thread, and when the thread returns, the job is finished. Siteco
 
 By default the after-life value is 1 minute. It can be changed using the `Options` property on the job.
 
-```c#
+{% highlight csharp %} 
 var job = Sitecore.Jobs.JobManager.GetJob("job name");
 if (job != null)
 {
     job.Options.AfterLife = new TimeSpan(0, 5, 0);
 }
-```
+{% endhighlight %}
 
 #### <a name="priority">Priority</a>
 A job runs as a thread, so it is possible to set the thread priority. 
 
-```c#
+{% highlight csharp %} 
 var options = new Sitecore.Jobs.JobOptions(...);
 options.Priority = System.Threading.ThreadPriority.Highest;
 Sitecore.Jobs.JobManager.Start(options);
-```
+{% endhighlight %}
 
 > Do not change the priority of a thread after it has started. This is a standard .NET recommendation.
 
@@ -375,7 +375,7 @@ The following job-related events are available.
 **Description:** Raised before a job is placed into the thread pool<br/>
 **Sample handler:** 
 
-```c#
+{% highlight csharp %}
 public virtual void OnJobStarting(Object sender, EventArgs e)
 {
     Assert.ArgumentNotNull(sender, "sender");
@@ -386,7 +386,7 @@ public virtual void OnJobStarting(Object sender, EventArgs e)
         //do something
     }
 }
-```
+{% endhighlight %}
 
 ----
 
@@ -394,7 +394,7 @@ public virtual void OnJobStarting(Object sender, EventArgs e)
 **Description:** Raised after a job is placed into the thread pool and has been started<br/>
 **Sample handler:** 
 
-```c#
+{% highlight csharp %}
 public virtual void OnJobStarted(Object sender, EventArgs e)
 {
     Assert.ArgumentNotNull(sender, "sender");
@@ -405,7 +405,7 @@ public virtual void OnJobStarted(Object sender, EventArgs e)
         //do something
     }
 }
-```
+{% endhighlight %}
 
 ----
 
@@ -413,7 +413,7 @@ public virtual void OnJobStarted(Object sender, EventArgs e)
 **Description:** Raised during the `Job_Finished` event<br/>
 **Sample handler:** 
 
-```c#
+{% highlight csharp %}
 public virtual void OnJobEnded(Object sender, EventArgs e)
 {
     Assert.ArgumentNotNull(sender, "sender");
@@ -424,6 +424,6 @@ public virtual void OnJobEnded(Object sender, EventArgs e)
         //do something
     }
 }
-```
+{% endhighlight %}
 
 ----
