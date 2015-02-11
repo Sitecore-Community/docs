@@ -48,6 +48,7 @@ You can specify constructor parameters in your Sitecore patch file.
 	</configuration>
 
 This configuration assumes the following class is available on the Sitecore server:
+
 	namespace Testing.Config
 	{
 	    public class MyClass2

@@ -12,7 +12,7 @@ Settings are defined in the Sitecore configuration section under `sitecore/setti
 
 > Do not define custom settings directly in `Web.config`. Only Sitecore platform settings 
 > should be defined in `Web.config`. Custom settings for a module should be defined in 
-> the module's [patch file]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch files).
+> the module's [patch file]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files).
 
 ## <a name="reading_settings_from_code">Reading Settings from Code</a>
 The Sitecore API provides a variety of methods that can be used to read settings. The methods are available on the `Sitecore.Configuration.Settings` class.
