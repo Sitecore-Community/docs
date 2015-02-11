@@ -94,13 +94,11 @@ Within Sitecore access rights are referenced by name. The name is associated wit
 
 The following are examples of how to map access rights. 
 
-{% highlight xml %}
-<add name="field:read" comment="Read right for fields." title="Field Read" />
-<add name="field:write" comment="Write right for fields." title="Field Write" modifiesData="true" />
-<add name="item:read" comment="Read right for items." title="Read" />
-<add name="item:write" comment="Write right for items." title="Write" modifiesData="true" />
-<add name="item:rename" comment="Rename right for items." title="Rename" modifiesData="true" />
-{% endhighlight %}
+	<add name="field:read" comment="Read right for fields." title="Field Read" />
+	<add name="field:write" comment="Write right for fields." title="Field Write" modifiesData="true" />
+	<add name="item:read" comment="Read right for items." title="Read" />
+	<add name="item:write" comment="Write right for items." title="Write" modifiesData="true" />
+	<add name="item:rename" comment="Rename right for items." title="Rename" modifiesData="true" />
 
 When an access right is configured the following attributes are available.
 
@@ -204,17 +202,16 @@ Access rights are defined under `/configuration/sitecore/accessRights/rules`.
 
 The following are examples of how to specify rules for access rights. 
 
-{% highlight xml %}
-<add prefix="field:" ancestor="{3C1715FE-6A13-4FCF-845F-DE308BA9741D}" comment="/sitecore/templates" typeName="Sitecore.Data.Fields.Field" />
-<add prefix="insert:" templateId="{35E75C72-4985-4E09-88C3-0EAC6CD1E64F}" comment="insert:show for Branch template" />
-<add prefix="insert:" templateId="{B2613CC1-A748-46A3-A0DB-3774574BD339}" comment="insert:show for Command template" />
-<add prefix="insert:" templateId="{AB86861A-6030-46C5-B394-E8F99E8B87DB}" comment="insert:show for Template template" />
-<add prefix="item:" typeName="Sitecore.Data.Items.Item" />
-<add prefix="language:" ancestor="{64C4F646-A3FA-4205-B98E-4DE2C609B60F}" comment="/sitecore/system/language" />
-<add prefix="workflowState:" ancestor="{05592656-56D7-4D85-AACF-30919EE494F9}" comment="/sitecore/system/workflows" />
-<add prefix="workflowCommand:" ancestor="{05592656-56D7-4D85-AACF-30919EE494F9}" comment="/sitecore/system/workflows" />
-<add prefix="profile:" templateId="{8E0C1738-3591-4C60-8151-54ABCC9807D1}" comment="profile:customize for Profile items only" />
-{% endhighlight %}
+	<add prefix="field:" ancestor="{3C1715FE-6A13-4FCF-845F-DE308BA9741D}" comment="/sitecore/templates" typeName="Sitecore.Data.Fields.Field" />
+	<add prefix="insert:" templateId="{35E75C72-4985-4E09-88C3-0EAC6CD1E64F}" comment="insert:show for Branch template" />
+	<add prefix="insert:" templateId="{B2613CC1-A748-46A3-A0DB-3774574BD339}" comment="insert:show for Command template" />
+	<add prefix="insert:" templateId="{AB86861A-6030-46C5-B394-E8F99E8B87DB}" comment="insert:show for Template template" />
+	<add prefix="item:" typeName="Sitecore.Data.Items.Item" />
+	<add prefix="language:" ancestor="{64C4F646-A3FA-4205-B98E-4DE2C609B60F}" comment="/sitecore/system/language" />
+	<add prefix="workflowState:" ancestor="{05592656-56D7-4D85-AACF-30919EE494F9}" comment="/sitecore/system/workflows" />
+	<add prefix="workflowCommand:" ancestor="{05592656-56D7-4D85-AACF-30919EE494F9}" comment="/sitecore/system/workflows" />
+	<add prefix="profile:" templateId="{8E0C1738-3591-4C60-8151-54ABCC9807D1}" comment="profile:customize for Profile items only" />
+
 
 * [`prefix`](#item_access_right_prefix)
 * [`typeName`](#item_access_right_typeName)
@@ -283,12 +280,10 @@ The only value that is supported is `stop`. If the other settings have resulted 
 #### <a name="checking_if_access_right_applies">Checking if Access Right Applies</a>
 The Sitecore security API is used to determine if a right is allowed to a specific user. The following is an example of how to use this API.
 
-{% highlight csharp %}
-var user = Sitecore.Security.Accounts.User.FromName("extranet\\anonymous", false);
-var item = Sitecore.Context.Database.GetItem("/sitecore/content/Home");
-var right = Sitecore.Security.AccessControl.AccessRight.FromName("testing:myright");
-var access = Sitecore.Security.AccessControl.AuthorizationManager.GetAccess(item, user, right);
-{% endhighlight %}
+	var user = Sitecore.Security.Accounts.User.FromName("extranet\\anonymous", false);
+	var item = Sitecore.Context.Database.GetItem("/sitecore/content/Home");
+	var right = Sitecore.Security.AccessControl.AccessRight.FromName("testing:myright");
+	var access = Sitecore.Security.AccessControl.AuthorizationManager.GetAccess(item, user, right);
 
 #### <a name="caching">Caching</a>
 After an access result is read it is added to the access result cache. This improves performance by reducing the number of times Sitecore needs to read from its database. 

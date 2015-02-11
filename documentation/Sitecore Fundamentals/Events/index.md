@@ -23,20 +23,19 @@ Event handlers are defined in Sitecore patch files.
 
 The following is an example of the event handler that handles the item:deleted event.
 
-{% highlight xml %}
-<event name="item:deleted">
-  <handler type="Sitecore.Links.ItemEventHandler, Sitecore.Kernel" 
-           method="OnItemDeleted" />
-  <handler type="Sitecore.Tasks.ItemEventHandler, Sitecore.Kernel" 
-           method="OnItemDeleted" />
-  <handler type="Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel" 
-           method="OnItemDeleted" />
-  <handler type="Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel" 
-           method="OnItemDeleted" />
-  <handler type="Sitecore.Rules.ItemEventHandler, Sitecore.Kernel" 
-           method="OnItemDeleted" />
-</event>
-{% endhighlight %}
+	<event name="item:deleted">
+	  <handler type="Sitecore.Links.ItemEventHandler, Sitecore.Kernel" 
+	           method="OnItemDeleted" />
+	  <handler type="Sitecore.Tasks.ItemEventHandler, Sitecore.Kernel" 
+	           method="OnItemDeleted" />
+	  <handler type="Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel" 
+	           method="OnItemDeleted" />
+	  <handler type="Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel" 
+	           method="OnItemDeleted" />
+	  <handler type="Sitecore.Rules.ItemEventHandler, Sitecore.Kernel" 
+	           method="OnItemDeleted" />
+	</event>
+
 
 #### <a name="add_an_event_handler">Adding an Event Handler</a>
 While there is neither a class to extend nor an interface to implement, a convention must be followed in order for Sitecore to be in order for a class to be used as an event handler.
@@ -48,25 +47,25 @@ The class must have a method that accepts two parameters and return void:
 
 The following is an example of a custom processor.
 
-{% highlight csharp %}
-public class MyEventHandlers
-{
-    public void OnItemSaved(object sender, EventArgs args)
-    {
-        //do something
-    }
-}
-{% endhighlight %}
+	public class MyEventHandlers
+	{
+	    public void OnItemSaved(object sender, EventArgs args)
+	    {
+	        //do something
+	    }
+	}
 
 > Consider including all related custom event handlers in a single class. 
 > By putting all custom event handlers in a single class it is easier to 
 > manage, maintain and keep track of them.
 
 After the event handler is written, it must be added to the event definition. The event definition is located in a Sitecore patch file.
+
 The following is an example of how the custom event handler is added to the Sitecore patch file.
-<event name="item:saved">
-  <handler type="Testing.MyEventHandler, Testing" method="OnItemSaved"/>
-</event>
+
+	<event name="item:saved">
+	  <handler type="Testing.MyEventHandler, Testing" method="OnItemSaved"/>
+	</event>
 
 > Consider including remote event handlers. Always assume your components 
 > will be used in multi-server environments. Consider whether your event 
@@ -78,15 +77,12 @@ Sitecore uses the .NET framework's event model to handle its events. This means 
 
 The following is an example of extracting a parameter from the `EventArgs` object.
 
-{% highlight csharp %}
-var item = Sitecore.Events.Event.ExtractParameter(args, 0) as Sitecore.Data.Items.Item;
-Sitecore.Diagnostics.Assert.IsNotNull(item, "No item in parameters");
-{% endhighlight %}
+	var item = Sitecore.Events.Event.ExtractParameter(args, 0) as Sitecore.Data.Items.Item;
+	Sitecore.Diagnostics.Assert.IsNotNull(item, "No item in parameters");
 
 > In order to use the `Event.ExtractParameter` method you must know the position 
 > of the parameter you want to extract. If this information is not included with 
 > the documentation, you must use your debugging skills to figure it out.
-
 
 ## <a name="custom_events">Custom Events</a>
 While not as common as custom pipelines, custom events are useful options when integrating an external system with Sitecore.
@@ -102,13 +98,11 @@ However, a custom `EventArgs` class makes it easier to pass objects between even
 
 In order to create a custom `EventArgs` class you must inherit from `System.EventArgs`.
 
-{% highlight csharp %}
-public class MyEventArgs : System.EventArgs
-{
-    public string Val1 { get; set; }
-    public string Val2 { get; set; }
-}
-{% endhighlight %}
+	public class MyEventArgs : System.EventArgs
+	{
+	    public string Val1 { get; set; }
+	    public string Val2 { get; set; }
+	}
 
 > Objects used with `EventArgs` objects must be serializable
 
@@ -117,12 +111,10 @@ An event itself is nothing more than a block of XML in the `/configuration/Sitec
 
 The following is an example of a custom event definition.
 
-{% highlight xml %}
-<testing:myevent>
-  <processor type="Testing.Events.SetVal1, Testing" />
-  <processor type="Testing.Events.SetVal2, Testing" />
-</testing:myevent>
-{% endhighlight %}
+	<testing:myevent>
+	  <processor type="Testing.Events.SetVal1, Testing" />
+	  <processor type="Testing.Events.SetVal2, Testing" />
+	</testing:myevent>
 
 > Event names should follow the convention used by Sitecore events. 
 > The colon character is used to separate logical parts of the event name. 
@@ -131,16 +123,14 @@ The following is an example of a custom event definition.
 #### <a name="raising_an_event">Raising an Event</a>
 The following is an example of raising an event.
 
-{% highlight csharp %}
-public class EventRaiser
-{
-  public void RaiseEvent()
-  {
-    var args = new Testing.Events.MyEventArgs();
-    Sitecore.Events.Event.RaiseEvent("testing:myevent", args);
-  }
-}
-{% endhighlight %}
+	public class EventRaiser
+	{
+	  public void RaiseEvent()
+	  {
+	    var args = new Testing.Events.MyEventArgs();
+	    Sitecore.Events.Event.RaiseEvent("testing:myevent", args);
+	  }
+	}
 
 > Set values from the Sitecore context and from other static objects on the `EventArgs` 
 > object. Event handlers run in a different context than the process (the request) 
@@ -160,16 +150,14 @@ But what happens if you are using a multi-server environment? The database has a
 
 The following is an example of the remote event handler for the `item:deleted` event. Another way of describing the following is it is an example of the event handlers for the `remote:item:deleted` event.
 
-{% highlight xml %}
-<event name="item:deleted:remote">
-  <handler type="Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel" 
-                  method="OnItemDeletedRemote" />
-  <handler type="Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel" 
-                  method="OnItemDeletedRemote" />
-  <handler type="Sitecore.Rules.ItemEventHandler, Sitecore.Kernel" 
-                  method="OnItemDeletedRemote" />
-</event>
-{% endhighlight %}
+	<event name="item:deleted:remote">
+	  <handler type="Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel" 
+	                  method="OnItemDeletedRemote" />
+	  <handler type="Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel" 
+	                  method="OnItemDeletedRemote" />
+	  <handler type="Sitecore.Rules.ItemEventHandler, Sitecore.Kernel" 
+	                  method="OnItemDeletedRemote" />
+	</event>
 
 If your event requires a remote event be triggered on remote servers, you need to be sure that you raise the remote event.
 
@@ -195,159 +183,139 @@ There are no special requirements for a class, apart from the members being seri
 
 The following is an example of a class that represents a custom remote event.
 
-{% highlight csharp %}
-public class MyEventRemote
-{
-    public string Param1 { get; set; }
-}
-{% endhighlight %}
+	public class MyEventRemote
+	{
+	    public string Param1 { get; set; }
+	}
 
 ###### <a name="adding_an_entry_to_the_event_queue">Adding an Entry to the Event Queue</a>
 Next you need to add an entry to the event queue. Often it makes sense to trigger the local event and to add the remote event to the event queue at the same time. The following is an example of this.
 
-{% highlight csharp %}
-public class EventRaiser
-{
-  public void RaiseEvent()
-  {
-    var parameters = new object[]{ "param1", "param2" };
-    Sitecore.Events.Event.RaiseEvent("testing:myevent", parameters);
-    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(new MyEventRemote());
-  }
-}
-
-{% endhighlight %}
+	public class EventRaiser
+	{
+	  public void RaiseEvent()
+	  {
+	    var parameters = new object[]{ "param1", "param2" };
+	    Sitecore.Events.Event.RaiseEvent("testing:myevent", parameters);
+	    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(new MyEventRemote());
+	  }
+	}
 
 ###### <a name="subscribing_to_the_remote_event">Subscribing to the Remote Event</a>
 Now the event queue monitor will pick up the remote event, and any subscribers to that event will get notified. But the only subscribers who fit this description are subscribers who registered via code. What about event handlers configured via Sitecore patch file? What triggers those handlers?
 
 Well, nothing does automatically. You must add code to trigger handlers defined in a Sitecore patch file. The following code demonstrates how to register a handler that will trigger the event `testing:myevent:remote`.
 
-{% highlight csharp %}
-public class EventHandlers
-{
-  public virtual void InitializeFromPipeline(PipelineArgs args)
-  {
-    var action = new Action<MyEventRemote>(RaiseRemoteEvent);
-    Sitecore.Eventing.EventManager.Subscribe<MyEventRemote>(action);
-  }
-  private void RaiseRemoteEvent(MyEventRemote myEvent)
-  {
-    Sitecore.Events.Event.RaiseEvent("testing:myevent:remote", 
-                                     new object[] { myEvent.Param1 });
-  }
-}
-{% endhighlight %}
+	public class EventHandlers
+	{
+	  public virtual void InitializeFromPipeline(PipelineArgs args)
+	  {
+	    var action = new Action<MyEventRemote>(RaiseRemoteEvent);
+	    Sitecore.Eventing.EventManager.Subscribe<MyEventRemote>(action);
+	  }
+	  private void RaiseRemoteEvent(MyEventRemote myEvent)
+	  {
+	    Sitecore.Events.Event.RaiseEvent("testing:myevent:remote", 
+	                                     new object[] { myEvent.Param1 });
+	  }
+	}
 
 ###### <a name="ensuring_the_subscription_code_runs">Ensuring the Subscription Code Runs</a>
 Next you need to make sure this code runs before the remote events start getting triggered. The best place for this code is in the initialize pipeline. The following Sitecore patch file sets this up.
 
-{% highlight xml %}
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <pipelines>
-      <initialize>
-        <processor type="Testing.EventHandlers, Testing" method="InitializeFromPipeline" />
-      </initialize>
-    </pipelines>
-  </sitecore>
-</configuration>
-{% endhighlight %}
+	<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+	  <sitecore>
+	    <pipelines>
+	      <initialize>
+	        <processor type="Testing.EventHandlers, Testing" method="InitializeFromPipeline" />
+	      </initialize>
+	    </pipelines>
+	  </sitecore>
+	</configuration>
 
 ###### <a name="adding_a_custom_remote_event_handler">Adding a Custom Remote Event Handler</a>
 Now everything is set up to allow a developer to add event handlers for `testing:myevent:remote`. The following Sitecore patch file demonstrates how this is done.
 
-{% highlight xml %}
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <events>
-      <event name="testing:myevent">
-        <handler type="Testing.EventHandlers, Testing" method="OnMyEvent" />
-      </event>
-      <event name="testing:myevent:remote">
-        <handler type="Testing.EventHandlers, Testing" method="OnMyEventRemote" />
-      </event>
-    </events>
-  </sitecore>
-</configuration>
-{% endhighlight %}
+	<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+	  <sitecore>
+	    <events>
+	      <event name="testing:myevent">
+	        <handler type="Testing.EventHandlers, Testing" method="OnMyEvent" />
+	      </event>
+	      <event name="testing:myevent:remote">
+	        <handler type="Testing.EventHandlers, Testing" method="OnMyEventRemote" />
+	      </event>
+	    </events>
+	  </sitecore>
+	</configuration>
 
 ###### <a name="raising_the_local_event">Raising the Local Event (which raises the remote event)</a>
 The following code is an example of how to raise the local event, which results in the remote event being raised.
 
-{% highlight csharp %}
-Sitecore.Events.Event.RaiseEvent("testing:myevent", new object[] { "test1", "test2" });
-{% endhighlight %}
+	Sitecore.Events.Event.RaiseEvent("testing:myevent", new object[] { "test1", "test2" });
 
 ###### <a name="complete_example">Complete Example</a>
 The following is the complete code for the example described in this section.
 
-{% highlight csharp %}
-public class MyEventRemote
-{
-    public string Param1 { get; set; }
-}
-{% endhighlight %}
+	public class MyEventRemote
+	{
+	    public string Param1 { get; set; }
+	}
 
-{% highlight csharp %}
-public class EventRaiser
-{
-  public void RaiseEvent()
-  {
-    var parameters = new object[]{ "param1", "param2" };
-    Sitecore.Events.Event.RaiseEvent("testing:myevent", parameters);
-    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(new MyEventRemote());
-  }
-}
-{% endhighlight %}
+	public class EventRaiser
+	{
+	  public void RaiseEvent()
+	  {
+	    var parameters = new object[]{ "param1", "param2" };
+	    Sitecore.Events.Event.RaiseEvent("testing:myevent", parameters);
+	    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(new MyEventRemote());
+	  }
+	}
 
-{% highlight csharp %}
-public class EventHandlers
-{
-  public virtual void InitializeFromPipeline(PipelineArgs args)
-  {
-    var action = new Action<MyEventRemote>(RaiseRemoteEvent);
-    Sitecore.Eventing.EventManager.Subscribe<MyEventRemote>(action);
-  }
-
-  private void RaiseRemoteEvent(MyEventRemote myEvent)
-  {
-    Sitecore.Events.Event.RaiseEvent("testing:myevent:remote", 
-                                     new object[] { myEvent.Param1 });
-  }
-
-  protected virtual void OnMyEventRemote(object sender, EventArgs args)
-  {
-    //do something
-  }
-
-  protected virtual void OnMyEvent(object sender, EventArgs args)
-  {
-    var s1 = Sitecore.Events.Event.ExtractParameter<string>(args, 0);
-    var e = new MyEventRemote() {Param1 = s1};
-    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(e);
-  }
-}
-{% endhighlight %}
+	public class EventHandlers
+	{
+	  public virtual void InitializeFromPipeline(PipelineArgs args)
+	  {
+	    var action = new Action<MyEventRemote>(RaiseRemoteEvent);
+	    Sitecore.Eventing.EventManager.Subscribe<MyEventRemote>(action);
+	  }
+	
+	  private void RaiseRemoteEvent(MyEventRemote myEvent)
+	  {
+	    Sitecore.Events.Event.RaiseEvent("testing:myevent:remote", 
+	                                     new object[] { myEvent.Param1 });
+	  }
+	
+	  protected virtual void OnMyEventRemote(object sender, EventArgs args)
+	  {
+	    //do something
+	  }
+	
+	  protected virtual void OnMyEvent(object sender, EventArgs args)
+	  {
+	    var s1 = Sitecore.Events.Event.ExtractParameter<string>(args, 0);
+	    var e = new MyEventRemote() {Param1 = s1};
+	    Sitecore.Eventing.EventManager.QueueEvent<MyEventRemote>(e);
+	  }
+	}
 
 The following is the complete Sitecore patch file described in this section.
 
-{% highlight xml %}
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <pipelines>
-      <initialize>
-        <processor type="Testing.EventHandlers, Testing" method="InitializeFromPipeline" />
-      </initialize>
-    </pipelines>
-    <events>
-      <event name="testing:myevent">
-        <handler type="Testing.EventHandlers, Testing" method="OnMyEvent" />
-      </event>
-      <event name="testing:myevent:remote">
-        <handler type="Testing.EventHandlers, Testing" method="OnMyEventRemote" />
-      </event>
-    </events>
-  </sitecore>
-</configuration>
-{% endhighlight %}
+	<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+	  <sitecore>
+	    <pipelines>
+	      <initialize>
+	        <processor type="Testing.EventHandlers, Testing" method="InitializeFromPipeline" />
+	      </initialize>
+	    </pipelines>
+	    <events>
+	      <event name="testing:myevent">
+	        <handler type="Testing.EventHandlers, Testing" method="OnMyEvent" />
+	      </event>
+	      <event name="testing:myevent:remote">
+	        <handler type="Testing.EventHandlers, Testing" method="OnMyEventRemote" />
+	      </event>
+	    </events>
+	  </sitecore>
+	</configuration>
+
