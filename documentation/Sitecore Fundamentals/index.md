@@ -112,7 +112,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 ### Configuration Topics
 * [Patch Files]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files)
 * [Settings]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Settings)
-* [Dependency Injection]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Dependency Injection)
+* [Configuration Factory]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Sitecore Configuration Factory)
 
 ### Blog Posts
 

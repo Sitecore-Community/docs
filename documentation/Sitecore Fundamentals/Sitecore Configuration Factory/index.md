@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Dependency Injection
+title: Sitecore's Configuration Factory
 ---
-Sitecore allows you to use dependency injection in Sitecore patch files to define objects that will be available at runtime. You can define arbitrary nodes under `/configuration/sitecore` and then use the Sitecore API to access objects that represent those nodes.
+Sitecore allows you to use use patch files to define objects that will be available at runtime. You can define arbitrary nodes under `/configuration/sitecore` and then use the Sitecore API to access objects that represent those nodes.
 
 The purpose of such nodes is to allow you to configure a component you have built. At some point you will want to access the information from those nodes. You can read those nodes as XML, but it is often easier to create a class that is loaded with the information.
 
 But it's not just a matter of convenience. Sitecore caches these objects so you get better performance.
+
+**Note:** This is not a replacement for true dependency injection at the application root!
 
 * [Mapping Types](#mapping_types)
 * [Mapping Constructors](#mapping_constructors)
