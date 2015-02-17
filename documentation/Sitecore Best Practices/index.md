@@ -3,8 +3,6 @@ layout: default
 title: Sitecore Best Practices
 ---
 
-# Sitecore Best Practices
-
 ## Official Sitecore Blog Posts
 * [Best practice blogs](https://www.sitecore.net/learn/blogs/best-practice-blogs)
 
