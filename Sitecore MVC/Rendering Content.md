@@ -53,7 +53,7 @@ Like the standard HTML helper, Sitecore's field helper accepts parameters. If Si
 
 You can create your own library of field helpers that support a specific field type - for instance, you might create an image, date, or link field helper. Refer to [John West's blog post on custom field helpers](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/John-West-Sitecore-Blog/Posts/2012/06/Sitecore-MVC-Playground-Part-4-Extending-the-SitecoreHelper-Class.aspx) for more information.
 
-### This doesn't feel very MVC...
+  ### This doesn't feel very MVC...
 
 For developers that are accustomed to seeing ``@Model.PropertyName``, using a generic model with a field helper may look a bit wrong. It does, however, have certain advantages:
 
