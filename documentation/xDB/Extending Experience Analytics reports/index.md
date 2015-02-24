@@ -10,5 +10,26 @@ __So, the task to do__: lets implement new report that shows statistic of visits
 ![Browser information in xDB]({{ site.baseurl }}/img/extending reports/robomongo1.png)
 
 ### Creating new dimension
+#### 1. Create a new dimension definition item
+Create new "Dimension" item under "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits" (Just use right click on the parent) and give it name "By Browser Version".
+Appropriate dimension item as well as segment item will be created.
+
+Lets also rename segment item to something better. So finally it will look like this:
+![Browser information in xDB]({{ site.baseurl }}/img/extending reports/dimensionItem1.png)
+
+Deploy the segment item: go to item "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version/All visits By Browser Version" in Content Editor, and hit "Deploy" button in "Review" tab of ribbon.  
+Right after that you'll have new record added to Segments table of reporting database. Take into account IDs in that DB record that are actually IDs of appropriate Dimension and Segment definition items:  
+![Browser information in xDB]({{ site.baseurl }}/img/extending reports/idsMapping.png)
+
+Update "DeployDate" field value of that record in DB to some older value (minimum 30 min. less) in order to make xDB processing data. The reason, visit will be processed by the segment if:  
+```
+__visit.SaveDateTime > segment.DeployDate + 30 min__)
+```
+
+#### 2. Create and register new dimension class in config
+#### 3. Create reporting page in EA (Experience Analitycs) using Sitecore Rocks
+#### 4. Create a dimension key transformer for the new dimension (optional)
+dimension key = Chrome-39.0  
+dimension key transformation = Chrome 39.0
 
 ### Creating new report
