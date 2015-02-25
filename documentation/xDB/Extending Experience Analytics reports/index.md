@@ -9,7 +9,7 @@ This article looks like really short step-by-step guide with few screenshot and 
 __So, the task to do__: lets implement new report that shows statistic of visits/value by different web browsers. This report can help marketing people to discover which browsers do visitors use, which browser bring more value etc.  
 ![Browser information in xDB]({{ site.baseurl }}/img/extending reports/robomongo1.png)
 
-### Creating new dimension
+### Creating new dimension  
 #### Step 1: create a new dimension definition item  
 Create new "Dimension" item under "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits" (Just use right click on the parent) and give it name "By Browser Version".  
 Appropriate dimension item as well as segment item will be created.
