@@ -68,7 +68,7 @@ namespace Sitecore.EADemo
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```
+```  
 using System;
 using System.Collections.Generic;
 using Sitecore.Analytics.Aggregation.Data.Model;
