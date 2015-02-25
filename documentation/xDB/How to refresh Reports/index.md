@@ -51,10 +51,12 @@ Perform following steps for that:
 ![Workaround cast]({{ site.baseurl }}/img/Refreshing reports/workaroundCast.png)
 
 
+---
+
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 Do the same steps as for Sitecore 7.5 except steps #7-9 - they are not required.
 
 __Tipp:__ in order to reset some Dashboard caches change date filter in report:
 
 
-![Sitecore 8 report]({{ site.baseurl }}/img/Refreshing reports/reportSitecore8.png|width=300px)  
+![Sitecore 8 report]({{ site.baseurl }}/img/Refreshing reports/reportSitecore8.png)  
