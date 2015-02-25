@@ -47,6 +47,4 @@ Do the same steps as for Sitecore 7.5 except steps #7-9 – they are not required.
 __Tipp:__ in order to reset some Dashboard caches change date filter in report:
 
 
-![Sitecore 8 report]({{ site.baseurl }}/img/Refreshing reports/reportSitecore8.png)
-
-
+![Sitecore 8 report]({{ site.baseurl }}/img/Refreshing reports/reportSitecore8.png)  
