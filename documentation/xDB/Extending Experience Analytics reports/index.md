@@ -34,10 +34,10 @@ Make sure 3 following Sitecore assemblies are referenced there:
 * Sitecore.Analytics.Aggregation.dll  
 * Sitecore.Analytics.Model.dll  
 * Sitecore.ExperienceAnalytics.dll  
-Create new class called "ByBrowserVersion" and inherit that from either ```DimensionBase``` or ```VisitDimensionBase``` base class. Lets use the second one in this example.  
+Create new class called "ByBrowserVersion" and inherit that from either `DimensionBase` or `VisitDimensionBase` base class. Lets use the second one in this example.  
 2 abstract methods need to be implemented. Lets do some simple implementation:
 
-```csharp
+```
 using System;
 using Sitecore.Analytics.Aggregation.Data.Model;
 using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
@@ -68,7 +68,7 @@ namespace Sitecore.EADemo
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```csharp
+```
 using System;
 using System.Collections.Generic;
 using Sitecore.Analytics.Aggregation.Data.Model;
@@ -104,19 +104,20 @@ namespace Sitecore.EADemo
 
 Build project and make sure the dll is copied to bin folder of the website.
 
-Map created class to appropriate item in Sitecore - add line similar to following to ```<dimensions>``` section of "Sitecore.ExperienceAnalytics.Aggregation.config" file:  
-```xml  
+Map created class to appropriate item in Sitecore - add line similar to following to `<dimensions>` section of "Sitecore.ExperienceAnalytics.Aggregation.config" file:  
+```
 <dimension id="{19ADC022-71BB-462F-8745-AC9A8396480E}" type="Sitecore.EADemo.ByBrowserVersion, Sitecore.EADemo" />
-```  
+```
+
 The id in my case is the ID of item "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version", Namespace, class and assembly name are of the one which has been just created.
 
 __Important:__ ID of Dimension (not a Segment) item should be used for mapping.
 
 
 To check that it works, remove all data from Interaction table of Analytics DB in MongoDB and generate some Visits by visiting website from different browsers. (see some more [tips and tricks]({{ site.baseurl }}/documentation/xDB/How to refresh Reports) how to get data flushed to MongoDB quicker).  
-Select data from ```dbo.ReportDataView``` view if reporting DB using following query:
+Select data from `dbo.ReportDataView` view if reporting DB using following query:
 
-```sql
+```
 SELECT TOP 1000 [SegmentRecordId]      
       ,[Visits]
       ,[Value]      
