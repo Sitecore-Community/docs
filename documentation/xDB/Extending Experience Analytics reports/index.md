@@ -37,7 +37,7 @@ Make sure 3 following Sitecore assemblies are referenced there:
 Create new class called "ByBrowserVersion" and inherit that from either ```DimensionBase``` or ```VisitDimensionBase``` base class. Lets use the second one in this example.  
 2 abstract methods need to be implemented. Lets do some simple implementation:
 
-```cs
+```c#
 using System;
 using Sitecore.Analytics.Aggregation.Data.Model;
 using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
@@ -68,7 +68,7 @@ namespace Sitecore.EADemo
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```cs
+```c#
 using System;
 using System.Collections.Generic;
 using Sitecore.Analytics.Aggregation.Data.Model;
