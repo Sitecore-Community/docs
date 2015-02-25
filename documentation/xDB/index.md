@@ -25,6 +25,8 @@ A contact facet is a property of a contact, such as their name or job title. The
 
 ## Generating Analytics Data
 
+### [How to refresh reports] ({{ site.baseurl }}/documentation/xDB/How to refresh Reports)
+
 ## Interfaces
 
 ### Experience Profile
