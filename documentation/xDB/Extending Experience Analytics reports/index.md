@@ -29,6 +29,112 @@ __visit.SaveDateTime > segment.DeployDate + 30 min__)
 ```
 
 #### Step 2: create and register new dimension class in config  
+You can create new separate standalone (class library) project in Visual Studio as well as using existing one.
+Make sure 3 following Sitecore assemblies are referenced there:  
+* Sitecore.Analytics.Aggregation.dll  
+* Sitecore.Analytics.Model.dll  
+* Sitecore.ExperienceAnalytics.dll  
+Create new class called "ByBrowserVersion" and inherit that from either ```DimensionBase``` or ```VisitDimensionBase``` base class. Lets use the second one in this example.  
+2 abstract methods need to be implemented. Lets do some simple implementation:
+
+```csharp
+using System;
+using Sitecore.Analytics.Aggregation.Data.Model;
+using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
+
+namespace Sitecore.EADemo
+{
+  class ByBrowserVersion : VisitDimensionBase
+  {
+    public ByBrowserVersion(Guid dimensionId) : base(dimensionId)
+    {
+    }
+
+    protected override bool HasDimensionKey(IVisitAggregationContext context)
+    {
+      // check browser data whether it is available
+      return !string.IsNullOrEmpty(context.Visit.Browser.BrowserMajorName) &&
+             !string.IsNullOrEmpty(context.Visit.Browser.BrowserVersion);
+    }
+
+    protected override string GetKey(IVisitAggregationContext context)
+    {
+      // making key for the dimension
+      return string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
+    }
+  }
+}
+```
+
+In case of using "DimensionBase" the custom class would look like this:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using Sitecore.Analytics.Aggregation.Data.Model;
+using Sitecore.ExperienceAnalytics.Aggregation.Data.Model;
+using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
+
+namespace Sitecore.EADemo
+{
+  class ByBrowserVersionV2 : DimensionBase
+  {
+    public ByBrowserVersionV2(Guid dimensionId) : base(dimensionId)
+    {
+    }
+
+    public override IEnumerable<DimensionData> GetData(IVisitAggregationContext context)
+    {
+      var key = string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
+
+      // point of changing calculations that comes from base class
+      // everything can be changed
+      var calculations = CalculateCommonMetrics(context);
+      calculations.Bounces = 15;
+
+      yield return new DimensionData
+      {
+        DimensionKey = key,
+        MetricsValue = calculations
+      };
+    }
+  }
+}
+
+```
+
+Build project and make sure the dll is copied to bin folder of the website.
+
+Map created class to appropriate item in Sitecore - add line similar to following to ```<dimensions>``` section of "Sitecore.ExperienceAnalytics.Aggregation.config" file:  
+```xml  
+<dimension id="{19ADC022-71BB-462F-8745-AC9A8396480E}" type="Sitecore.EADemo.ByBrowserVersion, Sitecore.EADemo" />
+```  
+The id in my case is the ID of item "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version", Namespace, class and assembly name are of the one which has been just created.
+
+__Important:__ ID of Dimension (not a Segment) item should be used for mapping.
+
+
+To check that it works, remove all data from Interaction table of Analytics DB in MongoDB and generate some Visits by visiting website from different browsers. (see some more [tips and tricks]({{ site.baseurl }}/documentation/xDB/How to refresh Reports) how to get data flushed to MongoDB quicker).  
+Select data from ```dbo.ReportDataView``` view if reporting DB using following query:
+
+```sql  
+SELECT TOP 1000 [SegmentRecordId]      
+      ,[Visits]
+      ,[Value]      
+      ,[Conversions]
+      ,[TimeOnSite]
+      ,[Pageviews]      
+      ,[SegmentId]
+      ,[Date]            
+      ,[DimensionKey]
+  FROM [launchsitecore8Sitecore_reporting].[dbo].[ReportDataView]
+  where SegmentId = '{17430584-B79D-423A-A2FB-89C36FF16E5E}'
+```
+
+The SegmentID in this case is ID of appropriate segment item ("/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version/All visits By Browser Version" in this example).  
+So, you should see some data that was aggregated using this custom dimension. Something like following one:  
+![Aggregated example data]({{ site.baseurl }}/img/Extending reports/aggregatedData.png)  
+
 
 #### Step 3: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
 
