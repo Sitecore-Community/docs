@@ -41,5 +41,3 @@ exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffe
 
 # Highlighter
 highlighter: pygments
-
-encoding: UTF-8

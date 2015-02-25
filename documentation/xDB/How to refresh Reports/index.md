@@ -21,11 +21,11 @@ Use copy of clean reporting DB for that. Add appropriate line in connection stri
 ![Connection strings]({{ site.baseurl }}/img/Refreshing reports/connectionStrings.png)  
 #### Step 2:  
 Change parameter ```"MinimumVisitsFilter"``` in "\sitecore\shell\Applications\Reports\Dashboard\Configuration.config" file from 50 to 0.  
-This parameter is responsible for specifying which interactions to show (if contact has ore or equal than 50 visits – show that in general statistic).  
+This parameter is responsible for specifying which interactions to show (if contact has ore or equal than 50 visits - show that in general statistic).  
 #### Step 3:  
-Set ```"<sessionState … timeout="">"``` to 2 (default value is 20). This makes Sitecore to flush information more often from RAM to Mongo DB.  
+Set ```"<sessionState ... timeout="">"``` to 2 (default value is 20). This makes Sitecore to flush information more often from RAM to Mongo DB.  
 #### Step 4:  
-Set ```"Analytics.AutoDetectBots"``` setting to ```false``` (you might not require this step, but just in case to be 100% sure that your requests won’t be filtered out as robots. Sitecore has really advanced robots detection logic).  
+Set ```"Analytics.AutoDetectBots"``` setting to ```false``` (you might not require this step, but just in case to be 100% sure that your requests won't be filtered out as robots. Sitecore has really advanced robots detection logic).  
 #### Step 5:  
 Open web site and visit some pages (better to open several times new "InPrivate" browser window and surf through that in order to generate several contacts and interactions).  
 #### Step 6:  
@@ -42,7 +42,7 @@ Perform following steps for that:
 ![Workaround cast]({{ site.baseurl }}/img/Refreshing reports/workaroundCast.png)
 
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
-Do the same steps as for Sitecore 7.5 except steps #7-9 – they are not required.
+Do the same steps as for Sitecore 7.5 except steps #7-9 - they are not required.
 
 __Tipp:__ in order to reset some Dashboard caches change date filter in report:
 
