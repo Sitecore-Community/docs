@@ -25,7 +25,7 @@ Right after that you'll have new record added to Segments table of reporting dat
 Update "DeployDate" field value of that record in DB to some older value (minimum 30 min. less) in order to make xDB processing data. The reason, visit will be processed by the segment if:
 
 ```
-__visit.SaveDateTime > segment.DeployDate + 30 min__)
+visit.SaveDateTime > segment.DeployDate + 30 min)
 ```
 
 #### Step 2: create and register new dimension class in config  
@@ -37,7 +37,7 @@ Make sure 3 following Sitecore assemblies are referenced there:
 Create new class called "ByBrowserVersion" and inherit that from either `DimensionBase` or `VisitDimensionBase` base class. Lets use the second one in this example.  
 2 abstract methods need to be implemented. Lets do some simple implementation:
 
-```
+```csharp
 using System;
 using Sitecore.Analytics.Aggregation.Data.Model;
 using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
@@ -68,7 +68,7 @@ namespace Sitecore.EADemo
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```  
+```csharp
 using System;
 using System.Collections.Generic;
 using Sitecore.Analytics.Aggregation.Data.Model;
@@ -117,7 +117,7 @@ __Important:__ ID of Dimension (not a Segment) item should be used for mapping.
 To check that it works, remove all data from Interaction table of Analytics DB in MongoDB and generate some Visits by visiting website from different browsers. (see some more [tips and tricks]({{ site.baseurl }}/documentation/xDB/How to refresh Reports) how to get data flushed to MongoDB quicker).  
 Select data from `dbo.ReportDataView` view if reporting DB using following query:
 
-```
+```sql
 SELECT TOP 1000 [SegmentRecordId]      
       ,[Visits]
       ,[Value]      
