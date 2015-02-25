@@ -37,7 +37,7 @@ Make sure 3 following Sitecore assemblies are referenced there:
 Create new class called "ByBrowserVersion" and inherit that from either ```DimensionBase``` or ```VisitDimensionBase``` base class. Lets use the second one in this example.  
 2 abstract methods need to be implemented. Lets do some simple implementation:
 
-```c#
+```csharp
 using System;
 using Sitecore.Analytics.Aggregation.Data.Model;
 using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
@@ -68,7 +68,7 @@ namespace Sitecore.EADemo
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using Sitecore.Analytics.Aggregation.Data.Model;
@@ -100,7 +100,6 @@ namespace Sitecore.EADemo
     }
   }
 }
-
 ```
 
 Build project and make sure the dll is copied to bin folder of the website.
@@ -117,7 +116,7 @@ __Important:__ ID of Dimension (not a Segment) item should be used for mapping.
 To check that it works, remove all data from Interaction table of Analytics DB in MongoDB and generate some Visits by visiting website from different browsers. (see some more [tips and tricks]({{ site.baseurl }}/documentation/xDB/How to refresh Reports) how to get data flushed to MongoDB quicker).  
 Select data from ```dbo.ReportDataView``` view if reporting DB using following query:
 
-```sql  
+```sql
 SELECT TOP 1000 [SegmentRecordId]      
       ,[Visits]
       ,[Value]      
@@ -138,11 +137,8 @@ So, you should see some data that was aggregated using this custom dimension. So
 
 #### Step 3: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
 
-#### Step 4: create a dimension key transformer for the new dimension (optional)  
 
-```
-dimension key = Chrome-39.0  
-dimension key transformation = Chrome 39.0
-```  
+#### Step 4: create a dimension key transformer for the new dimension (optional)  
+ 
 
 ### Creating new report  
