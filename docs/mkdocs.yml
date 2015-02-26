@@ -1,6 +1,0 @@
-site_name: Sitecore Community Documentation
-
-pages:
-- ['index.md', 'Welcome']
-- ['Sitecore MVC/Getting Started.md', 'Sitecore MVC', 'Getting Started']
-- ['xDB/index.md', 'xDB', 'Getting Started']
