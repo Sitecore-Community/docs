@@ -1,9 +1,6 @@
----
-layout: default
-title: Sitecore MVC
----
-
-## [Getting Started]()
+========
+Getting Started
+========
 
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
 
