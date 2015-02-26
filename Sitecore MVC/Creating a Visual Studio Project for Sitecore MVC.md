@@ -1,7 +1,4 @@
----
-layout: default
-title: Creating a Visual Studio Project for Sitecore MVC
----
+# Creating a Visual Studio Project for Sitecore MVC
 
 In order to work with Sitecore, you must set up a Visual Studio project. The following article explains how to do so for a Sitecore MVC project.
 
@@ -11,11 +8,13 @@ In order to work with Sitecore, you must set up a Visual Studio project. The fol
 
 ## Before You Start
 
-### Which Version of MVC?
+Which Version of MVC?
+~~~~~~~~~~~~~~~~~~~~~~
 
 Different versions of Sitecore support different versions of ASP.NET MVC. For a complete list, [refer to the Knowledgebase article](https://kb.sitecore.net/articles/522918). Your version affects the type of project you create.
 
-### Work Outside the Web Root
+Work Outside the Web Root
+~~~~~~~~~~~~~~~~~~~~~~
 
 Sitecore recommends that you create your Visual Studio project in a location outside the web root, and set up a process that copies files into the web root of the Sitecore instance (on build, for example). There are several methods of doing this:
 
@@ -23,7 +22,10 @@ Sitecore recommends that you create your Visual Studio project in a location out
 * Create a post-build script
 * Use [Web One Click Publish](http://msdn.microsoft.com/en-us/library/vstudio/dd434211.aspx) in Visual Studio
 
-## Step 1 - Create a Visual Studio Project
+## Creating a Project
+
+Step 1 - Create a Visual Studio Project
+~~~~~~~~~~~~~~~~~~~~~~
 
 1. Open Visual Studio, and create a new project with the [correct version of ASP.NET MVC for your version of Sitecore](https://kb.sitecore.net/articles/522918). Choosing the wrong version (ASP.NET MVC 5.0 vs 5.1) will result in application errors when the .dlls are copied into the bin directory.
 2. Replace the **default web.config** with the web.config from your Sitecore instance. Because the web.config file references **App_Config\ConnectionStrings.config**, you may get complaints that it can't find a referenced file. If this is the case, copy App_Config\ConnectionStrings.config into your solution.
@@ -32,6 +34,7 @@ Sitecore recommends that you create your Visual Studio project in a location out
 6. Build your solution and browse to your site.
 
 ## Step 2 - Add References
+~~~~~~~~~~~~~~~~~~~~~~
 
 Add a reference to **Sitecore.Kernel.dll** and **Sitecore.MVC.dll** at the very least. It is recommended that you do not add your references directly from the web root /bin directory, as the version and location may vary across machines. Here are some options:
 
@@ -40,6 +43,7 @@ Add a reference to **Sitecore.Kernel.dll** and **Sitecore.MVC.dll** at the very 
 * Set up a **local NuGet server** within your organization to store different versions of the Sitecore .dlls.
 
 ## Step 3 - Connect Your Project to Sitecore Rocks
+~~~~~~~~~~~~~~~~~~~~~~
 
 This is not a Sitecore MVC-specific step.
 
@@ -51,7 +55,8 @@ Connecting your project to Sitecore Rocks means that when you create certain fil
 
 ## FAQs and Troubleshooting
 
-### My project has the wrong ASP.NET MVC dlls - how can I correct this?
+My project has the wrong ASP.NET MVC dlls - how can I correct this?
+~~~~~~~~~~~~~~~~~~~~~~
 
 If you are using a version of Sitecore that requires ASP.NET MVC 5.1 but you have accidentally created a 5.0 project (of you're in Visual Studio 2012 without the update that lets you create a 5.1 project), you can get the .dlls from NuGet.
 
@@ -91,6 +96,7 @@ Notice that it inherits ``Sitecore.Web.Application`` (which in turn inherits the
 
 Or, if you want to use a ``Global.asax.cs`` to work in, just remember to inherit ``Sitecore.Web.Application``.
 
-### How do I install WebGrease if I am using Sitecore 7.2 and ASP.NET MVC 5.1?
+How do I install WebGrease if I am using Sitecore 7.2 and ASP.NET MVC 5.1?
+~~~~~~~~~~~~~~~~~~~~~~
 
 See Kern's [gist](https://gist.github.com/herskinduk/7a67839b4af39fc7ebcc) for web.config changes. At time of writing (17/10/2014), the MVC assemblies are targeting a lower version of the WebGrease assembly than the one used in the MVC project template.
