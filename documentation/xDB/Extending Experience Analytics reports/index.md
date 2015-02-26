@@ -133,10 +133,11 @@ SELECT TOP 1000 [SegmentRecordId]
 
 The SegmentID in this case is ID of appropriate segment item ("/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version/All visits By Browser Version" in this example).  
 So, you should see some data that was aggregated using this custom dimension. Something like following one:  
-![Aggregated example data]({{ site.baseurl }}/img/Extending reports/aggregatedData.png)  
+![Aggregated example data]({{ site.baseurl }}/img/Extending reports/aggregatedData.png)
 
+### Creating new report
 
-#### Step 3: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
+#### Step 1: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
 Now we need to visualize the data that we got on previous steps. For that we will just copy existing report, and do some changes there.  
 Lets use "Overview" report in "Audience":  
 ![Overview report]({{ site.baseurl }}/img/Extending reports/overviewReport.png)
@@ -156,10 +157,33 @@ Lets use "Overview" report in "Audience":
 ![Trending Browsers item fields]({{ site.baseurl }}/img/Extending reports/fieldsTrendingBrowsers.png)  
 * Go to Experience Analytics and check out Browsers report.
 
-![Browsers report]({{ site.baseurl }}/img/Extending reports/browsersReport.png)  
+![Browsers report]({{ site.baseurl }}/img/Extending reports/browsersReport.png)
 
+Let's add one more chart (area chart) to the report that will show us Top Visited browsers. We need to do following actions for that:
+* Add new item from template "ExperienceAnalyticsAreaChart Parameters" under "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Browsers/PageSettings", let's call that "Most Visited Browsers".
+* Configure some fields in newly created item:
+  1. Title.
+  2. Metrics: select "Visits" option.
+  3. TimeResolution: select "Daily".
+  4. Segment (we need to use the same segment as above).
+  5. KeysCount to 2 or 3 (depending of how much data you have generated in xDB). It will actually shows you Top N of the most visited browsers.
+  6. KeySortByMetrics: select "Visits" option.
+  7. KeySortDirection: select "Descending" option.
+* Add "ExperienceAnalyticsAreaChart" rendering to layouts of "Browsers" report item (using Design Layout of Sitecore Rocks) and map its datasource to the item created in previous step.  
+![Area Chart on report renderings]({{ site.baseurl }}/img/Extending reports/areaChartLayout.png)  
+* Check out the report and see area chart there:  
+![Area Chart on report]({{ site.baseurl }}/img/Extending reports/areChartOnReport.png)
 
-#### Step 4: create a dimension key transformer for the new dimension (optional)  
- 
+#### Step 2: create a dimension key transformer for the new dimension (optional)  
+Really quick about dimension key transformers.  
+This step is related to explain how to transform Dimension Key (remember "Chrome-24" from previous steps) in order to get something more human readable for report UI (for example browser name and version without ugly dash character).  
+The config for that is "Sitecore.ExperienceAnalytics.WebAPI.config". A transformer can be associated with appropriate dimension in similar way:  
+![Dimension key transformer config]({{ site.baseurl }}/img/Extending reports/dimensionTransformerConfig.png)
 
-### Creating new report  
+So our dimension should be placed in that config (see screenshot below) file and appropriate transformer needs to be developer and referenced there.  
+The code of transformer for removing a dash from the dimension key might look like following one:  
+![Dimension key transformer config]({{ site.baseurl }}/img/Extending reports/configAndCode.png)
+
+After implementing that, you will see something like this:  
+![No dashes]({{ site.baseurl }}/img/Extending reports/noDashes.png)
+
