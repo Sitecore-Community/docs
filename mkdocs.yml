@@ -1,0 +1,13 @@
+site_name: Sitecore Community Documentation
+
+pages:
+- ['index.md', 'Welcome']
+
+# MVC
+- ['Sitecore MVC/Getting Started.md', 'Sitecore MVC', 'Getting Started']
+- ['Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC.md', 'Sitecore MVC', 'Creating a Visual Studio Project']
+- ['Sitecore MVC/View Renderings.md', 'Sitecore MVC', 'View Renderings']
+- ['Sitecore MVC/Controller Renderings.md', 'Sitecore MVC', 'Controller Renderings']
+
+# xDB
+- ['xDB/index.md', 'xDB', 'Getting Started']
