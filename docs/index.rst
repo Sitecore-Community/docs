@@ -2,8 +2,10 @@
 Welcome to Sitecore Community Docs
 ==========
 
+Sitecore MVC
+-------------
+
 .. toctree::
    :maxdepth: 3
 
-   Sitecore MVC/Getting Started
-   xDB/Getting Started
+   sitecore_mvc/getting_started
