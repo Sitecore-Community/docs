@@ -11,3 +11,7 @@ pages:
 
 # xDB
 - ['xDB/index.md', 'xDB', 'Getting Started']
+
+# Link Aggregation
+- ['Link Aggregation/Extending the Sitecore Client.md', 'Link Aggregation', 'Extending the Sitecore Client']
+- ['Link Aggregation/Search.md', 'Link Aggregation', 'Search']
