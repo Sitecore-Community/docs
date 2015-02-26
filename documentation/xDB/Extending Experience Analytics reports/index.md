@@ -4,9 +4,11 @@ title: Extending Experience Analytics reports
 ---
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 This article provide really short introduction into creating of custom reports for Experience Analytics. In Sitecore terms I would say : to create new report dimensions and appropriate reports for showing them.
-This article looks like really short step-by-step guide with few screenshot and without any extended documentation and explanation. I hope that that will come a bit later.  
-- - -
-__So, the task to do__: lets implement new report that shows statistic of visits/value by different web browsers. This report can help marketing people to discover which browsers do visitors use, which browser bring more value etc.  
+This article looks like really short step-by-step guide with few screenshot and without any extended documentation and explanation. I hope that that will come a bit later.
+
+---
+
+__So, the task to do__: let's implement new report that shows statistic of visits/value by different web browsers. This report can help marketing people to discover which browsers do visitors use, which browser bring more value etc.  
 ![Browser information in xDB]({{ site.baseurl }}/img/Extending reports/robomongo1.png)
 
 ### Creating new dimension
@@ -15,14 +17,14 @@ __So, the task to do__: lets implement new report that shows statistic of visits
 Create new "Dimension" item under "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits" (Just use right click on the parent) and give it name "By Browser Version".  
 Appropriate dimension item as well as segment item will be created.
 
-Lets also rename segment item to something better. So finally it will look like this:  
+Let's also rename segment item to something better. So finally it will look like this:  
 ![Browser information in xDB]({{ site.baseurl }}/img/Extending reports/dimensionItem1.png)
 
 Deploy the segment item: go to item "/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser Version/All visits By Browser Version" in Content Editor, and hit "Deploy" button in "Review" tab of ribbon.  
 Right after that you'll have new record added to Segments table of reporting database. Take into account IDs in that DB record that are actually IDs of appropriate Dimension and Segment definition items:  
 ![Browser information in xDB]({{ site.baseurl }}/img/Extending reports/idsMapping.png)  
 
-Update "DeployDate" field value of that record in DB to some older value (minimum 30 min. less) in order to make xDB processing data. The reason, visit will be processed by the segment if:
+Update "DeployDate" field value of that record in DB to some older value (minimum 30 min. less) in order to make xDB to process data. The reason, visit will be processed by the segment if:
 
 ```
 visit.SaveDateTime > segment.DeployDate + 30 min)
@@ -34,8 +36,8 @@ Make sure 3 following Sitecore assemblies are referenced there:
 * Sitecore.Analytics.Aggregation.dll  
 * Sitecore.Analytics.Model.dll  
 * Sitecore.ExperienceAnalytics.dll  
-Create new class called "ByBrowserVersion" and inherit that from either `DimensionBase` or `VisitDimensionBase` base class. Lets use the second one in this example.  
-2 abstract methods need to be implemented. Lets do some simple implementation:
+Create new class called "ByBrowserVersion" and inherit that from either `DimensionBase` or `VisitDimensionBase` base class. Let's use the second one in this example.  
+2 abstract methods need to be implemented. Let's do some simple implementation:
 
 ```csharp
 using System;
@@ -139,7 +141,7 @@ So, you should see some data that was aggregated using this custom dimension. So
 
 #### Step 1: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
 Now we need to visualize the data that we got on previous steps. For that we will just copy existing report, and do some changes there.  
-Lets use "Overview" report in "Audience":  
+Let's use "Overview" report in "Audience":  
 ![Overview report]({{ site.baseurl }}/img/Extending reports/overviewReport.png)
 
 * Open the solution in Sitecore Rocks and duplicate the item "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Overview" with subitems.
@@ -169,8 +171,8 @@ Let's add one more chart (area chart) to the report that will show us Top Visite
   5. KeysCount to 2 or 3 (depending of how much data you have generated in xDB). It will actually shows you Top N of the most visited browsers.
   6. KeySortByMetrics: select "Visits" option.
   7. KeySortDirection: select "Descending" option.
-* Add "ExperienceAnalyticsAreaChart" rendering to layouts of "Browsers" report item (using Design Layout of Sitecore Rocks) and map its datasource to the item created in previous step.  
-![Area Chart on report renderings]({{ site.baseurl }}/img/Extending reports/areaChartLayout.png)  
+* Add "ExperienceAnalyticsAreaChart" rendering to layouts of "Browsers" report item (using Design Layout of Sitecore Rocks) and map its datasource to the item created in previous step.
+![Area Chart on report renderings]({{ site.baseurl }}/img/Extending reports/areaChartLayout.png)
 * Check out the report and see area chart there:  
 ![Area Chart on report]({{ site.baseurl }}/img/Extending reports/areChartOnReport.png)
 
