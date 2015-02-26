@@ -1,7 +1,6 @@
----
-layout: default
-title: The xDB Contact
----
+==========
+The xDB Contact
+==========
 
 <p class="well"><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 
