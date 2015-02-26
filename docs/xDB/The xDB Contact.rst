@@ -9,7 +9,9 @@ In the Experience Database (xDB), a contact is a visitor. Even if you are anonym
 
 You can view individual contacts in the **Experience Profile** interface. Note that this interface does not necessarily pull all of its content directly from MongoDB.
 
-## Where are contacts stored?
+Where are contacts stored?
+----------------------------
+
 The **raw contact data** is stored in the **contacts** collection of the **analytics MongoDB**. MongoDB stores information in JSON format. Here is a contact that has provided a first name, surname, and e-mail address:
 
 	{
@@ -59,7 +61,9 @@ A bare bones contact that didn't do much on the site looks like this - they did 
 
 Contact data is also aggregated down to the **reporting database** (which is used primarily by the reporting API and Engagement Analytics) and the **analytics index**, which is used by the Experience Profile search page and Email Experience Manager.
 
-## What is the difference between a contact and a user?
+What is the difference between a contact and a user?
+----------------------------
+
 When we talk about **users** in Sitecore, we tend to mean ASP.NET membership users. There is no direct link between a contact and a user in the xDB - you can be a contact without being a registered user. However, the xDB does store **identifiers** that you can use to link your contact to an ASP.NET user in code. The contact below is **'known'** and identified by their Sitecore extranet user:
 
 	"Identifiers" : {
@@ -78,7 +82,8 @@ As can be seen from the ContactIdentificationLevel enum below, **2** denotes **k
 
 Even though there is an option for 'Anonymous', you will find that the Identifiers section is simply missing from anonymous contacts. 
 
-### Identifying a contact in code
+Identifying a contact in code
+----------------------------
 
 Web Forms for Marketers will automatically 'identify' a contact to match a registered user if you use any of its 'log in' Save Actions. To identify a contact yourself, do the following:
 
@@ -87,13 +92,16 @@ Web Forms for Marketers will automatically 'identify' a contact to match a regis
 
 Remember to format the username correctly, including **domain** and double backslash.  The xDB will now associate your logged-in visitor with an existing xDB record, provided this is not their first visit.
 
-## Adding information to a contact
+Adding information to a contact
+----------------------------
 
-### Facets
+Facets
+----------------------------
 
 Find out more about [facets]({{ site.baseurl }}/documentation/xDB/Facets).
 
-### Tags
+Tags
+----------------------------
 
 **Tags** are an informal, unstructured way of storing data as key value pairs. If a marketer creates a form to capture details about a visitor's favourite food, that information can be stored as a tag without a developer needing to create some kind of data structure beforehand.
 

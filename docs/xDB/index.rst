@@ -1,7 +1,6 @@
----
-layout: default
-title: xDB and Experience Marketing
----
+=======
+xDB and Experience Marketing
+=======
 
 ## Architecture
 
