@@ -1,10 +1,11 @@
 ========
-Getting Started
+Sitecore MVC
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
+   visual_studio_project
    view_renderings
    controller_renderings
    rendering_content
