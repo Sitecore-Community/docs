@@ -13,6 +13,7 @@ pages:
 - ['xDB/index.md', 'xDB', 'Getting Started']
 
 # Configuration
+- ['Configuration/Configuration Factory.md', 'Configuration', 'Configuration Factory']
 - ['Configuration/Patch Files.md', 'Configuration', 'Patch Files']
 - ['Configuration/Settings.md', 'Configuration', 'Settings']
 
