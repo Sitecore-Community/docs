@@ -2,6 +2,12 @@
 Getting Started
 ========
 
+.. toctree::
+   :maxdepth: 3
+
+   sitecore_mvc/getting_started
+   sitorcore_mvc/view renderings
+
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
 
 * [YouTube: Sitecore MVC - Part 1: Getting Started](http://www.youtube.com/watch?v=i3Mwcphtz4w)
