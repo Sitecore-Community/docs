@@ -12,6 +12,11 @@ pages:
 # xDB
 - ['xDB/index.md', 'xDB', 'Getting Started']
 
+# Configuration
+- ['Configuration/Patch Files.md', 'Configuration', 'Patch Files']
+- ['Configuration/Settings.md', 'Configuration', 'Settings']
+
+
 # Link Aggregation
 - ['Link Aggregation/Extending the Sitecore Client.md', 'Link Aggregation', 'Extending the Sitecore Client']
 - ['Link Aggregation/Search.md', 'Link Aggregation', 'Search']
