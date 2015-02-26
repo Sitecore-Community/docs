@@ -3,10 +3,11 @@ Getting Started
 ========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    sitecore_mvc/view_renderings
    sitecore_mvc/controller_renderings
+   sitecore_mvc/rendering_content
 
 If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
 
