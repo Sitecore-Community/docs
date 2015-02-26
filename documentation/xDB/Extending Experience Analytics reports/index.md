@@ -137,6 +137,26 @@ So, you should see some data that was aggregated using this custom dimension. So
 
 
 #### Step 3: create reporting page in EA (Experience Analitycs) using Sitecore Rocks  
+Now we need to visualize the data that we got on previous steps. For that we will just copy existing report, and do some changes there.  
+Lets use "Overview" report in "Audience":  
+![Overview report]({{ site.baseurl }}/img/Extending reports/overviewReport.png)
+
+* Open the solution in Sitecore Rocks and duplicate the item "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Overview" with subitems.
+* Rename that new item to "Browsers".
+* Remove all the children of "Browsers/PageSettings" item except stylesheet and "All visits" item.
+* Design layout in Sitecore Rocks on "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Browsers" item and remove all the visualizations except of one line chart. So layouts will look like this:  
+![Layout]({{ site.baseurl }}/img/Extending reports/speakLayout.png)  
+* Fix datasource line chart control (latest control on screenshot above) in order to remap it to "All Visits" item under "Browsers" report (in this example it should be remapped to "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Browsers/PageSettings/All Visits" item)
+* Rename that "All visits" item to something more meaningful, for example "Trending browsers".
+* Update some fields of "/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Browsers/PageSettings/Trending browsers" item:
+  1. "Tooltip" and "Title" field with better text, e. g. "Trending browsers".
+  2. "Metrics" field - select only "Value" as a metric to show (for simplicity sake).
+  3. "Segments" field - the most important for us one. Select "All visits by Browser Version" segment that we have created in this guide above.
+  4. "Key Grouping" field - change to empty selection.  
+![Trending Browsers item fields]({{ site.baseurl }}/img/Extending reports/fieldsTrendingBrowsers.png)  
+* Go to Experience Analytics and check out Browsers report.
+
+![Browsers report]({{ site.baseurl }}/img/Extending reports/browsersReport.png)  
 
 
 #### Step 4: create a dimension key transformer for the new dimension (optional)  
