@@ -31,7 +31,8 @@ Facets are configured in ``Sitecore.Analytics.Model.config``. There are no corre
       </entities>
 
 
-### Retrieving Facets
+Retrieving Facets
+------------------------
 
 Once a facet has been set up, you can retrieve it by **name** using the contact API:
 
@@ -47,9 +48,11 @@ In this particular case, you will get an IContactEmailAddress object back with a
     string Preferred { get; set; }
   }
 
-### Default Facets
+Default Facets
+------------------------
 
-#### Email Address
+Email Address
+~~~~~~~~~~~~~~~~~~~~~~
 
 It is possible to add any number of e-mail addresses to a contact. In MongoDB, the structure for e-mail addresses looks like this per contact:
 
@@ -83,7 +86,8 @@ Each ``IEmailAddress`` has an SmtpAddress, and also a ``BounceCount`` integer wh
     int BounceCount { get; set; }
   }
 
-##### A note about preferred e-mail address
+A note about preferred e-mail address
+~~~~~~~~~~~~~~~~~~~~~~
 
 A visitor's preferred e-mail address is the one that is displayed in the Experience Profile search interface - if you do not specify a preference, it will display 'Unknown':
 
