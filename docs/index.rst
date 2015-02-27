@@ -4,7 +4,7 @@ Welcome to Sitecore Community Docs
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    sitecore_mvc/index
    xdb/index
