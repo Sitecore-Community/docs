@@ -37,7 +37,7 @@ There are cases where the first data provider is the only data provider that nee
 
 The following is an example of how to use this method:
 
-```c#
+```
 public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext context)
 {
     if (itemDefinition.ID == MyItemIDs.MyProviderRoot)

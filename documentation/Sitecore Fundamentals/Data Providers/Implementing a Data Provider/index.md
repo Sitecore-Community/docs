@@ -27,7 +27,7 @@ Configuration is used to tell Sitecore which data providers a Sitecore database 
 #### <a name="add_data_provider">Adding a data provider to a Sitecore database</a>
 The following example demonstrates how to define a data provider and add the data provider to the `master` Sitecore database:
 
-```xml
+```
 <dataProviders>
   <myDataProvider type="Testing.DataProviders.MyDataProvider, Testing" />
 </dataProviders>

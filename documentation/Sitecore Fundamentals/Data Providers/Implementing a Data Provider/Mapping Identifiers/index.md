@@ -44,7 +44,7 @@ The following code samples demonstrate how to work with the IDTable API:
 
 ###### <a name="api_add1">Add an entry</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var newId = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
@@ -53,7 +53,7 @@ var entry = IDTable.Add(prefix, key, newId);
 
 ###### <a name="api_add2">Add an entry (specifying the Parent ID)</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var newId = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
@@ -63,7 +63,7 @@ var entry = IDTable.Add(prefix, key, newId, parentId);
 
 ###### <a name="api_add3">Add an entry (specifying the Custom Data)</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var newId = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
@@ -74,7 +74,7 @@ var entry = IDTable.Add(prefix, key, newId, parentId, customData);
 
 ###### <a name="api_get1">Get an entry from a combination of Prefix and Key</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var entry = IDTable.GetID(prefix, key);
@@ -82,7 +82,7 @@ var entry = IDTable.GetID(prefix, key);
 
 ###### <a name="api_get2">Get an entry from a combination of Prefix and ID</a>
 
-```c#
+```
 var prefix = "source1";
 var id = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
 var entry = IDTable.GetKeys(prefix, id).FirstOrDefault();
@@ -90,7 +90,7 @@ var entry = IDTable.GetKeys(prefix, id).FirstOrDefault();
 
 ###### <a name="api_get3">Get the entries for a Prefix</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var entries = IDTable.GetKeys(prefix);
@@ -98,7 +98,7 @@ var entries = IDTable.GetKeys(prefix);
 
 ###### <a name="api_remove1">Remove an entry using a Prefix and Key</a>
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 IDTable.RemoveKey(prefix, key);
@@ -106,7 +106,7 @@ IDTable.RemoveKey(prefix, key);
 
 ###### <a name="api_remove2">Remove an entry using a Prefix and ID</a>
 
-```c#
+```
 var prefix = "source1";
 var id = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
 IDTable.RemoveID(prefix, id);
@@ -115,7 +115,7 @@ IDTable.RemoveID(prefix, id);
 ###### <a name="api_update1">Update an entry</a>
 There is no API for updating an entry, so an entry must be removed and then added.
 
-```c#
+```
 var prefix = "source1";
 var key = "product1";
 var id = Sitecore.Data.ID.Parse("{5D31DF26-9562-47E0-8095-666BD681AD08}");
@@ -132,7 +132,7 @@ Sitecore must store the mappings somewhere. This is handled by a provider that i
 
 The default provider uses a relational database table to store the mappings. This table is named `IDTable`. The IDTable configuration identifies which relational database is used. By default Sitecore uses the relational database that corresponds to the connection string named `master`:
 
-```xml
+```
 <IDTable type="Sitecore.Data.$(database).$(database)IDTable, Sitecore.Kernel" singleInstance="true">
   <param connectionStringName="master" />
   <param desc="cacheSize">2500KB</param>
@@ -148,7 +148,7 @@ The default provider implements some additional features:
 
 The default IDTable provider uses implements its own caching. The size of the cache is specified in the IDTable configuration.  
 
-```xml
+```
 <IDTable type="Sitecore.Data.$(database).$(database)IDTable, Sitecore.Kernel" singleInstance="true">
   <param connectionStringName="master" />
   <param desc="cacheSize">2500KB</param>
@@ -170,15 +170,14 @@ A C# implementation of the algorithm is [available on GitHub](https://github.com
 
 The following demonstrates how to use this implementation. The GUID `{9D02E821-E902-5BA1-BE5E-3B3F87F2DB51}` will always returned when the external identifier `D-7734J` is supplied.
 
-```c#
+```
 var externalId = "D-7734J";
 var guid = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
-
 ```
 
 Use the following code to check if a specific GUID corresponds to an external identifier:
 
-```c#
+```
 var guidExpected = Guid.Parse("{9D02E821-E902-5BA1-BE5E-3B3F87F2DB51}");
 var externalId = "D-7734J";
 var guidCreated = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
