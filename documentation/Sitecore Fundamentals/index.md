@@ -137,6 +137,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [Asynchronous Tasks]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Asynchronous Tasks)
 * [Caching]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Caching)
 * [Rules Engine]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Rules Engine)
+* [Data Providers]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers)
 
 ### Blog Posts
 
