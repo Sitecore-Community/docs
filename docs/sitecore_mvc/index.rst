@@ -3,7 +3,7 @@ Sitecore MVC
 ========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    visual_studio_project
    view_renderings
