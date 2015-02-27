@@ -20,10 +20,28 @@ A data provider inherits from the abstract class `Sitecore.Data.DataProviders.Da
 ## <a name="configuration">Configuration</a>
 
 Configuration is used to tell Sitecore which data providers a Sitecore database should use.
+* [Adding a data provider to a Sitecore database](#add_data_provider)
+* [Data provider order](#data_provider_order)
 
-> It is good to define a data provider in a separate configuration node. That makes it easier to make a data provider available to multiple Sitecore databases.
 
-#### Data provider order
+#### <a name="add_data_provider">Adding a data provider to a Sitecore database</a>
+The following example demonstrates how to define a data provider and add the data provider to the `master` Sitecore database:
+
+```xml
+<dataProviders>
+  <myDataProvider type="Testing.DataProviders.MyDataProvider, Testing" />
+</dataProviders>
+
+<databases>
+  <database id="master">
+    <dataProviders hint="list:AddDataProvider">
+      <dataProvider patch:before="*[1]" ref="dataProviders/myDataProvider" />
+    </dataProviders>
+  </database>
+</databases>
+```
+
+#### <a name="data_provider_order">Data provider order</a>
 
 Data providers are handled in the order they appear in the configuration. For more information on configuration and how order is determined, see the section on the [Patch Files]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files).
 

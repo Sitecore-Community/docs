@@ -10,6 +10,7 @@ The following are common options for handing this mapping:
 * [Deterministic GUIDs](#deterministic) - generating a GUID using an external identifier
 
 ## <a name="idtable">IDTable</a>
+
 Sitecore provides a storage area called the IDTable where external identifiers can be mapped to Sitecore item IDs.
 
 * [API](#api) - describes the API used to interact with the IDTable
@@ -17,9 +18,11 @@ Sitecore provides a storage area called the IDTable where external identifiers c
 * [`IDTableProvider`](#IDTableProvider) - the provider responsible for storing data in and retrieving data from the IDTable.
 
 #### <a name="api">API</a>
+
 Sitecore has an API that is dedicated to mapping identifiers to Sitecore item IDs. The API is found in the namespace `Sitecore.Data.IDTables`. 
 
 Using the API requires you understand a few concepts:
+
 * **Key** - the unique identifier of a resource in an external data source. A key is stored as a string value 
 * **Prefix** - a string that uniquely identifies an external data source. A single IDTable may store mappings for multiple external data sources. The combination of the prefix and the key uniquely identify an external resource in the IDTable.
 * **ID** - Sitecore item ID that is mapped to a combination of Prefix and Key
@@ -124,6 +127,7 @@ var entry = IDTable.Add(prefix, key, id, Sitecore.Data.ID.Null, customData);
 ```
 
 #### <a name="IDTableProvider">`IDTableProvider`</a>
+
 Sitecore must store the mappings somewhere. This is handled by a provider that inherits from `Sitecore.Data.IDTables.IDTableProvider`.
 
 The default provider uses a relational database table to store the mappings. This table is named `IDTable`. The IDTable configuration identifies which relational database is used. By default Sitecore uses the relational database that corresponds to the connection string named `master`:
@@ -136,10 +140,12 @@ The default provider uses a relational database table to store the mappings. Thi
  ```
 
 The default provider implements some additional features:
+
 * [Caching](#idprovider_caching)
 * [Events](#idprovider_events)
 
 ###### <a name="idprovider_caching">Caching</a>
+
 The default IDTable provider uses implements its own caching. The size of the cache is specified in the IDTable configuration.  
 
 ```xml
@@ -156,8 +162,8 @@ The default IDTable provider triggers the following events:
 * `idtable:added` - when an entry is added to the IDTable
 * `idtable:removed` - when an entry is removed from the IDTable
 
-
 ## <a name="deterministic">Deterministic GUIDs</a>
+
 It is possible to generate a GUID using a string. The algorithm is described in [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) from the IETF. 
 
 A C# implementation of the algorithm is [available on GitHub](https://github.com/LogosBible/Logos.Utility/blob/master/src/Logos.Utility/GuidUtility.cs).

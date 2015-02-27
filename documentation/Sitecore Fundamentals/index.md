@@ -16,6 +16,7 @@ If you are setting up a **production environment**, refer to the [**scaling guid
 ## Data Templates and the Sitecore Tree
 
 ### Official Sitecore Documentation (7.0 - 7.2)
+
 * [Data Definition Reference](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20Reference.aspx)  
 An overview of the Sitecore tree, items, data templates, and field types.
 * [Data Definition Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Data%20Definition%20Cookbook.aspx)  
@@ -110,6 +111,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [Handling HTTP 404](http://sdn.sitecore.net/Reference/Sitecore%207/Handing%20HTTP%20404.aspx)
 
 ### Configuration Topics
+
 * [Patch Files]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files)
 * [Settings]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Settings)
 * [Configuration Factory]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Sitecore Configuration Factory)
@@ -130,6 +132,7 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [Rules Engine Cookbook](http://sdn.sitecore.net/Reference/Sitecore%207/Rules%20Engine%20Cookbook.aspx)
 
 ### Extending Sitecore Topics
+
 * [Logging]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Logging)
 * [Pipelines]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Pipelines)
 * [Events]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Events)
