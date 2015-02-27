@@ -1,7 +1,6 @@
----
-layout: default
-title: Launch Pad
----
+=========
+Launch Pad
+=========
 
 The Launch Pad is a SPEAK interface that lists all items 
 

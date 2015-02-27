@@ -1,7 +1,6 @@
----
-layout: default
-title: Contact Facets
----
+=========
+Facets
+=========
 
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 
