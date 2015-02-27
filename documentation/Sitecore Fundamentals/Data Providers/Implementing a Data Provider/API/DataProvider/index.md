@@ -20,6 +20,7 @@ But there are many other methods available as well:
 * xxx
 
 ## <a name="GetChildIDs">GetChildIDs</a>
+
 Returns a collection of `ID`s that represents the Sitecore items that are children of a specific Sitecore item.
 
 ###### Parameters
@@ -35,20 +36,19 @@ Returns a collection of `ID`s that represents the Sitecore items that are childr
 
 ###### Example
 
-```c#
-public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext context)
-{
-    if (itemDefinition.ID == MyItemIDs.MyProviderRoot)
-    {
-		var ids = new IDList();
-		ids.Add(MyItemIDs.Child1);
-		ids.Add(MyItemIDs.Child2);
-		ids.Add(MyItemIDs.Child3);
-		return ids;
-    }
-    return null;
-}
-```
+	public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext context)
+	{
+	    if (itemDefinition.ID == MyItemIDs.MyProviderRoot)
+	    {
+			var ids = new IDList();
+			ids.Add(MyItemIDs.Child1);
+			ids.Add(MyItemIDs.Child2);
+			ids.Add(MyItemIDs.Child3);
+			return ids;
+	    }
+	    return null;
+	}
+
 ## <a name="GetItemDefinition">GetItemDefinition</a>
 
 Returns an object that describes the Sitecore item that corresponds to a specific Sitecore item `ID`.
@@ -65,30 +65,27 @@ Returns an object that describes the Sitecore item that corresponds to a specifi
 
 ###### Example
 
-```c#
-public override ItemDefinition GetItemDefinition(ID itemId, CallContext context)
-{
-    ItemDefinition itemDef = null;
-    if (itemId == MyItemIDs.MyProviderRoot)
-    {
-        itemDef = new ItemDefinition(itemId, "My Provider Root", TemplateIDs.Folder, ID.Null);
-    }
-    else if (itemId == MyItemIDs.Child1)
-    {
-        itemDef = new ItemDefinition(itemId, "Child1", TemplateIDs.File, ID.Null);
-    }
-    else if (itemId == MyItemIDs.Child2)
-    {
-        itemDef = new ItemDefinition(itemId, "Child2", TemplateIDs.File, ID.Null);
-    }
-    else if (itemId == MyItemIDs.Child3)
-    {
-        itemDef = new ItemDefinition(itemId, "Child3", TemplateIDs.File, ID.Null);
-    }
-    return itemDef;
-}
-
-```
+	public override ItemDefinition GetItemDefinition(ID itemId, CallContext context)
+	{
+	    ItemDefinition itemDef = null;
+	    if (itemId == MyItemIDs.MyProviderRoot)
+	    {
+	        itemDef = new ItemDefinition(itemId, "My Provider Root", TemplateIDs.Folder, ID.Null);
+	    }
+	    else if (itemId == MyItemIDs.Child1)
+	    {
+	        itemDef = new ItemDefinition(itemId, "Child1", TemplateIDs.File, ID.Null);
+	    }
+	    else if (itemId == MyItemIDs.Child2)
+	    {
+	        itemDef = new ItemDefinition(itemId, "Child2", TemplateIDs.File, ID.Null);
+	    }
+	    else if (itemId == MyItemIDs.Child3)
+	    {
+	        itemDef = new ItemDefinition(itemId, "Child3", TemplateIDs.File, ID.Null);
+	    }
+	    return itemDef;
+	}
 
 ## <a name="GetItemFields">GetItemFields</a>
 
@@ -110,26 +107,24 @@ Returns a collection of information that identifies the fields that populate the
 
 The following example demonstrates a data provider that does not support versioning. The same field values are returned regardless of the `VersionUri` parameter:
 
-```c#
-public override FieldList GetItemFields(ItemDefinition itemDefinition, VersionUri versionUri, CallContext context)
-{
-    if (itemId == MyItemIDs.MyProviderRoot || 
-	    itemId == MyItemIDs.Child1 || 
-		itemId == MyItemIDs.Child2 || 
-	    itemId == MyItemIDs.Child3)
-    {
-        var now = Sitecore.DateUtil.ToIsoDate(DateTime.Now);
-	    var fields = new FieldList();
-        fields.Add(FieldIDs.Created, now);
-        fields.Add(FieldIDs.Updated, now);
-        fields.Add(FieldIDs.Owner, this.Owner);
-        fields.Add(FieldIDs.CreatedBy, "custom data provider");
-        fields.Add(FieldIDs.UpdatedBy, "custom data provider");
-		return fields;
-    }
-    return null;
-}
-```
+	public override FieldList GetItemFields(ItemDefinition itemDefinition, VersionUri versionUri, CallContext context)
+	{
+	    if (itemId == MyItemIDs.MyProviderRoot || 
+		    itemId == MyItemIDs.Child1 || 
+			itemId == MyItemIDs.Child2 || 
+		    itemId == MyItemIDs.Child3)
+	    {
+	        var now = Sitecore.DateUtil.ToIsoDate(DateTime.Now);
+		    var fields = new FieldList();
+	        fields.Add(FieldIDs.Created, now);
+	        fields.Add(FieldIDs.Updated, now);
+	        fields.Add(FieldIDs.Owner, this.Owner);
+	        fields.Add(FieldIDs.CreatedBy, "custom data provider");
+	        fields.Add(FieldIDs.UpdatedBy, "custom data provider");
+			return fields;
+	    }
+	    return null;
+	}
 
 ## <a name="GetItemVersions">GetItemVersions</a>
 
@@ -150,24 +145,22 @@ Returns a collection of `VersionUri` objects that represent the versions availab
 
 The following example demonstrates a data provider that does not support versioning. It always returns one version for each language defined in the Sitecore database:
 
-```c#
-public override VersionUriList GetItemVersions(ItemDefinition itemDefinition, CallContext context)
-{
-    if (itemId == MyItemIDs.MyProviderRoot || 
-	    itemId == MyItemIDs.Child1 || 
-		itemId == MyItemIDs.Child2 || 
-	    itemId == MyItemIDs.Child3)
-    {
-	    var versions = new VersionUriList();
-        foreach (var language in context.DataManager.Database.Languages)
-        {
-            versions.Add(language, Sitecore.Data.Version.First);
-        }
-		return versions;
-    }
-    return null;
-}
-```
+	public override VersionUriList GetItemVersions(ItemDefinition itemDefinition, CallContext context)
+	{
+	    if (itemId == MyItemIDs.MyProviderRoot || 
+		    itemId == MyItemIDs.Child1 || 
+			itemId == MyItemIDs.Child2 || 
+		    itemId == MyItemIDs.Child3)
+	    {
+		    var versions = new VersionUriList();
+	        foreach (var language in context.DataManager.Database.Languages)
+	        {
+	            versions.Add(language, Sitecore.Data.Version.First);
+	        }
+			return versions;
+	    }
+	    return null;
+	}
 
 ## <a name="GetLanguages">GetLanguages</a>
 
