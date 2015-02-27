@@ -5,7 +5,9 @@ xDB and Experience Marketing
 .. toctree::
    :maxdepth: 2
 
-   The xDB Contact
+   xdb_contact
+   facets
+   launch_pad
 
 ## Architecture
 
