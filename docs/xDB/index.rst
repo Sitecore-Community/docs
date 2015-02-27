@@ -5,7 +5,7 @@ xDB and Experience Marketing
 .. toctree::
    :maxdepth: 2
 
-   *
+   The xDB Contact
 
 ## Architecture
 
