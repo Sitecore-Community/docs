@@ -192,10 +192,12 @@ In most cases this method should be overridden to return `null`. The default dat
 The following example demonstrates a data provider that does not add support for any additional languages:
 
 ```
+
 public override LanguageCollection GetLanguages(CallContext context)
 {
     return null;
 }
+
 ```
 
 ## <a name="GetParentID">GetParentID</a>
@@ -214,7 +216,8 @@ Returns the `ID` that represents the Sitecore item that is the parent of a speci
 
 ###### Example
 
-```
+```c#
+
 public override ID GetParentID(ItemDefinition itemDefinition, CallContext context)
 {
     if (itemId == MyItemIDs.Child1 || 
@@ -225,4 +228,5 @@ public override ID GetParentID(ItemDefinition itemDefinition, CallContext contex
     }
     return ID.Null;
 }
+
 ```
