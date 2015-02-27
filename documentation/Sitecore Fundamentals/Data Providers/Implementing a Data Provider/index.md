@@ -8,6 +8,7 @@ When you implement a data provider you are creating two things:
 2. [Configuration](#configuration) - specifies where Sitecore should use the implementation
 
 ## <a name="implementation">Implementation</a>
+
 A data provider inherits from the abstract class `Sitecore.Data.DataProviders.DataProvider`.
 
 * [API]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/API) - describes the API used to build a custom data provider
@@ -17,6 +18,7 @@ A data provider inherits from the abstract class `Sitecore.Data.DataProviders.Da
 * [Templates]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/Templates) - how to work with templates
 
 ## <a name="configuration">Configuration</a>
+
 Configuration is used to tell Sitecore which data providers a Sitecore database should use.
 
 > It is good to define a data provider in a separate configuration node. That makes it easier to make a data provider available to multiple Sitecore databases.

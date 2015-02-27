@@ -28,6 +28,7 @@ Returns a collection of `ID`s that represents the Sitecore items that are childr
 * `CallContext`
 
 ###### Returns
+
 * If the specified Sitecore item has children: `IDList` containing the `ID`s of the children
 * If the specified Sitecore item has no children: `null` or empty `IDList` object 
 * If the data provider does not handle the specified Sitecore item: `null`
@@ -49,6 +50,7 @@ public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext co
 }
 ```
 ## <a name="GetItemDefinition">GetItemDefinition</a>
+
 Returns an object that describes the Sitecore item that corresponds to a specific Sitecore item `ID`.
 
 ###### Parameters
@@ -57,6 +59,7 @@ Returns an object that describes the Sitecore item that corresponds to a specifi
 * `CallContext`
 
 ###### Returns
+
 * If the data provider handles the specified `ID`: `ItemDefinition` object
 * If the data provider does not handle the specified `ID`: `null`
 
@@ -88,6 +91,7 @@ public override ItemDefinition GetItemDefinition(ID itemId, CallContext context)
 ```
 
 ## <a name="GetItemFields">GetItemFields</a>
+
 Returns a collection of information that identifies the fields that populate the a specific version of a specific Sitecore item.
 
 ###### Parameters
@@ -97,11 +101,13 @@ Returns a collection of information that identifies the fields that populate the
 * `CallContext`
 
 ###### Returns
+
 * If the specified Sitecore item has fields: `FieldList` containing the `ID`s of the children
 * If the specified Sitecore item has no fields: `null` or empty `IDList` object 
 * If the data provider does not handle the specified Sitecore item: `null`
 
 ###### Example
+
 The following example demonstrates a data provider that does not support versioning. The same field values are returned regardless of the `VersionUri` parameter:
 
 ```c#
@@ -126,6 +132,7 @@ public override FieldList GetItemFields(ItemDefinition itemDefinition, VersionUr
 ```
 
 ## <a name="GetItemVersions">GetItemVersions</a>
+
 Returns a collection of `VersionUri` objects that represent the versions available for a specific Sitecore item.
 
 ###### Parameters
@@ -134,11 +141,13 @@ Returns a collection of `VersionUri` objects that represent the versions availab
 * `CallContext`
 
 ###### Returns
+
 * If the specified Sitecore item has versions: `VersionUriList` containing the `VersionUri` objects that represent the available versions
 * If the specified Sitecore item has no versions: `null` or empty `VersionUriList` object 
 * If the data provider does not handle the specified Sitecore item: `null`
 
 ###### Example
+
 The following example demonstrates a data provider that does not support versioning. It always returns one version for each language defined in the Sitecore database:
 
 ```c#
@@ -161,6 +170,7 @@ public override VersionUriList GetItemVersions(ItemDefinition itemDefinition, Ca
 ```
 
 ## <a name="GetLanguages">GetLanguages</a>
+
 Returns the languages that are supported by the data provider. 
 
 In most cases this method should be overridden to return `null`. The default data provider will return the appropriate languages. Failing to implement the method properly will result in duplicate languages appearing:
@@ -172,11 +182,13 @@ In most cases this method should be overridden to return `null`. The default dat
 * `CallContext`
 
 ###### Returns
+
 * If the specified Sitecore item adds support for specific languages: `LanguageCollection` containing the `Language` objects
 * If the specified Sitecore item does not add support for specific language: `null` or empty `LanguageCollection` object 
 * If the data provider does not handle the specified Sitecore item: `null`
 
 ###### Example
+
 The following example demonstrates a data provider that does not add support for any additional languages:
 
 ```c#
@@ -187,6 +199,7 @@ public override LanguageCollection GetLanguages(CallContext context)
 ```
 
 ## <a name="GetParentID">GetParentID</a>
+
 Returns the `ID` that represents the Sitecore item that is the parent of a specific Sitecore item.
 
 ###### Parameters
@@ -195,6 +208,7 @@ Returns the `ID` that represents the Sitecore item that is the parent of a speci
 * `CallContext`
 
 ###### Returns
+
 * If the data provider is able to determine the parent Sitecore item ID for the specified Sitecore item: `ID` for the parent Sitecore item
 * If the data provider does not handle the specified Sitecore item: `Sitecore.Data.ID.Null`
 
