@@ -8,4 +8,3 @@ Welcome to Sitecore Community Docs
 
    sitecore_mvc/index
    xdb/index
-   link_aggregation/index
