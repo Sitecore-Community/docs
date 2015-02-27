@@ -20,11 +20,12 @@ A data provider inherits from the abstract class `Sitecore.Data.DataProviders.Da
 ## <a name="configuration">Configuration</a>
 
 Configuration is used to tell Sitecore which data providers a Sitecore database should use.
+
 * [Adding a data provider to a Sitecore database](#add_data_provider)
 * [Data provider order](#data_provider_order)
 
-
 #### <a name="add_data_provider">Adding a data provider to a Sitecore database</a>
+
 The following example demonstrates how to define a data provider and add the data provider to the `master` Sitecore database:
 
 	<dataProviders>
