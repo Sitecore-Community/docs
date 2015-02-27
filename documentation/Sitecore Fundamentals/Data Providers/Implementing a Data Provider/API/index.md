@@ -37,18 +37,16 @@ There are cases where the first data provider is the only data provider that nee
 
 The following is an example of how to use this method:
 
-```
-public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext context)
-{
-    if (itemDefinition.ID == MyItemIDs.MyProviderRoot)
-    {
-		var ids = new IDList();
-		ids.Add(MyItemIDs.Child1);
-		ids.Add(MyItemIDs.Child2);
-		ids.Add(MyItemIDs.Child3);
-		context.Abort();
-		return ids;
-    }
-    return null;
-}
-```
+	public override IDList GetChildIDs(ItemDefinition itemDefinition, CallContext context)
+	{
+	    if (itemDefinition.ID == MyItemIDs.MyProviderRoot)
+	    {
+			var ids = new IDList();
+			ids.Add(MyItemIDs.Child1);
+			ids.Add(MyItemIDs.Child2);
+			ids.Add(MyItemIDs.Child3);
+			context.Abort();
+			return ids;
+	    }
+	    return null;
+	}

@@ -27,19 +27,17 @@ Configuration is used to tell Sitecore which data providers a Sitecore database 
 #### <a name="add_data_provider">Adding a data provider to a Sitecore database</a>
 The following example demonstrates how to define a data provider and add the data provider to the `master` Sitecore database:
 
-```
-<dataProviders>
-  <myDataProvider type="Testing.DataProviders.MyDataProvider, Testing" />
-</dataProviders>
-
-<databases>
-  <database id="master">
-    <dataProviders hint="list:AddDataProvider">
-      <dataProvider patch:before="*[1]" ref="dataProviders/myDataProvider" />
-    </dataProviders>
-  </database>
-</databases>
-```
+	<dataProviders>
+	  <myDataProvider type="Testing.DataProviders.MyDataProvider, Testing" />
+	</dataProviders>
+	
+	<databases>
+	  <database id="master">
+	    <dataProviders hint="list:AddDataProvider">
+	      <dataProvider patch:before="*[1]" ref="dataProviders/myDataProvider" />
+	    </dataProviders>
+	  </database>
+	</databases>
 
 #### <a name="data_provider_order">Data provider order</a>
 

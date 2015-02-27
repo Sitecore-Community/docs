@@ -170,16 +170,12 @@ A C# implementation of the algorithm is [available on GitHub](https://github.com
 
 The following demonstrates how to use this implementation. The GUID `{9D02E821-E902-5BA1-BE5E-3B3F87F2DB51}` will always returned when the external identifier `D-7734J` is supplied.
 
-```
-var externalId = "D-7734J";
-var guid = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
-```
+	var externalId = "D-7734J";
+	var guid = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
 
 Use the following code to check if a specific GUID corresponds to an external identifier:
 
-```
-var guidExpected = Guid.Parse("{9D02E821-E902-5BA1-BE5E-3B3F87F2DB51}");
-var externalId = "D-7734J";
-var guidCreated = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
-var match = (guidExpected == guidCreated);
-``` 
+	var guidExpected = Guid.Parse("{9D02E821-E902-5BA1-BE5E-3B3F87F2DB51}");
+	var externalId = "D-7734J";
+	var guidCreated = GuidUtility.Create(GuidUtility.IsoOidNamespace, externalId);
+	var match = (guidExpected == guidCreated);
