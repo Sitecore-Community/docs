@@ -41,8 +41,8 @@ Relationships between items can be described in a couple of ways:
 
 Relationships between items can be followed using the following means. In order for a custom data provider to work correctly it is important to consider each of these:
 
-1. Sitecore Content API 
-2. Sitecore Content Search API
+* **Sitecore Content API** - used to access content directly from a Sitecore database
+* **Sitecore Content Search API** - used to search for content 
  
 #### <a name="Databases">Databases</a> 
 
@@ -50,7 +50,11 @@ A Sitecore database exposes items using the items' hierarchical relationships.
 
 The root item in a Sitecore database has the name `sitecore` and the ID `{11111111-1111-1111-1111-111111111111}`. All items in a Sitecore database are descendants of the root item.
 
-Sitecore comes with 3 databases. By default `core`, `master` and `web` are configured, but additional databases can be added.
+By default the following Sitecore databases are pre-configured, but additional databases can be added:
+
+* **core** - stores content that determines how the Sitecore application works
+* **master** - stores content available during the content authoring process
+* **web** - stores content available during the content delivery process 
 
 The specific items that are exposed in a Sitecore database depend on the data providers that are assigned to the Sitecore database. Each of the default Sitecore databases has a data provider assigned that exposes items stored in a relational database. These relational databases are created and specified during Sitecore installation.
 

@@ -15,7 +15,7 @@ Sitecore provides a storage area called the IDTable where external identifiers c
 
 * [API](#api) - describes the API used to interact with the IDTable
 * [Caching](#caching) - describes the IDTable caching features
-* [`IDTableProvider`](#IDTableProvider) - the provider responsible for storing data in and retrieving data from the IDTable.
+* [IDTableProvider](#IDTableProvider) - the provider responsible for storing data in and retrieving data from the IDTable.
 
 #### <a name="api">API</a>
 
@@ -108,7 +108,7 @@ There is no API for updating an entry, so an entry must be removed and then adde
 	var customData = "name=Something|place=Here";
 	var entry = IDTable.Add(prefix, key, id, Sitecore.Data.ID.Null, customData);
 
-#### <a name="IDTableProvider">`IDTableProvider`</a>
+#### <a name="IDTableProvider">IDTableProvider</a>
 
 Sitecore must store the mappings somewhere. This is handled by a provider that inherits from `Sitecore.Data.IDTables.IDTableProvider`.
 
@@ -137,8 +137,8 @@ The default IDTable provider uses implements its own caching. The size of the ca
 
 The default IDTable provider triggers the following events:
 
-* `idtable:added` - when an entry is added to the IDTable
-* `idtable:removed` - when an entry is removed from the IDTable
+* **idtable:added** - when an entry is added to the IDTable
+* **idtable:removed** - when an entry is removed from the IDTable
 
 ## <a name="deterministic">Deterministic GUIDs</a>
 

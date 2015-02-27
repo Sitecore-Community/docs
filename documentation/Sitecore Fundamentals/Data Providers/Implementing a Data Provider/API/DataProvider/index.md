@@ -6,18 +6,28 @@ title: Sitecore.Data.DataProviders.DataProvider
 
 The list of methods available on this class is pretty expansive. A small number of the methods must be implemented in order to get a working data provider. The functionality you need will determine the methods you must implement.
 
-However, in most cases there are methods that you will almost certainly need to implement. Those methods are:  
+For read-only data providers you must implement:  
 
-1. [GetChildIDs](#GetChildIDs)
-2. [GetItemDefinition](#GetItemDefinition)
-3. [GetItemFields](#GetItemFields)
-4. [GetItemVersions](#GetItemVersions)
-5. [GetLanguages](#GetLanguages)
-6. [GetParentID](#GetParentID)
+* [GetChildIDs](#GetChildIDs)
+* [GetItemDefinition](#GetItemDefinition)
+* [GetItemFields](#GetItemFields)
+* [GetItemVersions](#GetItemVersions)
+* [GetLanguages](#GetLanguages)
+* [GetParentID](#GetParentID)
 
-But there are many other methods available as well:
+For read/write data providers you must implement:
 
-* xxx
+* CopyItem
+* CreateItem
+* DeleteItem
+* MoveItem
+* SaveItem
+
+For read/write data providers that support versioning you must implement:
+
+* AddVersion
+* RemoveVersion
+* RemoveVersions
 
 ## <a name="GetChildIDs">GetChildIDs</a>
 
@@ -40,11 +50,11 @@ Returns a collection of `ID`s that represents the Sitecore items that are childr
 	{
 	    if (itemDefinition.ID == MyItemIDs.MyProviderRoot)
 	    {
-			var ids = new IDList();
-			ids.Add(MyItemIDs.Child1);
-			ids.Add(MyItemIDs.Child2);
-			ids.Add(MyItemIDs.Child3);
-			return ids;
+	        var ids = new IDList();
+	        ids.Add(MyItemIDs.Child1);
+	        ids.Add(MyItemIDs.Child2);
+	        ids.Add(MyItemIDs.Child3);
+	        return ids;
 	    }
 	    return null;
 	}
