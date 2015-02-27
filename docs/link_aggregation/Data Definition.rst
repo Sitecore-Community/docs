@@ -1,7 +1,6 @@
----
-layout: default
-title: Data Definition
----
+=======
+Data Definition
+=======
 
 #Official Sitecore Documentation (7.0 - 7.2)
 
