@@ -24,7 +24,7 @@ In Sitecore content is exposed via `Fields`. Each field stores a value. The valu
 
 #### <a name="Items">Items</a>
 
-Related fields are grouped together in constructs called `Items`. An item is a collection of `Fields`. But there is more to an item. Each item has...
+Related fields are grouped together in constructs called `Items`. An item is a collection of `Fields`. But there is more to an item. Each item has the following properties:
 
 * **ID** - a GUID (global unique identifier) that uniquely identifies an item. An ID is often expressed as a hexadecimal number, such as `{BD36FFD2-211B-4B93-886C-F87DA01DCE2C}`.
 * **Name** - a name that identifies an item. Names are not unique, but they are useful because they are easier to understand the the item ID.

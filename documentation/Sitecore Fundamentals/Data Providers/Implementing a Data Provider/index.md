@@ -16,6 +16,7 @@ A data provider inherits from the abstract class `Sitecore.Data.DataProviders.Da
 * [Search]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/Search) - how to ensure items from custom data providers are available to the Sitecore search API 
 * [Publishing]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/Publishing) - how to ensure publishing items from custom data providers works as required
 * [Templates]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/Templates) - how to work with templates
+* [Non-hierarchical data]({{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers/Implementing a Data Provider/Non-hierarchical data) - how to work with templates
 
 ## <a name="configuration">Configuration</a>
 
