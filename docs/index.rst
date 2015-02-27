@@ -6,5 +6,4 @@ Welcome to Sitecore Community Docs
    :maxdepth: 1
 
    sitecore_mvc/index
-   xdb/index
    link_aggregation/index
