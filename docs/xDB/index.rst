@@ -8,4 +8,3 @@ xDB and Experience Marketing
    xdb_contact
    facets
    launch_pad
-
