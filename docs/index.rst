@@ -6,4 +6,3 @@ Welcome to Sitecore Community Docs
    :maxdepth: 1
 
    sitecore_mvc/index
-   link_aggregation/index
