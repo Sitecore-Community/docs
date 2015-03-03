@@ -37,6 +37,6 @@ The default process will not work if you want the Sitecore search index to be ke
 
 A custom index update strategy class can provide a solution. The precisely implementation of this class will depend on the external system. Some examples are:
 
-* **Push **- the external system notifies Sitecore that content has changed. This might be an event that is fired on the external system. An event handler on the external system makes a web service call to Sitecore. This web service call acts as the notification that Sitecore needs in order to know that a change has been made on the external system. 
+* **Push**- the external system notifies Sitecore that content has changed. This might be an event that is fired on the external system. An event handler on the external system makes a web service call to Sitecore. This web service call acts as the notification that Sitecore needs in order to know that a change has been made on the external system. 
 * **Monitor** - a Sitecore scheduled task periodically checks the external system for any changes. 
 
