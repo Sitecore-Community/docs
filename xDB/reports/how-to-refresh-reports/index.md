@@ -12,7 +12,7 @@ So, developers get always something like below:
 So, below are some steps that developer should do on its dev. environment in order to get wanted behavior.
 
 - - -  
-__Note: please take into account that some of suchg steps are not good to do on production__
+__Note: please take into account that some of such steps are not good to do on production__
 - - -  
 
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 7.5</p>
