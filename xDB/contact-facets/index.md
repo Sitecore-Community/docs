@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Contact Facets
+redirect_from: "/documentation/xDB/Facets/"
 ---
-
-<p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 
 Not to be confused with **goal facets** or **search facets**, a contact facet is a property of a contact - such their first name, e-mail address, or job title. You can easily [add your own facets](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2014/09/Introducing-Contact-Facets.aspx).
 
@@ -29,7 +28,6 @@ Facets are configured in ``Sitecore.Analytics.Model.config``. There are no corre
           </facets>
         </contact>
       </entities>
-
 
 ### Retrieving Facets
 
@@ -87,12 +85,12 @@ Each ``IEmailAddress`` has an SmtpAddress, and also a ``BounceCount`` integer wh
 
 A visitor's preferred e-mail address is the one that is displayed in the Experience Profile search interface - if you do not specify a preference, it will display 'Unknown':
 
-![Create a Sitecore item]({{ site.baseurl }}/img/smtp.PNG)	
+![Create a Sitecore item]({{ site.baseurl }}/images/smtp.PNG)
 
 It also displays in the Experience Profile itself:
 
-![Create a Sitecore item]({{ site.baseurl }}/img/smtp2.PNG)	
+![Create a Sitecore item]({{ site.baseurl }}/images/smtp2.PNG)	
 
 All available e-mail addresses are listed (with their keys) in the **Details** tab:
 
-![Create a Sitecore item]({{ site.baseurl }}/img/smtp3.PNG)	
+![Create a Sitecore item]({{ site.baseurl }}/images/smtp3.PNG)	

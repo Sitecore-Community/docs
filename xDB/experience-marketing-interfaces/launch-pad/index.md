@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Launch Pad
+redirect_from: "/documentation/xDB/Interfaces/Launch Pad/"
 ---
 
 The Launch Pad is a SPEAK interface that lists all items 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Creating a Visual Studio Project for Sitecore MVC
+redirect_from: "/documentation/Sitecore%20MVC/Creating a Visual Studio Project for Sitecore MVC/"
 ---
 
 In order to work with Sitecore, you must set up a Visual Studio project. The following article explains how to do so for a Sitecore MVC project.

@@ -1,50 +1,20 @@
 ---
 layout: default
 title: Sitecore MVC
+redirect_from: "/documentation/Sitecore MVC/"
 ---
 
-## [Getting Started]()
+If you are new to Sitecore MVC, watch the following two videos for an overview of the basics. Sitecore MVC is an adaptation of ASP.NET MVC for Sitecore, and knowledge of standard ASP.NET MVC is both good and bad. [/what-is-sitecore-mvc](Find out more about why Sitecore MVC is different from standard ASP.NET MVC).
 
-If you are new to Sitecore MVC, check out the following videos and introductory blog posts to get started:
+## Video: Getting Started
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/i3Mwcphtz4w" frameborder="0" allowfullscreen></iframe>
+</div>
 
-* [YouTube: Sitecore MVC - Part 1: Getting Started](http://www.youtube.com/watch?v=i3Mwcphtz4w)
-* [YouTube: Sitecore MVC - Part 2: View Renderings, @Html.Sitecore(), and Custom Models](http://www.youtube.com/watch?v=dW_rQp9bMmE)
-* [http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html](http://www.alen.me.uk/2012/08/learning-sitecore-mvc-part-1.html) (4 parts)
-
-----------------------
-
-## [Creating a Visual Studio Project for Sitecore MVC]({{ site.baseurl }}/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC/index.html)
-How to create a  Visual Studio project to work with Sitecore MVC, including troubleshooting and FAQ sections.
-
-----------------------
-
-## Sitecore MVC Components
-
-Sitecore MVC introduces a number of additional component types. The most commonly used types are **controller renderings** and **view renderings**.
-
-### [View Renderings]({{ site.baseurl }}/documentation/Sitecore MVC/View Renderings/index.html)
-
-View renderings allow you to return a .cshtml file which can take a standard or custom Sitecore model.
-
-### [Controller Renderings]({{ site.baseurl }}/documentation/Sitecore MVC/Controller Renderings/index.html)
-
-Controller renderings allow you to specify a controller and action result, which in turn can return a .cshtml file or any other type of renderable content.
-
----------------------------
-
-## [Models]()
-
----------------------------
-
-## [Rendering Content]({{ site.baseurl }}/documentation/Sitecore MVC/Rendering Content/index.html)
-
-In Sitecore MVC, you can either return content as properties of your model (much like standard ASP.NET MVC), or use the field helper to output fields from a context or datasource item.
-
----------------------------
-
-## Reference Materials
-
-### General Information
+## Video: View Renderings, @Html.Sitecore(), and Custom Models
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/dW_rQp9bMmE" frameborder="0" allowfullscreen></iframe>
+</div>
 
 #### Blog Posts
 

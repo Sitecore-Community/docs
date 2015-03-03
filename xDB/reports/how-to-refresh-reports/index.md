@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Refreshing Executive Dashboard/ Experience Analytics reports
+redirect_from: "/documentation/xDB/How to refresh Reports/"
 ---
 
 Developers (especially those that do some custom reports) would like often to debug something more easily by following scenario: "I visit some pages on my web site and I see results in reports immediately (no matter Executive Dashboard of Sitecore 7.5 or Experience Analytics of Sitecore 8.0)".  
 Well, for now it is pretty tricky to get such behavior in both 7.5 and 8.0 out of the box. Since Executive Dashboard (ED) and Experience Analytics (EA) are not "runtime" reports and they show some aggregated information after some period of time (we will not cover more details in this article).  
 So, developers get always something like below:  
-![Empty Dashboard]({{ site.baseurl }}/img/Refreshing reports/emptyDashboard.png)
+![Empty Dashboard]({{ site.baseurl }}/images/Refreshing reports/emptyDashboard.png)
 
 So, below are some steps that developer should do on its dev. environment in order to get wanted behavior.
 
@@ -19,7 +20,7 @@ __Note: please take into account that some of suchg steps are not good to do on 
 #### Step 1:  
 Configure ```"reporting.secondary"``` DB (see the reason of that [here](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/processing%20overview)).  
 Use copy of clean reporting DB for that. Add appropriate line in connection strings (see some information [here](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/configure%20a%20content%20management%20server)). We will need that reporting DB when executing step #7.  
-![Connection strings]({{ site.baseurl }}/img/Refreshing reports/connectionStrings.png)
+![Connection strings]({{ site.baseurl }}/images/Refreshing reports/connectionStrings.png)
 
 #### Step 2:  
 Change parameter ```"MinimumVisitsFilter"``` in "\sitecore\shell\Applications\Reports\Dashboard\Configuration.config" file from 50 to 0.  
@@ -48,7 +49,7 @@ In reporting secondary database change the ```dbo.TrafficOverview``` view in the
 Perform following steps for that:  
 1. Open your reporting DB  
 2. Navigate to Views -> dbo.TrafficOverview. Click "Design" and add the ```"CAST(Date AS date) AS Date"``` line and save the changes:  
-![Workaround cast]({{ site.baseurl }}/img/Refreshing reports/workaroundCast.png)
+![Workaround cast]({{ site.baseurl }}/images/Refreshing reports/workaroundCast.png)
 
 
 ---
@@ -59,4 +60,4 @@ Do the same steps as for Sitecore 7.5 except steps #7-9 - they are not required.
 __Tipp:__ in order to reset some Dashboard caches change date filter in report:
 
 
-![Sitecore 8 report]({{ site.baseurl }}/img/Refreshing reports/reportSitecore8.png)  
+![Sitecore 8 report]({{ site.baseurl }}/images/Refreshing reports/reportSitecore8.png)  

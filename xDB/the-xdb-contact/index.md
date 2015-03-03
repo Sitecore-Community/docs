@@ -1,9 +1,8 @@
 ---
 layout: default
 title: The xDB Contact
+redirect_from: "/documentation/xDB/The xDB Contact/"
 ---
-
-<p class="well"><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 
 ## What is a contact?
 In the Experience Database (xDB), a contact is a visitor. Even if you are anonymous, or have never provided your e-mail address to Sitecore, you are still referred to and stored as a contact.
@@ -61,6 +60,7 @@ A bare bones contact that didn't do much on the site looks like this - they did 
 Contact data is also aggregated down to the **reporting database** (which is used primarily by the reporting API and Engagement Analytics) and the **analytics index**, which is used by the Experience Profile search page and Email Experience Manager.
 
 ## What is the difference between a contact and a user?
+
 When we talk about **users** in Sitecore, we tend to mean ASP.NET membership users. There is no direct link between a contact and a user in the xDB - you can be a contact without being a registered user. However, the xDB does store **identifiers** that you can use to link your contact to an ASP.NET user in code. The contact below is **'known'** and identified by their Sitecore extranet user:
 
 	"Identifiers" : {
@@ -79,7 +79,7 @@ As can be seen from the ContactIdentificationLevel enum below, **2** denotes **k
 
 Even though there is an option for 'Anonymous', you will find that the Identifiers section is simply missing from anonymous contacts. 
 
-### Identifying a contact in code
+## Identifying a contact in code
 
 Web Forms for Marketers will automatically 'identify' a contact to match a registered user if you use any of its 'log in' Save Actions. To identify a contact yourself, do the following:
 
@@ -88,30 +88,13 @@ Web Forms for Marketers will automatically 'identify' a contact to match a regis
 
 Remember to format the username correctly, including **domain** and double backslash.  The xDB will now associate your logged-in visitor with an existing xDB record, provided this is not their first visit.
 
-## Adding information to a contact
+## Extending a Contact
 
-### Facets
+There are a number of ways to add more information to a contact.
 
-Find out more about [facets]({{ site.baseurl }}/documentation/xDB/Facets).
+* Use [facets]({{ site.baseurl }}/documentation/xDB/Facets) for permanent, business-critical information - such as 'Loyalty Card Number'
+* Use [extensions]({{ site.baseurl }}/documentation/xDB/Extensions) for more ad-hoc information - such as 'Favourite Vacation Memory'
+* Use [tags]({{ site.baseurl }}/documentation/xDB/Tags) for ad-hoc information that needs to be tracked over time
 
-### Tags
 
-**Tags** are an informal, unstructured way of storing data as key value pairs. If a marketer creates a form to capture details about a visitor's favourite food, that information can be stored as a tag without a developer needing to create some kind of data structure beforehand.
-
-    "Tags" : {
-        "Entries" : {
-            "Favourite Food" : {
-                "Values" : {
-                    "0" : {
-                        "Value" : "Bananas, obviously.",
-                        "DateTime" : ISODate("2015-02-06T13:17:19.089Z")
-                    }
-                }
-            }
-        }
-    }
-
-### Tip!
-
-To store a field value as a tag when using Web Forms for Marketers, select the field in question and tick the 'Tag' checkbox in the Analytics sub-section in the left-hand menu.
 

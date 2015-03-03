@@ -3,14 +3,14 @@ layout: home
 title: Index
 ---
 
+{% include navigation.html %}
+ 
 <div class="well">
 <h3 id="what-is-this">What is this?</h3>
 <p>This is a <strong>community-driven</strong> collection of developer resources - including blogs, videos, references, and articles. Please note that although Sitecore employees contribute, this is not official Sitecore documentation. As content matures, it may be migrated to <strong>Sitecore's official documentation site:</strong></p>
 
 	<a href="#" class="btn btn-primary">Visit doc.sitecore.net</a>
 </div>
-
-<p>This is a GitHub Pages site - please <strong><a href="https://github.com/Sitecore-Community/Sitecore-Community-Docs">fork</a></strong> to contribute your own content.</p>
 
 <hr />
 
@@ -20,50 +20,28 @@ title: Index
 
 <hr />
 
-<h2>Community Documentation</h2>
-
-
-<h3 id="sitecore-mvcdocsdocumentationsitecore-mvcindexhtml"><a href="{{site.baseurl}}/documentation/Sitecore MVC/index.html"><span class="glyphicon glyphicon-pushpin"></span> Sitecore MVC</a></h3>
+<h2>Defining Data</h2>
 
 <ul>
-  <li><a href="{{site.baseurl}}/documentation/Sitecore MVC/Creating a Visual Studio Project for Sitecore MVC">Creating a Visual Studio project for Sitecore MVC</a></li>
-  <li>
-    MVC Components
-      <ul>
-        <li><a href="{{site.baseurl}}/documentation/Sitecore MVC/View Renderings">View Renderings</a></li>
-        <li>Controller Renderings</li>
-      </ul>
-  </li>
-  <li><a href="{{site.baseurl}}/documentation/Sitecore MVC/Rendering Content">Rendering Content</a></li>
+  <li><s>Items and Content Architecture</s></li>
+  <li><s>Data Templates</s></li>
+  <li><s>Standard Values</s></li>
+  <li><s>Insert Options</s></li>
 </ul>
 
-<h3><a href="{{site.baseurl}}/documentation/xDB/"><span class="glyphicon glyphicon-pushpin"></span> The Experience Database (xD)</a></h3>
-
+<h2>Workflow and User Permissions</h2>
 <ul>
-  <li><a href="{{site.baseurl}}/documentation/xDB/The xDB Contact">The xDB Contact</a>
-      <ul>
-        <li><a href="{{site.baseurl}}/documentation/xDB/Facets">Facets</a></li>
-      </ul>
-
-  </li>
+  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Authorizations">Authorizations/Permissions</a></li>
 </ul>
 
-<h3><span class="glyphicon glyphicon-pushpin"></span> <a href="/docs/documentation/Sitecore Fundamentals/index.html">Sitecore Fundamentals</a></h3>
-<h4>Workflow and User Permissions</h4>
-<ul>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Authorizations">Authorizations/Permissions</a>
-
-  </li>
-</ul>
-
-<h4>Configuration</h4>
+<h2>Configuration</h2>
 <ul>
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files">Patch Files</a></li>
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Settings">Settings</a></li>
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Sitecore Configuration Factory">Configuration Factory</a></li>
 </ul>
 
-<h4>Extending and Customizing Sitecore</h4>
+<h2>Extending and Customizing Sitecore</h2>
 
 <ul>
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Pipelines">Pipelines</a></li>
@@ -74,133 +52,72 @@ title: Index
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Rules Engine">Rules Engine</a></li>
 </ul>
 
-<hr />
-
-
-<h3 id="sitecore-75-resourcesdocsdocumentationsitecore-7-5indexhtml"><a href="/docs/documentation/Sitecore 7-5/index.html">Sitecore 7.5 Resources</a></h3>
-<p>Sitecore 7.5 blog posts and links to official documentation.</p>
-
-<h3 id="sitecore-8-resourcesdocsdocumentationsitecore-8indexhtml"><a href="/docs/documentation/Sitecore 8/index.html">Sitecore 8 Resources</a></h3>
-<p>List of Sitecore 8 blog posts from those with the technical preview.</p>
-
-
-<h3 id="scaling-and-optimizationdocsdocumentationscaling-and-optimizationindexhtml"><a href="/docs/documentation/Scaling and Optimization/index.html">Scaling and Optimization</a></h3>
-
-<p><strong>Includes</strong></p>
+<h2>Sitecore MVC</h2>
 
 <ul>
-  <li>Scaling</li>
-  <li>Caching</li>
-  <li>Diagnostics and Testing</li>
+  <li><a href="{{site.baseurl}}/sitecore-mvc">Getting Started</a></li>
+  <li><a href="{{site.baseurl}}/sitecore-mvc/creating-project">Create a Project</a></li>
+  <li>MVC Components
+      <ul>
+        <li><a href="{{site.baseurl}}/sitecore-mvc/view-renderings">View Renderings</a></li>
+        <li><a href="{{site.baseurl}}/sitecore-mvc/controller-renderings">Controller Renderings</a></li>
+      </ul>
+    </li>
+  <li><a href="{{site.baseurl}}/sitecore-mvc/rendering-content">Rendering Content</a></li>
+</ul>
+
+<h2>xDB</h2>
+
+<ul>
+  <li><a href="{{site.baseurl}}/xDB/the-xdb-contact">xDB Contacts</a>
+      <ul>
+        <li><a href="{{site.baseurl}}/xDB/contact-facets">Facets</a></li>
+        <li><s>Extensions</s></li>
+        <li><s>Tags</s></li>        
+      </ul>
+  </li>
+  <li><s>Goals and Outcomes</s></li>
+  <li><s>Engagement Automation</s></li>
+  <li><s>Scaling</s></li>
+  <li><s>Experience Marketing Interfaces</s></li>
+  <li>Reporting
+    <ul>
+      <li><a href="{{site.baseurl}}/xDB/reports/extending-experience-analytics-reports">Extending Experience Analytics Reports</a></li>
+      <li><a href="{{site.baseurl}}/xDB/reports/how-to-refresh-reports">Refreshing Reports</a></li>
+    </ul>
+  </li>
+  <li>Interfaces
+    <ul>
+      <li><a href="{{site.baseurl}}/xDB/experience-marketing-interfaces/launch-pad">Launch Pad</a></li>
+    </ul>
+  </li>
 </ul>
 
 <hr />
 
-<h3 id="upgrades-and-migratingdocsdocumentationupgrades-and-migratingindexhtml"><a href="/docs/documentation/Upgrades and Migrating/index.html">Upgrades and Migrating</a></h3>
-<p><strong>Includes</strong></p>
+<h2>Link Aggregation</h2>
 
 <ul>
-  <li>Upgrade Tips</li>
-  <li>Upgrade Fixes</li>
+  <li><a href="/docs/documentation/Sitecore Fundamentals/index.html">Sitecore Fundamentals</a></li>
+  <li><a href="/docs/documentation/Scaling and Optimization/index.html">Scaling and Optimization</a></li>
+  <li><a href="/docs/documentation/Upgrades and Migrating/index.html">Upgrades and Migrating</a></li>
+  <li><a href="/docs/documentation/Search/index.html">Sitecore Search</a></li>
+  <li><a href="/docs/documentation/Sitecore Services Layer/index.html">Sitecore.Services.Client</a></li>
+  <li><a href="/docs/documentation/Sitecore and Media/index.html">Sitecore and Media</a></li>
+  <li><a href="/docs/documentation/Development Processes/index.html">Development Processes and Methodologies</a></li>
+  <li><a href="/docs/documentation/Services and ORMs/index.html">Services and ORM</a></li>
+  <li><a href="/docs/documentation/Extending the Sitecore Client/index.html">Extending the Sitecore Client</a></li>
+  <li><a href="/docs/documentation/IoC/index.html">IoC and Dependency Injection</a></li>
+  <li><a href="/docs/documentation/Mobile/index.html">Sitecore and Mobile</a></li>
+  <li><a href="/docs/documentation/Sitecore Azure/index.html">Sitecore Azure</a></li>
+  <li><a href="/docs/documentation/DMS/index.html">DMS</a></li>
+  <li><a href="/docs/documentation/Modules/index.html">Modules</a></li>
+  <li><a href="/docs/documentation/Sitecore Best Practices/index.html">Sitecore Best Practices and Newbie Help</a></li>
+  <li><a href="/docs/documentation/Sitecore 7-5/index.html">Sitecore 7.5 Resources</a></li>
+  <li><a href="/docs/documentation/Sitecore 8/index.html">Sitecore 8 Resources</a></li>
 </ul>
 
-<hr />
-
-<h3 id="sitecore-searchdocsdocumentationsearchindexhtml"><a href="/docs/documentation/Search/index.html">Sitecore Search</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>SOLR</li>
-  <li></li>
-</ul>
-
-<h3 id="sitecore-services-layerdocsdocumentationsitecore-services-layerindexhtml"><a href="/docs/documentation/Sitecore Services Layer/index.html">Sitecore Services Layer</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>SSC</li>
-  <li>EntityService</li>
-</ul>
-
-<h3 id="sitecore-and-mediadocsdocumentationsitecore-and-mediaindexhtml"><a href="/docs/documentation/Sitecore and Media/index.html">Sitecore and Media</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>Responsive Images</li>
-</ul>
-
-<hr />
-
-<h3 id="development-processes-and-methodologiesdocsdocumentationdevelopment-processesindexhtml"><a href="/docs/documentation/Development Processes/index.html">Development Processes and Methodologies</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>Solution Structure</li>
-  <li>Continuous Integration / Continuous Delivery</li>
-  <li>Team Development</li>
-</ul>
-
-<hr />
-
-<h3 id="services-and-ormdocsdocumentationservices-and-ormsindexhtml"><a href="/docs/documentation/Services and ORMs/index.html">Services and ORM</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>Item Web API</li>
-</ul>
-
-<h3 id="extending-the-sitecore-clientdocsdocumentationextending-the-sitecore-clientindexhtml"><a href="/docs/documentation/Extending the Sitecore Client/index.html">Extending the Sitecore Client</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>SPEAK</li>
-  <li>Sheer UI</li>
-</ul>
-
-<h3 id="ioc-and-dependency-injectiondocsdocumentationiocindexhtml"><a href="/docs/documentation/IoC/index.html">IoC and Dependency Injection</a></h3>
-
-<hr />
-
-<h3 id="sitecore-and-mobiledocsdocumentationmobileindexhtml"><a href="/docs/documentation/Mobile/index.html">Sitecore and Mobile</a></h3>
-
-<hr />
-
-<h3 id="sitecore-azuredocsdocumentationsitecore-azureindexhtml"><a href="/docs/documentation/Sitecore Azure/index.html">Sitecore Azure</a></h3>
-
-<hr />
-
-<h3><a href="/docs/documentation/DMS/index.html">DMS</a></h3>
-
-<h3 id="modulesdocsdocumentationmodulesindexhtml"><a href="/docs/documentation/Modules/index.html">Modules</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>Web Forms For Marketers (WFFM)</li>
-  <li>Email Campaign Manager (ECM)</li>
-  <li>Print Experience Manager (previously Adaptive Print Studio)</li>
-</ul>
-
-<hr />
-
-<h3 id="bestpractices"><a href="/docs/documentation/Sitecore Best Practices/index.html">Sitecore Best Practices</a></h3>
-
-<p><strong>Includes</strong></p>
-
-<ul>
-  <li>Sitecore best practices</li>
-  <li>Sitecore Newbie help</li>
-</ul>
-
-<h1 id="misc">Misc</h1>
-
-<h3 id="feeds">Feeds</h3>
+<h2>Feeds</h2>
 
 <ul>
   <li><a href="http://feeds.sitecore.net/Feed/LatestPosts">http://feeds.sitecore.net/Feed/LatestPosts</a> (This replaces the Yahoo! pipe - please e-mail Mark van Aalst to add a blog - <a href="mva@sitecore.net">mva@sitecore.net</a>)</li>
@@ -210,17 +127,10 @@ title: Index
 
 <h3 id="newsletters">Newsletters</h3>
 
-<h3 id="daily">Daily</h3>
-
 <ul>
   <li><a href="http://paper.li/sitecore">The Sitecore Daily</a></li>
   <li><a href="http://paper.li/kiranpatils/1378702752">Sitecore Basics</a></li>
   <li><a href="http://paper.li/varunvns/1387067950">Sitecore Journal</a></li>
-</ul>
-
-<h3 id="weekly">Weekly</h3>
-
-<ul>
   <li><a href="http://tinyletter.com/sitecorebasics">Sitecore Basics Weekly</a></li>
 </ul>
 
