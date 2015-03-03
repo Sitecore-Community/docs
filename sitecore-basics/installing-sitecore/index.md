@@ -21,4 +21,4 @@ You can choose to install and set up Sitecore manually by downloading the **site
 
 Sitecore Rocks allows you to set up an installation script with any number of custom steps you require for your particular project or development environment. The default scripts are a great example of how to use Powershell to install Sitecore:
 
-![Sitecore Rocks installation script]({{ site.baseurl }}/images/sitecore-rocks-install.PNG.png)
+![Sitecore Rocks installation script]({{ site.baseurl }}/images/sitecore-rocks-install.PNG)
