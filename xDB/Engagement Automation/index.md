@@ -21,13 +21,18 @@ So, let’s imagine we have a simple engagement plan:
 ## States, conditions and items configuration
 
 1.   **Initial State**
-![alt]({{site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png)
+
+ ![alt]({{site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png)
+    
     Pay attention to **Page Event Subscription**.    When you subscribe to exact goal in that field - in this case, Initial State subscribed for Sample Goal - it means that:
-     * when contact is in Initial State state
-     * and contact  triggers Sample Goal
-     * then and only then engagement automation processes further. In this example it will run a condition we have attached to Initial State.
-     > **NB:** you won’t see the results in Marketing Control Panel immediately. A lot of work in Sitecore 8 is done in the background and inside the contact session. We’ll get to it later in chapter How it works.
-     Often developers forget to set this Page Event Subscription and just wait that condition will be executed on itself. But no, it won’t.
+ * when contact is in Initial State state
+ * and contact  triggers Sample Goal
+ * then and only then engagement automation processes further. In this example it will run a condition we have attached to Initial State.
+
+ > **NB:** you won’t see the results in Marketing Control Panel immediately. A lot of work in Sitecore 8 is done in the background and inside the contact session. We’ll get to it later in chapter How it works.
+
+ Often developers forget to set this Page Event Subscription and just wait that condition will be executed on itself. But no, it won’t.
+
 2. **Condition**
 
     In this example it is a custom historical condition, but can be anything else:
