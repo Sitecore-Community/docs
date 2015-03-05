@@ -2,6 +2,7 @@
 layout: default
 title: Extending Experience Analytics reports
 redirect_from: "/documentation/xDB/Extending Experience Analytics reports/"
+category: xdb
 ---
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 8</p>
 This article provide really short introduction into creating of custom reports for Experience Analytics. In Sitecore terms I would say : to create new report dimensions and appropriate reports for showing them.

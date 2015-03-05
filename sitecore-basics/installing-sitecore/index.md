@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Installing Sitecore
+category: definingdata
 ---
 
 Once you become a **certified Sitecore developer**, you will be able to download the latest version of Sitecore and all associated modules from http://dev.sitecore.net/. On dev.sitecore.net, there are always two different formats available for download - the **complete site root** or an **executable file**. The following is a list of ways that you can install Sitecore.
@@ -21,4 +22,4 @@ You can choose to install and set up Sitecore manually by downloading the **site
 
 Sitecore Rocks allows you to set up an installation script with any number of custom steps you require for your particular project or development environment. The default scripts are a great example of how to use Powershell to install Sitecore:
 
-![Sitecore Rocks installation script]({{ site.baseurl }}/images/sitecore-rocks-install.PNG)
+![Sitecore Rocks installation script]({{ site.baseurl }}/images/sitecore-rocks-install.PNG) 

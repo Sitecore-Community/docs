@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: onecol
 title: Diagnostics, Troubleshooting, and Testing
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Caching
+category: extending
 ---
 Sitecore uses caching to improve system performance and response time.
 

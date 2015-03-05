@@ -3,12 +3,9 @@ layout: home
 title: Index
 ---
  
-<div class="well">
-<h3 id="what-is-this">What is this?</h3>
-<p>This is a <strong>community-driven</strong> collection of developer resources - including blogs, videos, references, and articles. Please note that although Sitecore employees contribute, this is not official Sitecore documentation. As content matures, it may be migrated to <strong>Sitecore's official documentation site:</strong></p>
+<h1>Community-generated documentation and links</h1>
 
-	<a href="#" class="btn btn-primary">Visit doc.sitecore.net</a>
-</div>
+<p>This is a <strong>community-driven</strong> collection of developer resources - including blogs, videos, references, and articles. Please note that although Sitecore employees contribute, this is <strong>not</strong> official Sitecore documentation. As content matures, it may be migrated to <strong><a href="http://doc.sitecore.net/">Sitecore's official documentation site</a></strong>.</p>
 
 <hr />
 
@@ -37,65 +34,13 @@ title: Index
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Authorizations">Authorizations/Permissions</a></li>
 </ul>
 
-<h2>Configuration</h2>
-<ul>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Patch Files">Patch Files</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Settings">Settings</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Sitecore Configuration Factory">Configuration Factory</a></li>
-</ul>
+{% include nav_config.html %}
 
-<h2>Extending and Customizing Sitecore</h2>
+{% include nav_extending.html %}
 
-<ul>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Pipelines">Pipelines</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Events">Events</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Providers">Providers</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Asynchronous Tasks">Async Tasks</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Caching">Caching</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Rules Engine">Rules Engine</a></li>
-  <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Data Providers">Data Providers</a></li>
-</ul>
+{% include nav_mvc.html %}
 
-<h2>Sitecore MVC</h2>
-
-<ul>
-  <li><a href="{{site.baseurl}}/sitecore-mvc">Getting Started</a></li>
-  <li><a href="{{site.baseurl}}/sitecore-mvc/creating-project">Create a Project</a></li>
-  <li>MVC Components
-      <ul>
-        <li><a href="{{site.baseurl}}/sitecore-mvc/view-renderings">View Renderings</a></li>
-        <li><a href="{{site.baseurl}}/sitecore-mvc/controller-renderings">Controller Renderings</a></li>
-      </ul>
-    </li>
-  <li><a href="{{site.baseurl}}/sitecore-mvc/rendering-content">Rendering Content</a></li>
-</ul>
-
-<h2>xDB</h2>
-
-<ul>
-  <li><a href="{{site.baseurl}}/xDB/the-xdb-contact">xDB Contacts</a>
-      <ul>
-        <li><a href="{{site.baseurl}}/xDB/contact-facets">Facets</a></li>
-        <li><s>Extensions</s></li>
-        <li><s>Tags</s></li>        
-      </ul>
-  </li>
-  <li><s>Goals and Outcomes</s></li>
-  <li><s>Engagement Automation</s></li>
-  <li><s>Scaling</s></li>
-  <li><s>Experience Marketing Interfaces</s></li>
-  <li>Reporting
-    <ul>
-      <li><a href="{{site.baseurl}}/xDB/reports/extending-experience-analytics-reports">Extending Experience Analytics Reports</a></li>
-      <li><a href="{{site.baseurl}}/xDB/reports/how-to-refresh-reports">Refreshing Reports</a></li>
-    </ul>
-  </li>
-  <li>Interfaces
-    <ul>
-      <li><a href="{{site.baseurl}}/xDB/experience-marketing-interfaces/launch-pad">Launch Pad</a></li>
-    </ul>
-  </li>
-</ul>
+{% include nav_xdb.html %}
 
 <hr />
 

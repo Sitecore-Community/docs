@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Pipelines
+category: extending
 ---
 Pipelines are one of Sitecore's essential integration concepts. They are used to extend existing functionality, and to allow custom functionality to be extended in the future. They also provide a level of documentation and transparency by virtual of how they are configured.
 

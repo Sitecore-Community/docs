@@ -2,6 +2,7 @@
 layout: default
 title: Sitecore MVC
 redirect_from: "/documentation/Sitecore MVC/"
+category: mvc
 ---
 
 If you are new to Sitecore MVC, watch the following two videos for an overview of the basics. Sitecore MVC is an adaptation of ASP.NET MVC for Sitecore, and knowledge of standard ASP.NET MVC is both good and bad. [/what-is-sitecore-mvc](Find out more about why Sitecore MVC is different from standard ASP.NET MVC).

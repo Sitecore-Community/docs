@@ -1,4 +1,78 @@
-body {
+@font-face {
+	font-family: 'KievitLight';
+	src: url('/docs/site-assets/fonts/kievit-light.eot');
+	src: url('/docs/site-assets/fonts/kievit-light.eot?#iefix') format('embedded-opentype'),
+		url('/docs/site-assets/fonts/kievit-light.svg#kievit-light') format('svg'),
+		url('/docs/site-assets/fonts/kievit-light.woff') format('woff'),
+		url('/docs/site-assets/fonts/kievit-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'KievitLight', Arial, sans-serif;
+	font-weight: bold;
+}
+
+.navbar-nav>li>a:hover {
+	background: #1cb0c2;
+}
+
+h3#what-is-this {
+	margin-top: 0;
+}
+
+a {
+	color: #006f7c
+}
+
+a:hover {
+	color: #1cb0c2;
+}
+
+img {
+	max-width: 100%;
+}
+
+.navbar-sitecore {
+	background: #008998;
+}
+
+.navbar-sitecore a {
+	color: #fff;
+}
+
+#sidebar-menu h2 {
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+#sidebar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar-menu .main-menu a {
+    display: block;
+	font-size: 13px;
+	font-weight: 500;
+	color: #999;
+	padding: 0;
+}
+#sidebar-menu .main-menu a:hover {
+	background:none;
+}
+#sidebar-menu .sub-menu a {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 15px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+/* body {
 	background: #000;
 }
 
@@ -61,9 +135,10 @@ border-color: #33aab7;
 	border-top: 1px solid #203a51;
 	padding: 30px 10px;
 }
+*/
 
 /* RESPONSIVE */
-
+/*
 @media (max-width: 768px) 
 {
 	.container.doc-body {
@@ -78,3 +153,4 @@ border-color: #33aab7;
 }
 
 }
+ */

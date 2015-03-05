@@ -2,6 +2,7 @@
 layout: default
 title: Contact Facets
 redirect_from: "/documentation/xDB/Facets/"
+category: xdb
 ---
 
 Not to be confused with **goal facets** or **search facets**, a contact facet is a property of a contact - such their first name, e-mail address, or job title. You can easily [add your own facets](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Getting-to-Know-Sitecore/Posts/2014/09/Introducing-Contact-Facets.aspx).

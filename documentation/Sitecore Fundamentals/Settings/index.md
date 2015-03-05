@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Settings
+category: config
 ---
 Settings are used to store values that are accessed by code when the code needs to perform a task. A setting is name and a value.
 

@@ -2,6 +2,7 @@
 layout: default
 title: Refreshing Executive Dashboard/ Experience Analytics reports
 redirect_from: "/documentation/xDB/How to refresh Reports/"
+category: xdb
 ---
 
 Developers (especially those that do some custom reports) would like often to debug something more easily by following scenario: "I visit some pages on my web site and I see results in reports immediately (no matter Executive Dashboard of Sitecore 7.5 or Experience Analytics of Sitecore 8.0)".  

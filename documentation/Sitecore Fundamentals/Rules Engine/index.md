@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Rules Engine
+category: extending
 ---
 Sitecore's Rules Engine provides the ability to evaluate conditions and perform actions that is usable for business users. Using the Rules Engine provides a consistent means for configuring complex, rule-based business logic within Sitecore. 
 

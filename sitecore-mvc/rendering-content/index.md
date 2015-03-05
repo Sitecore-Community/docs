@@ -2,6 +2,7 @@
 layout: default
 title: Rendering Content
 redirect_from: "/documentation/Sitecore MVC/Rendering Content/"
+category: mvc
 ---
 
 In standard ASP.NET MVC, a view accepts a view model. Recommended practice says that the view model contains everything that the view requires, and that the view should contain no further business logic. The view should only contain display logic. In standard ASP.NET MVC, something like EntityFramework or nHibernate may be used to return data as objects in the application's repository layer - for example, you may have a ``NewsArticle`` model with a ``Text`` and ``Title`` property. The view receives the completed model and outputs it as HTML:

@@ -2,6 +2,7 @@
 layout: default
 title: View Renderings
 redirect_from: "/documentation/Sitecore MVC/View Renderings/"
+category: mvc
 ---
 
 A view rendering is the simplest Sitecore MVC rendering type. As with all presentation items in Sitecore, a view rendering consists of a definition item in Sitecore and a file on the file system. In the case of view renderings, the file is a standard Razor view (``.cshtml``) which expects a model of type ``RenderingModel`` by default (but can be configured to use a custom class). The model is assembled by the Sitecore MVC pipeline - you do not create a controller and ``ActionResult`` as you would with standard ASP.NET MVC. For this reason, [controller renderings may be a better choice for complex business logic](http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/). 

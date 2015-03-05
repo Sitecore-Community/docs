@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Providers
+category: extending
 ---
 .NET's provider model offers a convenient and consistent model for encapsulating business logic so that is can be extended or replaced. Sitecore uses providers extensively.
 

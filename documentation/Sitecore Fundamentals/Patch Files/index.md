@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Patch Files
+category: config
 ---
 Since Sitecore runs within IIS, it is natural for Sitecore to be configured using IIS's configuration file, `Web.config`. The path to Sitecore-specific settings is `/configuration/sitecore`.
 

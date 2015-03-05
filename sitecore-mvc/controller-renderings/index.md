@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Controller Renderings
+category: mvc
 redirect_from: "/documentation/Sitecore MVC/Controller Renderings/"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Data Providers
+category: extending
 ---
 A Sitecore data provider exposes data as Sitecore items. The default data provider exposes data stored in Sitecore's content repositories (SQL Server or Oracle databases). Custom data providers can be written that expose data stored in third-party systems. 
 

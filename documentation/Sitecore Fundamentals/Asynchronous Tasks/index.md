@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore Asynchronous Tasks
+category: extending
 ---
 Sitecore provides the ability for custom tasks to run asynchronously.
 

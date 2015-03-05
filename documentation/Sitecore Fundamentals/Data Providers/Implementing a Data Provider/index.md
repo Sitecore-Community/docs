@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Implementing a Sitecore Data Provider
+category: extending
 ---
 When you implement a data provider you are creating two things:
  

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sitecore's Configuration Factory
+category: config
 ---
 Sitecore allows you to use use patch files to define objects that will be available at runtime. You can define arbitrary nodes under `/configuration/sitecore` and then use the Sitecore API to access objects that represent those nodes.
 

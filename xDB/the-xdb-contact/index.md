@@ -2,6 +2,7 @@
 layout: default
 title: The xDB Contact
 redirect_from: "/documentation/xDB/The xDB Contact/"
+category: xdb
 ---
 
 ## What is a contact?
