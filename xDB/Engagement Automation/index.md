@@ -22,7 +22,7 @@ So, let’s imagine we have a simple engagement plan:
 
 1.   **Initial State**
 
-    ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png?raw=true)
+	![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png?raw=true)
 
     Pay attention to **Page Event Subscription**. When you subscribe to exact goal in that field - in this case, Initial State subscribed for Sample Goal - it means that:
 
@@ -33,35 +33,36 @@ So, let’s imagine we have a simple engagement plan:
 
     Often developers forget to set this Page Event Subscription and just wait that condition will be executed on itself. But no, it won’t.
 
-*   **Condition**
+2. **Condition**
 
     In this example it is a custom historical condition, but can be anything else:
 
     ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/Condition1.png?raw=true)
 
-7.  **Goal Triggered state**: doesn’t have any specific settings.
-8.  **Home item**: nothing special, except of the link to Page1 item. 
+3.  **Goal Triggered state**: doesn’t have any specific settings.
+4.  **Home item**: nothing special, except of the link to Page1 item. 
 
     ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/home_item.png?raw=true)
-9.  **Home/Page1 item**: has Sample Goal assigned.
+5.  **Home/Page1 item**: has Sample Goal assigned.
 
     ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/page1_item.png?raw=true)
-*   **Additional buttons** on Sample Layout:
+6.   **Additional buttons** on Sample Layout:
 
     *   One of them identifies contact, by calling
-
-                            Tracker.Current.Session.Identify("somename")
-
-                        and sets its first name by calling
-
-                            var facet = Tracker.Current.Contact.GetFacet<Sitecore.Analytics.Model.Entities.IContactPersonalInfo>("Personal");
-                    facet.FirstName = "somename";
-    *   Second button - enrolls user in the plan's Initial State by calling
+     
+	    `Tracker.Current.Session.Identify("somename")`
+    
+	    and sets its first name by calling
+    
+	    `var facet = 
+	    Tracker.Current.Contact.GetFacet<Sitecore.Analytics.Model.Entities.IContactPersonalInfo>("Personal");
+                    facet.FirstName = "somename";`
+      
+    * Second button - enrolls user in the plan's Initial State by calling
 
                             Tracker.Current.Contact.AutomationStates().EnrollInEngagementPlan(planID, stateId)
     *   Third button - ends the session by calling
-
-                            Session.Abandon()
+	    `Session.Abandon()`
 11.  Everything is deployed, published or live mode (master database) is used.
 
 ## How it works
@@ -78,23 +79,23 @@ Steps during debugging, explained:
     ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks1.png?raw=true)
 2.  Identify your user. This step actually can be omitted, but it is recommended if you do not want to see only IDs in Marketing Control Panel and compare numbers and letters. After you have called Identify, you’ll have a new contact in db.Contacts in Analytics database. You can check how it looks in Robomongo by calling:
 
-`db.Contacts.find().skip(390)`
+	`db.Contacts.find().skip(390)`
 
-        Skip as many contacts as you have except the last one. 
+	Skip as many contacts as you have except the last one. 
 
-> **NB:** Actually, your contact is not certainly will be the last conact in the database, because of random mongo data access, but usually it is.
+	> **NB:** Actually, your contact is not certainly will be the last conact in the database, because of random mongo data access, but usually it is.
 
-This is what you should see there:
+	This is what you should see there:
 
-![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks2.png?raw=true)
+	![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks2.png?raw=true)
 
-Note, that despite we have assigned FirstName to the contact, we don’t see it in database. This is because we assign FirstName after calling Identify. Identify calls FlushContactToXdb method that flushes the data we had by that moment. Rest of the changes will be saved in session and flushed when it ends.
+	Note, that despite we have assigned FirstName to the contact, we don’t see it in database. This is because we assign FirstName after calling Identify. Identify calls FlushContactToXdb method that flushes the data we had by that moment. Rest of the changes will be saved in session and flushed when it ends.
 
->**NB:**  never call FlushContactToXdb method yourself. It may cause instability of data.
+	>**NB:**  never call FlushContactToXdb method yourself. It may cause instability of data.
 
 3. Enroll contact in engagement plan. You won’t see any changes anywhere after you enrolled that contact, because this change exists only in session and is not yet flushed anywhere.
 
-                Just to ensure, you may check db.Contacts, db.AutomationStates and db.Interactions collections in Analytics database, nothing will be changed for them.
+	Just to ensure, you may check db.Contacts, db.AutomationStates and db.Interactions collections in Analytics database, nothing will be changed for them.
 
 4.   End the session.
 
@@ -102,11 +103,7 @@ Note, that despite we have assigned FirstName to the contact, we don’t see it 
 
         ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks3.png?raw=true)
 
-        Note that this document has StateTransition field, where StateIdBefore is nullID, and StateIdAfter is an id of our Initial State.
-
-                    This document with StateTransition is created by
-
-        `AutomationStateManager.SaveChanges` method, which is called by `SaveAutomationRecords` processor from `<submitContact>` pipeline. `<submitContact>` pipeline is called from `FlushContactToXdb`, that happens again on the session end.
+        Note that this document has StateTransition field, where StateIdBefore is nullID, and StateIdAfter is an id of our Initial State. This document with StateTransition is created by `AutomationStateManager.SaveChanges` method, which is called by `SaveAutomationRecords` processor from `<submitContact>` pipeline. `<submitContact>` pipeline is called from `FlushContactToXdb`, that happens again on the session end.
 
         > **NB:**  never call AutomationStateManager.SaveChanges method yourself. It may cause instability of data.
 
