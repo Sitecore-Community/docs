@@ -10,19 +10,19 @@ category: xdb
 
 Debugging Engagement Plans can be tricky, if you do not know what exactly is happening in which period of time with contact in the Engagement Plan.
 
-    This guide should help you to find out, what’s going on and when.
+This guide should help you to find out, what’s going on and when.
 
 _Note: this is a guide for developers, marketers probably don’t need to know all the internal details._
 
 So, let’s imagine we have a simple engagement plan:
 
-![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/engPlan1.png?raw=true)
+![Alt text]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/engPlan1.png)
 
 ## States, conditions and items configuration
 
 1.   **Initial State**
 
-	![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png?raw=true)
+	![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png?raw=true)
 
     Pay attention to **Page Event Subscription**. When you subscribe to exact goal in that field - in this case, Initial State subscribed for Sample Goal - it means that:
 
@@ -37,15 +37,15 @@ So, let’s imagine we have a simple engagement plan:
 
     In this example it is a custom historical condition, but can be anything else:
 
-    ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/Condition1.png?raw=true)
+    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/Condition1.png?raw=true)
 
 3.  **Goal Triggered state**: doesn’t have any specific settings.
 4.  **Home item**: nothing special, except of the link to Page1 item. 
 
-    ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/home_item.png?raw=true)
+    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/home_item.png?raw=true)
 5.  **Home/Page1 item**: has Sample Goal assigned.
 
-    ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/page1_item.png?raw=true)
+    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/page1_item.png?raw=true)
 6.   **Additional buttons** on Sample Layout:
 
     *   One of them identifies contact, by calling
@@ -76,7 +76,7 @@ Steps during debugging, explained:
 
 1.  Open the Anonymous browser session:
 
-    ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks1.png?raw=true)
+    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks1.png?raw=true)
 2.  Identify your user. This step actually can be omitted, but it is recommended if you do not want to see only IDs in Marketing Control Panel and compare numbers and letters. After you have called Identify, you’ll have a new contact in db.Contacts in Analytics database. You can check how it looks in Robomongo by calling:
 
 	`db.Contacts.find().skip(390)`
@@ -87,7 +87,7 @@ Steps during debugging, explained:
 
 	This is what you should see there:
 
-	![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks2.png?raw=true)
+	![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks2.png?raw=true)
 
 	Note, that despite we have assigned FirstName to the contact, we don’t see it in database. This is because we assign FirstName after calling Identify. Identify calls FlushContactToXdb method that flushes the data we had by that moment. Rest of the changes will be saved in session and flushed when it ends.
 
@@ -101,7 +101,7 @@ Steps during debugging, explained:
 
     *   Now check your db.AutomationStates. You should see there a document like next:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks3.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks3.png?raw=true)
 
         Note that this document has StateTransition field, where StateIdBefore is nullID, and StateIdAfter is an id of our Initial State. This document with StateTransition is created by `AutomationStateManager.SaveChanges` method, which is called by `SaveAutomationRecords` processor from `<submitContact>` pipeline. `<submitContact>` pipeline is called from `FlushContactToXdb`, that happens again on the session end.
 
@@ -109,41 +109,41 @@ Steps during debugging, explained:
 
         Now you should **wait** until this document looses its StateTransition field and becomes something like that:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks5.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks5.png?raw=true)
 
         It means, that engagement automation has already processed StateTransition and moved contact to the Initial State. **/this needs to be checked, as I’m not sure if this is done by automation worker or aggregation part/**
 
     *   Now check Marketing Control Panel, plan’s Initial State. There should be our KateButenko contact:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks8.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks8.png?raw=true)
     *   Now check your db.Interactions. It should have one additional interaction.
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks6.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks6.png?raw=true)
 
         Note the query I use for checking latest interactions, you can use it too:
 
         `db.Interactions.find({StartDateTime: { $gte : new ISODate("2015-03-13T14:00:31Z")}})`
     *   Now check your db.Contacts. The contact that we saw after step 2 (identifying) now gets additional fields:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks7.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks7.png?raw=true)
 
 19.  Now let’s return to browser page and go to Page1, which as we remember has Sample Goal assigned and should move our contact through the Engagement Plan.
 22.  End session again, for our data to get to xDB.
 
     *   Now check your db.AutomationStates. You should see there an old document, processed, and a new document like next:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks11.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks11.png?raw=true)
 
         The new document should contain StateTransition with transferring from Initial State to Goal Triggered state.
 
                             Now you should **wait** until this document looses its StateTransition field and merges together with previous document:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks12.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks12.png?raw=true)
 
         It means, that engagement automation has already processed StateTransition and moved contact from Initial State to Goal Triggered state. **/this needs to be checked, as I’m not sure if this is done by automation worker or aggregation part/**
     *   Now check Marketing Control Panel, plan’s Goal Triggered state. There should be our KateButenko contact:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks13.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks13.png?raw=true)
     *   You can also check db.Interactions collection to reassure that your second interaction has appeared there:
 
-        ![enter image description here](http://sitecore-community.github.io/docs/images/Engagement%20Automation/Testing%20Plan/howitworks10.png?raw=true)
+        ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks10.png?raw=true)
