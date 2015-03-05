@@ -1,3 +1,9 @@
+---
+layout: default
+title: How to test an Engagement Plan?
+redirect_from: "/documentation/xDB/Engagement Automation/"
+category: xdb
+---
 # How to test an Engagement Plan?
 
 * * *
