@@ -83,7 +83,7 @@ Second button - enrolls user in the plan's Initial State by calling
 Third button - ends the session by calling
 `Session.Abandon()`
 
-###Publishing
+###7. Publishing
 
 Everything is deployed, published or live mode (master database) is used.
 
