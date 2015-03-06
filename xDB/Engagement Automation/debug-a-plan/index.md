@@ -6,7 +6,8 @@ category: xdb
 ---
 
 Debugging engagement plans can be tricky as it's difficult to know exactly what is happening to your contact. This guide will talk you through debugging an engagement plan. 
-Here is a plan I'm going to use in the debugging example:
+
+Below is a plan I'm going to use in the debugging example. If you want to read more thoroughly about each of the components of Engagement Plan, you can take a look at [this guide]({{ site.baseurl}}/xDB/Engagement Automation/create-a-plan).
 
 ![Alt text]({{site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/engPlan1.png)
 
@@ -21,8 +22,6 @@ Here is a plan I'm going to use in the debugging example:
 ### Goal Triggered state
 
 No specific settings.
-
-If you want to read more thoroughly about each of the components of Engagement Plan, you can take a look at [this guide]({{ site.baseurl}}/xDB/Engagement Automation/create-a-plan).
 
 
 ## Setting up the test environment
@@ -39,9 +38,13 @@ Sample goal (to trigger transition between states) and Google +1 goal (to fit th
 
    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/Page1.png)
 
-### Create an 'Identify' button
+### Create buttons
 
-**You can download Sample layout.aspx with needed buttons and textboxes [here]({{ site.baseurl}}/xDB/Engagement Automation/debug-a-plan/Sample%20layout.aspx)**
+You can download Sample layout.aspx with needed buttons and textboxes [here]({{ site.baseurl}}/xDB/Engagement Automation/debug-a-plan/Sample%20layout.aspx)
+
+Or, if you want to use own layout to test, add there the next three code pieces.
+
+#### Create an 'Identify' button
 
 If you do not identify your user, you will see GUIDs in the engagement plan report.
 
@@ -54,13 +57,13 @@ Set the user's first name. There is no need in that, but just makes debugging ea
 	var firstName =  Tracker.Current.Contact.GetFacet<Sitecore.Analytics.Model.Entities.IContactPersonalInfo>("Personal");
 	facet.FirstName = "Kate";
 
-### Create an 'Enroll' button
+#### Create an 'Enroll' button
 
 Create a second button that enrolls the user in the Initial State of your engagement plan:
 	
 	Tracker.Current.Contact.AutomationStates().EnrollInEngagementPlan(planID, stateId)
 
-### Create an 'End Session' button
+#### Create an 'End Session' button
 
 End the session by calling:
 
