@@ -42,6 +42,7 @@ Sample goal (to trigger transition between states) and Google +1 goal (to fit th
 ### Create an 'Identify' button
 
 **You can download Sample layout.aspx with needed buttons and textboxes [here]({{ site.baseurl}}/xDB/Engagement Automation/debug-a-plan/Sample%20layout.aspx)**
+
 If you do not identify your user, you will see GUIDs in the engagement plan report.
 
 Create a button that **identifies** your contact - you could also install Web Forms for Marketers and create a form that creates and logs in a user (this will identify the user in the background). Because there is absolutely no connection between ASP.NET membership and xDB contacts, you can identify your user by anything you want for testing purposes:
@@ -111,7 +112,7 @@ You will see a document that looks like this:
 
 ![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks3.png)
 
-Note that this document has a `StateTransition` field, where `StateIdBefore` is nullID because this this is the first state we have entered into, and `StateIdAfter` is an id of our Initial State. 
+Note that this document has a `StateTransition` field, where `StateIdBefore` is nullID because this is the first state we have entered into, and `StateIdAfter` is an id of our Initial State. 
 
 This document with `StateTransition` is created by `AutomationStateManager.SaveChanges` method, which is called by `SaveAutomationRecords` processor from `<submitContact>` pipeline. `<submitContact>` pipeline is called from `FlushContactToXdb`, which is called when we end the session.
 
