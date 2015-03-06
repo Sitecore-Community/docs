@@ -22,20 +22,20 @@ Here is a plan I'm going to use in the debugging example:
 
 No specific settings.
 
-If you want to read more thoroughly about each of the components of Engagement Plan, you can take a look at [this guide]({{ site.baseurl}}/xDB/Engagement Automation/creat-a-plan).
+If you want to read more thoroughly about each of the components of Engagement Plan, you can take a look at [this guide]({{ site.baseurl}}/xDB/Engagement Automation/create-a-plan).
 
 
 ## Setting up the test environment
 
-### Assign sample goal to an item
+### Assign Google +1 goal to an item other than Home
 
-1. Add a link to your sample page:
+1. Add a link from Home page to your sample page:
 
    ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/home_item.png)
 
 2. Assign a goal to this sample page (Home/Page1)
 
-   ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/page1.png)
+   ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/Page1.png)
 
 ### Create an 'Identify' button
 
