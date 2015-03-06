@@ -5,7 +5,25 @@ redirect_from: "/documentation/xDB/Engagement Automation/"
 category: xdb
 ---
 
-Debugging engagement plans can be tricky as it's difficult to know exactly what is happening to your contact. This guide will talk you through debugging an engagement plan using a [sample plan]({{ site.baseurl}}/xDB/Engagement Automation/creat-a-plan).
+Debugging engagement plans can be tricky as it's difficult to know exactly what is happening to your contact. This guide will talk you through debugging an engagement plan. 
+Here is a plan I'm going to use in the debugging example:
+
+![Alt text]({{site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/engPlan1.png)
+
+### Initial State
+
+![alt]({{site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/InitialStatePageEventSubscription.png)
+
+### Condition
+
+![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/Condition1.png)
+
+### Goal Triggered state
+
+No specific settings.
+
+If you want to read more thoroughly about each of the components of Engagement Plan, you can take a look at [this guide]({{ site.baseurl}}/xDB/Engagement Automation/creat-a-plan).
+
 
 ## Setting up the test environment
 
@@ -17,7 +35,7 @@ Debugging engagement plans can be tricky as it's difficult to know exactly what 
 
 2. Assign a goal to this sample page (Home/Page1)
 
-   ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/page1_item.png)
+   ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/page1.png)
 
 ### Create an 'Identify' button
 
@@ -27,14 +45,14 @@ Create a button that **identifies** your contact - you could also install Web Fo
      
 	Tracker.Current.Session.Identify("KateTest");
     
-Set the user's first name:
+Set the user's first name. There is no need in that, but just makes debugging easier:
     
 	var firstName =  Tracker.Current.Contact.GetFacet<Sitecore.Analytics.Model.Entities.IContactPersonalInfo>("Personal");
 	facet.FirstName = "Kate";
 
-### Create an 'Enrol' button
+### Create an 'Enroll' button
 
-Create a second button that enrols the user in the Initial State of your engagement plan:
+Create a second button that enrolls the user in the Initial State of your engagement plan:
 	
 	Tracker.Current.Contact.AutomationStates().EnrollInEngagementPlan(planID, stateId)
 
@@ -46,7 +64,7 @@ End the session by calling:
 
 This forces data to be flushed to the xDB.
 
-### Poublish and deploy
+### Publish and deploy
 
 Make sure you deploy and publish everything (including the engagement plan), or use live mode (master database used) to run the test.
 
@@ -80,7 +98,7 @@ Note that even though we have set FirstName, we are not seeing it in the databas
 
 ### Step 3: Enroll contact in engagement plan
 
-Enrol contact in engagement plan (in our example, we specify a plan ID and state ID, and press 'Enrol'). Note that you will not see any changes in the Marketing Control Panel after enrolling the contact because this change exists only in session and the session is still active. You can check `db.Contacts`, `db.AutomationStates` and `db.Interactions` to confirm.
+Enroll contact in engagement plan (in our example, we specify a plan ID and state ID, and press 'Enroll'). Note that you will not see any changes in the Marketing Control Panel after enrolling the contact because this change exists only in session and the session is still active. You can check `db.Contacts`, `db.AutomationStates` and `db.Interactions` to confirm.
 
 ### Step 4: End the session
 
@@ -100,11 +118,11 @@ Now you need to **wait** until this document looses its `StateTransition` field 
 
 ![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks5.png)
 
-This means that engagement automation has processed `StateTransition` and moved our contact to the Initial State. **/this needs to be checked, as I’m not sure if this is done by automation worker or aggregation part/**
+This means that engagement automation has processed `StateTransition` and moved our contact to the Initial State. 
 
 ### Check the Marketing Control Panel
 
-Select your engagement plan in the Marketing Control Panel tree and select **Monitor**. Select Initial State and 'View' in the Contacts chunk in the ribbon. You should see your visitor there:
+Select your engagement plan in the Marketing Control Panel tree and select **Supervise**. Select Initial State and 'View' in the Contacts chunk in the ribbon. You should see your visitor there:
 
 ![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks8.png)
 
@@ -145,11 +163,11 @@ Now you should **wait** until this document looses its StateTransition field and
 
 ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks12.png)
 
-It means, that engagement automation has already processed StateTransition and moved contact from Initial State to Goal Triggered state. **/this needs to be checked, as I’m not sure if this is done by automation worker or aggregation part/**
+It means, that engagement automation has already processed StateTransition and moved contact from Initial State to Goal Triggered state.
 
 ####Now check Marketing Control Panel, plan’s Goal Triggered state. 
 
-There should be our KateButenko contact:
+There should be our "KateButenko" contact:
 
 ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks13.png)
 
@@ -158,3 +176,5 @@ There should be our KateButenko contact:
 to reassure that your second interaction has appeared there:
 
 ![enter image description here]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks10.png)
+
+Happy debugging of Engagement Plans!
