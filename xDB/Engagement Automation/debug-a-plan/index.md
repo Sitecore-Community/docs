@@ -27,7 +27,9 @@ If you want to read more thoroughly about each of the components of Engagement P
 
 ## Setting up the test environment
 
-### Assign Google +1 goal to an item other than Home
+### Assign goals 
+
+Sample goal (to trigger transition between states) and Google +1 goal (to fit the condition) should be assigned to some sample item, other than Home. 
 
 1. Add a link from Home page to your sample page:
 
