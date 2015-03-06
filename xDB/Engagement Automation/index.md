@@ -152,7 +152,11 @@ It means, that engagement automation has already processed StateTransition and m
 There should be our KateButenko contact:
 
 ![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks8.png)
-    *   Now check your db.Interactions. It should have one additional interaction.
+
+
+####Now check your db.Interactions. 
+
+It should have one additional interaction.
 
 ![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks6.png)
 
@@ -164,7 +168,7 @@ Note the query I use for checking latest interactions, you can use it too:
 
 The contact that we saw after step 2 (identifying) now gets additional fields:
 
-![alt({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks7.png)
+![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks7.png)
 
 
 ###5. Submit Sample Goal
