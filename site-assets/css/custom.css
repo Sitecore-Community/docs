@@ -32,6 +32,7 @@ a:hover {
 
 img {
 	max-width: 100%;
+	border:1px solid #999;
 }
 
 .navbar-sitecore {
@@ -40,6 +41,10 @@ img {
 
 .navbar-sitecore a {
 	color: #fff;
+}
+
+#sidebar-menu {
+	padding: 0;
 }
 
 #sidebar-menu h2 {
