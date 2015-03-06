@@ -41,6 +41,7 @@ Sample goal (to trigger transition between states) and Google +1 goal (to fit th
 
 ### Create an 'Identify' button
 
+**You can download Sample layout.aspx with needed buttons and textboxes [here]({{ site.baseurl}}/xDB/Engagement Automation/debug-a-plan/Sample%20layout.aspx)**
 If you do not identify your user, you will see GUIDs in the engagement plan report.
 
 Create a button that **identifies** your contact - you could also install Web Forms for Marketers and create a form that creates and logs in a user (this will identify the user in the background). Because there is absolutely no connection between ASP.NET membership and xDB contacts, you can identify your user by anything you want for testing purposes:
