@@ -168,7 +168,7 @@ Note the query I use for checking latest interactions, you can use it too:
 
 The contact that we saw after step 2 (identifying) now gets additional fields:
 
-![alt({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks7.png)
+![alt]({{ site.baseurl}}/images/Engagement%20Automation/Testing%20Plan/howitworks7.png)
 
 
 ###5. Submit Sample Goal
