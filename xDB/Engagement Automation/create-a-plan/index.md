@@ -44,4 +44,4 @@ No specific settings - we could mark this as the 'final' state by checking the c
 
 ## Checking that it works
 
-Now for the fun part - checking that the engagement plan is doing what it is supposed to. See [debugging engagement plans]({{ site.baseurl }}/xDB/Engagement Automation/debugging) for more information.
+Now for the fun part - checking that the engagement plan is doing what it is supposed to. See [debugging engagement plans]({{ site.baseurl }}/xDB/Engagement Automation/debug-a-plan) for more information.
