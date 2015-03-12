@@ -9,7 +9,8 @@ This article provides an explanation, how some of the tables in reporting databa
 ---
 When you have just installed Sitecore 8, you see a long list of tables in Reporting database:
 
-![list of tables in reporting db]({{ site.baseurl }}/images/Explaining tables in Reporting db/1 tables list.png)
+![list of tables in reporting db]({{ site.baseurl }}/images/Explaining%20tables%20in%20Reporting%20db/1%20Tables%20list.png)
+
 
 ## Segments-related tables
 There are several tables, that have word Segments in their names:
@@ -35,7 +36,7 @@ If you look into Segments table, you'll see there a set of rows, where each row 
 
 There is also one important thing we need to know about in connection to the Segments - ReportDataView. When you open Experience Analytics, this is the first page you see:
 
-![experience analytics first page]({{ site.baseurl }}/images/Explaining tables in Reporting db/2 dashboard.png)
+![experience analytics first page]({{ site.baseurl }}/images/Explaining%20tables%20in%20Reporting%20db/2_dashboard.png)
 
 This dashboard is actually built from ReportDataView
 
