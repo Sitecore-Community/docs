@@ -88,8 +88,8 @@ Web Forms for Marketers will automatically 'identify' a contact to match a regis
 	Tracker.Current.Session.Identify(domainUser);
 
 Remember to format the username correctly, including **domain** and double backslash.  The xDB will now associate your logged-in visitor with an existing xDB record, provided this is not their first visit.
-<span name="merge">   </span>
-### Automatic merge
+
+### <a name="merge"></a> Automatic merge
 
 Example of actions that lead to the automatic merge of contact data:
 
