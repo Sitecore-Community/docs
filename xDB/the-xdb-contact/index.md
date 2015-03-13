@@ -98,7 +98,7 @@ Example of actions that lead to the automatic merge of contact data:
 This is how anonymous contact looks like in xDB:
 
         {
-            "_id" : NUUID("ad4c9d3b-465d-488c-b4ac-9ee5fcda618b"),
+            "_id" : NUUID("9deb81b7-4a1c-4093-9a8f-7d79484549d9"),
             "System" : {
                 "Classification" : 0,
                 "OverrideClassification" : 0,
