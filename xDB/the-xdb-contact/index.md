@@ -89,7 +89,7 @@ Web Forms for Marketers will automatically 'identify' a contact to match a regis
 
 Remember to format the username correctly, including **domain** and double backslash.  The xDB will now associate your logged-in visitor with an existing xDB record, provided this is not their first visit.
 
-### Automatic merge
+<span id="merge">### Automatic merge</span>
 
 Example of actions that lead to the automatic merge of contact data:
 
