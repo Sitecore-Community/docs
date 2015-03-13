@@ -97,16 +97,16 @@ Example of actions that lead to the automatic merge of contact data:
 * His session is ended or data are flushed in another way to xDB. It leads to creation of anonymous contact in db.Contacts.
 This is how anonymous contact looks like in xDB:
 
-'{
-    "_id" : NUUID("ad4c9d3b-465d-488c-b4ac-9ee5fcda618b"),
-    "System" : {
-        "Classification" : 0,
-        "OverrideClassification" : 0,
-        "VisitCount" : 1,
-        "Value" : 0
-    },
-    "Lease" : null
-}'
+        {
+            "_id" : NUUID("ad4c9d3b-465d-488c-b4ac-9ee5fcda618b"),
+            "System" : {
+                "Classification" : 0,
+                "OverrideClassification" : 0,
+                "VisitCount" : 1,
+                "Value" : 0
+            },
+            "Lease" : null
+        }
 Notice, that there are no Identifier.
 * In the same browser User get's identified as **already existing** contact at some point. For example, he fills the form that identifies him as one of the existing contacts.
 
@@ -114,12 +114,12 @@ It leads to the situation, where newly created anonymous contact cannot be delet
 
 This is what our anonymous contact becomes after merging:
 
-'{
-    "_id" : NUUID("9deb81b7-4a1c-4093-9a8f-7d79484549d9"),
-    "Successor" : NUUID("dbfb1cac-861f-4e62-9007-834dd93e589f")
-}'
+        {
+            "_id" : NUUID("9deb81b7-4a1c-4093-9a8f-7d79484549d9"),
+            "Successor" : NUUID("dbfb1cac-861f-4e62-9007-834dd93e589f")
+        }
 
-Old contact has id "dbfb1cac-861f-4e62-9007-834dd93e589f".
+Old contact has id `"dbfb1cac-861f-4e62-9007-834dd93e589f"`.
 
 This merging allows to create a link between old and new contact and do not lose any interaction data.
 
