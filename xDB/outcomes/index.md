@@ -18,9 +18,26 @@ Essentially, Outcomes are similar to Goals, but they offer a more meaningful way
 
 Typical examples of Outcomes are Contact Acquisition or Sales Lead.
 
+The Outcome items are housed in the new marketing control panel 
 
 
-![GitHub Logo](/images/logo.png)
+When Outcomes are triggered they are stored in the xDB database and they can be viewed on a contact's activity tab.
+
+![Xdb outcomes](/images/logo.png)
 Format: ![Alt Text](url)
+
+At present an Outcome can only be triggered by using the Analytics API and there is no way out of the box for a marketer to trigger a goal.
+
+The code for triggering an Outcome is as follows.
+
+Code for trigger.
+
+It is possible to use the api to create a custom rule action to trigger an outcome.
+
+An example of this is listed here
+
+https://github.com/ianjohngraham/CoreBlimey.Utils/tree/master/CoreBlimey.OutcomeRules
+
+
 
 
