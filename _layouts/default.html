@@ -13,7 +13,10 @@
         {% endif %}
         {% if page.category == "config" %}
           {% include nav_config.html %}
-        {% endif %}        
+        {% endif %}
+                        {% if page.category == "xdbscaling" %}
+          {% include nav_xdb_scaling.html %}
+        {% endif %}   
       
         
       </div>
