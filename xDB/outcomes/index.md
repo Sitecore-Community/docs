@@ -14,7 +14,9 @@ A business significant result could mean the following:
 Think of an organisation looking to run a campaign to get sign ups for a website; marketers can run MV tests and personalisation across the site to try and push people to the sign up. 
 So in this instance the sign up of users is the business significant result.
 
-In terms of Sitecore, Outcomes provide a way to record that a user has reached a certain point in the engagement process. Instead of a user having reached a goal in the engagement process, Outcomes can be though of as more high level. A typical example of Outcomes are Contact Acquisition or Sales Lead.
+Essentially, Outcomes are similar to Goals, but they offer a more meaningful way of recording the result of a user's interactions 
+
+Typical examples of Outcomes are Contact Acquisition or Sales Lead.
 
 
 
