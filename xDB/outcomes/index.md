@@ -15,25 +15,25 @@ A business significant result could mean the following:
 Think of an organisation looking to run a campaign to get sign ups for a website; marketers can run MV tests and personalisation across the site to try and push people to the sign up. 
 So in this instance the sign up of users is the business significant result.
 
-Essentially, Outcomes are similar to Goals, but they offer a more meaningful way of recording the result of a user's interactions 
+Essentially, Outcomes are similar to Sitecore Goals, but they offer a more meaningful way of recording the result of a user's interactions.
 
 Typical examples of Outcomes are Contact Acquisition or Sales Lead.
 
 The Outcome items are housed in the new Marketing Control Panel 
 
-![xDB outcomes](/images/outcomes/Marketing center.jpg)
+![Marketing Control Panel](/images/outcomes/Marketing center.jpg)
 Format: ![Alt Text](url)
 
 When Outcomes are triggered they are stored in the xDB database and they can be viewed on a contact's activity tab.
 
-![xDB outcomes](/images/outcomes/xdb_outcome.jpg)
+![Activity Tab](/images/outcomes/xdb_outcome.jpg)
 Format: ![Alt Text](url)
 
 ## How do I trigger an Outcome?
 
-At present an Outcome can only be triggered by using the Analytics API and there is no way out of the box for a marketer to trigger a goal.
+At present, an Outcome can only be triggered by using the analytics API and there is no out-of-the-box way for a marketer to trigger a Goal.
 
-The code for triggering an Outcome is as follows.
+The code for triggering an Outcome is as follows.The new libraries for the OutcomeManager can be found in Sitecore.Analytics.Outcome.dll.
 
 ```cs
 ID id =  Sitecore.Data.ID.NewID;
@@ -55,9 +55,9 @@ manager.Save(outcome);
 
 ```
 
-However, it is possible to use the API to create a custom rule action to trigger an outcome.
+However, it is possible to use the API to create a custom Rule Action to trigger an Outcome.
 
-An example of this is listed here
+An example of this is listed here:
 
 https://github.com/ianjohngraham/CoreBlimey.Utils/tree/master/CoreBlimey.OutcomeRules
 
