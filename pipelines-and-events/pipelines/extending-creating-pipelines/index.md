@@ -27,7 +27,7 @@ Most processors are specified by type only, but there are other ways to specify 
 * **Example:** `<processor type="Sitecore.Jobs.JobRunner, Sitecore.Kernel" method="SetPriority" />`
 * **Method called:** `void SetPriority(PipelineArgs)`
 
-The second method is useful when are using the same processor class more than once in a pipeline (or across pipelines), with different methods, and you want to group this functionality together.
+The second approach can be useful when you would like to use the same class more than once in a pipeline (or across pipelines), with different methods, allowing you to group functionality together or share common methods within the class.
 
 ## <a name="custom_pipelines">Creating a Custom Pipeline</a>
 Creating custom pipelines is an essential part of integrating an external system with Sitecore.
