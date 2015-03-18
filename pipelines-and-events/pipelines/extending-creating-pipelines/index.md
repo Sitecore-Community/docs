@@ -72,4 +72,4 @@ The following is an example of calling a pipeline.
 Set values from the Sitecore context and from other static objects on the `PipelineArgs` object.
 Pipelines run in a different context than the process (the request) that invokes the pipeline. Explicitly set any values you need on the `PipelineArgs` before running a pipeline.
 
-> Pipelines run synchronously on the current thread, so be aware that a call into the pipeline will be a blocking call, until the pipeline has finished executed or is aborted.
+> Pipelines run synchronously on the current thread, so be aware that a call to run a pipeline will block the thread until the pipeline has finished executing or is aborted.
