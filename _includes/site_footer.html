@@ -29,9 +29,9 @@ UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script
 
 // Set colors
 UserVoice.push(['set', {
-  accent_color: '#808283',
+  accent_color: '#e23a39',
   trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+  trigger_background_color: '#e23a39'
 }]);
 
 // Identify the user and pass traits
@@ -53,7 +53,7 @@ UserVoice.push(['identify', {
 }]);
 
 // Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'satisfaction', trigger_position: 'bottom-right' }]);
+UserVoice.push(['addTrigger', { mode: 'satisfaction', trigger_position: 'top-right' }]);
 
 // Or, use your own custom trigger:
 //UserVoice.push(['addTrigger', '#id', { mode: 'satisfaction' }]);
