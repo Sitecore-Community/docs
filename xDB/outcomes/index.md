@@ -4,8 +4,9 @@ title: Sitecore 8 Outcomes
 category: xdb
 ---
 
-## Outcomes
+# Outcomes
 
+## What is an Outcome?
 
 “An outcome is the business significant result of a dialogue between a contact and a brand.”
 
@@ -27,6 +28,8 @@ When Outcomes are triggered they are stored in the xDB database and they can be 
 
 ![xDB outcomes](/images/outcomes/xdb_outcome.jpg)
 Format: ![Alt Text](url)
+
+## How do I trigger an Outcome?
 
 At present an Outcome can only be triggered by using the Analytics API and there is no way out of the box for a marketer to trigger a goal.
 
@@ -52,7 +55,7 @@ manager.Save(outcome);
 
 ```
 
-It is possible to use the API to create a custom rule action to trigger an outcome.
+However, it is possible to use the API to create a custom rule action to trigger an outcome.
 
 An example of this is listed here
 
