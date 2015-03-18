@@ -62,5 +62,13 @@ UserVoice.push(['addTrigger', { mode: 'satisfaction', trigger_position: 'bottom-
 UserVoice.push(['autoprompt', {}]);
 </script>
   
+  <script>
+$('a').filter(function() {
+   console.log(this);
+   return this.hostname && this.hostname !== location.hostname &&  !this.classList.contains('noicon');
+}).append(" <span class='glyphicon glyphicon glyphicon-new-window'></span>")
+
+</script>
+
   </body>
 </html>
