@@ -27,6 +27,8 @@ Most processors are specified by type only, but there are other ways to specify 
 * **Example:** `<processor type="Sitecore.Jobs.JobRunner, Sitecore.Kernel" method="SetPriority" />`
 * **Method called:** `void SetPriority(PipelineArgs)`
 
+The second approach can be useful when you would like to use the same class more than once in a pipeline (or across pipelines), with different methods, allowing you to group functionality together or share common methods within the class.
+
 ## <a name="custom_pipelines">Creating a Custom Pipeline</a>
 Creating custom pipelines is an essential part of integrating an external system with Sitecore.
 
@@ -35,9 +37,9 @@ Creating custom pipelines is an essential part of integrating an external system
 * [Invoking a Pipeline](#invoking_a_pipeline)
 
 ### <a name="pipelineargs">`PipelineArgs`</a>
-When creating a custom pipeline a custom `PipelineArgs` class is not required. The standard `PipelineArgs` class can be used. 
+When creating a custom pipeline a custom `PipelineArgs` class is not required. The standard `PipelineArgs` class can be used.
 
-However, custom a `PipelineArgs` class makes it easier to pass objects between processors and to provide output to the process that called the pipeline. At runtime the `PipelineArgs` object acts as the pipeline's context.
+However, a custom `PipelineArgs` class makes it easier to pass objects between processors and to provide output to the process that called the pipeline. At runtime the `PipelineArgs` object acts as the pipeline's context.
 
 In order to create a custom `PipelineArgs` class you must inherit from `Sitecore.Pipeline.PipelineArgs`.
 
@@ -59,11 +61,15 @@ The following is an example of a custom pipeline definition.
 	  <processor type="Testing.SetVal2, Testing" />
 	</myPipeline>
 
+Processors are executed in the order they are defined in the configuration.
+
 ### <a name="invoking_a_pipeline">Invoking a Pipeline</a>
 The following is an example of calling a pipeline.
 
 	var args = new Testing.MyPipelineArgs();
 	Sitecore.Pipelines.CorePipeline.Run("myPipeline", args);
 
-Set values from the Sitecore context and from other static objects on the `PipelineArgs` object
+Set values from the Sitecore context and from other static objects on the `PipelineArgs` object.
 Pipelines run in a different context than the process (the request) that invokes the pipeline. Explicitly set any values you need on the `PipelineArgs` before running a pipeline.
+
+> Pipelines run synchronously on the current thread, so be aware that a call to run a pipeline will block the thread until the pipeline has finished executing or is aborted.
