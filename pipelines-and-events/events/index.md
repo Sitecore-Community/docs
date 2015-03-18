@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Sitecore Events
-category: extending
+category: pipelinesandevents
+redirect_from: "/documentation/Sitecore Fundamentals/Events/"
 ---
+
 Events in Sitecore are similar to events in other systems: handlers subscribe to the event, and when the event is raised, the handlers are called. Many system events in Sitecore are exposed as events that you can subscribe to. It is also possible to add your own events to the system.
 
 * [Event Basics](#event_basics)
