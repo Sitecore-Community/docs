@@ -20,6 +20,15 @@ title: Services and ORM
 
 ## ORM
 
+### Frameworks
+
+| Framework | Type | Features |
+| ----- | ---- | ----- |
+| [Glass.Mapper.Sc](http://glass.lu) | Mapper | |
+| [Fortis](http://fortis.ws/) | Wrapper | |
+| [Synthesis](https://github.com/kamsar/Synthesis) | Wrapper | |
+| [Diamond](https://github.com/sitecorerick/diamond) | Wrapper | | 
+
 * [http://glass.lu/](http://glass.lu/)
 * [http://cardinalcore.co.uk/category/glass-mapper/](http://cardinalcore.co.uk/category/glass-mapper/)
 * [http://herskind.co.uk/blog/2012/05/auto-generating-glass-model-with-tds-t4](http://herskind.co.uk/blog/2012/05/auto-generating-glass-model-with-tds-t4)
