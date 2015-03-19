@@ -20,3 +20,6 @@ The technical preview for Sitecore 8 was made available to MVPs and those that r
 * [What's new about goals in Sitecore 8](http://blog.horizontalintegration.com/2014/10/28/whats-new-about-goals-in-sitecore-8/)
 * [Sitecore 8 : How to Programatically associate visitor data into Contact Card](http://blog.horizontalintegration.com/2014/11/05/sitecore-8-how-to-programatically-associate-visitor-data-into-contact-card/)
 * [Sitecore 8 : Overview of Experience Profile](http://blog.horizontalintegration.com/2014/11/01/sitecore-8-overview-of-experience-profile/)
+* [Sitecore 8 Outcomes](http://coreblimey.azurewebsites.net/sitecore-8-outcomes/)
+* [xDB and Experience Profile Simplified](http://coreblimey.azurewebsites.net/sitecore-8-xdb-and-experience-profile-simplified/)
+* [Firing up the Sitecore Path Analyser](http://coreblimey.azurewebsites.net/firing-up-the-sitecore-8-path-analyser/)
