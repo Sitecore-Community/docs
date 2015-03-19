@@ -1,7 +1,6 @@
-﻿---
+---
 layout: default
 title: Sitecore 8 Outcomes
-redirect_from: "/documentation/xDB/outcomes/"
 category: xdb
 ---
 
@@ -61,7 +60,6 @@ However, it is possible to use the API to create a custom Rule Action to trigger
 An example of this is listed here:
 
 https://github.com/ianjohngraham/CoreBlimey.Utils/tree/master/CoreBlimey.OutcomeRules
-
 
 
 
