@@ -1,6 +1,7 @@
 ﻿---
 layout: default
 title: Sitecore 8 Outcomes
+redirect_from: "/documentation/xDB/outcomes/"
 category: xdb
 ---
 
