@@ -28,7 +28,7 @@ This is the default setup, and fine if you have a single CD. If you have more th
 
 #### Using `InProc` for private, `OutProc` for shared
 
-This setup is **not recommended** even though it looks like you could have this configuration, as you are getting the worst of both worlds - reduced speed with OutProc, and increased unreliability with `InProc`. You still need to use sticky sessions to ensure that private session state is not lost if you are moved from one CD to another, and in the event that your session is interrupted, you risk losing everything in the private session store. The only 'pro' is that shared session state is available to any other, concurrent sessions that may be started up by that contact on a different device.
+*Theoretically* possible, not recommended. You are getting the worst of both worlds in terms of reduced speed (`OutProc`) and reduced reliability (`InProc`).
 
 #### Using `OutProc` for private and shared
 
