@@ -14,7 +14,7 @@ As a visitor browses around your site, information about that visitor and their 
 
 There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom, as they need to implement `Session_End`.
 
-In a content delivery environment, you can choose to use `InProc` our **OutProc** session state management. `InProc` is short for 'In Process', and means that any information about a visitor's session is stored in memory. This is the default configuration when you install Sitecore, and it is your *only* option for content management environments. `InProc` is always, always going to be faster than OutProc, because you are not writing anything to disk.
+In a content delivery environment, you can choose to use `InProc` or `OutProc` session state management. `InProc` is short for 'In Process', and means that any information about a visitor's session is stored in memory. This is the default configuration when you install Sitecore, and it is your *only* option for content management environments. `InProc` is always, always going to be faster than OutProc, because you are not writing anything to disk.
 
 **OutProc**, short for 'Out of Process', is when you store session state information somewhere that *isn't* in memory. For example, you might write your session state information to a SQL database. Sitecore offers two OutProc session state providers: [**MongoDB**]() and **SQL**.
 
@@ -44,10 +44,11 @@ You have to use `InProc` for CM environments - for both private and shared sessi
 
 ## If OutProc is slower, why would I use it - and what does it have to do with analytics? 
 
-There are two key advantages to OutProc session management:
+There are two key advantages to full OutProc session management:
 
 * You trade some speed for **increased reliability**
-* You can share session information across **multiple devices** 
+* You can share information across concurrent sessions on **multiple devices**
+* No need for sticky sessions (sticky sessions may result in unevent splits of traffic across load-balanced CDs)
 
 ### Reliability
 
