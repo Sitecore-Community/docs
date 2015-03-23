@@ -16,7 +16,7 @@ There is nothing proprietary about session management in Sitecore - it is all bu
 
 In a content delivery environment, you can choose to use `InProc` or `OutProc` session state management. `InProc` is short for 'In Process', and means that any information about a visitor's session is stored in memory. This is the default configuration when you install Sitecore, and it is your *only* option for content management environments. `InProc` is always, always going to be faster than OutProc, because you are not writing anything to disk.
 
-**OutProc**, short for 'Out of Process', is when you store session state information somewhere that *isn't* in memory. For example, you might write your session state information to a SQL database. Sitecore offers two OutProc session state providers: [**MongoDB**]() and **SQL**.
+**OutProc**, short for 'Out of Process', is when you store session state information somewhere that *isn't* in memory. For example, you might write your session state information to a SQL database. Sitecore offers two OutProc session state providers: **MongoDB** and **SQL**.
 
 ### Shared vs Private, `InProc` vs `OutProc`
 
@@ -36,7 +36,12 @@ Slower, but most reliable. No matter which CD a visitor hits within a cluster, t
 
 ### Which session state provider should I use?
 
-That's up to you. There is no officially supported data that suggests one is faster than the other, although you should always perform your own tests. MongoDB is simpler to spin up, but if you are not comfortable supporting MongoDB, you can use the SQL provider.
+That's up to you. There is no officially supported data that suggests one is faster than the other, although you should always perform your own tests. MongoDB is simpler to spin up, but if you are not comfortable supporting MongoDB, you can use the SQL provider. Configuration steps available on the documentation site:
+
+* [Walkthrough: Configuring a private session state database using the MongoDB provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configuring%20a%20private%20session%20state%20database%20using%20the%20mongodb%20provider)
+* [Walkthrough: Configuring a private session state database using the SQL Server provider](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/xDB%20configuration/Walkthrough%20Configuring%20a%20private%20session%20state%20database%20using%20the%20SQL%20Server%20provider)
+* [Walkthrough: Configuring a shared session state database using the MongoDB provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configuring%20a%20shared%20session%20state%20database%20using%20the%20mongodb%20provider)
+* [Walkthrough: Configuring a shared session state database using the SQL Server provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configure%20a%20shared%20session%20state%20database%20using%20the%20sql%20server%20provider)
 
 ### What about content management (CM) environments
 
