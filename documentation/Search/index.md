@@ -3,10 +3,6 @@ layout: onecol
 title: Sitecore Search
 ---
 
-# Sitecore Search
-
-## General
-
 ### Official Sitecore Documentation (7.0 - 7.2)
 
 * [Developer's Guide to Item Buckets and Search](http://sdn.sitecore.net/Reference/Sitecore%207/Developers%20Guide%20to%20Item%20Buckets%20and%20Search.aspx)
