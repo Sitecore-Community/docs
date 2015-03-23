@@ -4,7 +4,6 @@ title: Session State and the xDB
 category: xdb
 ---
 
-
 ## First of all - what are my options?
 
 In a content delivery environment, you can choose to use **InProc** our **OutProc** session state management. 
@@ -51,10 +50,15 @@ Why does this matter? For marketers, Sitecore 8 is all about getting a full pict
 
 ### Sharing session data across devices
 
+There is a small chance that a visitor will have two concurrent sessions running. Consider the following scenario (note that if Bob does not identify himself by logging in or similar, Sitecore has no way of knowing that he is the same person on both devices):
+
 * Bob logs onto travelling website and browses around for holidays - he triggers a number of goals and is moved from 'New Visitor' engagement state to 'Looking for Holidays'.
 * Bob finishes work, leaves his computer, and immediately picks up his phone to continue the search on the commute home.
 * He logs onto the same site, and contiues browsing. Bob now has two sessions running at the same time.
 * If shared session state is being managed **out of process**, the xDB knows that Bob already has an active session - it is able to use information about the contact and his engagement level state. If this information was not available in shared session state, Bob would be seen as being a 'New Visitor' on his mobile phone despite that not being the case.
+
+
+Sharring session data across devices **in a multi-CD setup** requires `OutProc` session management. Every CD needs access to the shared session state in order to know about contact details and engagement states.
 
 ### Cluster-forwarding 
 
