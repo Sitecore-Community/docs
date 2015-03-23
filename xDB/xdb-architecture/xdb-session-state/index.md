@@ -24,7 +24,7 @@ The xDB stores [two kinds of session information - **shared** and **private**](h
 
 #### Using `InProc` for both private and shared
 
-This is the default setup, and fine if you have a single CD. If you have more than one CD and wish to continue using `InProc` session management, you must use **sticky sessions**. When a visitor hits your site, they are locked to a particular CD instance - all of their session activity is managed in memory by that machine. If your session is interrupted, you may lose your data.
+This is the default setup, and fine if you have a single CD. If you have more than one CD, you cannot use `InProc` - not even with sticky sessions enabled. This is because as soon as you have more than one CD environment, you open yourself up to the possibility of two concurrent sessions on separate CDs. In order to manage that kind of session data, all CDs need access to a single store of information about the contact, which can only be done `OutProc` using a session state database. You also run the risk of data being inaccurate, as the sessions do not know about each other and may write conflicting data back to the xDB (if the second device is able to get access at all).
 
 #### Using `InProc` for private, `OutProc` for shared
 
