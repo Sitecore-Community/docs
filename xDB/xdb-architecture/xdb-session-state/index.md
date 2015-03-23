@@ -4,6 +4,8 @@ title: Session State and the xDB
 category: xdb
 ---
 
+> This is a work in progress! 
+
 ## First of all - what are my options?
 
 In a content delivery environment, you can choose to use **InProc** our **OutProc** session state management. 
