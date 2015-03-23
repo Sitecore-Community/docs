@@ -36,7 +36,7 @@ Slower, but most reliable. No matter which CD a visitor hits within a cluster, t
 
 ### Which session state provider should I use?
 
-That's up to you. There is no officially supported data that suggests one is faster than the other, although you should always perform your own tests. MongoDB is simpler to spin up, but if you are not comfortable supporting MongoDB, you can use the SQL provider. Configuration steps available on the documentation site:
+That's up to you. There is no officially supported data that suggests one is faster than the other, although you should always perform your own tests. MongoDB is simpler to spin up, but if you are not comfortable supporting MongoDB, you can use the SQL provider. Configuration steps are available on the documentation site:
 
 * [Walkthrough: Configuring a private session state database using the MongoDB provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configuring%20a%20private%20session%20state%20database%20using%20the%20mongodb%20provider)
 * [Walkthrough: Configuring a private session state database using the SQL Server provider](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/xDB%20configuration/Walkthrough%20Configuring%20a%20private%20session%20state%20database%20using%20the%20SQL%20Server%20provider)
@@ -53,11 +53,11 @@ There are two key advantages to full OutProc session management:
 
 * You trade some speed for **increased reliability**
 * You can share information across concurrent sessions on **multiple devices**
-* No need for sticky sessions (sticky sessions may result in unevent splits of traffic across load-balanced CDs)
+* No need for sticky sessions (sticky sessions may result in uneven splits of traffic across load-balanced CDs)
 
 ### Reliability
 
-In Sitecore's xDB, information about a visitor's is built up during their session and flushed to MongoDB on session end. Imagine that you are using `InProc` session management - everything is stored in memory. If anything goes awry in your content delivery environment (for example, one out of three load-balanced instances goes down), visitors are at risk of losing their entire session. By contrast, if you are using OutProc session management, their session is maintained in a database - the information about that session is not lost.
+In Sitecore's xDB, information about a visitor is built up during their session and flushed to MongoDB on session end. Imagine that you are using `InProc` session management - everything is stored in memory. If anything goes awry in your content delivery environment (for example, one out of three load-balanced instances goes down), visitors are at risk of losing their entire session. By contrast, if you are using OutProc session management, their session is maintained in a database - the information about that session is not lost.
 
 Why does this matter? For marketers, Sitecore 8 is all about getting a full picture of the individual. Interfaces like the Experience Profile lets you use Sitecore like a CRM - it collects all manner of information about what a visitor has done over time, what part of the sales process they are in, and how they are interacting with your brand. This kind of detailed information might not matter as much to you if your orders rarely exceed £10 - but if you are a vendor of luxury holiday packages, it probably does. In this scenario, individual session data is likely to be worth a lot more; if even a single session is lost, a contact may not be seen as moving through the sales pipeline even though they are.
 
@@ -71,11 +71,11 @@ There is a small chance that a visitor will have two concurrent sessions running
 * If shared session state is being managed **out of process**, the xDB knows that Bob already has an active session - it is able to use information about the contact and his engagement level state. If this information was not available in shared session state, Bob would be seen as being a 'New Visitor' on his mobile phone despite that not being the case.
 
 
-Sharring session data across devices **in a multi-CD setup** requires `OutProc` session management. Every CD needs access to the shared session state in order to know about contact details and engagement states.
+Sharing session data across devices **in a multi-CD setup** requires `OutProc` session management. Every CD needs access to the shared session state in order to know about contact details and engagement states.
 
 ### Cluster-forwarding 
 
-In a geographically distributed setup, you have a cluster of CDs and session state server *per cluster*. The session state server needs to be as close to the CDs as possible to ensure the best possible performance. If for any reason a contact starts a session on cluster A, and a second, concurrent session on a different device in cluster B, they are [i]redirected to their original cluster[/i] by the CD environment. This is possible because the first session causes a lock to be placed on the contact, which ties them to a particular cluster. This behaviour is not possible without `OutProc` session management.
+In a geographically distributed setup, you have a cluster of CDs and session state server *per cluster*. The session state server needs to be as close to the CDs as possible to ensure the best possible performance. If for any reason a contact starts a session on cluster A, and a second, concurrent session on a different device in cluster B, they are *redirected to their original cluster* by the CD environment. This is possible because the first session causes a lock to be placed on the contact, which ties them to a particular cluster. This behaviour is not possible without `OutProc` session management.
 
 ## Do I have to use OutProc session management?
 
