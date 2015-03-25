@@ -21,13 +21,11 @@ Typical examples of Outcomes are Contact Acquisition or Sales Lead.
 
 The Outcome items are housed in the new Marketing Control Panel 
 
-![Marketing Control Panel]({{ site.baseurl }}/images/Outcomes/Marketing center.jpg)
-Format: ![Alt Text](url)
+![Marketing Control Panel]({{ site.baseurl }}/images/Outcomes/Marketing center.JPG)
 
 When Outcomes are triggered they are stored in the xDB database and they can be viewed on a contact's activity tab.
 
-![Activity Tab]({{ site.baseurl }}/images/Outcomes/xdb_outcome.jpg)
-Format: ![Alt Text](url)
+![Activity Tab]({{ site.baseurl }}/images/Outcomes/xdb_outcome.JPG)
 
 ## How do I trigger an Outcome?
 
