@@ -4,7 +4,7 @@ title: Session State and the xDB
 category: xdb
 ---
 
-> This is a work in progress! 
+<div class="alert alert-warning" role="alert">This article is a work in progress!</div>
 
 ## Where does session state fit in with the xDB?
 
@@ -15,8 +15,6 @@ As a visitor browses around your site, information about that visitor and their 
 The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. 
 
 Both types of session state always exist - when you install Sitecore on your development machine, they are both set to use `InProc`.
-
-## Session state, CDs, and clusters
 
 ## What are my options when configuring session state?
 
