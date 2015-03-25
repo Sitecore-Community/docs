@@ -128,6 +128,21 @@ color: #fff;
 	background: #008998;
 	margin-bottom: 30px;
 	min-height: 50px;
+	padding: 20px 0;
+}
+
+.searchBarInner {
+	margin: 0 auto;
+	float: none;
+}
+
+.searchBarInner .btn-default {
+	background: #1cb0c2;
+	border: 1px solid #1cb0c2;
+}
+
+.searchBar .col-lg-6 {
+	margin: 0 auto;
 }
 
 .searchBar input[type="text"]
@@ -145,36 +160,6 @@ color: #fff;
     background-color: #1cb0c2;
     border-radius: 5px;
 
-}
-
-input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #1cb0c2 !important;
-    background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    height: 16px !important;
-    border-color: #1cb0c2 !important;
-    filter: none;
-}
-
-
-.gsc-input-box input[type="text"] {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.gsib_a {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-}
-
-.gsc-input-box {
-	height: auto !important;
-}
-
-.gsc-control-cse  {
-	max-width: 500px !important;	
-	margin: 0 auto;
 }
 
 

@@ -67,9 +67,19 @@
 {% endif %}
 
   <div class="searchBar">
-    <div class="container">
-  <gcse:search></gcse:search>
-</div>
+
+
+<div class="col-md-4 searchBarInner">
+  <form id="searchbox" action="{{ site.baseurl}}/search-results">
+    <div class="input-group">
+      <input type="text" class="form-control" name="q" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </form>
+  </div><!-- /.col-lg-6 -->
+
 </div>
 
   
