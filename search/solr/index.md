@@ -1,5 +1,5 @@
 ---
-layout: onecol
+layout: default
 title: Solr
 category: search
 ---
