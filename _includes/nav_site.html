@@ -137,7 +137,7 @@
 
   {% if page.category == "learn" %}
 
-<h2>Configuration<h2>
+<h2>Configuration</h2>
 
 {% else %}
 
@@ -146,7 +146,7 @@
  {% endif %}
 
 
-        {% if page.category == "config" %}
+        {% if page.category == "config" or page.category == "learn" %}
          
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Patch Files">Patch Files</a></li>
