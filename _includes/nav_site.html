@@ -1,0 +1,141 @@
+<div class="sidenav">
+
+<strong class="heading"><a href="{{ site.baseurl }}/resources-overview">Resources Overview</a></strong>  
+
+<strong class="heading"><a href="{{ site.baseurl }}/xDB">xDB</a></strong>
+
+{% if page.category == "xdb" %}
+
+ <ul class="main-menu nav-stacked affix-top">
+
+<li id="par-1-menu">xDB Architecture</a>
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/xdb-architecture/overview" onClick="ga('send','event','Sidenav','Click','xDB')">Introduction to xDB</a></li>
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/xdb-architecture/xdb-session-state" onClick="ga('send','event','Sidenav','Click','xDB')">Session State</a></li>
+     </ul>
+
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/xDB/the-xdb-contact/" onClick="ga('send','event','Sidenav','Click','xDB')">The xDB Contact</a>
+    
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/contact-facets" onClick="ga('send','event','Sidenav','Click','xDB')">Facets</a></li>
+     </ul>
+
+
+    <li id="par-1-menu">Engagement Automation</a>
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/Engagement%20Automation/create-a-plan/" onClick="ga('send','event','Sidenav','Click','xDB')">Creating an Engagement plan</a></li>
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/Engagement%20Automation/debug-a-plan" onClick="ga('send','event','Sidenav','Click','xDB')">Debugging an Engagement plan</a></li>
+     </ul>
+    </li>
+
+       <li id="par-1-menu">Reporting and Data</a>
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/extending-experience-analytics-reports" onClick="ga('send','event','Sidenav','Click','xDB')">Extend Analytics Reports</a></li>
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/generating-data" onClick="ga('send','event','Sidenav','Click','xDB')">Generating Analytics Data</a></li>        
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/how-to-refresh-reports" onClick="ga('send','event','Sidenav','Click','xDB')">Refreshing Reports</a></li>
+     </ul>
+   </li>
+
+            <li id="par-1-menu">Interfaces</a>
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/interfaces/launch-pad" onClick="ga('send','event','Sidenav','Click','xDB')">Launch Pad</a></li>
+        
+     </ul>
+
+       </li>
+       <a href="{{ site.baseurl }}/xDB/outcomes" onClick="ga('send','event','Sidenav','Click','outcomes')">Outcomes</a>
+       
+    </li>
+  </ul>
+
+  {% endif %}
+
+<strong class="heading"><a href="{{ site.baseurl }}/sitecore-mvc">Sitecore MVC</a></strong>
+          {% if page.category == "mvc" %}
+   
+ <ul class="main-menu nav-stacked affix-top">
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc" onClick="ga('send','event','Sidenav','Click','MVC')">Getting Started</a></li>
+
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc/creating-project" onClick="ga('send','event','Sidenav','Click','MVC')">Create a Project</a></li>
+
+    <li id="par-1-menu">
+      MVC Components
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc/view-renderings" onClick="ga('send','event','Sidenav','Click','MVC')">View Renderings</a></li>
+
+        <li id="sub-par-1-2-menu"><a href="{{ site.baseurl }}/sitecore-mvc/controller-renderings" onClick="ga('send','event','Sidenav','Click','MVC')">Controller Renderings</a></li>
+      </ul>
+
+       <li id="par-1-menu">
+      <a href="{{ site.baseurl }}/sitecore-mvc/rendering-content" onClick="ga('send','event','Sidenav','Click','MVC')">Rendering Content</a></li>
+    </li>
+  </ul>
+        {% endif %}
+        <strong class="heading">Extending Sitecore</strong>
+
+        {% if page.category == "extending" %}
+       
+
+ <ul class="main-menu nav-stacked affix-top">
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Providers">Providers</a>
+
+
+
+    </li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Asynchronous%20Tasks">Async Tasks</a></li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Caching">Caching</a></li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Rules Engine">Rules Engine</a></li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Data Providers">Data Providers</a>
+
+
+<ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Data Providers/Implementing a Data Provider">Implementing a Data Provider</a></li>
+      </ul>
+
+    </li>
+    </li>
+  </ul>
+
+        {% endif %}
+
+
+
+        {% if page.category == "config" %}
+
+        <strong class="heading">Configuration</strong>
+         
+ <ul class="main-menu nav-stacked affix-top">
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Patch Files">Patch Files</a></li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Settings">Settings</a></li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Sitecore Configuration Factory">Configuration Factory</a></li>
+  </ul>
+
+        {% endif %}
+
+
+        {% if page.category == "pipelinesandevents" %}
+
+        <strong class="heading">Pipelines and Events</strong>
+ <ul class="main-menu nav-stacked affix-top">
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipelines</a>
+        <ul class="sub-menu">
+                <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines/pipeline-processors" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipeline Processors</a></li>   
+                <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines/extending-creating-pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Extending Pipelines</a></li>
+             
+        </ul>
+
+    </li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/events" onClick="ga('send','event','Sidenav','Click','Events')">Events</a></li>
+</ul>
+         
+        {% endif %}   
+
+
+</div>
+
+

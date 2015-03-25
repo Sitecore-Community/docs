@@ -2,26 +2,8 @@
 {% include site_header.html %}
       <div class="col-md-2" id="sidebar-menu">
 
-        {% if page.category == "mvc" %}
-          {% include nav_mvc.html %}
-        {% endif %}
-        {% if page.category == "xdb" %}
-          {% include nav_xdb.html %}
-        {% endif %}
-        {% if page.category == "extending" %}
-          {% include nav_extending.html %}
-        {% endif %}
-        {% if page.category == "config" %}
-          {% include nav_config.html %}
-        {% endif %}
-        {% if page.category == "xdbscaling" %}
-          {% include nav_xdb_scaling.html %}
-        {% endif %} 
+          {% include nav_site.html %}
 
-                  {% if page.category == "pipelinesandevents" %}
-          {% include nav_pipelines_events.html %}
-        {% endif %}   
-      
         
       </div>
       <div class="col-md-10">
@@ -32,6 +14,20 @@
   
     {{content}}
 	
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'sitecorecommunitydocs';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 	</div>
 	</div>
 {% include site_footer.html %}

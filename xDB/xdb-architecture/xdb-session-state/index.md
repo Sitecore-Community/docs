@@ -8,21 +8,29 @@ category: xdb
 
 ## Where does session state fit in with the xDB?
 
-As a visitor browses around your site, information about that visitor and their interaction is stored in session. On session end, this information if flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. For this reason, session management needs to be as robust as possible.
+As a visitor browses around your site, information about that visitor and their interaction is stored in session. On session end, this information is flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. This reduces the number of calls to the collection database, but it means that session management should be as robust as possible.
 
-## First of all - what are my options?
+### Shared vs Private session state
+
+The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. 
+
+Both types of session state always exist - when you install Sitecore on your development machine, they are both set to use `InProc`.
+
+## Session state, CDs, and clusters
+
+## What are my options when configuring session state?
 
 There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom, as they need to implement `Session_End`.
+
+### Choosing `OutProc` or `InProc` session state management
 
 In a content delivery environment, you can choose to use `InProc` or `OutProc` session state management. `InProc` is short for 'In Process', and means that any information about a visitor's session is stored in memory. This is the default configuration when you install Sitecore, and it is your *only* option for content management environments. `InProc` is always, always going to be faster than OutProc, because you are not writing anything to disk.
 
 **OutProc**, short for 'Out of Process', is when you store session state information somewhere that *isn't* in memory. For example, you might write your session state information to a SQL database. Sitecore offers two OutProc session state providers: **MongoDB** and **SQL**.
 
-### Shared vs Private, `InProc` vs `OutProc`
+##
 
-The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the 'contact' session state - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. When you install Sitecore, **both** session stores are set to `InProc`.
-
-#### Using `InProc` for both private and shared
+#### Using `InProc` for both private and shared session state
 
 This is the default setup, and works if you have a single CD instance. If you have more than one CD, you cannot use `InProc` - not even with sticky sessions enabled. This is because as soon as you have more than one CD, you open yourself up to the possibility of two concurrent sessions on separate CDs. In order to manage that kind of session data, all CDs need access to a single store of information about the contact, which can only be done `OutProc` using a session state database. You also run the risk of data being inaccurate, as the sessions do not know about each other and may write conflicting data back to the xDB (if the second device is able to get access at all).
 

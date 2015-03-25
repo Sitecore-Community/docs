@@ -5,6 +5,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ site.baseurl}}/site-assets/js/bootstrap.min.js"></script>
 
   <!-- Hi there, source viewer. ;) This will be changed to use Sitecore's very own FxM shortly. --> 
   <script>
@@ -69,11 +70,17 @@ $('a').filter(function() {
 
 </script>
 
-<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0031/1578.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    <script>
+  (function() {
+    var cx = '016557152785981333391:v6qzyba-rrq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
 
   </body>
