@@ -4,6 +4,8 @@ title: Solr
 category: search
 ---
 
+> This is a work in progress!
+
 This section contains articles that relate to installing, configuring and using Solr with Sitecore 8.
 
  * [Installing Solr using the Bitnami Apache Solr Stack](installing-solr-using-the-bitnami-apache-solr-stack/)
