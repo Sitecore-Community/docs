@@ -1,10 +1,19 @@
-<div class="sidenav">
+<div class="sidenav">   
 
 <strong class="heading"><a href="{{ site.baseurl }}/resources-overview">Resources Overview</a></strong>  
 
+{% if page.category == "learn" %}
+
+<h2><a href="{{ site.baseurl }}/xDB">xDB</a></h2>
+
+{% else %}
+
 <strong class="heading"><a href="{{ site.baseurl }}/xDB">xDB</a></strong>
 
-{% if page.category == "xdb" %}
+ {% endif %}
+
+
+{% if page.category == "xdb" or page.category == "learn" %}
 
  <ul class="main-menu nav-stacked affix-top">
 
@@ -47,15 +56,30 @@
      </ul>
 
        </li>
+
+       <li>
        <a href="{{ site.baseurl }}/xDB/outcomes" onClick="ga('send','event','Sidenav','Click','outcomes')">Outcomes</a>
        
     </li>
+
+  </li>
+
+</li>
   </ul>
 
   {% endif %}
 
+  {% if page.category == "learn" %}
+
+<h2><a href="{{ site.baseurl }}/sitecore-mvc">Sitecore MVC</a></h2>
+
+{% else %}
+
 <strong class="heading"><a href="{{ site.baseurl }}/sitecore-mvc">Sitecore MVC</a></strong>
-          {% if page.category == "mvc" %}
+
+ {% endif %}
+
+          {% if page.category == "mvc" or page.category == "learn" %}
    
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc" onClick="ga('send','event','Sidenav','Click','MVC')">Getting Started</a></li>
@@ -76,16 +100,23 @@
     </li>
   </ul>
         {% endif %}
-        <strong class="heading">Extending Sitecore</strong>
+       
+  {% if page.category == "learn" %}
 
-        {% if page.category == "extending" %}
+<h2>Extending Sitecore</h2>
+
+{% else %}
+
+<strong class="heading">Extending Sitecore</strong>
+
+ {% endif %}
+
+
+        {% if page.category == "extending" or page.category == "learn" %}
        
 
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Providers">Providers</a>
-
-
-
     </li>
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Asynchronous%20Tasks">Async Tasks</a></li>
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Caching">Caching</a></li>
@@ -104,10 +135,18 @@
         {% endif %}
 
 
+  {% if page.category == "learn" %}
+
+<h2>Configuration<h2>
+
+{% else %}
+
+<strong class="heading">Configuration</strong>
+
+ {% endif %}
+
 
         {% if page.category == "config" %}
-
-        <strong class="heading">Configuration</strong>
          
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Patch Files">Patch Files</a></li>
@@ -117,10 +156,18 @@
 
         {% endif %}
 
+          {% if page.category == "learn" %}
 
-        {% if page.category == "pipelinesandevents" %}
+<h2>Pipelines and Events</h2>
 
-        <strong class="heading">Pipelines and Events</strong>
+{% else %}
+
+<strong class="heading">Pipelines and Events</strong>
+
+ {% endif %}
+
+        {% if page.category == "pipelinesandevents" or page.category == "learn" %}
+
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipelines</a>
         <ul class="sub-menu">
@@ -135,7 +182,32 @@
          
         {% endif %}   
 
+          {% if page.category == "learn" %}
 
+<h2><a href="{{ site.baseurl }}/search/">Search</a></h2>
+
+{% else %}
+
+<strong class="heading"><a href="{{ site.baseurl }}/search/">Search</a></strong>
+
+ {% endif %}
+
+        
+
+{% if page.category == "search" or page.category == "learn" %}
+
+  <ul class="main-menu nav-stacked affix-top">
+    <li id="par-1-menu">Lucene</li>
+    <li id="par-1-menu"><a href="{{ site.baseurl }}/search/solr/">Solr</a>
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/search/solr/installing-solr-using-the-bitnami-apache-solr-stack/">Installing Solr using the Bitnami Apache Solr Stack</a></li>
+        <!--<li id="sub-par-1-1-menu"><a href="#">Configuring Solr for use with Sitecore 8</a></li>
+        <li id="sub-par-1-1-menu"><a href="#">Configuring a Sitecore 8 solution to use Solr</a></li>-->
+      </ul>
+    </li>
+  </ul>
+
+      {% endif %}   
 </div>
 
 

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: onecol
 title: Learn Sitecore
+category: learn
 ---
 
 <h2>Installation and Setup</h2>
@@ -8,27 +9,10 @@ title: Learn Sitecore
    <li><a href="{{ site.baseurl }}/sitecore-basics/installing-sitecore">Options for Installing Sitecore</a></li>
 </ul>
 
-<h2>Defining Data</h2>
-
-<ul>
-  <li><s>Items and Content Architecture</s></li>
-  <li><s>Data Templates</s></li>
-  <li><s>Standard Values</s></li>
-  <li><s>Insert Options</s></li>
-</ul>
-
 <h2>Workflow and User Permissions</h2>
 <ul>
   <li><a href="{{ site.baseurl }}/documentation/Sitecore Fundamentals/Authorizations">Authorizations/Permissions</a></li>
 </ul>
-
-{% include nav_config.html %}
-
-{% include nav_pipelines_events.html %}
-
-{% include nav_extending.html %}
-
-{% include nav_mvc.html %}
 
 {% include nav_site.html %}
 
