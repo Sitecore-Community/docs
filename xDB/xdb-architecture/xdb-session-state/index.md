@@ -4,21 +4,34 @@ title: Session State and the xDB
 category: xdb
 ---
 
-<div class="alert alert-warning" role="alert">This article is a work in progress!</div>
+<div class="alert alert-warning" role="alert">This article is a work in progress and might be <strong>completely wrong</strong>! Proceed at your own risk. :)</div>
 
 ## Where does session state fit in with the xDB?
 
 As a visitor browses around your site, information about that visitor and their interaction is stored in session. On session end, this information is flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. This reduces the number of calls to the collection database, but it means that session management should be as robust as possible.
 
+There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom, as they need to support`Session_End`.
+
 ### Shared vs Private session state
 
-The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. 
+The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. When you install Sitecore on a single machine, both types of session data are stored `InProc`.
 
-Both types of session state always exist - when you install Sitecore on your development machine, they are both set to use `InProc`.
+## Scenario 1: Single CD and `InProc`
 
-## What are my options when configuring session state?
+In this example, session is managed in memory by a single CD:
 
-There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom, as they need to implement `Session_End`.
+![Session and a single CD]({{ site.baseurl }}/images/sesssion/local-env.PNG)
+
+1. Bob browses to awesomecore.net - it's a tiny site, so it can get away with having a single CD environment
+2. He browses around, triggering goals and amassing session data about his interaction - the single CD uses `InProc` session management, so this is all done in memory
+3. When his session ends, the data is flushed to the xDB, where it will be processed and aggregated for reporting
+
+
+## Scenario 2: Multiple CDs, Single Cluster, and `OutProc`
+
+In this example, there are *multiple* CDs in a single cluster.
+
+![Session and a single CD]({{ site.baseurl }}/images/sesssion/local-env.PNG)
 
 ### Choosing `OutProc` or `InProc` session state management
 
