@@ -163,7 +163,7 @@ color: #fff;
 }
 
 .gsc-selected-option-container {
-	min-width: 100px;
+	min-width: 100px !important;
 }
 
 .gsc-control-cse {

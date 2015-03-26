@@ -6,9 +6,10 @@ category: xdb
 ---
 
 ## What is a contact?
-In the Experience Database (xDB), a contact is a visitor. Even if you are anonymous, or have never provided your e-mail address to Sitecore, you are still referred to and stored as a contact.
 
-You can view individual contacts in the **Experience Profile** interface. Note that this interface does not necessarily pull all of its content directly from MongoDB.
+All visitors are stored in the xDB - including anonymous visitors. As soon as you **identify yourself** by providing Sitecore with an e-mail address, you become a **contact**.
+
+You can view identified contacts and individual visitors in the **Experience Profile** interface. Note that this interface does not necessarily pull all of its content directly from MongoDB.
 
 ## Where are contacts stored?
 The **raw contact data** is stored in the **contacts** collection of the **analytics MongoDB**. MongoDB stores information in JSON format. Here is a contact that has provided a first name, surname, and e-mail address:
