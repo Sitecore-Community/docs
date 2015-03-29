@@ -41,3 +41,8 @@ category: search
 `<setting name="ContentSearch.Solr.EnableHttpCache" value="false" />` - change to false
 
 Enjoy!
+
+**P.S.** To check if anything is getting into your index, make some completed visits to the website (followed by session end) and run next query in the browser:
+
+`http://localhost:8983/solr/sitecore_analytics_index/select?q=*&rows=1000
+
