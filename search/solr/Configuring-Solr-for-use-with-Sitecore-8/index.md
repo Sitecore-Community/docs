@@ -26,16 +26,17 @@ category: search
 
 #### Download Solr Support Package from your <a href="https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/8_0.aspx" >update of Sitecore 8</a>. Unpack the package and copy all dlls from bin folder to your Sitecore bin folder.
 
-#### If you don’t have the Microsoft.Practices.Unity.dll in your bin folder, download and install <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=17866" /> and it will be in C:\Program Files (x86)\Microsoft Unity Application Block 2.1\Bin.
+#### If you don’t have the Microsoft.Practices.Unity.dll in your bin folder, download and install <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=17866">Unity</a> and the needed dll will be in C:\Program Files (x86)\Microsoft Unity Application Block 2.1\Bin.
 
 #### Go to App_Config/Include folder:
+
 - Uncomment Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config
 - Uncomment Sitecore.ContentSearch.Solr.Index.Analytics.config
 - Comment Sitecore.ContentSearch.Lucene.Index.Analytics.config
 
 #### Change next settings in Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config:
 
-    `<setting name="ContentSearch.Solr.ServiceBaseAddress" value="http://localhost:9999/solr" />` - set your port here
-    `<setting name="ContentSearch.Solr.EnableHttpCache" value="false" />` - change to false
+`<setting name="ContentSearch.Solr.ServiceBaseAddress" value="http://localhost:9999/solr" />` - set your port here
+`<setting name="ContentSearch.Solr.EnableHttpCache" value="false" />` - change to false
 
 Enjoy!
