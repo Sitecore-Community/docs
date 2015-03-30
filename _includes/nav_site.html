@@ -2,7 +2,7 @@
 
 <strong class="heading"><a href="{{ site.baseurl }}/resources-overview">Resources Overview</a></strong>  
 
-{% if page.category == "learn" %}
+{% if page.category == "home" %}
 
 <h2><a href="{{ site.baseurl }}/xDB">xDB</a></h2>
 
@@ -13,7 +13,7 @@
  {% endif %}
 
 
-{% if page.category == "xdb" or page.category == "learn" %}
+{% if page.category == "xdb" or page.category == "home" %}
 
  <ul class="main-menu nav-stacked affix-top">
 
@@ -69,7 +69,7 @@
 
   {% endif %}
 
-  {% if page.category == "learn" %}
+  {% if page.category == "home" %}
 
 <h2><a href="{{ site.baseurl }}/sitecore-mvc">Sitecore MVC</a></h2>
 
@@ -79,7 +79,7 @@
 
  {% endif %}
 
-          {% if page.category == "mvc" or page.category == "learn" %}
+          {% if page.category == "mvc" or page.category == "home" %}
    
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc" onClick="ga('send','event','Sidenav','Click','MVC')">Getting Started</a></li>
@@ -101,7 +101,7 @@
   </ul>
         {% endif %}
        
-  {% if page.category == "learn" %}
+  {% if page.category == "home" %}
 
 <h2>Extending Sitecore</h2>
 
@@ -112,7 +112,7 @@
  {% endif %}
 
 
-        {% if page.category == "extending" or page.category == "learn" %}
+        {% if page.category == "extending" or page.category == "home" %}
        
 
  <ul class="main-menu nav-stacked affix-top">
@@ -135,7 +135,7 @@
         {% endif %}
 
 
-  {% if page.category == "learn" %}
+  {% if page.category == "home" %}
 
 <h2>Configuration</h2>
 
@@ -146,7 +146,7 @@
  {% endif %}
 
 
-        {% if page.category == "config" or page.category == "learn" %}
+        {% if page.category == "config" or page.category == "home" %}
          
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Patch Files">Patch Files</a></li>
@@ -156,7 +156,7 @@
 
         {% endif %}
 
-          {% if page.category == "learn" %}
+          {% if page.category == "home" %}
 
 <h2>Pipelines and Events</h2>
 
@@ -166,7 +166,7 @@
 
  {% endif %}
 
-        {% if page.category == "pipelinesandevents" or page.category == "learn" %}
+        {% if page.category == "pipelinesandevents" or page.category == "home" %}
 
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipelines</a>
@@ -182,7 +182,7 @@
          
         {% endif %}   
 
-          {% if page.category == "learn" %}
+          {% if page.category == "home" %}
 
 <h2><a href="{{ site.baseurl }}/search/">Search</a></h2>
 
@@ -194,7 +194,7 @@
 
         
 
-{% if page.category == "search" or page.category == "learn" %}
+{% if page.category == "search" or page.category == "home" %}
 
   <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu">Lucene</li>

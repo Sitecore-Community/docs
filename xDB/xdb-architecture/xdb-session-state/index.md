@@ -10,11 +10,19 @@ category: xdb
 
 As a visitor browses around your site, information about that visitor and their interaction is stored in session. On session end, this information is flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. This reduces the number of calls to the collection database, but it means that session management should be as robust as possible.
 
-There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom, as they need to support`Session_End`.
+There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state.
 
 ### Shared vs Private session state
 
 The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. When you install Sitecore on a single machine, both types of session data are stored `InProc`.
+
+### `InProc` vs `OutProc`
+
+`InProc` and `OutProc` session management is not specific to Sitecore. `InProc` is short for 'In Process', and means that session data is managed in memory. `OutProc`, conversely, means that session data is stored somewhere else - it might be written to disk as the user browses around your site. In Sitecore's case, there are two custom `OutProc` session providers; one for MongoDB and one for SQL. As soon as you scale to multiple CDs within a cluster, you must use `OutProc`.
+
+A default installation of Sitecore uses `InProc` session managementt. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom implementations because they need to support`Session_End`.
+
+As soon as you scale beyond one CD within a cluster, you **must** use `OutProc` session management.
 
 ## Scenario 1: Single CD and `InProc`
 
@@ -22,7 +30,7 @@ In this example, session is managed in memory by a single CD:
 
 ![Session and a single CD]({{ site.baseurl }}/images/sesssion/local-env.PNG)
 
-1. Bob browses to awesomecore.net - it's a tiny site, so it can get away with having a single CD environment
+1. Bob browses to samplesitecore.com - it's a tiny site, so it can get away with having a single CD environment
 2. He browses around, triggering goals and amassing session data about his interaction - the single CD uses `InProc` session management, so this is all done in memory
 3. When his session ends, the data is flushed to the xDB, where it will be processed and aggregated for reporting
 
@@ -31,27 +39,22 @@ In this example, session is managed in memory by a single CD:
 
 In this example, there are *multiple* CDs in a single cluster.
 
-![Session and a single CD]({{ site.baseurl }}/images/sesssion/local-env.PNG)
+![Session and a single CD]({{ site.baseurl }}/images/sesssion/single-cluster-session.PNG)
 
-### Choosing `OutProc` or `InProc` session state management
+1. Bob browses to samplesitecore.com again - it has grown since his last visit, and there are now three CD instances
+2. His request is routed to the least busy server via a non-sticky load balancer - because it is non-sticky, he is not attached to this server for the duration of his visit
+3. As he browses, Bob bounces between CD instances - trigger goals, moving through engagement plans, and generally getting into internet trouble
+4. No matter which CD his request is routed to, his session information is written to a shared **session database**
+5. When Bob's session ends, this data is written to the xDB and eventually disappears from the session database
 
-In a content delivery environment, you can choose to use `InProc` or `OutProc` session state management. `InProc` is short for 'In Process', and means that any information about a visitor's session is stored in memory. This is the default configuration when you install Sitecore, and it is your *only* option for content management environments. `InProc` is always, always going to be faster than OutProc, because you are not writing anything to disk.
 
-**OutProc**, short for 'Out of Process', is when you store session state information somewhere that *isn't* in memory. For example, you might write your session state information to a SQL database. Sitecore offers two OutProc session state providers: **MongoDB** and **SQL**.
-
-##
-
-#### Using `InProc` for both private and shared session state
+## Why can't I use `InProc` with sticky sessions within a cluster?
 
 This is the default setup, and works if you have a single CD instance. If you have more than one CD, you cannot use `InProc` - not even with sticky sessions enabled. This is because as soon as you have more than one CD, you open yourself up to the possibility of two concurrent sessions on separate CDs. In order to manage that kind of session data, all CDs need access to a single store of information about the contact, which can only be done `OutProc` using a session state database. You also run the risk of data being inaccurate, as the sessions do not know about each other and may write conflicting data back to the xDB (if the second device is able to get access at all).
 
-#### Using `InProc` for private, `OutProc` for shared
+## Can I mix `InProc` and `OutProc`?
 
 *Theoretically* possible, not recommended. You are getting the worst of both worlds in terms of reduced speed (`OutProc`) and reduced reliability (`InProc`).
-
-#### Using `OutProc` for private and shared
-
-Slower, but most reliable, and the recommended option for scaled environments. No matter which CD a visitor hits within a cluster, their session data is available in the session database.
 
 ### Which session state provider should I use?
 
