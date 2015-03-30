@@ -1,6 +1,6 @@
-<div class="sidenav">   
+<div class="sidenav">
 
-<strong class="heading"><a href="{{ site.baseurl }}/resources-overview">Resources Overview</a></strong>  
+<strong class="heading"><a href="{{ site.baseurl }}/resources-overview">Resources Overview</a></strong>
 
 {% if page.category == "home" %}
 
@@ -25,7 +25,7 @@
      </ul>
 
     <li id="par-1-menu"><a href="{{ site.baseurl }}/xDB/the-xdb-contact/" onClick="ga('send','event','Sidenav','Click','xDB')">The xDB Contact</a>
-    
+
       <ul class="sub-menu">
         <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/contact-facets" onClick="ga('send','event','Sidenav','Click','xDB')">Facets</a></li>
      </ul>
@@ -43,7 +43,7 @@
 
       <ul class="sub-menu">
         <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/extending-experience-analytics-reports" onClick="ga('send','event','Sidenav','Click','xDB')">Extend Analytics Reports</a></li>
-        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/generating-data" onClick="ga('send','event','Sidenav','Click','xDB')">Generating Analytics Data</a></li>        
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/generating-data" onClick="ga('send','event','Sidenav','Click','xDB')">Generating Analytics Data</a></li>
         <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/reports/how-to-refresh-reports" onClick="ga('send','event','Sidenav','Click','xDB')">Refreshing Reports</a></li>
      </ul>
    </li>
@@ -52,14 +52,14 @@
 
       <ul class="sub-menu">
         <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/xDB/interfaces/launch-pad" onClick="ga('send','event','Sidenav','Click','xDB')">Launch Pad</a></li>
-        
+
      </ul>
 
        </li>
 
        <li>
        <a href="{{ site.baseurl }}/xDB/outcomes" onClick="ga('send','event','Sidenav','Click','outcomes')">Outcomes</a>
-       
+
     </li>
 
   </li>
@@ -80,7 +80,7 @@
  {% endif %}
 
           {% if page.category == "mvc" or page.category == "home" %}
-   
+
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/sitecore-mvc" onClick="ga('send','event','Sidenav','Click','MVC')">Getting Started</a></li>
 
@@ -100,7 +100,7 @@
     </li>
   </ul>
         {% endif %}
-       
+
   {% if page.category == "home" %}
 
 <h2>Extending Sitecore</h2>
@@ -113,7 +113,7 @@
 
 
         {% if page.category == "extending" or page.category == "home" %}
-       
+
 
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Providers">Providers</a>
@@ -147,7 +147,7 @@
 
 
         {% if page.category == "config" or page.category == "home" %}
-         
+
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Patch Files">Patch Files</a></li>
     <li id="par-1-menu"><a href="{{ site.baseurl }}/documentation/Sitecore%20Fundamentals/Settings">Settings</a></li>
@@ -171,17 +171,16 @@
  <ul class="main-menu nav-stacked affix-top">
     <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipelines</a>
         <ul class="sub-menu">
-                <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines/pipeline-processors" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipeline Processors</a></li>   
+                <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines/pipeline-processors" onClick="ga('send','event','Sidenav','Click','Pipelines')">Pipeline Processors</a></li>
                 <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/pipelines/extending-creating-pipelines" onClick="ga('send','event','Sidenav','Click','Pipelines')">Extending Pipelines</a></li>
-             
+
         </ul>
 
     </li>
     <li id="par-1-menu"><a href="{{ site.baseurl }}/pipelines-and-events/events" onClick="ga('send','event','Sidenav','Click','Events')">Events</a></li>
 </ul>
-         
-        {% endif %}   
 
+ {% endif %}
           {% if page.category == "home" %}
 
 <h2><a href="{{ site.baseurl }}/search/">Search</a></h2>
@@ -192,7 +191,6 @@
 
  {% endif %}
 
-        
 
 {% if page.category == "search" or page.category == "home" %}
 
@@ -201,13 +199,11 @@
     <li id="par-1-menu"><a href="{{ site.baseurl }}/search/solr/">Solr</a>
       <ul class="sub-menu">
         <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/search/solr/installing-solr-using-the-bitnami-apache-solr-stack/">Installing Solr using the Bitnami Apache Solr Stack</a></li>
-        <!--<li id="sub-par-1-1-menu"><a href="#">Configuring Solr for use with Sitecore 8</a></li>
-        <li id="sub-par-1-1-menu"><a href="#">Configuring a Sitecore 8 solution to use Solr</a></li>-->
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/search/solr/Configuring-Solr-for-use-with-Sitecore-8/">Configuring Solr for use with Sitecore 8</a></li>
+        <!--<li id="sub-par-1-1-menu"><a href="#">Configuring a Sitecore 8 solution to use Solr</a></li>-->
       </ul>
     </li>
   </ul>
 
-      {% endif %}   
+      {% endif %}
 </div>
-
-
