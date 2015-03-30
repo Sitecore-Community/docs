@@ -40,6 +40,9 @@ category: search
 
 `<setting name="ContentSearch.Solr.EnableHttpCache" value="false" />` - change to false
 
+**Step 10.** If you get an `index has no configuration` exception after starting the site, check your config patch files for Lucene indexes that are missing the `<configuration />` element.  
+When you enable SOLR it becomes the default provider and that causes this exception on existing Lucene indexes that don't have the provider explicitely configured.   
+
 Enjoy!
 
 **P.S.** To check if anything is getting into your index, make some completed visits to the website (followed by session end) and run next query in the browser:
