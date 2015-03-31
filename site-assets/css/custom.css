@@ -43,16 +43,36 @@ img {
 	border:1px solid #999;
 }
 
-.jumbotron {
+.jumboContainer .jumbotron {
 	margin-bottom: 0;
+	background: url('/docs/images/banner2.PNG');
+
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background-position: -180px -320px;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1024px) {
+    .jumboContainer {
+        display:none;
+    }
+}
+
+
+.navbar-toggle {
+	color: #fff;
 }
 
 .navbar-sitecore {
 	background: #000000;
-	color: #fff;
 	margin-bottom: 0;
-	border: 0;
-	border-radius: none;
+	border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
 }
 
 .navbar-sitecore a {
@@ -169,6 +189,10 @@ color: #fff;
 .gsc-control-cse {
 	padding: 0;
 }
+
+/* RESPONSIVE */
+
+
 
 /* body {
 	background: #000;

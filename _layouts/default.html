@@ -1,12 +1,6 @@
 
 {% include site_header.html %}
-      <div class="col-md-2" id="sidebar-menu">
-
-          {% include nav_site.html %}
-
-        
-      </div>
-      <div class="col-md-10">
+      <article class="col-md-10 col-md-push-2">
 
 <h1>{{ page.title }}</h1>
 
@@ -28,6 +22,12 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-	</div>
-	</div>
+	
+	</article>
+        <aside class="col-md-2 col-md-pull-10" id="sidebar-menu">
+
+          {% include nav_site.html %}
+
+        
+      </aside>
 {% include site_footer.html %}

@@ -23,51 +23,56 @@
   <body>
 
 
-    <nav class="navbar navbar-sitecore">
+    <nav class="navbar navbar-sitecore navbar-inverse">
       <div class="container">
         <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="{{ site.baseurl }}/">Unofficial Sitecore Community Docs</a>          
 
         </div>
-
+ <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
 
 <!-- <li><a href="{{ site.baseurl }}/learn">Learn</a></li> -->
 <li><a href="{{ site.baseurl }}/download">Download</a></li>
 <li><a href="{{ site.baseurl }}/community">Community</a></li>
-<li><a href="{{ site.baseurl }}/unofficial">Why unofficial?</a></li>
 <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contribute <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{ site.baseurl}}/how-to-help" class="noicon">How to contribute</a></li>
                 <li><a href="http://github.com/sitecore-community/docs" class="noicon" onClick="ga('send','event','External','Click','GitHub')">Fork on GitHub</a></li>
-                <li><a href="https://sitecorecommunitydocs.uservoice.com/" onClick="ga('send','event','External','Click','UserVoice')" class="noicon">Send Feedback (UserVoice)</a></li>
+                <li><a href="https://sitecorecommunitydocs.uservoice.com/" onClick="ga('send','event','External','Click','UserVoice')" class="noicon">Send Feedback (UserVoice)</a></li>              
               </ul>
             </li>
-
+              <li><a href="http://doc.sitecore.net/" class="navbar-link"  onClick="ga('send','event','External','Click','Official Documentation')"><span class="glyphicon glyphicon-book"></span> Official Docs</a></li>
           </ul>
 
 
-          <p class="navbar-text navbar-right">
-            <a href="http://doc.sitecore.net/" class="navbar-link"  onClick="ga('send','event','External','Click','Official Documentation')"><span class="glyphicon glyphicon-book"></span> Official Sitecore Documentation</a>
-          </p>
       </div>
+    </div>
     </nav>
 
 {% if page.layout == "home" %}
 
 
+<div class="jumboContainer">
 <div class="jumbotron">
       <div class="container">
-        <h1>Technical Sitecore documentation written by developers</h1>
-        <p>Sitecore Community Docs is an  <strong>unofficial,community-driven project</strong> to signpost all available Sitecore resources for <strong>technical people</strong>, including documentation, videos, conferences, user groups, social channels, and blog posts.</p>
+        <h1>Sitecore docs written by developers</h1>
+        <p>A <strong>community-driven</strong> project to document and sign-post all things Sitecore for technical people.</p>
         <p><a class="btn btn-default btn-lg" href="https://github.com/sitecore-community/docs" role="button">Fork on GitHub</a></p>
       </div>
-    </div>
+ </div>
+</div>
 
 {% endif %}
 
-  <div class="searchBar">
+<div class="searchBar container-fluid">
 
 
 <div class="col-md-4 searchBarInner">

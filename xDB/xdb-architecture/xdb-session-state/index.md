@@ -44,13 +44,33 @@ In this example, there are *multiple* CDs in a single cluster.
 1. Bob browses to samplesitecore.com again - it has grown since his last visit, and there are now three CD instances
 2. His request is routed to the least busy server via a non-sticky load balancer - because it is non-sticky, he is not attached to this server for the duration of his visit
 3. As he browses, Bob bounces between CD instances - trigger goals, moving through engagement plans, and generally getting into internet trouble
-4. No matter which CD his request is routed to, his session information is written to a shared **session database**
+4. No matter which CD his request is routed to, his session information is written to a shared **session database** that they all have access to
 5. When Bob's session ends, this data is written to the xDB and eventually disappears from the session database
 
 
 ## Why can't I use `InProc` with sticky sessions within a cluster?
 
-This is the default setup, and works if you have a single CD instance. If you have more than one CD, you cannot use `InProc` - not even with sticky sessions enabled. This is because as soon as you have more than one CD, you open yourself up to the possibility of two concurrent sessions on separate CDs. In order to manage that kind of session data, all CDs need access to a single store of information about the contact, which can only be done `OutProc` using a session state database. You also run the risk of data being inaccurate, as the sessions do not know about each other and may write conflicting data back to the xDB (if the second device is able to get access at all).
+`InProc` session management is the default setup for both private and shared session state data, and works if you have a **single CD**. If you have more than one CD, you cannot use `InProc` - not even with sticky sessions enabled.
+
+This is because as soon as you have more than one CD, you open yourself up to the possibility of a single contact having two concurrent sessions on separate CDs. In order to manage that kind of session data, all CDs need access to a single store of information about the contact, which can only be done `OutProc` using a session state database.  Consider the following scenario:
+
+### Scenario 3: Two devices, two concurrent sessions
+
+![Session and a single CD]({{ site.baseurl }}/images/sesssion/sticky-sessions-are-no.PNG)
+
+1. (A) Bob browses to your site on his computer at work - he is looking for information about the LARP scene in Copenhagen, and authenticates himself with Twitter
+2. (A) Your environment is set up to use three CDs and a **sticky load balancer** - once Bob's request is directed to a CD, it sticks to it until his session ends
+3. (A) All *seems* to be well - if Bob's session ends, he it should just be written to the xDB from session
+
+But Bob is an internet addict. Work finishes, and Bob immediately jumps on his phone to continue his search.
+
+1. (B) Bob logs in on his phone, **whilst his first session is still going**, and information about that visit is not yet in the xDB
+2. (B) This session sticks to a CD as well - it may or may not be the same CD, there is no way of knowing
+3. (B) This is where things start to go horribly wrong..
+  * When a request comes in to a cluster of CDs, a lock is placed on your contact - 'you belong to cluster A for the duration of this session'
+  * But Bob has two sessions going at the same time, and if the cluster was using `OutProc` session state management, those two sessions would know about each other - they would share things like contact and engagement plan information
+  * You now have two conflicting sessions - Bob may have changed his contact data by using a form, or moved into different engagement plan states in either of his two sessions
+  * Which session wins? There is now way for the xDB to work that out, so your data is likely to be incomplete and/or inaccurate
 
 ## Can I mix `InProc` and `OutProc`?
 
