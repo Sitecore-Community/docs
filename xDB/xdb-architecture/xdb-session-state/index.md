@@ -80,7 +80,7 @@ In this example, session is managed in memory by a single CD:
 
 In this example, there are *multiple* CDs in a single cluster.
 
-![Session and a single CD]({{ site.baseurl }}/images/sesssion/single-cluster-session.PNG)
+![Session and a single CD]({{ site.baseurl }}/images/sesssion/single-cluster-session.png)
 
 1. Bob browses to samplesitecore.com again - it has grown since his last visit, and there are now three CD instances
 2. His request is routed to the least busy server via a non-sticky load balancer - because it is non-sticky, he is not attached to this server for the duration of his visit
