@@ -45,7 +45,7 @@ img {
 
 .jumboContainer .jumbotron {
 	margin-bottom: 0;
-	background: url('/docs/images/banner2.PNG');
+	background: url('/docs/images/banner2.PNG') #ccc;
 
   color: #fff;
   text-shadow: 1px 1px 1px #000;
