@@ -8,7 +8,7 @@ The xDB was introduced in Sitecore 7.5, and is the scalable alternative to the s
 
 ## xDB Architecture 
 
-### [Overview of xDB Architecture]()
+### [Overview of xDB Architecture]({{ site.baseurl }}/xDB/xdb-architecture/overview/)
 
 An overview of all xDB components and how they fit together, including some example scaling diagrams.
 
@@ -21,19 +21,6 @@ An in-depth look at session state and what role it plays in the xDB.
 
 ---------------------------------
 
-
-### [Collection]()
-
-An overview of the MongoDB collection database and how it stores information about contacts and interactions.
-
----------------------------------
-
-
-### [Processing and Reporting]()
-
-Information about the system components responsible for aggregating data into a format that can then be used by the reporting APIs.
-
----------------------------------
 
 ## The xDB Contact
 
@@ -49,11 +36,6 @@ A contact facet is a property of a contact, such as their name or job title. The
 
 ---------------------------------
 
-### [Contact merging]()
-
-A contact facet is a property of a contact, such as their name or job title. The default list can easily be extended.
-
----------------------------------
 
 ## Engagement Automation
 

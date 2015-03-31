@@ -8,7 +8,7 @@ category: xdb
 
 ## Where does session state fit in with the xDB?
 
-As a visitor browses around your site, information about that visitor and their interaction is stored in session. On session end, this information is flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. This reduces the number of calls to the collection database, but it means that session management should be as robust as possible.
+As a visitor browses around your site, information about that visitor and their interaction is stored in session. When the session ends, this information is flushed to the xDB - but for the duration of an interaction, session is solely responsible for storing valuable information about a visitor's actions on your website. This reduces the number of calls to the collection database, but it means that session management should be as robust as possible.
 
 There is nothing proprietary about session management in Sitecore - it is all built on standard ASP.NET session state.
 
@@ -18,11 +18,7 @@ The xDB stores [two kinds of session information - **shared** and **private**](h
 
 ### `InProc` vs `OutProc`
 
-`InProc` and `OutProc` session management is not specific to Sitecore. `InProc` is short for 'In Process', and means that session data is managed in memory. `OutProc`, conversely, means that session data is stored somewhere else - it might be written to disk as the user browses around your site. In Sitecore's case, there are two custom `OutProc` session providers; one for MongoDB and one for SQL. As soon as you scale to multiple CDs within a cluster, you must use `OutProc`.
-
-A default installation of Sitecore uses `InProc` session managementt. If you look at the vanilla `Sitecore.Analytics.Tracking.config`, you will see that `sharedSessionState` uses the standard `System.Web.SessionState.InProcSessionStateStore`. Sitecore's two `OutProc` providers (MongoDB and SQL) are custom implementations because they need to support`Session_End`.
-
-As soon as you scale beyond one CD within a cluster, you **must** use `OutProc` session management.
+`InProc` and `OutProc` session management is not specific to Sitecore. `InProc` is short for 'In Process', and means that all session data (both private and shared) is managed in memory. `OutProc`, conversely, means that session data is stored somewhere else - it might be written to disk as the user browses around your site. In Sitecore's case, there are two custom `OutProc` session providers; one for MongoDB and one for SQL. A default installation of Sitecore uses `InProc` session management for both shared and private session data. As soon as you scale to multiple CDs within a cluster, you must use `OutProc` session management for both shared and private session data.
 
 ## Scenario 1: Single CD and `InProc`
 
