@@ -51,23 +51,6 @@ category: search
      <dynamicField name="*_t_tr" type="text_tr" indexed="true" stored="true" /> 
 
 
-      <entities>
-        <contact>
-          <factory type="Sitecore.Analytics.Data.ContactFactory, Sitecore.Analytics" singleInstance="true" />
-          <template type="Sitecore.Analytics.Data.ContactTemplateFactory, Sitecore.Analytics" singleInstance="true" />
-          <facets>
-            <facet name="Personal" contract="Sitecore.Analytics.Model.Entities.IContactPersonalInfo, Sitecore.Analytics.Model" />
-            <facet name="Addresses" contract="Sitecore.Analytics.Model.Entities.IContactAddresses, Sitecore.Analytics.Model" />
-            <facet name="Emails" contract="Sitecore.Analytics.Model.Entities.IContactEmailAddresses, Sitecore.Analytics.Model" />
-            <facet name="Phone Numbers" contract="Sitecore.Analytics.Model.Entities.IContactPhoneNumbers, Sitecore.Analytics.Model" />
-            <facet name="Picture" contract="Sitecore.Analytics.Model.Entities.IContactPicture, Sitecore.Analytics.Model" />
-            <facet name="Communication Profile" contract="Sitecore.Analytics.Model.Entities.IContactCommunicationProfile, Sitecore.Analytics.Model" />
-            <facet name="Preferences" contract="Sitecore.Analytics.Model.Entities.IContactPreferences, Sitecore.Analytics.Model" />
-          </facets>
-        </contact>
-      </entities>
-
-
 so they look like following ones afterwards:
 
 `<dynamicField name="*_t_ar" type="text_general" indexed="true" stored="true" />
