@@ -19,35 +19,37 @@ category: search
 `<fieldType name="pint" class="solr.**Trie**IntField"/>`
 
 **Step 4.** Fix following lines in the file "schema.xml" (that were added to "schema.xml" by schema generator):
-`<dynamicField name="*_t_ar" type="text_ar" indexed="true" stored="true" />`
-`<dynamicField name="*_t_bg" type="text_bg" indexed="true" stored="true" />`
-`<dynamicField name="*_t_ca" type="text_ca" indexed="true" stored="true" />`
-`<dynamicField name="*_t_cz" type="text_cz" indexed="true" stored="true" />`
-`<dynamicField name="*_t_da" type="text_da" indexed="true" stored="true" />`
-`<dynamicField name="*_t_de" type="text_de" indexed="true" stored="true" />`
-`<dynamicField name="*_t_el" type="text_el" indexed="true" stored="true" />`
-`<dynamicField name="*_t_es" type="text_es" indexed="true" stored="true" />`
-`<dynamicField name="*_t_eu" type="text_eu" indexed="true" stored="true" />`
-`<dynamicField name="*_t_fa" type="text_fa" indexed="true" stored="true" />`
-`<dynamicField name="*_t_fi" type="text_fi" indexed="true" stored="true" />`
-`<dynamicField name="*_t_fr" type="text_fr" indexed="true" stored="true" />`
-`<dynamicField name="*_t_ga" type="text_ga" indexed="true" stored="true" />`
-`<dynamicField name="*_t_gl" type="text_gl" indexed="true" stored="true" />`
-`<dynamicField name="*_t_hi" type="text_hi" indexed="true" stored="true" />`
-`<dynamicField name="*_t_hu" type="text_hu" indexed="true" stored="true" />`
-`<dynamicField name="*_t_hy" type="text_hy" indexed="true" stored="true" />`
-`<dynamicField name="*_t_id" type="text_id" indexed="true" stored="true" />`
-`<dynamicField name="*_t_it" type="text_it" indexed="true" stored="true" />`
-`<dynamicField name="*_t_ja" type="text_ja" indexed="true" stored="true" />`
-`<dynamicField name="*_t_lv" type="text_lv" indexed="true" stored="true" />`
-`<dynamicField name="*_t_nl" type="text_nl" indexed="true" stored="true" />`
-`<dynamicField name="*_t_no" type="text_no" indexed="true" stored="true" />`
-`<dynamicField name="*_t_pt" type="text_pt" indexed="true" stored="true" />`
-`<dynamicField name="*_t_ro" type="text_ro" indexed="true" stored="true" />`
-`<dynamicField name="*_t_ru" type="text_ru" indexed="true" stored="true" />`
-`<dynamicField name="*_t_sv" type="text_sv" indexed="true" stored="true" />`
-`<dynamicField name="*_t_th" type="text_th" indexed="true" stored="true" />`
-`<dynamicField name="*_t_tr" type="text_tr" indexed="true" stored="true" />`
+```
+<dynamicField name="*_t_ar" type="text_ar" indexed="true" stored="true" />
+<dynamicField name="*_t_bg" type="text_bg" indexed="true" stored="true" />
+<dynamicField name="*_t_ca" type="text_ca" indexed="true" stored="true" />
+<dynamicField name="*_t_cz" type="text_cz" indexed="true" stored="true" />
+<dynamicField name="*_t_da" type="text_da" indexed="true" stored="true" />
+<dynamicField name="*_t_de" type="text_de" indexed="true" stored="true" />
+<dynamicField name="*_t_el" type="text_el" indexed="true" stored="true" />
+<dynamicField name="*_t_es" type="text_es" indexed="true" stored="true" />
+<dynamicField name="*_t_eu" type="text_eu" indexed="true" stored="true" />
+<dynamicField name="*_t_fa" type="text_fa" indexed="true" stored="true" />
+<dynamicField name="*_t_fi" type="text_fi" indexed="true" stored="true" />
+<dynamicField name="*_t_fr" type="text_fr" indexed="true" stored="true" />
+<dynamicField name="*_t_ga" type="text_ga" indexed="true" stored="true" />
+<dynamicField name="*_t_gl" type="text_gl" indexed="true" stored="true" />
+<dynamicField name="*_t_hi" type="text_hi" indexed="true" stored="true" />
+<dynamicField name="*_t_hu" type="text_hu" indexed="true" stored="true" />
+<dynamicField name="*_t_hy" type="text_hy" indexed="true" stored="true" />
+<dynamicField name="*_t_id" type="text_id" indexed="true" stored="true" />
+<dynamicField name="*_t_it" type="text_it" indexed="true" stored="true" />
+<dynamicField name="*_t_ja" type="text_ja" indexed="true" stored="true" />
+<dynamicField name="*_t_lv" type="text_lv" indexed="true" stored="true" />
+<dynamicField name="*_t_nl" type="text_nl" indexed="true" stored="true" />
+<dynamicField name="*_t_no" type="text_no" indexed="true" stored="true" />
+<dynamicField name="*_t_pt" type="text_pt" indexed="true" stored="true" />
+<dynamicField name="*_t_ro" type="text_ro" indexed="true" stored="true" />
+<dynamicField name="*_t_ru" type="text_ru" indexed="true" stored="true" />
+<dynamicField name="*_t_sv" type="text_sv" indexed="true" stored="true" />
+<dynamicField name="*_t_th" type="text_th" indexed="true" stored="true" />
+<dynamicField name="*_t_tr" type="text_tr" indexed="true" stored="true" />
+```
 
 so they look like following ones afterwards:
 
