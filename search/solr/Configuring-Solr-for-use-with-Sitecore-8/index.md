@@ -53,35 +53,36 @@ category: search
 
 so they look like following ones afterwards:
 
-`<dynamicField name="*_t_ar" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_bg" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_ca" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_cz" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_da" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_de" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_el" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_es" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_eu" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_fa" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_fi" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_fr" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_ga" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_gl" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_hi" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_hu" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_hy" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_id" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_it" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_ja" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_lv" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_nl" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_no" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_pt" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_ro" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_ru" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_sv" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_th" type="text_general" indexed="true" stored="true" />
-<dynamicField name="*_t_tr" type="text_general" indexed="true" stored="true" />`
+     <dynamicField name="*_t_ar" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_bg" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_ca" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_cz" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_da" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_de" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_el" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_es" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_eu" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_fa" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_fi" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_fr" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_ga" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_gl" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_hi" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_hu" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_hy" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_id" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_it" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_ja" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_lv" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_nl" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_no" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_pt" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_ro" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_ru" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_sv" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_th" type="text_general" indexed="true" stored="true" />
+     <dynamicField name="*_t_tr" type="text_general" indexed="true" stored="true" />
+
 
 so, property "type" should be replaced in all those lines to "text_general".
 **Note:** This is just for testing purposes, for real project definitions of appropriate language-specific field types (for example "text_de") have to be added according to SOLR documentation.
