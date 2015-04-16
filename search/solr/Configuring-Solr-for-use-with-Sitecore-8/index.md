@@ -19,9 +19,9 @@ category: search
 `<fieldType name="pint" class="solr.**Trie**IntField"/>`
 
 **Step 4.** Fix following lines in the file "schema.xml" (that were added to "schema.xml" by schema generator):
-```xml
-<dynamicField name="*_t_ar" type="text_ar" indexed="true" stored="true" /> 
-<dynamicField name="*_t_bg" type="text_bg" indexed="true" stored="true" /> 
+`<dynamicField name="*_t_ar" type="text_ar" indexed="true" stored="true" />` 
+`<dynamicField name="*_t_bg" type="text_bg" indexed="true" stored="true" />` 
+
 <dynamicField name="*_t_ca" type="text_ca" indexed="true" stored="true" /> 
 <dynamicField name="*_t_cz" type="text_cz" indexed="true" stored="true" /> 
 <dynamicField name="*_t_da" type="text_da" indexed="true" stored="true" /> 
@@ -49,7 +49,6 @@ category: search
 <dynamicField name="*_t_sv" type="text_sv" indexed="true" stored="true" /> 
 <dynamicField name="*_t_th" type="text_th" indexed="true" stored="true" /> 
 <dynamicField name="*_t_tr" type="text_tr" indexed="true" stored="true" /> 
-```
 
 so they look like following ones afterwards:
 
