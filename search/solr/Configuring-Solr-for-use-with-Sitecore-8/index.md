@@ -128,6 +128,6 @@ Enjoy!
 
 **P.S.** To check if anything is getting into your index, make some completed visits to the website (followed by session end) and run next query in the browser:
 
-`http://localhost:8983/solr/sitecore_analytics_index/select?q=*&rows=1000'
+`http://localhost:8983/solr/sitecore_analytics_index/select?q=*&rows=1000`
 
-For other indexes, for example "sitecore_master_index", just rebuild index (using standard application in Control Panel -> Indexing Manager) and request similar URL: `http://localhost:8983/solr/sitecore_master_index/select?q=*&rows=1000'
+For other indexes, for example "sitecore_master_index", just rebuild index (using standard application in Control Panel -> Indexing Manager) and request similar URL: `http://localhost:8983/solr/sitecore_master_index/select?q=*&rows=1000`
