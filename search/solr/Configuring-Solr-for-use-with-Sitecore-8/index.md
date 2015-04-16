@@ -84,7 +84,7 @@ so they look like following ones afterwards:
      <dynamicField name="*_t_tr" type="text_general" indexed="true" stored="true" />
 
 
-so, property "type" should be replaced in all those lines to "text_general".
+so, property "type" should be replaced in all those lines to **"text_general"**. 
 **Note:** This is just for testing purposes, for real project definitions of appropriate language-specific field types (for example "text_de") have to be added according to SOLR documentation.
 
 **Step 5.** Go to Solr admin page by loading http://localhost:8983/solr/ (it is default port, you should use the one that you specified when installed Bitnami) or by pressing Go to application in Bitnami tool:
@@ -111,9 +111,9 @@ so, property "type" should be replaced in all those lines to "text_general".
 
 `<setting name="ContentSearch.Solr.EnableHttpCache" value="false" />` - change to false
 
-**Step 11.** Do Step 11 from following [article](http://www.dansolovay.com/2013/05/setting-up-solr-with-sitecore-7.html). - "It is also necessary to add Castle.Core and Castle.Windsor. For example version 3.1.0 for each. Getting these is tricky. You can create a solution and use NuGet, or you can pull them directly from the Nuget site, using https://www.nuget.org/api/v2/package/castle.windsor/3.1.0and https://www.nuget.org/api/v2/package/castle.core/3.1.0 Hitting these URLs on Chrome automatically downloads a .nupkg object, which you can rename to a zip archive. Both archives contain a "lib\net40-client" path. Copy Castle.Windsor.dll and Castle.Core.dll from lib\net40-client of each package to the website bin directory."
+**Step 11.** Do Step 11 from following [article](http://www.dansolovay.com/2013/05/setting-up-solr-with-sitecore-7.html). - "It is also necessary to add Castle.Core and Castle.Windsor. For example version 3.1.0 for each. Getting these is tricky. You can create a solution and use NuGet, or you can pull them directly from the Nuget site, using [https://www.nuget.org/api/v2/package/castle.windsor/3.1.0](https://www.nuget.org/api/v2/package/castle.windsor/3.1.0) and [https://www.nuget.org/api/v2/package/castle.core/3.1.0](https://www.nuget.org/api/v2/package/castle.core/3.1.0) Hitting these URLs on Chrome automatically downloads a .nupkg object, which you can rename to a zip archive. Both archives contain a "lib\net40-client" path. Copy Castle.Windsor.dll and Castle.Core.dll from lib\net40-client of each package to the website bin directory."
 
-**Step 12.** Do Step 12 from the same article (as in previous step). - "Finally, wire in the Inversion of Control logic by editing the Global.asax "Application" directive to read:
+**Step 12.** Do Step 12 from the same article (as in previous step). - "Finally, wire in the Inversion of Control logic by editing the Global.asax "Application" directive to read: 
 `<%@Application Language='C#' Inherits="Sitecore.ContentSearch.SolrProvider.CastleWindsorIntegration.WindsorApplication" %>`" 
 
 **Step 13.** If you get an `index has no configuration` exception after starting the site, check your config patch files for Lucene indexes that are missing the `<configuration />` element.  
@@ -122,12 +122,12 @@ When you enable SOLR it becomes the default provider and that causes this except
 ### How to configure SOLR to enable other indexes
 
 You can configure other indexes to work with SOLR. Basically you need to repeat the same steps as for analytics index but give the index correct name. So "sitecore_master_index" or "sitecore_web_index" or "sitecore_core_index" instead of "sitecore_analytics_index".
-In case you have already done all the steps for analytics index (described) above, off course there is no need in repeating the steps #1,7,8,10,11,12. And on Step 9 you should disable and enable appropriate config file.  
+In case you have already done all the steps for analytics index (described above), off course there is no need in repeating the steps #1,7,8,10,11,12. And on Step 9 you should disable and enable appropriate config file.  
 
 Enjoy!
 
 **P.S.** To check if anything is getting into your index, make some completed visits to the website (followed by session end) and run next query in the browser:
 
-`http://localhost:8983/solr/sitecore_analytics_index/select?q=*&rows=1000
+`http://localhost:8983/solr/sitecore_analytics_index/select?q=*&rows=1000'
 
-For other indexes, for example "sitecore_master_index", just rebuild index (using standard application in Control Panel -> Indexing Manager) and request similar URL: `http://localhost:8983/solr/sitecore_master_index/select?q=*&rows=1000
+For other indexes, for example "sitecore_master_index", just rebuild index (using standard application in Control Panel -> Indexing Manager) and request similar URL: `http://localhost:8983/solr/sitecore_master_index/select?q=*&rows=1000'
