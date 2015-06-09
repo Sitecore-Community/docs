@@ -55,11 +55,15 @@ Moved to its own page [here]({{ site.baseurl }}/documentation/IoC/index.html).
 * [http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2](http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2)
 * [http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/](http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/)
 * [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
+* [Unit testing with Sitecore.FakeDb and deserialized data](http://hermanussen.eu/sitecore/wordpress/2014/09/unit-testing-with-sitecore-fakedb-and-deserialized-data/#sthash.emKOv3u3.dpuf)
+* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb – Part 1 – Testing Conditions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-1-testing-conditions/)
+* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb – Part 2 – Testing Actions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-2-testing-actions/)
 
 #### Video
 
 * [Sitecore Unit Testing Setup](https://www.youtube.com/watch?v=mZKSl3pemEs)
 * [Alistair Deneys on Unit Testing Sitecore](https://www.youtube.com/watch?v=oQ2CPvN9FAU )
+* [Unit testing with Sitecore.FakeDb](https://www.youtube.com/watch?v=9IgKrI3Y_Z0)
 
 ### Form Posts and Routing
 
