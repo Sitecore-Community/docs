@@ -37,7 +37,7 @@ The **raw contact data** is stored in the **contacts** collection of the **analy
 	        "Surname" : "Bean"
 	    },
 	    "Emails" : {
-	        "Preferred" : "jill@mail.com",
+	        "Preferred" : "work_email",
 	        "Entries" : {
 	            "work_email" : {
 	                "SmtpAddress" : "jillsmtp@mail.com"
