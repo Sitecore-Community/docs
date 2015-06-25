@@ -39,12 +39,12 @@ Once a facet has been set up, you can retrieve it by **name** using the contact 
 
 In this particular case, you will get an IContactEmailAddress object back with a list of email addresses, and the name of the preferred e-mail address (such as work, home, etc):
 
-  public interface IContactEmailAddresses : IFacet, IElement, IValidatable
-  {
-    IElementDictionary<IEmailAddress> Entries { get; }
-
-    string Preferred { get; set; }
-  }
+    public interface IContactEmailAddresses : IFacet, IElement, IValidatable
+    {
+      IElementDictionary<IEmailAddress> Entries { get; }
+    
+      string Preferred { get; set; }
+    }
 
 ### Default Facets
 
@@ -66,21 +66,21 @@ It is possible to add any number of e-mail addresses to a contact. In MongoDB, t
 
 When this data is retrieved using the API, each one becomes an ``IEmailAddress`` in the ``Entries`` list, and the **title of the contact's preferred e-mail address* gets mapped to ``Preferred`` - not the e-mail address itself!
 
-  public interface IContactEmailAddresses : IFacet, IElement, IValidatable
-  {
-    IElementDictionary<IEmailAddress> Entries { get; }
+    public interface IContactEmailAddresses : IFacet, IElement, IValidatable
+    {
+      IElementDictionary<IEmailAddress> Entries { get; }
 
-    string Preferred { get; set; }
-  }
+      string Preferred { get; set; }
+    }
 
 Each ``IEmailAddress`` has an SmtpAddress, and also a ``BounceCount`` integer where relevant. Note that there is no 'E-Mail Name' anywhere; the ``Entries`` property on ``IContactEmailAddresses`` is a dictionary, and the e-mail names are the keys.
 
-  public interface IEmailAddress : IElement, IValidatable
-  {
-    string SmtpAddress { get; set; }
+    public interface IEmailAddress : IElement, IValidatable
+    {
+      string SmtpAddress { get; set; }
 
-    int BounceCount { get; set; }
-  }
+      int BounceCount { get; set; }
+    }
 
 ##### A note about preferred e-mail address
 
