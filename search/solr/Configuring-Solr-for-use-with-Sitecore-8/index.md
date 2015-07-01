@@ -15,8 +15,8 @@ category: search
 <img src="/docs/images/search/solr/Configuring-Solr-for-use-with-Sitecore-8/solrfolder.png"  />
 
 **Step 3.** Do steps, described in workaround of article [https://kb.sitecore.net/articles/227897](https://kb.sitecore.net/articles/227897) for "schema.xml" in newly created folder.
-    **Note:** for SOLR 5.X "pint" fildType definition should look like following one:
-     <pre>&lt;fieldType name="pint" class="solr.<b>Trie</b>IntField"/&gt;</pre>
+    **Note:** for SOLR 5.X "pint" fieldType definition should look like following one:
+     <pre>&lt;fieldType name="pint" class="solr.TrieIntField"/&gt;</pre>
 
 **Step 4.** Fix following lines in the file "schema.xml" (that were added to "schema.xml" by schema generator):
 
