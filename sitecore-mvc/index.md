@@ -49,15 +49,15 @@ Moved to its own page [here]({{ site.baseurl }}/documentation/IoC/index.html).
 * [http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/](http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/)
 * [http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/](http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/)
 * [http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5](http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5)
-* [http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/](http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/) 
+* [http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/](http://www.martywoods.nl/unit-testing-sitecore-mvc-its-easy-when-using-synthesis/)
 * [http://www.martywoods.nl/unit-testing-sitecore-webforms-with-the-mvp-pattern/](http://www.martywoods.nl/unit-testing-sitecore-webforms-with-the-mvp-pattern/)
 * [http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/](http://blog.istern.dk/2013/04/08/mocking-sitecore-with-microsoft-fakes-part-1/)
 * [http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2](http://blog.istern.dk/2013/04/10/mocking-sitecore-with-microsoft-fakes-part-2)
 * [http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/](http://blogs.perficient.com/microsoft/2014/05/testing-sitecore-with-test-driven-code/)
 * [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
 * [Unit testing with Sitecore.FakeDb and deserialized data](http://hermanussen.eu/sitecore/wordpress/2014/09/unit-testing-with-sitecore-fakedb-and-deserialized-data/#sthash.emKOv3u3.dpuf)
-* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb – Part 1 – Testing Conditions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-1-testing-conditions/)
-* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb – Part 2 – Testing Actions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-2-testing-actions/)
+* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb - Part 1 - Testing Conditions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-1-testing-conditions/)
+* [Unit Testing Custom Rules, Actions, and Conditions with FakeDb - Part 2 - Testing Actions](http://jockstothecore.com/unit-testing-custom-rules-actions-and-conditions-with-fakedb-part-2-testing-actions/)
 
 #### Video
 
