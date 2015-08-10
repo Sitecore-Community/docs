@@ -41,70 +41,67 @@ Make sure 3 following Sitecore assemblies are referenced there:
 Create new class called "ByBrowserVersion" and inherit that from either `DimensionBase` or `VisitDimensionBase` base class. Let's use the second one in this example.  
 2 abstract methods need to be implemented. Let's do some simple implementation:
 
-```csharp
-using System;
-using Sitecore.Analytics.Aggregation.Data.Model;
-using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
 
-namespace Sitecore.EADemo
-{
-  class ByBrowserVersion : VisitDimensionBase
-  {
-    public ByBrowserVersion(Guid dimensionId) : base(dimensionId)
-    {
-    }
+    using System;
+    using Sitecore.Analytics.Aggregation.Data.Model;
+    using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
 
-    protected override bool HasDimensionKey(IVisitAggregationContext context)
+    namespace Sitecore.EADemo
     {
-      // check browser data whether it is available
-      return !string.IsNullOrEmpty(context.Visit.Browser.BrowserMajorName) &&
-             !string.IsNullOrEmpty(context.Visit.Browser.BrowserVersion);
-    }
+      class ByBrowserVersion : VisitDimensionBase
+      {
+        public ByBrowserVersion(Guid dimensionId) : base(dimensionId)
+        {
+        }
 
-    protected override string GetKey(IVisitAggregationContext context)
-    {
-      // making key for the dimension
-      return string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
+        protected override bool HasDimensionKey(IVisitAggregationContext context)
+        {
+          // check browser data whether it is available
+          return !string.IsNullOrEmpty(context.Visit.Browser.BrowserMajorName) &&
+                 !string.IsNullOrEmpty(context.Visit.Browser.BrowserVersion);
+        }
+
+        protected override string GetKey(IVisitAggregationContext context)
+        {
+          // making key for the dimension
+          return string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
+        }
+      }
     }
-  }
-}
-```
 
 In case of using "DimensionBase" the custom class would look like this:
 
-```csharp
-using System;
-using System.Collections.Generic;
-using Sitecore.Analytics.Aggregation.Data.Model;
-using Sitecore.ExperienceAnalytics.Aggregation.Data.Model;
-using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
+    using System;
+    using System.Collections.Generic;
+    using Sitecore.Analytics.Aggregation.Data.Model;
+    using Sitecore.ExperienceAnalytics.Aggregation.Data.Model;
+    using Sitecore.ExperienceAnalytics.Aggregation.Dimensions;
 
-namespace Sitecore.EADemo
-{
-  class ByBrowserVersionV2 : DimensionBase
-  {
-    public ByBrowserVersionV2(Guid dimensionId) : base(dimensionId)
+    namespace Sitecore.EADemo
     {
-    }
-
-    public override IEnumerable<DimensionData> GetData(IVisitAggregationContext context)
-    {
-      var key = string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
-
-      // point of changing calculations that comes from base class
-      // everything can be changed
-      var calculations = CalculateCommonMetrics(context);
-      calculations.Bounces = 15;
-
-      yield return new DimensionData
+      class ByBrowserVersionV2 : DimensionBase
       {
-        DimensionKey = key,
-        MetricsValue = calculations
-      };
+        public ByBrowserVersionV2(Guid dimensionId) : base(dimensionId)
+        {
+        }
+
+        public override IEnumerable<DimensionData> GetData(IVisitAggregationContext context)
+        {
+          var key = string.Format("{0}-{1}", context.Visit.Browser.BrowserMajorName, context.Visit.Browser.BrowserVersion);
+
+          // point of changing calculations that comes from base class
+          // everything can be changed
+          var calculations = CalculateCommonMetrics(context);
+          calculations.Bounces = 15;
+
+          yield return new DimensionData
+          {
+            DimensionKey = key,
+            MetricsValue = calculations
+          };
+        }
+      }
     }
-  }
-}
-```
 
 Build project and make sure the dll is copied to bin folder of the website.
 
@@ -190,4 +187,3 @@ The code of transformer for removing a dash from the dimension key might look li
 
 After implementing that, you will see something like this:  
 ![No dashes]({{ site.baseurl }}/images/Extending reports/noDashes.png)
-
