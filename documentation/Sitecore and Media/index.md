@@ -18,6 +18,7 @@ title: Sitecore and Media
 * [http://blog.xcentium.com/2014/02/images-in-sitecore-and-responsive-design/](http://blog.xcentium.com/2014/02/images-in-sitecore-and-responsive-design/)
 * [http://laubplusco.net/make-sitecore-deliver-images-fits-screen/](http://laubplusco.net/make-sitecore-deliver-images-fits-screen/)
 * [http://laubplusco.net/make-sitecore-deliver-images-fits-screen-part-2/](http://laubplusco.net/make-sitecore-deliver-images-fits-screen-part-2/)
+* [http://www.matthewdresser.com/sitecore/responsive-images-in-sitecore-mvc](http://www.matthewdresser.com/sitecore/responsive-images-in-sitecore-mvc)
 
 ## Media Framework
 
@@ -34,6 +35,7 @@ The Sitecore Media Framework refers to a product that allows you to integrate we
 * [http://blog.xcentium.com/2014/02/images-in-sitecore-and-responsive-design/](http://blog.xcentium.com/2014/02/images-in-sitecore-and-responsive-design/)
 * [http://laubplusco.net/make-sitecore-deliver-images-fits-screen/](http://laubplusco.net/make-sitecore-deliver-images-fits-screen/)
 * [http://laubplusco.net/make-sitecore-deliver-images-fits-screen-part-2/](http://laubplusco.net/make-sitecore-deliver-images-fits-screen-part-2/)
+* [http://www.matthewdresser.com/sitecore/responsive-images-in-sitecore-mvc](http://www.matthewdresser.com/sitecore/responsive-images-in-sitecore-mvc)
 
 
 ## Cropping
