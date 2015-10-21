@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sitecore SPEAK 2.0
-redirect_from: "/documentation/Sitecore MVC/SPEAK 20"
+redirect_from: "/documentation/Sitecore SPEAK/SPEAK 20"
 category: speak
 ---
 

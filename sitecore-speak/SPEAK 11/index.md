@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sitecore SPEAK 1.1
-redirect_from: "/documentation/Sitecore MVC/SPEAK 11"
+redirect_from: "/documentation/Sitecore SPEAK/SPEAK 11"
 category: speak
 ---
 
