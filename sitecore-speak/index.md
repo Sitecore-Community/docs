@@ -9,8 +9,8 @@ Sitecore SPEAK is the new framework for creating applications within Sitecore, i
 
 ## SPEAK 1.1
 
-<a href="{{ site.baseurl }}/Sitecore-SPEAK/Sitecore-SPEAK-11">SPEAK 1.1 Documentation</a>
+<a href="{{ site.baseurl }}/sitecore-speak/sitecore-speak-11">SPEAK 1.1 Documentation</a>
 
 ## SPEAK 2.0
 
-<a href="{{ site.baseurl }}/Sitecore-SPEAK/Sitecore-SPEAK-20">SPEAK 2.0 Documentation</a>
+<a href="{{ site.baseurl }}/sitecore-speak/sitecore-speak-20">SPEAK 2.0 Documentation</a>
