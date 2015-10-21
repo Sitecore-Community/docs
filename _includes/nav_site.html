@@ -99,6 +99,34 @@
     </li>
   </ul>
         {% endif %}
+        
+        
+   {% if page.category == "home" %}
+
+<h2><a href="{{ site.baseurl }}/sitecore-speak">Sitecore SPEAK</a></h2>
+
+{% else %}
+
+<strong class="heading"><a href="{{ site.baseurl }}/sitecore-speak">Sitecore SPEAK</a></strong>
+
+ {% endif %}    
+ 
+  {% if page.category == "speak" or page.category == "home" %}
+
+ <ul class="main-menu nav-stacked affix-top">
+  
+    <li id="par-1-menu">
+      SPEAK versions
+
+      <ul class="sub-menu">
+        <li id="sub-par-1-1-menu"><a href="{{ site.baseurl }}/sitecore-speak/sitecore-speak-11" onClick="ga('send','event','Sidenav','Click','speak')">SPEAK 1.1</a></li>
+
+        <li id="sub-par-1-2-menu"><a href="{{ site.baseurl }}/sitecore-speak/sitecore-speak-20" onClick="ga('send','event','Sidenav','Click','speak')">SPEAK 2.0</a></li>
+      </ul>
+    </li>
+  </ul>
+        {% endif %}   
+        
 
   {% if page.category == "home" %}
 
