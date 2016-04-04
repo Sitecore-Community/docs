@@ -16,7 +16,7 @@ You can choose to install and set up Sitecore manually by downloading the **site
 
 ## Sitecore Instance Manager (SIM)
 
-[SIM is available for download on the Sitecore Marketplace](https://marketplace.sitecore.net/en/Modules/Sitecore_Instance_Manager.aspx), and allows you to install any version of Sitecore from a local repository and manage instances of Sitecore on your machine. This is an essential tool for development environments.
+[SIM is available as a ClickOnce application](https://dl.sitecore.net/updater/sim), and allows you to download and install any version of Sitecore and manage instances of Sitecore on your machine. This is an essential tool for development environments. It also bundles many other handful apps like Log Analyzer, Config Builder and NuGet Generator.
 
 ## Sitecore Rocks
 
