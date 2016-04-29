@@ -148,6 +148,12 @@ Generally speaking, any config file with the *Lucene* text in it should be disab
 
 **NOTE:** If you get an <i>index has no configuration</i> exception after starting the site, check your config patch files for Lucene indexes that are missing the ```<configuration />``` element. When you enable SOLR it becomes the default provider and that causes this exception on existing Lucene indexes that don't have the provider explicitly configured.
 
+Another option is to use Unity integration:
+
+<%@Application Language='C#' Inherits="Sitecore.ContentSearch.SolrProvider.UnityIntegration.UnityApplication" %>
+
+Check it out, if Castle.Windsor doesn't work for you for some reasons. 
+
 ## Verify it works
 
 To check if anything is getting into your index, make some completed visits to the website (followed by session end) and run this query in the browser:
