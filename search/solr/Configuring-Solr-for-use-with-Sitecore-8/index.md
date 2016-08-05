@@ -16,9 +16,9 @@ The purpose of this document is to illustrate the steps needed to get SOLR confi
 
 **Step 3:** Perform the steps described in this [KB article](https://kb.sitecore.net/articles/227897) for "schema.xml" in *sitecore_configs* folder. 
 
-**NOTE:** For SOLR 5.x "pint" fieldType definition should look like this: ```<fieldType name="pint" class="solr.TrieIntField"/>``` 
+>**NOTE:** For SOLR 5.x "pint" fieldType definition should look like this: ```<fieldType name="pint" class="solr.TrieIntField"/>``` 
 
-**NOTE:** For some newer Sitecore versions dynamicField "pint" is already changed to "tint", check the generated schema for ```<dynamicField name="*_pi" type="tint" indexed="true" stored="true" />```
+>**NOTE:** For some newer Sitecore versions dynamicField "pint" is already changed to "tint", check the generated schema for ```<dynamicField name="*_pi" type="tint" indexed="true" stored="true" />```
 
 **Step 4:** Copy the *sitecore_configs* (C:\Bitnami\solr-5.2.1-0\apache-solr\solr\configsets\sitecore_configs) folder and paste it in C:\Bitnami\solr-5.2.1-0\apache-solr\solr. Rename it to the index you are setting up, which, for this exercise, use *sitecore_analytics_index*.
 
