@@ -24,7 +24,8 @@ The purpose of this document is to illustrate the steps needed to get SOLR confi
 
   <img src="/docs/images/search/solr/Configuring-Solr-for-use-with-Sitecore-8/solrfolder.png" style="margin:5px 15px" />
 
-**Step 5:** Pass the *schema.xml* file from C:\Bitnami\solr-5.2.1-0\apache-solr\solr\sitecore_analytics_index\conf to the Sitecore SOLR Schema Generator (Control Panel > Indexing > Generate the SOLR Schema.xml file). **NOTE:** You should be able to use the same file for both source and target but it for some reason you have errors then copy schema.xml to schema-orig.xml and use that as your source).
+**Step 5:** Pass the *schema.xml* file from C:\Bitnami\solr-5.2.1-0\apache-solr\solr\sitecore_analytics_index\conf to the Sitecore SOLR Schema Generator (Control Panel > Indexing > Generate the SOLR Schema.xml file). 
+>**NOTE:** You should be able to use the same file for both source and target but it for some reason you have errors then copy schema.xml to schema-orig.xml and use that as your source).
 
 ---
 
