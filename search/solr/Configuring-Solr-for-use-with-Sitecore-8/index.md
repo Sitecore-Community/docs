@@ -14,7 +14,7 @@ The purpose of this document is to illustrate the steps needed to get SOLR confi
 
   <img src="/docs/images/search/solr/Configuring-Solr-for-use-with-Sitecore-8/configsets.png" style="margin:5px 15px" />
 
-**Step 3:** Perform the steps described in this [KB article](https://kb.sitecore.net/articles/227897) for "schema.xml" in *sitecore_configs* folder. 
+**Step 3:** Please see 2 notes below before you go to the KB link! Perform the steps described in this [KB article](https://kb.sitecore.net/articles/227897) for "schema.xml" in *sitecore_configs* folder. 
 
 >**NOTE:** For SOLR 5.x "pint" fieldType definition should look like this: ```<fieldType name="pint" class="solr.TrieIntField"/>``` 
 
