@@ -8,6 +8,8 @@ category: search
 
 The purpose of this document is to illustrate the steps needed to get SOLR configured properly for use with a Sitecore 8 instance.
 
+If you are looking for a very short guide, please check our [fast track for lazy developers]({{ site.baseurl }}/search/solr/fast-track-solr-for-lazy-developers/). Currently it has everything ready for Solr 4.10 on Sitecore 8.1.
+
 **Step 1:** Install SOLR via Bitnami as described  [here]({{ site.baseurl }}/search/solr/installing-solr-using-the-bitnami-apache-solr-stack/).
 
 **Step 2:** To save time, create a custom SOLR configset by copying, pasting and renaming the *basic_configs* folder (found, for instance, in C:\Bitnami\solr-5.2.1-0\apache-solr\solr\configsets) to create a new one named *sitecore_configs* like this:
