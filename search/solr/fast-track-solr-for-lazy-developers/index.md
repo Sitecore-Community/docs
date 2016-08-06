@@ -11,7 +11,8 @@ Ideal for testing locally. SOLR 4.10, Sitecore 8.1 versions (might also work for
 ## Shortest guide version
 ...if you have already done installing and configuring before and you are just looking for links:
 
-* [SOLR 4.10 installer](http://archive.apache.org/dist/lucene/solr/4.10.4/solr-4.10.4.zip) 
+* [SOLR 4.10 zip](http://archive.apache.org/dist/lucene/solr/4.10.4/solr-4.10.4.zip) 
+* [SOLR Bitnami installer for 4.10](https://www.dropbox.com/s/599lglniv58gxf9/bitnami-solr-4.10.3-0-windows-installer.exe?dl=0) - not needed if you use link above
 * [Sitecore Solr Support package for 8.1 update-3](https://dev.sitecore.net/~/media/7CE11E1730444897A41D89D2333019E6.ashx)
 
 * [Clean Sitecore SOLR 4.10 cores](https://www.dropbox.com/s/0sf9esus1c3eypa/Clean%20SOLR%20cores%204.10.zip?dl=0)
