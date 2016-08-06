@@ -12,3 +12,4 @@ This section contains articles that relate to installing, configuring and using 
  * [Configuring Solr for use with Sitecore 8](Configuring-Solr-for-use-with-Sitecore-8/)
  * Configuring a Sitecore 8 solution to use Solr
  * [Install and configure SolrCloud](Install-and-configure-SolrCloud/)
+ * [Fast track Solr for lazy Sitecore developers](fast-track-solr-for-lazy-developers/)
