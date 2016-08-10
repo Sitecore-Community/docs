@@ -11,12 +11,11 @@ The following documents relate to the **Sitecore Azure module**. This module rel
 
 - [Sitecore Azure Compatibility Table](https://kb.sitecore.net/articles/880886)
 - [Sitecore and Microsoft Azure SDK Compatibility Table](https://kb.sitecore.net/articles/026831)
-- [Install Sitecore Azure](https://doc.sitecore.net/cloud/azure/install%20sitecore%20azure)
 - [Getting started with Sitecore Azure](https://doc.sitecore.net/cloud/azure/getting%20started%20with%20sitecore%20azure)
-- [Upgrade Sitecore Azure from version 7.2 to 8.0](https://doc.sitecore.net/cloud/azure/upgrade%20sitecore%20azure%20from%20version%2072%20rev%20140411%20to%2080%20rev%20150522)
-- [Upgrade Sitecore Azure from version 7.5 to 8.0](https://doc.sitecore.net/cloud/azure/upgrade%20sitecore%20azure%20from%20version%2075%20rev%20141126%20to%2080%20rev150522)
+- [Install Sitecore Azure and deploy to Microsoft Azure](https://doc.sitecore.net/cloud/azure/using_sitecore_azure/install_sitecore_azure_and_deploy_to_microsoft_azure)
 - [Manage your Sitecore Azure service](https://doc.sitecore.net/cloud/azure/manage%20your%20sitecore%20azure%20service)
 - [Troubleshooting Sitecore Azure](https://doc.sitecore.net/cloud/azure/troubleshooting%20sitecore%20azure)
+- [Connect to xDB from Sitecore Azure ](https://doc.sitecore.net/cloud/xdb_cloud/connect_to_sitecore_xdb_from_sitecore_azure)
 
 ## Knowledgebase Articles
 
@@ -44,8 +43,13 @@ The following articles have come out of Sitecore Support and the Technical Consu
 - [How to deploy Sitecore 7.2 solution to Microsoft Azure Cloud Service using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-deploy-sitecore-72-solution-to-microsoft-azure-cloud-service-using-visual-studio.md)
 - [How to deploy Sitecore 7.5 solution to Microsoft Azure Cloud Service using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-deploy-sitecore-75-solution-to-microsoft-azure-cloud-service-using-visual-studio.md)
 - [How to deploy Sitecore 8.0 solution to Microsoft Azure Web App using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-deploy-sitecore-80-solution-to-microsoft-azure-web-app-using-visual-studio.md)
+- [How to deploy Sitecore 8.1 solution to Microsoft Azure Web App using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-deploy-sitecore-81-solution-to-microsoft-azure-web-app-using-visual-studio.md)
 - [How to configure a standard multi-instance Sitecore 7.2 solution using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-configure-a-standard-multi-instance-sitecore-72-solution-using-visual-studio.md)
 - [How to configure a standard multi-instance Sitecore 7.5 solution using Visual Studio](https://github.com/olegburov/sitecore-azure-content/blob/master/articles/how-to-configure-a-standard-multi-instance-sitecore-75-solution-using-visual-studio.md)
+
+### Sitecore and PowerShell
+
+- [How to deploy Sitecore databases to Azure SQL Database using PowerShell](https://github.com/olegburov/Sitecore-Azure-Content/blob/master/articles/how-to-deploy-sitecore-databases-to-azure-sql-database-using-powershell.md)
 
 ## Blog Posts
 
