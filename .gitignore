@@ -3,3 +3,4 @@ node_modules
 validation-report.json
 validation-status.json
 /archive
+.vscode
