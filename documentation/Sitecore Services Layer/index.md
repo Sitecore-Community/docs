@@ -2,6 +2,8 @@
 layout: default
 title: Services Services Layer
 ---
+# Item Services
+[Play with ItemServices]({{ site.baseurl }}/documentation/Sitecore Services Layer/Play with Item Services/)
 
 ## Reference Materials
 
