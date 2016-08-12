@@ -18,7 +18,7 @@ Few words about authentication: **it works in ItemServices**! But... your site s
 
 ## Log in
 
-In order to log in, you should do POST request to "https://<your_hostname>/sitecore/api/ssc/auth/login" method with some JSON in the request body (don't forget to set "Content-Type" header to be "application/json"). See an example in Postman export.
+In order to log in, you should do POST request to "https://-your_hostname-/sitecore/api/ssc/auth/login" method with some JSON in the request body (don't forget to set "Content-Type" header to be "application/json"). See an example in Postman export.
 
 ![Postman Login]({{ site.baseurl }}/images/SitecoreServicesClient/Postman_login.png)
 
@@ -27,7 +27,7 @@ As soon as you are logged in, you will get a cookie ".ASPXAUTH" cookie. That coo
 
 ## Log out
 
-As simple as it is: just POST request to "https://<your_hostname>/sitecore/api/ssc/auth/login". No specific request body or headers required.
+As simple as it is: just POST request to "https://-your_hostname-/sitecore/api/ssc/auth/login". No specific request body or headers required.
 
 ## Get an item
 
