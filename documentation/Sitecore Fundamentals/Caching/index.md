@@ -58,7 +58,7 @@ Caches can be created as needed in your code.
 * [Removing a Value from the Cache](#removing_a_value_from_the_cache)
 * [Clearing the Cache](#clearing_the_cache)
 
-#### <a name=creating_the_cache"">Creating the Cache</a>
+#### <a name="creating_the_cache">Creating the Cache</a>
 Creating a cache consists of creating a new instance of `Sitecore.Caching.Cache`. When the instance is created the cache is automatically registered with the system. This means that Sitecore recognizes the cache and can control it.
 
 	var mycache = new Sitecore.Caching.Cache("test cache", 1024);
