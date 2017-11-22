@@ -53,7 +53,7 @@ The following articles have come out of Sitecore Support and the Technical Consu
 
 ## Blog Posts
 
-- [Sitecore media library and Azure blob storage](http://www.sitecore.net/Community/Technical-Blogs/SitecoreBetter/Posts/2013/07/Sitecore-media-library-and-Azure-blob-storage.aspx)
+- [Sitecore media library and Azure blob storage](https://community.sitecore.net/technical_blogs/b/sitecorebetter/posts/sitecore-media-library-and-azure-blob-storage)
 - [The ultimate approach to storing Sitecore media items in CDN](http://www.cognifide.com/blogs/sitecore/the-ultimate-approach-to-storing-sitecore-media-items-in-cdn/)
 - [Sitecore Azure – Kick Off](http://techitpro.com/sitecore-azure/)
 - [10 Considerations for a Successful Sitecore Azure Implementation](http://www.perficient.com/securedocs/1841191041051161013211297112101114115.pdf)
