@@ -4,6 +4,8 @@ title: Learn Sitecore
 category: learn
 ---
 
+
+
 <h2>Installation and Setup</h2>
 <ul>
    <li><a href="{{ site.baseurl }}/sitecore-basics/installing-sitecore">Options for Installing Sitecore</a></li>
@@ -40,22 +42,23 @@ category: learn
   <li><a href="/docs/documentation/Sitecore 8/index.html">Sitecore 8 Resources</a></li>
 </ul>
 
-<h2>Feeds</h2>
+## Feeds
 
-<ul>
-  <li><a href="http://feeds.sitecore.net/Feed/LatestPosts">http://feeds.sitecore.net/Feed/LatestPosts</a></li>
-  <li><a href="https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&amp;output=html">https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&amp;output=html</a> (MVP Details)</li>
-  <li><a href="http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2">http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2</a> (Older Yahoo! MVP pipe - <a href="http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&amp;_render=rss">RSS</a> / <a href="http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&amp;_render=json">JSON</a>)</li>
-</ul>
+- [Sitecore Company Blog](https://www.sitecore.com/company/blog)
+- [Sitecore Latest Blogs](https://dev.sitecore.net/~/link.aspx?_id=C12C95F2683A4AF98BABA504B4701DD7&_z=z)
+- [Sitecore Documentation Feed](http://feeds.sitecore.net/Feed/LatestPosts)
+
+## MVPs
+
+- [MVP List 2018](https://mvp.sitecore.net/MVPs/2018)
+- [MVP Twitter List 2018](https://twitter.com/Sitecore/lists/sitecore-2018-mvps)
 
 <h3 id="newsletters">Newsletters</h3>
 
-<ul>
-  <li><a href="http://paper.li/sitecore">The Sitecore Daily</a></li>
-  <li><a href="http://paper.li/kiranpatils/1378702752">Sitecore Basics</a></li>
-  <li><a href="http://paper.li/varunvns/1387067950">Sitecore Journal</a></li>
-  <li><a href="http://tinyletter.com/sitecorebasics">Sitecore Basics Weekly</a></li>
-</ul>
+## Newsletters
+- [http://paper.li/kiranpatils/1378702752](Sitecore Basics)
+- [http://paper.li/varunvns/1387067950](Sitecore Journal)
+- [https://tinyletter.com/sitecorebasics/archive](Sitecore Basics Weekly (Archive))
 
 <h3 id="user-groups">User Groups</h3>
 
