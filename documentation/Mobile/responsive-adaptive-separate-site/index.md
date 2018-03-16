@@ -75,5 +75,3 @@ For information about how Sitecore can help you with adapative images, see the [
 # Blog Posts
 
 * [Mobile Device Detection Module](https://marketplace.sitecore.net/Modules/Mobile_Device_Detector.aspx)
-* [http://techitpro.com/sitecore-mobile-website-shared-content-tree-structure-part-1/](http://techitpro.com/sitecore-mobile-website-shared-content-tree-structure-part-1/)
-* [http://techitpro.com/sitecore-mobile-website-separate-content-tree-structure-part-2/](http://techitpro.com/sitecore-mobile-website-separate-content-tree-structure-part-2/)

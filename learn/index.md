@@ -63,7 +63,6 @@ category: learn
 <h3 id="user-groups">User Groups</h3>
 
 <ul>
-  <li><a href="http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx">http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx </a></li>
   <li><a href="https://www.youtube.com/watch?v=vQVBaU5D4yo">https://www.youtube.com/watch?v=vQVBaU5D4yo (Sitecore MVC, SUG Conference)</a></li>
   <li><a href="https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI">https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI (Sitecore Virtual User Group)</a></li>
   <li><a href="https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH">https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH (2013 Sitecore Virtual Users Summit)</a></li>
@@ -87,10 +86,4 @@ category: learn
 <h3 id="best-practices-multi-site-solutions">Best Practices: Multi-Site Solutions</h3>
 <ul>
   <li><a href="http://www.nonlinearcreations.com/Digital/how-we-think/slideshows/Sitecore-multi-sites.aspx#.VHdnTyLfJmw.twitter">Sitecore best practices: Making the most of multi-sites</a></li>
-</ul>
-
-<h3 id="forums">Forums</h3>
-
-<ul>
-  <li><a href="http://techitpro.com/sitecore-forums-know-how/">http://techitpro.com/sitecore-forums-know-how/</a></li>
 </ul>

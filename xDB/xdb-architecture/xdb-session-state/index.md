@@ -16,7 +16,7 @@ There is nothing proprietary about session management in Sitecore - it is all bu
 
 ### Shared vs Private session state
 
-The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/session%20state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. When you install Sitecore on a single machine, both types of session data are stored `InProc`.
+The xDB stores [two kinds of session information - **shared** and **private**](https://doc.sitecore.net/sitecore_experience_platform/setting_up_and_maintaining/session_state/session_state/session_state). You can think of shared session state as the **contact** store - it has information about the contact, devices used, and engagement plan states. Private session state contains information about interactions - such as goals triggered. When you install Sitecore on a single machine, both types of session data are stored `InProc`.
 
 ### Why do we need two kinds of session state?
 
@@ -49,10 +49,8 @@ This does not solve the problem of concurrent sessions. If device A (desktop) st
 
 That's up to you. There is no officially supported data that suggests one is faster than the other, although you should always perform your own tests. MongoDB is simpler to spin up, but if you are not comfortable supporting MongoDB, you can use the SQL provider. Configuration steps are available on the documentation site:
 
-* [Walkthrough: Configuring a private session state database using the MongoDB provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configuring%20a%20private%20session%20state%20database%20using%20the%20mongodb%20provider)
-* [Walkthrough: Configuring a private session state database using the SQL Server provider](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/xDB%20configuration/Walkthrough%20Configuring%20a%20private%20session%20state%20database%20using%20the%20SQL%20Server%20provider)
-* [Walkthrough: Configuring a shared session state database using the MongoDB provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configuring%20a%20shared%20session%20state%20database%20using%20the%20mongodb%20provider)
-* [Walkthrough: Configuring a shared session state database using the SQL Server provider](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/walkthrough%20configure%20a%20shared%20session%20state%20database%20using%20the%20sql%20server%20provider)
+* [Walkthrough: Configuring a private session state database using the SQL Server provider](https://doc.sitecore.net/sitecore_experience_platform/setting_up_and_maintaining/session_state/session_state/walkthrough_configuring_a_private_session_state_database_using_the_sql_server_provider)
+* [Walkthrough: Configuring a shared session state database using the SQL Server provider](https://doc.sitecore.net/sitecore_experience_platform/setting_up_and_maintaining/session_state/session_state/walkthrough_configure_a_shared_session_state_database_using_the_sql_server_provider)
 
 ### What about if I have *multiple* clusters of CDs?
 
