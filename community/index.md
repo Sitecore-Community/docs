@@ -3,17 +3,36 @@ layout: onecol
 title: Sitecore's Community
 ---
 
-## SDN Forums
+## Sitecore Community Portal
 
-Sitecore's official forums are on the Sitecore Developer Network.
+Sitecore's official community portal with discussion and support forums. 
 
-<a class="btn btn-default" href="http://sdn.sitecore.net/Forums.aspx">SDN forums</a>
+- [Sitecore Community](https://community.sitecore.net/)
 
-## StackOverflow
+## Sitecore Stack Exchange
 
-Thousands of questions and answers on StackOverflow tagged with #sitecore, #sitecore7, #sitecore6, etc.
+Stack Exchange site dedicated to Sitecore
 
-<a class="btn btn-default" href="http://stackoverflow.com/questions/tagged/sitecore">Sitcore on StackOverflow</a>
+- [Sitecore Stack Exchange](http://sitecore.stackexchange.com)
+
+## Stack Overflow
+
+Questions tagged with `sitecore` on the general Stack Overflow site.
+
+- [Sitecore on Stack Overflow](http://stackoverflow.com/questions/tagged/sitecore)
+
+## Sitecore Slack Chat
+
+Slack workspace dedicated to Sitecore with topic-specific channels. 
+
+- [Sitecore Slack Chat](https://sitecorechat.slack.com/)
+- [Signup](http://bit.ly/SitecoreSlackSignup)
+
+## User Groups
+
+Find and attend your local User Group
+
+- [Current list of User Groups](https://sitecore.stackexchange.com/a/1690/1106)
 
 ## Twitter
 
