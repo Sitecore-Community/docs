@@ -17,9 +17,8 @@ title: Modules
 
 #### Blog Posts
 * [http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Sitecore-Magnified.aspx](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/Sitecore-Magnified.aspx)
-* [http://www.newguid.net/category/sitecore/sitecore-modules/email-campaign-manager-sitecore/](http://www.newguid.net/category/sitecore/sitecore-modules/email-campaign-manager-sitecore/)
 * [http://www.aroundcode.com/2013/04/send-non-campaign-emails-with-sitecore-ecm/](http://www.aroundcode.com/2013/04/send-non-campaign-emails-with-sitecore-ecm/)
-* [http://mikerobbins.co.uk/2014/02/03/custom-tokens-in-email-campaign-manager/](http://mikerobbins.co.uk/2014/02/03/custom-tokens-in-email-campaign-manager/ )
+* [http://www.mikerobbins.co.uk/developer/email%20campaign%20manager/sitecore/2014/02/03/custom-tokens-in-email-campaign-manager.html](http://www.mikerobbins.co.uk/developer/email%20campaign%20manager/sitecore/2014/02/03/custom-tokens-in-email-campaign-manager.html)
 
 #### Projects / Resources
 

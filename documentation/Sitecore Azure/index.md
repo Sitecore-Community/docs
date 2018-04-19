@@ -11,11 +11,6 @@ The following documents relate to the **Sitecore Azure module**. This module rel
 
 - [Sitecore Azure Compatibility Table](https://kb.sitecore.net/articles/880886)
 - [Sitecore and Microsoft Azure SDK Compatibility Table](https://kb.sitecore.net/articles/026831)
-- [Getting started with Sitecore Azure](https://doc.sitecore.net/cloud/azure/getting%20started%20with%20sitecore%20azure)
-- [Install Sitecore Azure and deploy to Microsoft Azure](https://doc.sitecore.net/cloud/azure/using_sitecore_azure/install_sitecore_azure_and_deploy_to_microsoft_azure)
-- [Manage your Sitecore Azure service](https://doc.sitecore.net/cloud/azure/manage%20your%20sitecore%20azure%20service)
-- [Troubleshooting Sitecore Azure](https://doc.sitecore.net/cloud/azure/troubleshooting%20sitecore%20azure)
-- [Connect to xDB from Sitecore Azure ](https://doc.sitecore.net/cloud/xdb_cloud/connect_to_sitecore_xdb_from_sitecore_azure)
 
 ## Knowledgebase Articles
 
@@ -56,8 +51,6 @@ The following articles have come out of Sitecore Support and the Technical Consu
 - [Sitecore media library and Azure blob storage](https://community.sitecore.net/technical_blogs/b/sitecorebetter/posts/sitecore-media-library-and-azure-blob-storage)
 - [The ultimate approach to storing Sitecore media items in CDN](http://www.cognifide.com/blogs/sitecore/the-ultimate-approach-to-storing-sitecore-media-items-in-cdn/)
 - [Sitecore Azure – Kick Off](http://techitpro.com/sitecore-azure/)
-- [10 Considerations for a Successful Sitecore Azure Implementation](http://www.perficient.com/securedocs/1841191041051161013211297112101114115.pdf)
 - [Sitecore Azure for Beginners – Part 1: What Is Microsoft Azure?](http://mhwelander.net/2014/09/23/sitecore-azure-for-beginners-part-1-what-is-microsoft-azure/)
-- [Sitecore Azure Walkthrough](http://www.hugeinc.com/ideas/perspective/sitecore-azure-walkthrough/)
 - [Instantiating Your First Sitecore Azure](http://www.awareweb.com/awareblog/11-26-13-sitecoreazure/)
 - [Sitecore Azure PaaS – With Email Campaign Manager (ECM)](http://blog.coralweb.com.au/index.php/sitecore-azure-paas-with-email-campaign-manager-ecm/)

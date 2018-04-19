@@ -21,7 +21,6 @@ Performance tuning specifically relating to the analytics infrastructure.
 
 ### Blog Posts
 
-* [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
 * [http://sitecorebasics.wordpress.com/tag/caching/](http://sitecorebasics.wordpress.com/tag/caching/)
 * [http://sitecorebasics.wordpress.com/2011/03/05/sitecore-caching/](
 http://sitecorebasics.wordpress.com/2011/03/05/sitecore-caching/) 

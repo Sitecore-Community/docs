@@ -23,5 +23,4 @@ All Sitecore documentation for Sitecore 7.5 and older lives on the old Sitecore 
 
 ## Sitecore Training
 
-* [Training for Back-End Developers](https://www.sitecore.net/services-and-support/training/back-end-developers.aspx)
-* [Training for Front-End Developers](https://www.sitecore.net/services-and-support/training/front-end-developers.aspx)
+- [Official Sitecore training homepage](https://www.sitecore.com/en-gb/services-and-support/training)

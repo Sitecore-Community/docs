@@ -6,7 +6,7 @@ title: Services and ORM
 # Services and ORM
 
 ## Item Web API
-* [Web API Sitecore ID Formatter](http://mikerobbins.co.uk/2014/12/02/web-api-sitecore-id-formatter/)
+* [Web API Sitecore ID Formatter](http://www.mikerobbins.co.uk/sitecore/web%20item%20api/2014/12/02/web-api-sitecore-id-formatter.html)
 
 ### Video
 * [https://www.youtube.com/watch?v=muLFkTlYtCM - by Kern Herskind Nightingale](https://www.youtube.com/watch?v=muLFkTlYtCM )
@@ -27,7 +27,6 @@ title: Services and ORM
 | [Glass.Mapper.Sc](http://glass.lu) | Mapper | |
 | [Fortis](http://fortis.ws/) | Wrapper | |
 | [Synthesis](https://github.com/kamsar/Synthesis) | Wrapper | |
-| [Diamond](https://github.com/sitecorerick/diamond) | Wrapper | | 
 
 * [http://glass.lu/](http://glass.lu/)
 * [http://cardinalcore.co.uk/category/glass-mapper/](http://cardinalcore.co.uk/category/glass-mapper/)

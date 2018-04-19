@@ -43,12 +43,9 @@ Overview of how Sitecore manages content, including information about **the cont
 #### SEO
 
 * [http://www.partechit.nl/nl/blog/2014/03/sitecore-url-rewriter-module](http://www.partechit.nl/nl/blog/2014/03/sitecore-url-rewriter-module)
-* [http://www.partechit.nl/en/blog/2013/05/sitecore-seo-friendly-url-module](http://www.partechit.nl/en/blog/2013/05/sitecore-seo-friendly-url-module)
-* [http://www.partechit.nl/nl/blog/2014/03/seo-friendly-url-resolver-issue-striplanguage-and-alwaysstriplanguage](http://www.partechit.nl/nl/blog/2014/03/seo-friendly-url-resolver-issue-striplanguage-and-alwaysstriplanguage)
 * [http://www.sitecore.net/Learn/Blogs/Technical-Blogs/John-West-Sitecore-Blog/Posts/2010/11/Use-the-Sitecore-Rules-Engine-to-Control-Item-Names.aspx](http://www.sitecore.net/Learn/Blogs/Technical-Blogs/John-West-Sitecore-Blog/Posts/2010/11/Use-the-Sitecore-Rules-Engine-to-Control-Item-Names.aspx)
 * [http://sitecoreblog.alexshyba.com/2010/03/sitecore-friendly-urls-and-plus-sign.html](http://sitecoreblog.alexshyba.com/2010/03/sitecore-friendly-urls-and-plus-sign.html)
 * [http://adeneys.wordpress.com/2013/07/19/item-buckets-and-urls/](http://adeneys.wordpress.com/2013/07/19/item-buckets-and-urls/)
-* [http://www.partechit.nl/en/blog/2013/03/text-fields-with-limited-length-and-feedback-during-editing](http://www.partechit.nl/en/blog/2013/03/text-fields-with-limited-length-and-feedback-during-editing)
 * [http://sitecoreskills.blogspot.co.uk/2014/05/notes-on-lowercase-sitecore-urls.html](http://sitecoreskills.blogspot.co.uk/2014/05/notes-on-lowercase-sitecore-urls.html)
 * [http://laubplusco.net/url-mappings-in-sitecore-done-easy/](http://laubplusco.net/url-mappings-in-sitecore-done-easy/)
 
@@ -77,7 +74,6 @@ Chapter 3 contains information about publishing (including targets, types, and r
 ### Blog Posts
 
 * [https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx (Major improvements to publishing in 7.2)](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/Reinnovations/Posts/2014/03/Publishing-Improvements-in-7-2.aspx)
-* [http://www.partechit.nl/en/blog/2013/03/display-item-publication-status-in-the-sitecore-gutter](http://www.partechit.nl/en/blog/2013/03/display-item-publication-status-in-the-sitecore-gutter)
 * [http://firebreaksice.com/unpublish-sitecore-content/](http://firebreaksice.com/unpublish-sitecore-content/)
 * [http://sitecorebasics.wordpress.com/?s=publish ](http://sitecorebasics.wordpress.com/?s=publish )
 * [http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ ](http://sitecorebasics.wordpress.com/2011/05/28/is-your-sitecore-publishing-stucks/ )
@@ -145,12 +141,10 @@ Chapter 3 contains information about publishing (including targets, types, and r
 ### Blog Posts
 
 * [http://www.partechit.nl/nl/blog/2014/09/configurable-pipeline-processors-and-event-handlers](http://www.partechit.nl/nl/blog/2014/09/configurable-pipeline-processors-and-event-handlers)
-* [http://www.partechit.nl/nl/blog/2014/09/isolating-pipeline-processors-and-event-handlers](http://www.partechit.nl/nl/blog/2014/09/isolating-pipeline-processors-and-event-handlers)
 * [http://sitecorejunkie.com/category/pipeline/](http://sitecorejunkie.com/category/pipeline/)
 * [http://sitecorejunkie.com/category/processors/](http://sitecorejunkie.com/category/processors/)
 * [http://sitecorejunkie.com/category/commands/](http://sitecorejunkie.com/category/commands/)
 * [http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html](http://sitecoreskills.blogspot.co.uk/2013/09/site-specific-pipeline-processors.html)
-* [http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html](http://www.alen.me.uk/2014/09/how-to-customize-sitecore-parts-that.html)
 * [http://blog.coates.dk/2014/10/03/sitecore-save-event/](http://blog.coates.dk/2014/10/03/sitecore-save-event/)
 
 --------------------------
@@ -179,7 +173,6 @@ Chapter 3 contains information about publishing (including targets, types, and r
 
 ## General Blog Posts
 
-* [http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html (13 parts so far)](http://www.joshuwa.com/2013/02/working-with-sitecore-introdution.html)
 * [http://learnsitecore.cmsuniverse.net/Developers/Articles/2009/07/SimpleSitePart1.aspx (11 part serties)](http://learnsitecore.cmsuniverse.net/Developers/Articles/2009/07/SimpleSitePart1.aspx)
 * [http://sitecorebasics.wordpress.com/2011/05/13/basics-of-sitecore-for-beginner-developers/](http://sitecorebasics.wordpress.com/2011/05/13/basics-of-sitecore-for-beginner-developers/)
 * [http://sitecorebasics.wordpress.com/2014/04/20/sitecore-cms-version-history/ ](http://sitecorebasics.wordpress.com/2014/04/20/sitecore-cms-version-history/ )
@@ -193,23 +186,14 @@ Chapter 3 contains information about publishing (including targets, types, and r
 * [http://navmarwaha.com/2014/09/23/have-vision-but-dont-get-there/](http://navmarwaha.com/2014/09/23/have-vision-but-dont-get-there/)
 * [http://ctor.io/correctly-switching-sitecore-contextes/](http://ctor.io/correctly-switching-sitecore-contextes/)
 * [http://sitecore.unic.com/2014/08/08/enable-multi-level-site-property-inheritance](http://sitecore.unic.com/2014/08/08/enable-multi-level-site-property-inheritance)
-* [http://www.cognifide.com/blogs/categories/sitecore/](http://www.cognifide.com/blogs/categories/sitecore/)
-* [http://www.partechit.nl/en/blog](http://www.partechit.nl/en/blog)
-* [http://www.newguid.net/](http://www.newguid.net/)
 * [http://www.bugdebugzone.com/search/label/Sitecore ](http://www.bugdebugzone.com/search/label/Sitecore)
 * [http://laubplusco.net/category/sitecore-development-tips/](http://laubplusco.net/category/sitecore-development-tips/)
-* [http://www.partechit.nl/en/blog/2013/03/embedding-the-page-editor-in-the-content-editor](http://www.partechit.nl/en/blog/2013/03/embedding-the-page-editor-in-the-content-editor)
 * [http://www.partechit.nl/nl/blog/2014/02/copy-version-module](http://www.partechit.nl/nl/blog/2014/02/copy-version-module)
 * [http://www.partechit.nl/nl/blog/2014/08/displaying-info-on-the-sitecore-login-page](http://www.partechit.nl/nl/blog/2014/08/displaying-info-on-the-sitecore-login-page)
 * [http://exploringsitecore.wordpress.com/2013/04/10/use-name-value-list-field-type-its-there-for-a-reason/](http://exploringsitecore.wordpress.com/2013/04/10/use-name-value-list-field-type-its-there-for-a-reason/)
 * [http://visionsincode.wordpress.com/2014/02/16/how-to-make-a-customized-control-for-the-sitecore-page-editor/](http://visionsincode.wordpress.com/2014/02/16/how-to-make-a-customized-control-for-the-sitecore-page-editor/)
 * [http://visionsincode.wordpress.com/2014/02/18/make-your-own-droplink-control-for-the-sitecore-page-editor/](http://visionsincode.wordpress.com/2014/02/18/make-your-own-droplink-control-for-the-sitecore-page-editor/)
-* [http://www.partechit.nl/en/blog/2012/10/solving-some-common-sitecore-component-problems](http://www.partechit.nl/en/blog/2012/10/solving-some-common-sitecore-component-problems)
 * [http://getfishtank.ca/blog/module-markdown-for-sitecore](http://getfishtank.ca/blog/module-markdown-for-sitecore)
 * [http://www.codehousegroup.com/services/sitecore-modules/sitecore-google-maps](http://www.codehousegroup.com/services/sitecore-modules/sitecore-google-maps)
-* [http://www.partechit.nl/en/blog/2012/12/dynamic-content-editor-templates-using-rendering-dependencies](http://www.partechit.nl/en/blog/2012/12/dynamic-content-editor-templates-using-rendering-dependencies)
-* [http://www.partechit.nl/en/blog/2013/01/using-an-enumeration-as-data-source](http://www.partechit.nl/en/blog/2013/01/using-an-enumeration-as-data-source)
-* [http://www.newguid.net/sitecore/2014/restricting-the-number-of-components-in-the-sitecore-page-editor/](http://www.newguid.net/sitecore/2014/restricting-the-number-of-components-in-the-sitecore-page-editor/)
 * [http://jockstothecore.com/injecting-resources-into-content-and-page-editor/](http://jockstothecore.com/injecting-resources-into-content-and-page-editor/)
 * [http://getfishtank.ca/blog/create-rss-feeds-in-sitecore](http://getfishtank.ca/blog/create-rss-feeds-in-sitecore)
-* [http://sitecorejourney.nileshthakkar.com/](http://sitecorejourney.nileshthakkar.com/)

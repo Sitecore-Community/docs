@@ -19,8 +19,8 @@ __Note: please take into account that some of such steps are not good to do on p
 <p><span class="glyphicon glyphicon-tag"></span> Sitecore 7.5</p>
 
 #### Step 1:  
-Configure ```"reporting.secondary"``` DB (see the reason of that [here](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/processing%20overview)).  
-Use copy of clean reporting DB for that. Add appropriate line in connection strings (see some information [here](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20configuration/configure%20a%20content%20management%20server)). We will need that reporting DB when executing step #7.  
+Configure ```"reporting.secondary"``` DB (see the reason of that [here](https://doc.sitecore.net/developers/scaling-guide/architecture-overview/experience-platform/processing-architecture.html)).  
+Use copy of clean reporting DB for that. Add appropriate line in connection strings (see some information [here](https://doc.sitecore.net/developers/server-role-configuration-reference/core-roles/content-management/index.html)). We will need that reporting DB when executing step #7.  
 ![Connection strings]({{ site.baseurl }}/images/Refreshing reports/connectionStrings.png)
 
 #### Step 2:  

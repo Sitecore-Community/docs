@@ -23,7 +23,6 @@ If you are new to Sitecore MVC, watch the following two videos for an overview o
 * [http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/](http://kevinobee.wordpress.com/2013/01/05/mvc-areas-in-sitecore/)
 * [http://ctor.io/wrapping-a-view-rendering-to-automatically-add-additional-markup/](http://ctor.io/wrapping-a-view-rendering-to-automatically-add-additional-markup/)
 * [http://www.chrisvandesteeg.nl/2014/06/13/sitecore-mvc-in-a-multisite-environment-areas/](http://www.chrisvandesteeg.nl/2014/06/13/sitecore-mvc-in-a-multisite-environment-areas/)
-* [http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC)](http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/ (data-* attributes and Sitecore MVC))
 * [http://www.matthewdresser.com/sitecore/single-page-application-sitecore-mvc](http://www.matthewdresser.com/sitecore/single-page-application-sitecore-mvc)
 * [http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/](http://mhwelander.net/2014/06/16/supporting-field-parameters-with-sitecore-mvc/)
 * [http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/](http://mhwelander.net/2014/06/13/view-renderings-vs-controller-renderings/)
@@ -43,9 +42,7 @@ Moved to its own page [here]({{ site.baseurl }}/documentation/IoC/index.html).
 
 * [http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/](http://blog.istern.dk/2012/07/10/unit-testing-our-mvc-controller-for-sitecore/)
 * [http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/](http://mhwelander.net/2014/04/30/unit-testing-sitecore-mvc/)
-* [http://www.igloo.com.au/blog/unit-testing-for-sitecore/](http://www.igloo.com.au/blog/unit-testing-for-sitecore/)
 * [http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/](http://blog.istern.dk/2012/02/07/unit-testing-with-sitecore-item/)
-* [http://nttdatasitecore.com/Blog/2014/September/Highly-testable-Sitecore-code-using-MVC-Ninject-Synthesis-Moq-and-NUnit](http://nttdatasitecore.com/Blog/2014/September/Highly-testable-Sitecore-code-using-MVC-Ninject-Synthesis-Moq-and-NUnit)
 * [http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/](http://adeneys.wordpress.com/2010/11/20/unit-testing-in-sitecore-is-not-scary/)
 * [http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/](http://hermanussen.eu/sitecore/wordpress/2012/06/sitecore-unit-testing-with-test-fixtures/)
 * [http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5](http://www.partechit.nl/nl/blog/2014/09/sitecore-abstractions-dll-in-sitecore-7-5)

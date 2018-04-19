@@ -14,7 +14,7 @@ The technical preview for Sitecore 8 was made available to MVPs and those that r
 * [http://petersondave.wordpress.com/2014/10/01/sitecore-8-at-a-glance/](http://petersondave.wordpress.com/2014/10/01/sitecore-8-at-a-glance/)
 * [http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/10/Sitecore-8-Adding-applications-launch-pad.aspx](http://www.nonlinearcreations.com/Digital/how-we-think/articles/2014/10/Sitecore-8-Adding-applications-launch-pad.aspx)
 * [http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx](http://www.hhogdev.com/blog/2014/october/speak-app-changes.aspx)(Changes to SPEAK apps on the Sitecore 8 Dashboard)
-* [Sitecore SPEAK: How to add Applications to Sitecore 8 Launch Pad](http://mikerobbins.co.uk/2014/12/20/how-to-add-speak-applications-to-sitecore-8-launch-pad/)
+* [Sitecore SPEAK: How to add Applications to Sitecore 8 Launch Pad](http://www.mikerobbins.co.uk/sitecore/speak/2014/12/20/how-to-add-speak-applications-to-sitecore-8-launch-pad.html)
 * [Active Commerce and the Experience Explorer Pad](http://www.techphoria414.com/Blog/2014/September/Sitecore-8-Technical-Preview-Active-Commerce-and-the-Experience-Explorer)
 * [Sitecore Pipeline Groups](http://blog.boro2g.co.uk/sitecore-pipeline-groups/)
 * [What's new about goals in Sitecore 8](http://blog.horizontalintegration.com/2014/10/28/whats-new-about-goals-in-sitecore-8/)

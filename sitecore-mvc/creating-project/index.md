@@ -21,7 +21,7 @@ Different versions of Sitecore support different versions of ASP.NET MVC. For a 
 
 Sitecore recommends that you create your Visual Studio project in a location outside the web root, and set up a process that copies files into the web root of the Sitecore instance (on build, for example). There are several methods of doing this:
 
-* Use something like [Team Development for Sitecore (TDS)](https://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx)
+* Use something like [Team Development for Sitecore (TDS)](https://www.teamdevelopmentforsitecore.com/)
 * Create a post-build script
 * Use [Web One Click Publish](http://msdn.microsoft.com/en-us/library/vstudio/dd434211.aspx) in Visual Studio
 

@@ -4,7 +4,7 @@ title: Generating Sample Analytics Data
 category: xdb
 ---
 
-In Sitecore 8, the information you see in reports is not the raw data that was collected in MongoDB. [Analytics data is processed and aggregated](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/processing%20overview) into indexes and databases that are then used for reporting. This makes it a bit more difficult to generate data.
+In Sitecore 8, the information you see in reports is not the raw data that was collected in MongoDB. [Analytics data is processed and aggregated](https://doc.sitecore.net/developers/scaling-guide/architecture-overview/experience-platform/processing-architecture.html) into indexes and databases that are then used for reporting. This makes it a bit more difficult to generate data.
 
 ## Flow of Information in the xDB
 

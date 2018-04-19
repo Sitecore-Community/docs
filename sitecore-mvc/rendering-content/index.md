@@ -52,10 +52,6 @@ Like the standard HTML helper, Sitecore's field helper accepts parameters. If Si
 @Html.Sitecore().Field("Pet Image", Model.PageItem, new { @class="large-image", @mw="250" })
 {% endhighlight %}
 
-<mark>
-	<strong>Note</strong>: Sitecore does have some problems processing data_* attributes - see <a href="http://brad-christie.com/blog/2014/09/24/using-data-attributes-with-sitecore-mvc/">Brad Christie's blog post for a solution</a>.
-</mark>
-
 ### Creating a custom field helper
 
 You can create your own library of field helpers that support a specific field type - for instance, you might create an image, date, or link field helper. Refer to [John West's blog post on custom field helpers](https://www.sitecore.net/Learn/Blogs/Technical-Blogs/John-West-Sitecore-Blog/Posts/2012/06/Sitecore-MVC-Playground-Part-4-Extending-the-SitecoreHelper-Class.aspx) for more information.

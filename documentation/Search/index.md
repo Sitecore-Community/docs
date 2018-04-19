@@ -18,10 +18,6 @@ title: Sitecore Search
 * [Sitecore 7 - Predefined Queries](http://getfishtank.ca/blog/new-sitecore-7-feature-predefined-queries)
 * [Lucene Query walk-through](http://learnsitecore.cmsuniverse.net/en/Developers/Articles/2009/06/LuceneQuery1.aspx) (Sitecore 6)
 
-#### In-depth Mechanics
-
-* [Sitecore 7 in-depth - Indexing mechanics](http://www.partechit.nl/en/blog/2013/04/sitecore-7-in-depth-indexing-mechanics)
-
 #### Customizing Fields
 
 * [Computed Index Fields – Sitecore 7 Content Search](http://reasoncodeexample.com/2014/04/01/computed-index-fields-sitecore-7-content-search/)
@@ -54,7 +50,6 @@ title: Sitecore Search
 #### Tools
 
 *  [Index Viewer 2.0 for Sitecore 7](http://learnsitecore.cmsuniverse.net/en/Blog/Sitecore-Index-Viewer-2-released.aspx)
-*  [Sitecore Datasource Indexer](http://sitecorefun.baziret.com/2014/06/sitecore-datasource-indexer/)
 
 #### Lucinq
 
@@ -78,10 +73,10 @@ title: Sitecore Search
 
 * [Sitecore and Solr - custom field reader and indexing](http://www.skillcore.net/sitecore/sitecore-and-solr-custom-field-reader-and-indexing)
 * [Setting up Solr with Sitecore 7](http://www.dansolovay.com/2013/05/setting-up-solr-with-sitecore-7.html)
-* [Solr - Search On Exact Phrase](http://mikerobbins.co.uk/2014/09/23/solr-search-on-exact-phrase/)
+* [Solr - Search On Exact Phrase](http://www.mikerobbins.co.uk/content%20search/developer/sitecore/2014/09/23/solr-search-on-exact-phrase.html)
 * [How to Achieve Zero-Downtime Sitecore Deployments (Solr Search)](http://www.ehabelgindy.com/category/solr/)
 * [Using SwitchOnRebuildSolrSearchIndex Solr provider for Sitecore](http://www.skillcore.net/sitecore/using-switchonrebuildsolrsearchindex-solr-provider-for-sitecore)
-* [Install Solr as Windows Service for Sitecore Content Search](http://mikerobbins.co.uk/2014/11/07/install-solr-as-windows-service-for-sitecore-content-search/)
+* [Install Solr as Windows Service for Sitecore Content Search](http://www.mikerobbins.co.uk/content%20search/developer/sitecore/solr/2014/11/07/install-solr-as-windows-service-for-sitecore-content-search.html)
 
 ### Video
 

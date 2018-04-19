@@ -20,7 +20,7 @@ You can also choose to use MongoDB as your **session state provider** if you cho
 
 ## Deployment Options: Cloud vs On Premise
 
-You can find out more about [xDB cloud vs on premise on the doc site](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/architecture%20options). Your options are essentially this:
+You can find out more about [xDB cloud vs on premise on the doc site](https://doc.sitecore.net/developers/scaling-guide/deployment-options.html). Your options are essentially this:
 
 * Host and scale everything yourself - including MongoDB
 * Take advantage of xDB in the Cloud. This is an Azure service. Sitecore takes care of **all analytics data collection and aggregation**, including the reporting databases, and provides you with a number of connection strings. You host and scale the content management aspects of the platform, including:
@@ -31,5 +31,4 @@ You can find out more about [xDB cloud vs on premise on the doc site](https://do
   
 Find out more about the software and hardware requirements for Sitecore xDB on the doc.sitecore.net:
 
-* [xDB Software Recommendations](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/software%20recommendations)
-* [xDB Hardware Guidelines](https://doc.sitecore.net/products/sitecore%20experience%20platform/xdb%20overview/hardware%20guidlines)
+* [Hardware and software requirements](https://doc.sitecore.net/developers/scaling-guide/hardware-and-software.html)
