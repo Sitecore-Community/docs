@@ -97,7 +97,8 @@ A custom cache is a strongly-typed cache. These types of caches are easier to wo
 
 #### <a name="custom_cache_example">Custom Cache Example</a>
 The following is an example of a custom cache and a manager class for accessing the cache.
-
+    
+	public class AbbreviationCache : CustomCache<string>
 	{
 	    public AbbreviationCache(string name, long maxSize) : base(name, maxSize) {  }
 	
