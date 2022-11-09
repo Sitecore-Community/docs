@@ -63,6 +63,10 @@ Creating a cache consists of creating a new instance of `Sitecore.Caching.Cache`
 
 	var mycache = new Sitecore.Caching.Cache("test cache", 1024);
 
+For Sitecore version 9.0 or later, create a cache instance using the `GetNamedInstance` method of `CacheManager` static class.  
+
+	ICache<string> mycache = Sitecore.Caching.CacheManager.GetNamedInstance("test cache", 1024, true);
+
 #### <a name="referencing_the_cache">Referencing the Cache</a>
 A cache is accessed by name using the Cache Manager.
 
