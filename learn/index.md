@@ -4,6 +4,8 @@ title: Learn Sitecore
 category: learn
 ---
 
+
+
 <h2>Installation and Setup</h2>
 <ul>
    <li><a href="{{ site.baseurl }}/sitecore-basics/installing-sitecore">Options for Installing Sitecore</a></li>
@@ -40,27 +42,27 @@ category: learn
   <li><a href="/docs/documentation/Sitecore 8/index.html">Sitecore 8 Resources</a></li>
 </ul>
 
-<h2>Feeds</h2>
+## Feeds
 
-<ul>
-  <li><a href="http://feeds.sitecore.net/Feed/LatestPosts">http://feeds.sitecore.net/Feed/LatestPosts</a></li>
-  <li><a href="https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&amp;output=html">https://docs.google.com/spreadsheet/pub?key=0AuSZJtbDBPCQdFZKaUIxZkhxZlFndk11c1NUZU84YkE&amp;output=html</a> (MVP Details)</li>
-  <li><a href="http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2">http://pipes.yahoo.com/pipes/pipe.info?_id=a4854adf0c2c2518e526facaac8ab8c2</a> (Older Yahoo! MVP pipe - <a href="http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&amp;_render=rss">RSS</a> / <a href="http://pipes.yahoo.com/pipes/pipe.run?_id=a4854adf0c2c2518e526facaac8ab8c2&amp;_render=json">JSON</a>)</li>
-</ul>
+- [Sitecore Company Blog](https://www.sitecore.com/company/blog)
+- [Sitecore Latest Blogs](https://dev.sitecore.net/~/link.aspx?_id=C12C95F2683A4AF98BABA504B4701DD7&_z=z)
+- [Sitecore Documentation Feed](http://feeds.sitecore.net/Feed/LatestPosts)
+
+## MVPs
+
+- [MVP List 2018](https://mvp.sitecore.net/MVPs/2018)
+- [MVP Twitter List 2018](https://twitter.com/Sitecore/lists/sitecore-2018-mvps)
 
 <h3 id="newsletters">Newsletters</h3>
 
-<ul>
-  <li><a href="http://paper.li/sitecore">The Sitecore Daily</a></li>
-  <li><a href="http://paper.li/kiranpatils/1378702752">Sitecore Basics</a></li>
-  <li><a href="http://paper.li/varunvns/1387067950">Sitecore Journal</a></li>
-  <li><a href="http://tinyletter.com/sitecorebasics">Sitecore Basics Weekly</a></li>
-</ul>
+## Newsletters
+- [http://paper.li/kiranpatils/1378702752](Sitecore Basics)
+- [http://paper.li/varunvns/1387067950](Sitecore Journal)
+- [https://tinyletter.com/sitecorebasics/archive](Sitecore Basics Weekly (Archive))
 
 <h3 id="user-groups">User Groups</h3>
 
 <ul>
-  <li><a href="http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx">http://www.sitecore.net/Events/UK-Technical-User-Group/Presentations.aspx </a></li>
   <li><a href="https://www.youtube.com/watch?v=vQVBaU5D4yo">https://www.youtube.com/watch?v=vQVBaU5D4yo (Sitecore MVC, SUG Conference)</a></li>
   <li><a href="https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI">https://www.youtube.com/playlist?list=PLb9QmtmxCbhmbOiRvFMXvByUb3AuvsdJI (Sitecore Virtual User Group)</a></li>
   <li><a href="https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH">https://www.youtube.com/playlist?list=PLb9QmtmxCbhmpb40pb8lpF_nX4h1a1zKH (2013 Sitecore Virtual Users Summit)</a></li>
@@ -84,10 +86,4 @@ category: learn
 <h3 id="best-practices-multi-site-solutions">Best Practices: Multi-Site Solutions</h3>
 <ul>
   <li><a href="http://www.nonlinearcreations.com/Digital/how-we-think/slideshows/Sitecore-multi-sites.aspx#.VHdnTyLfJmw.twitter">Sitecore best practices: Making the most of multi-sites</a></li>
-</ul>
-
-<h3 id="forums">Forums</h3>
-
-<ul>
-  <li><a href="http://techitpro.com/sitecore-forums-know-how/">http://techitpro.com/sitecore-forums-know-how/</a></li>
 </ul>

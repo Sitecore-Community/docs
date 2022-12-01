@@ -6,9 +6,9 @@ title: Services Services Layer
 [Play with ItemServices]({{ site.baseurl }}/documentation/Sitecore Services Layer/Play with Item Services/)
 
 ## EntityService
-* [EntityService within Sitecore.Services.Client](mikerobbins.co.uk/2015/01/06/entityservice-sitecore-service-client/)
-* [EntityService Custom Controller Action](http://mikerobbins.co.uk/2015/03/20/sitecore-entity-service-ssc-custom-controller-action/)
-* [EntityService Adding Paging](http://mikerobbins.co.uk/2015/03/23/sitecore-entity-service-ssc-adding-paging/)
+* [EntityService within Sitecore.Services.Client](http://www.mikerobbins.co.uk/sitecore/sitecore.services.client/speak/2015/01/06/entityservice-sitecore-service-client.html/)
+* [EntityService Custom Controller Action](http://www.mikerobbins.co.uk/sitecore/sitecore.services.client/2015/03/20/sitecore-entity-service-ssc-custom-controller-action.html)
+* [EntityService Adding Paging](http://www.mikerobbins.co.uk/sitecore/sitecore.services.client/2015/03/23/sitecore-entity-service-ssc-adding-paging.html)
 
 ## Reference Materials
 

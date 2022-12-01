@@ -18,13 +18,10 @@ title: Development Process
 
 * [John West: Sitecore Differentiating Factors: Sitecore Rocks](http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2011/07/sitecore-differentiating-factors-blog-series-sitecore-rocks.aspx) 
 * [Trevor Campbell: 28 Days Of Sitecore Rocks](http://www.sitecore.net/learn/blogs/technical-blogs/trevor-campbell.aspx)
-* [http://vsplugins.sitecore.net](http://vsplugins.sitecore.net)
 * [http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/ ](http://sitecorebasics.wordpress.com/2011/05/10/sitecore-rocks-templatewizard-version0-7-0-0-cultureneutral-publickeytokenc9e2eeb5a3dd9908-processorarchitecturemsil/)
 * [http://www.seanholmesby.com/sitecore-rocks-presentation-with-the-layout-designer/](http://www.seanholmesby.com/sitecore-rocks-presentation-with-the-layout-designer/)
 
 #### Rocks Query Analyzer
-* [http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/](http://www.newguid.net/sitecore/2012/sitecore-rocks-query-analyzer-handy-queries/)
-* [http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/](http://www.newguid.net/uncategorized/2012/sitecore-rocks-query-analyzer-handy-queries-part-2/)
 * [http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx](http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2012/09/sitecore-rocks-query-analyzer-ingredients-for-the-sitecore-aspnet-cms.aspx)
 * [http://www.seanholmesby.com/setting-the-item-sortorder-value-in-sitecore-rocks-query-analyzer/](http://www.seanholmesby.com/setting-the-item-sortorder-value-in-sitecore-rocks-query-analyzer/)
 
@@ -59,7 +56,7 @@ title: Development Process
 * [https://github.com/kamsar/Unicorn](https://github.com/kamsar/Unicorn)
 * [http://www.razl.net/](http://www.razl.net/)
 * [https://github.com/dnicolson/CopySauce](https://github.com/dnicolson/CopySauce)
-* [http://www.hhogdev.com/Products/Team-Development-for-Sitecore/Overview.aspx](http://www.hhogdev.com/Products/Team-Development-for-Sitecore/Overview.aspx)
+* [https://www.teamdevelopmentforsitecore.com](https://www.teamdevelopmentforsitecore.com)
 * [https://github.com/HedgehogDevelopment/Symposium2014-SitecoreTools (Resources from Symposium NA 2014 talk on Sitecore Tools)](https://github.com/HedgehogDevelopment/Symposium2014-SitecoreTools)
 
 ### Videos
@@ -71,11 +68,6 @@ title: Development Process
 ### Official Sitecore Documentation (7.0 - 7.2)
 
 * [Package Designer Administrator's Guide](http://sdn.sitecore.net/Reference/Sitecore%207/Package%20Designer%20Administrator%20Guide.aspx)
-
-### Blog Posts
-* [http://www.partechit.nl/en/blog/2012/11/sitecore-package-installation-options-explained](http://www.partechit.nl/en/blog/2012/11/sitecore-package-installation-options-explained)
-
-## Powershell
 
 ### Blog Posts
 

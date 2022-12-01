@@ -19,9 +19,9 @@ All versions of Sitecore and associated official modules can be downloaded from 
 
 ## Download free modules
 
-The marketplace offers free modules, some of which are supported by Sitecore. Some modules are either [tested by or supported by Sitecore](https://marketplace.sitecore.net/en/Better_Shared_Source.aspx), but many are built and maintained by the commnity.
+The marketplace offers free modules, some of which are supported by Sitecore. Some modules are either [tested by or supported by Sitecore](https://marketplace.sitecore.net/SearchResults.aspx#ff=f0,f1), but many are built and maintained by the commnity.
 
-<a href="http://marketplace.sitecore.net" class="btn btn-default">marketplace.sitecore.net</a>
+<a href="https://marketplace.sitecore.net" class="btn btn-default">marketplace.sitecore.net</a>
 
 ## Sitecore on GitHub
 

@@ -4,10 +4,7 @@ title: Creating an Engagement Plan
 category: xdb
 ---
 
-Engagement plans lets you track visitors through a series of states based on their behaviour and status. You can find out more about the basics of Engagement Plans on doc.sitecore.net:
-
-* [Engagement plans overview](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/Engagement%20plans/Engagement%20plans)
-* [Creating  an engagement plan](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/Engagement%20plans/Walkthrough%20Creating%20an%20engagement%20plan)
+Engagement plans lets you track visitors through a series of states based on their behaviour and status. 
 
 The engagement plan walkthrough demonstrates how to create an engagement plan using a **design interface** that resembles Visio:
 
@@ -28,7 +25,7 @@ Pay attention to **Page Event Subscription** and **Time interval** fields - one 
 
 There is a dropdown on the condition that allows you to specify if you want to **evaluate always, on timeout, or when an event has been triggered**.
 
-In this example, triggering Sample Goal whilst in the Initial State will run a **condition**, which is a child item of the state. You **must** specify a trigger or timeout - conditions will only be evaluated if something has triggered that to happen. You can [find out more about different types of triggers](https://doc.sitecore.net/Products/Sitecore%20Experience%20Platform/Engagement%20plans/Engagement%20plan%20triggers%20and%20conditions).
+In this example, triggering Sample Goal whilst in the Initial State will run a **condition**, which is a child item of the state. You **must** specify a trigger or timeout - conditions will only be evaluated if something has triggered that to happen. 
 
  > **Note:** You will **not** see the results in Marketing Control Panel immediately. A lot of work in Sitecore 8 is done in the background and inside the contact session.
 
